@@ -1,7 +1,7 @@
 # One-Core-API-Extras
 This repositry contains binary releases of extra features of the One-Core-API project. These are compatible with Windows Server 2003 SP2, Windows XP SP3 and Windows XP x64 SP2.
 
-Folders in this repository:
+**Folders in this repository:**
 
 - Packages\x86 and Packages\x64: Binary releases categorized by package. You can download and install/update the packages directly from here (i.e. by going to Packages\x86\Base installer\update and runnning update.exe).
 - Release: Scripts to generate a new binaries release;
@@ -9,8 +9,9 @@ Folders in this repository:
 
 The One-Core-API-Extra Binaries project consists of the following packages: Warning: Always if OCA package require restart, do it. If you install all packages and restart only on last, Windows will be corrupted.
 
-- D3d: D3D Native runtime (Mainly DX10 and DX11, based on native Windows Directx Runtime);
-- Modern Setup - This is a package designed to prepare Windows to get ability to be installed in others computers. If you don't want capture the Windows installation, don't need install this package.
+- **D3d Native**: D3D Native runtime (Mainly DX10 and DX11, based on native Windows Directx Runtime);
+- **Modern Setup** - This is a package designed to prepare Windows to get ability to be installed in others computers. If you don't want capture the Windows installation, don't need install this package.
+  - Allow support for install Windows on any computers, with generalized hardware;  
 
 **Modern Setup - Detailed**
 - After install One-Core-API Modern Setup and restart computer, you can run Sysprep, a tool to prepare Windows to be generalize Windows Installation to any hardware;
