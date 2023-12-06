@@ -110,6 +110,8 @@
 	dxgi.dll,amd64/dxgi.dll
 	fntcache.dll,amd64/fntcache.dll
 	vcruntime140.dll,amd64/vcruntime140.dll
+	wined3d.dll,amd64/wined3d.dll
+	wineft2.dll,amd64/wineft2.dll	
 	
 [CopyAlways.SysWOW64.Files]
     d2d1.dll,i386/wd2d1.dll
@@ -127,7 +129,9 @@
 	dxdiagn.dll,i386/wdxdiagn.dll	
 	dxgi.dll,i386/wdxgi.dll
 	fntcache.dll,i386/wfntcache.dll
-	vcruntime140.dll,i386/wvcruntime140.dll	
+	vcruntime140.dll,i386/wvcruntime140.dll
+	wined3d.dll,i386/wwined3d.dll
+	wineft2.dll,i386/wwineft2.dll
 	
 [SourceDisksNames]
     1=%ServicePackSourceFiles%
@@ -147,6 +151,8 @@
 	amd64/dxdiag.exe = 1	
 	amd64/dxgi.dll = 1
 	amd64/fntcache.dll = 1
+	amd64/wined3d.dll = 1
+	amd64/wineft2.dll = 1	
     i386/wd2d1.dll = 1
 	i386/wd3d9.dll = 1
 	i386/wd3d9ex.dll = 1
@@ -161,7 +167,9 @@
 	i386/wdxdiag.exe = 1	
 	i386/wdwrite.dll = 1
 	i386/wdxgi.dll = 1
-	i386/fntcache.dll = 1	
+	i386/wfntcache.dll = 1
+	i386/wwined3d.dll = 1
+	i386/wwineft2.dll = 1	
 
 [UninstallSections]
     GlobalRegistryChanges, GlobalRegistryChanges.UnInstall

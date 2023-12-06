@@ -116,6 +116,8 @@
 	D3DCompiler_47.dll
 	fntcache.dll
 	vcruntime140.dll	
+	wined3d.dll
+	wineft2.dll	
 	
 [SourceDisksNames]
     1=%ServicePackSourceFiles%
@@ -137,6 +139,8 @@
 	D3DCompiler_47.dll = 1
 	fntcache.dll = 1
 	vcruntime140.dll = 1
+	wined3d.dll
+	wineft2.dll	
 	
 [UninstallSections]
     GlobalRegistryChanges, GlobalRegistryChanges.UnInstall
