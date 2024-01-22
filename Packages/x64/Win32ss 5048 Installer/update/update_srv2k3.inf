@@ -1,0 +1,170 @@
+[Version]
+    Signature                 = "$Windows NT$"
+    LanguageType              = 0x0
+    NtBuildToUpdate           = 3790
+    NtMajorVersionToUpdate    = 5
+    NtMinorVersionToUpdate    = 2
+    MaxNtBuildToUpdate        = 3790
+    MaxNtMajorVersionToUpdate = 5
+    MaxNtMinorVersionToUpdate = 2
+    MinNtServicePackVersion   = 256
+    MaxNtServicePackVersion   = 768
+	MachineType=64
+	
+[Configuration]
+    noPNPfiles=1
+    InstallationType        = Hotfix
+    InstallLogFileName      = %SP_SHORT_TITLE%.log
+    UnInstallLogFileName    = %SP_SHORT_TITLE%Uninst.log
+    UnInstallDirName        = $NtUninstall%SP_SHORT_TITLE%$
+    EventLogKeyName         = NtServicePack
+    EventLogDllName         = spmsg.dll	
+    ServiceFileInUseDetect    = 1
+    AppFileinUseDetect        = 3
+
+[Prerequisite]
+	condition=SingleOp,LatestUpdateCheck1.Section
+	
+[LatestUpdateCheck1.Section]
+    EqualOp=CheckReg,HKLM,"SOFTWARE\Microsoft\Windows NT\CurrentVersion\HotFix\OCAB",Installed,0x10001,==,1
+    Display_String="%LatestBaseUpdateFail%"	
+	
+[Strings]
+    SERVICE_PACK_NUMBER     = 2
+    HelpLink = "http://shorthornproject.com"
+    URLInfoAbout = "http://shorthornproject.com"
+	BASE_VERSION            = "1.0.0"	
+    UPDATE                	= "Update"
+    HOTFIX                	= "Hotfix"
+    SECURITY_UPDATE       	= "Security Update"
+    LangTypeValue           = 0x0
+    ServicePackSourceFiles  = "One-Core-API Win32ss Longhorn 5048 Source Files"
+    SP_SHORT_TITLE          = "OCAW32SS5048"
+    SP_TITLE                = "One-Core-API Win32ss Longhorn 5048"
+    PARENT_DISPLAY_NAME     = "One-Core-API"
+	LatestBaseUpdateFail    = "Please Install latest One-Core-API Base first!"
+	
+[Product.Add.Reg]
+    HKLM,"SOFTWARE\Microsoft\Windows\CurrentVersion\Setup", "LogLevel", 0x10001, 0
+    HKLM,"SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\%SP_SHORT_TITLE%","ParentKeyName",0x00000000,"OperatingSystem"
+    HKLM,"SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\%SP_SHORT_TITLE%","ParentDisplayName",0x00000000,"%PARENT_DISPLAY_NAME%"
+    HKLM,SOFTWARE\Microsoft\Windows NT\CurrentVersion\Hotfix\%SP_SHORT_TITLE%,"Installed",0x10001,1
+    HKLM,SOFTWARE\Microsoft\Windows NT\CurrentVersion\Hotfix\%SP_SHORT_TITLE%,"Comments",0,%SP_TITLE%
+    HKLM,SOFTWARE\Microsoft\Windows NT\CurrentVersion\Hotfix\%SP_SHORT_TITLE%,"Backup Dir",0,""
+    HKLM,SOFTWARE\Microsoft\Windows NT\CurrentVersion\Hotfix\%SP_SHORT_TITLE%,"Fix Description",0,%SP_TITLE%
+    HKLM,SOFTWARE\Microsoft\Windows NT\CurrentVersion\Hotfix\%SP_SHORT_TITLE%,"Installed By",0,""
+    HKLM,SOFTWARE\Microsoft\Windows NT\CurrentVersion\Hotfix\%SP_SHORT_TITLE%,"Installed On",0,""
+    HKLM,SOFTWARE\Microsoft\Windows NT\CurrentVersion\Hotfix\%SP_SHORT_TITLE%,"Service Pack",0x10001,%SERVICE_PACK_NUMBER%
+    HKLM,SOFTWARE\Microsoft\Windows NT\CurrentVersion\Hotfix\%SP_SHORT_TITLE%,"Valid",0x10001,1
+    HKLM,SOFTWARE\Microsoft\Windows NT\CurrentVersion\Hotfix\%SP_SHORT_TITLE%\File 1\,"Flags",0,""
+    HKLM,SOFTWARE\Microsoft\Windows NT\CurrentVersion\Hotfix\%SP_SHORT_TITLE%\File 1\,"New File",0,""
+    HKLM,SOFTWARE\Microsoft\Windows NT\CurrentVersion\Hotfix\%SP_SHORT_TITLE%\File 1\,"New Link Date",0,""
+    HKLM,SOFTWARE\Microsoft\Windows NT\CurrentVersion\Hotfix\%SP_SHORT_TITLE%\File 1\,"Old Link Date",0,""
+	HKLM,SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\%SP_SHORT_TITLE%,"DisplayVersion",0x00000000,%BASE_VERSION%
+    HKLM,SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\%SP_SHORT_TITLE%,"ReleaseType",0,%HOTFIX%
+	HKLM,"SYSTEM\CurrentControlSet\Services\UxSms","DisplayName",0x0,"User Experience Session Management Service"
+	HKLM,"SYSTEM\CurrentControlSet\Services\UxSms","ImagePath",0x20000,"%%SystemRoot%%\System32\svchost.exe -k UxSvcGroup"
+	HKLM,"SYSTEM\CurrentControlSet\Services\UxSms","Description",0x0,"User Experience Session Management Service - Provides DWM startup and maintenance services"
+	HKLM,"SYSTEM\CurrentControlSet\Services\UxSms","ObjectName",0x0,"localSystem"
+	HKLM,"SYSTEM\CurrentControlSet\Services\UxSms","ErrorControl",0x10001,01,00,00,00
+	HKLM,"SYSTEM\CurrentControlSet\Services\UxSms","Start",0x10001,02,00,00,00
+	HKLM,"SYSTEM\CurrentControlSet\Services\UxSms","Type",0x10001,20,00,00,00
+	HKLM,"SYSTEM\CurrentControlSet\Services\UxSms\Parameters","ServiceDll",0x20000,"%%SystemRoot%%\System32\uxsms.dll"
+	HKLM,"SYSTEM\CurrentControlSet\Services\UxSms\Parameters","ServiceMain",0x0,"ServiceMain"
+	HKLM,"SOFTWARE\Microsoft\Windows NT\CurrentVersion\svchost", "UxSvcGroup", 0x00010008, "UxSms"
+	
+[ProductInstall.ReplaceFilesIfExist]
+    CopyFiles=System32.files
+	
+[ProductInstall.DontDelayUntilReboot]
+    CopyFiles=MustReplace.System32.files	
+
+[ProductInstall.CopyFilesAlways]
+    CopyFiles=CopyAlways.System32.files
+	CopyFiles=CopyAlways.SysWOW64.files
+	
+[ProductInstall.GlobalRegistryChanges.Install]
+    AddReg=Product.Add.Reg
+
+[ProductInstall.GlobalRegistryChanges.ReInstall]
+    AddReg=Product.Add.Reg
+	
+[DestinationDirs]
+	System32.files=11                   ; %windir%\system32 (replace if exist)
+    CopyAlways.System32.files=11  ; %windir%\system32 (don't delay until reboot)
+	MustReplace.System32.files=11       ; %windir%\system32 (don't delay until reboot)
+	CopyAlways.SysWOW64.files=10,SysWOW64  ; %windir%\system32 (don't delay until reboot)
+	
+[System32.files]
+	win32k.sys, XP64SP2\amd64\win32k.sys
+
+[MustReplace.System32.files]
+	csrsrv.dll, XP64SP2\amd64\csrsrv.dll
+	imm32.dll, XP64SP2\amd64\imm32.dll
+	win32k.sys, XP64SP2\amd64\win32k.sys
+	winsrv.dll, XP64SP2\amd64\winsrv.dll
+	wow64win.dll, XP64SP2\amd64\wow64win.dll	
+	
+[CopyAlways.System32.Files]
+	csrsrv.dll, XP64SP2\amd64\csrsrv.dll
+	d3d9.dll, XP64SP2\amd64\d3d9.dll
+	;dwmapi.dll, XP64SP2\amd64\dwmapi.dll
+    gdibase.dll,XP64SP2\amd64\gdibase.dll	
+	imm32.dll, XP64SP2\amd64\imm32.dll
+	milcore.dll, XP64SP2\amd64\milcore.dll
+    uDWM.dll,XP64SP2\amd64\uDWM.dll
+    userbase.dll,XP64SP2\amd64\userbase.dll
+    uxsms.dll,XP64SP2\amd64\uxsms.dll
+    uxss.exe,XP64SP2\amd64\uxss.exe
+	win32k.sys, XP64SP2\amd64\win32k.sys
+	winsrv.dll, XP64SP2\amd64\winsrv.dll	
+	wow64win.dll, XP64SP2\amd64\wow64win.dll
+
+[CopyAlways.SysWOW64.Files]
+	d3d9.dll,XP64SP2\i386\wd3d9.dll
+	gdibase.dll,XP64SP2\i386\wgdibase.dll
+	userbase.dll,XP64SP2\i386\wuserbase.dll
+	
+[DirectoriesToCleanUp.Uninstall]
+
+[SourceDisksNames]
+    1=%ServicePackSourceFiles%
+
+[SourceDisksFiles]
+	XP64SP2\amd64\csrsrv.dll = 1
+	XP64SP2\amd64\d3d9.dll = 1
+	;XP64SP2\amd64\dwmapi.dll = 1
+    XP64SP2\amd64\gdibase.dll = 1	
+	XP64SP2\amd64\imm32.dll = 1
+	XP64SP2\amd64\milcore.dll = 1
+	XP64SP2\amd64\rpcrtbase.dll = 1
+    XP64SP2\amd64\uDWM.dll = 1
+    XP64SP2\amd64\userbase.dll = 1
+    XP64SP2\amd64\uxsms.dll = 1
+    XP64SP2\amd64\uxss.exe = 1
+	XP64SP2\amd64\win32k.sys = 1
+	XP64SP2\amd64\winsrv.dll = 1
+
+[UninstallSections]
+    GlobalRegistryChanges, GlobalRegistryChanges.UnInstall
+    Add.Reg, Add.Reg.Uninstall
+    Del.Reg, Del.Reg.Uninstall
+	
+[Save.Reg.For.Uninstall]
+    HKLM,"SOFTWARE\Microsoft\Windows\CurrentVersion\Setup","LogLevel"
+    HKLM,SOFTWARE\Microsoft\Windows NT\CurrentVersion\Hotfix\%SP_SHORT_TITLE%	
+
+[LinkItems.Create.Uninstall]
+
+[GlobalRegistryChanges.UnInstall]
+    AddReg=Add.Reg
+    DelReg=Del.Reg
+
+[Del.Reg.Uninstall]
+	HKLM,SOFTWARE\Microsoft\Updates\Windows Server 2003\SP%SERVICE_PACK_NUMBER%\%SP_SHORT_TITLE%
+	HKLM,SOFTWARE\Microsoft\Updates\Windows XP\SP%SERVICE_PACK_NUMBER%\%SP_SHORT_TITLE%
+	HKLM,SOFTWARE\Microsoft\Updates\Windows XP Version 2003\SP%SERVICE_PACK_NUMBER%\%SP_SHORT_TITLE%
+
+[Add.Reg.Uninstall]
+
+[PreRequisite.Uninstall]

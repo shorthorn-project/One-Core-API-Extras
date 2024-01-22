@@ -4749,7 +4749,7 @@
     CopyFiles=System32.config.files
     CopyFiles=System32.Licenses.files
     CopyFiles=System32.oobe.files
-    CopyFiles=Syswow64.sysprep.files
+    CopyFiles=System32.sysprep.Files
     CopyFiles=CopyAlways.PCHealth.files	
     CopyFiles=CopyAlways.Windows.files
     CopyFiles=CopyAlways.System32.files
@@ -4796,7 +4796,7 @@
     System32.config.files=11,config      ; %windir%\system32\config (copy even if don't exist)
     System32.Licenses.files=11,Licenses      ; %windir%\system32\Licenses (copy even if don't exist)
     System32.oobe.files=11,oobe      ; %windir%\system32\oobe (copy even if don't exist)
-    Syswow64.sysprep.files=10,SysWOW64\sysprep      ; %windir%\syswow64\sysprep (copy even if don't exist)
+    System32.sysprep.files=11,sysprep      ; %windir%\system32\sysprep (copy even if don't exist)
     CopyAlways.System32.files=11      ; %windir%\system32 (copy even if don't exist)
     CopyAlways.SysWOW64.files=10,SysWOW64      ; %windir%\syswow64 (copy even if don't exist)
     CopyAlways.DriverCab.files=65623  ; Destination determined at runtime
@@ -5479,8 +5479,8 @@
 	setup\username.htm, Windows\System32\oobe\setup\username.htm
 	setup\welcome.htm, Windows\System32\oobe\setup\welcome.htm
 	
-[Syswow64.sysprep.Files]
-    sysprep.exe, Windows\Syswow64\sysprep\sysprep.exe
+[System32.sysprep.Files]
+    sysprep.exe, Windows\System32\sysprep\sysprep.exe
 	
 [Drivers.CoreDriverFiles]
 	acpi.sys, drivers\acpi.sys
