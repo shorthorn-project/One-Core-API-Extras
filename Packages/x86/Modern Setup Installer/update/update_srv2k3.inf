@@ -5448,7 +5448,7 @@
     Del.Reg, Del.Reg.Uninstall
 	
 [DestinationDirs.Uninstall]
-    Links.Delfiles=16407	
+    ;Links.Delfiles=16407	
 
 [GlobalRegistryChanges.UnInstall]
     AddReg=Add.Reg
