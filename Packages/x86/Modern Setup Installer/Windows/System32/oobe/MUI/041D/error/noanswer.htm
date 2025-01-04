@@ -1,0 +1,99 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+    <title>out of box experience</title>
+    <LINK REL="stylesheet" TYPE="text/css" HREF="../setup/oobestyl.css">
+</head>
+
+<body style="background-Color: transparent; background-repeat: no-repeat;" TABINDEX=-1
+      onload="window.parent.NoAnsw_LoadMe();window.parent.Agent_Activate('NoAnswer');"
+      onunload="window.parent.Agent_Deactivate();">
+
+<table border=0 cellpadding=0 cellspacing=0 width=100% height=100%><tr><td ID=leftmargincell width=7%></td>
+<td ID=maincell valign=middle class="text-primary">
+<br><br>
+
+    <span class="title"><id id="na1">Samtalet gick inte fram</id></span><br>
+    <br>
+    <p><span class="text-primary"><id id="na2">Klicka på <b>Återställ</b> nedan om du vill återställa originaltelefonnumret i rutan ovanför:</id></span>
+
+         <table border=0 cellspacing=0 cellpadding=0>
+           <tr>
+            <td valign="top">
+              <span class="text-primary"><id id="na3">Det telefonnummer som ringdes upp var </id></span>
+            </td>
+            <td valign="top">
+             <SPAN ID="spanDisplayNumber" class="text-primary" DIR="LTR"></SPAN>
+            </td>
+           </tr>
+           <tr>
+            <td style="padding-left: 1em;"><input ACCESSKEY="S" type="radio" id="DialRuleYes" name="DialRuleChoice" CHECKED TABINDEX=1 onclick="window.parent.SelectDialRule(); edtPhoneNumber.focus();">
+                <span id="spn_staticDialRuleYes" class="text-primary" onclick="document.all.DialRuleYes.click();"><u>S</u>lå detta nummer som det visas: </span>
+            </td>
+            <td style="padding-left: 2em;">
+                <input DIR=LTR TABINDEX=2 class="dial-number-box" type="text" id="edtPhoneNumber" onfocus="this.select();" name="textfield" size="23" maxlength="25">
+            </td>
+           </tr>
+           <tr>
+            <td style="padding-left: 1em;"><input ACCESSKEY="I" type="radio" id="DialRuleNo" name="DialRuleChoice" TABINDEX=3 onclick="window.parent.SelectDialRule(); edtCallWaiting.focus();">
+                <span id="spn_staticDialRuleNo" class="text-primary" onclick="document.all.DialRuleNo.click();">R<u>i</u>ng upp ett nummer enligt följande anvisningar: </span>
+            </td>
+            <td style="padding-left: 2em;">
+                <span id="spn_staticDialRuleNoa" class="text-secondary"><id id="Disable_call_waiting_text">Inaktivera <u>s</u>amtal väntar. </id></span><input DIR=LTR ACCESSKEY="S" class="dial-number-box" type="text" id="edtCallWaiting" onfocus="this.select();" name="textfield" size="7" maxlength="10" TABINDEX=4>
+            </td>
+           </tr>
+           <tr>
+            <td>&nbsp;</td>
+            <td style="padding-left: 2em;">
+                <span id="spn_staticDialRuleNob" class="text-secondary"><id id="Set_Outside_line_text"><u>E</u>xtern linje </id></span><input DIR=LTR ACCESSKEY="E" class="dial-number-box" type="text" id="edtOutsideLine" onfocus="this.select();" name="textfield" size="4" maxlength="4" TABINDEX=5>
+            </td>
+           </tr>
+           <tr>
+            <td colspan=2>
+                <span style="padding-left: 1.8em;" id="spn_staticDialRuleNoc" class="text-primary"><id id="Set_Dial_Signal_text">Ring upp med:</id></span>
+                <span style="padding-left: 1em;"><input name="DialSignalChoice" type="radio" tabindex="6" id="DialTone" CHECKED><LABEL TABINDEX=-1 ACCESSKEY="T" id="spn_staticDialTone" for="DialTone" class="text-secondary"><id id="Set_Tone_text"><u>T</u>onval</id></LABEL></span>
+                <span style="padding-left: 2em;"><input name="DialSignalChoice" type="radio" tabindex="7" id="DialPulse"><LABEL TABINDEX=-1 ACCESSKEY="P" id="spn_staticDialPulse" for="DialPulse" class="text-secondary"><id id="Set_Pulse_text"><u>P</u>ulsval</id></LABEL></span>
+            </td>
+           </tr>
+
+         </table>
+         <br>
+         <span class="text-primary"><id id="txtNoAnswerHints">Några ledtrådar innan du försöker ringa upp igen:</id></span>
+         <ul>
+         <li><span class="text-primary"><id id="na31">Om detta är det korrekta telefonnumret, vänta i några minuter och klicka sedan på <b>Ring igen</b>.</id></span></li><br>
+         <li><span class="text-primary"><id id="na32">Om detta inte är det korrekta telefonnumret, skriv det korrekta numret i rutan ovan. Om ett nummer måste slås för att nå en extern linje, lägg till det i början av telefonnumret.</id></span></li><br>
+         <li><span class="text-primary"><id id="na33"> Om detta nummer är utanför ditt riktnummerområde måste 1 läggas till framför riktnumret. Detta kommer att räknas som ett rikssamtal.</id></span></li>
+         </ul>
+         <p><span class="text-primary-btndesc"><id id="na4">Klicka på <b>Ring igen</b> om du vill försöka ansluta igen. Klicka på <b>Hoppa över</b> om du vill hoppa över det här steget.</id></span></p>
+       </span></p>
+    <DIV class="text-error" ID=error_mesg style="display:none; padding-top:20px"></div>
+    <br>
+    <br>
+    </span><br>
+
+    <table border=0 class="newbuttonposition">
+    <tr>
+        <td width=10>&nbsp;&nbsp;</td>
+        <td><BUTTON ID="btnRestore" class="newbuttonsNext" TABINDEX=8 ACCESSKEY="Å"  style="visibility:visible;" onclick="window.parent.RestoreDialRule();"></BUTTON></td>
+        <td nowrap valign=middle class="text-primary"><span id="RestoreBtnLocalText" style="visibility:visible;"><label for=btnRestore><ID id=noanswer_restore><u>Å</u>terställ</ID></label></span></td>
+
+        <td width=99%>&nbsp;</td>
+        <td nowrap valign=middle class="text-primary"><span id="SkipBtnLocalText" style="visibility:visible;"><label for=btnSkip><id id="LocalBtnSkip_Text"><u>H</u>oppa över</id></label></span></td>
+        <td><BUTTON ID="btnSkip" class="newbuttonsSkip" TABINDEX=9  ACCESSKEY="H" style="visibility:visible;"></BUTTON></td>
+
+        <td width=10>&nbsp;&nbsp;</td>
+        <td nowrap valign=middle class="text-primary"><span id="NextBtnLocalText" style="visibility:visible;"><label for=btnNext><id id="LocalBtnRedial_Text"><u>R</u>ing igen</id></label></span></td>
+        <td><BUTTON ID="btnNext" class="newbuttonsNext" TABINDEX=10  ACCESSKEY="R" style="visibility:visible;"></BUTTON></td>
+    </tr>
+    </table>
+
+    </td>
+</tr>
+</table>
+
+
+</body>
+</html>

@@ -1,0 +1,97 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1253">
+    <title>πρώτη επαφή</title>
+    <LINK REL="stylesheet" TYPE="text/css" HREF="oobestyl.css">
+
+</head>
+
+<body style="background-Color: transparent; background-repeat: no-repeat;" TABINDEX=-1
+      onload="window.parent.Miglist_LoadMe();window.parent.Agent_Activate('MigList');"
+      onunload="window.parent.Agent_Deactivate();">
+
+<table border=0 cellpadding=0 cellspacing=0 width=100% height=100%><tr><td ID=leftmargincell width=7%></td>
+<td ID=maincell valign=middle class="text-primary">
+<br><br>
+
+<span id=MigListTitle   style="display:none" class="title"><ID id="isp2_intro">Επιλέξτε την υπηρεσία παροχής Internet</ID></span>
+<span id=MigListNoOffer style="display:none" class="title"><ID id="isp2_intro2">Επικοινωνήστε με την υπηρεσία παροχής Internet</ID></span>
+
+<br>
+<span id=MigListTxt style="display:none" class="text-primary">
+<ID id="isp2_txt1">Παρακάτω είναι μια μερική λίστα των υπηρεσιών παροχής Internet (ISP) στην περιοχή σας. Οι ISP που δεν παρέχουν εθνική κάλυψη δεν εμφανίζονται σε αυτήν τη λίστα.<br><br>Επι<u>λ</u>έξτε μια ISP (κάντε κλικ σε μία.)</id>
+</span>
+
+<span id=MigListTxtNoOffer style="display:none" class="text-primary">
+<ID id="isp2_txt2">Η Υποδοχή των Windows δεν μπορεί να ανακτήσει τις ρυθμίσεις σας λογαριασμού για την υπηρεσία παροχής Internet. Μετά την ολοκλήρωση της Υποδοχής των Windows, επικοινωνήστε με την υπηρεσία παροχής Internet για να σας βοηθήσει να δημιουργήσετε ξανά το λογαριασμό σας Internet σε αυτόν τον υπολογιστή.</ID>
+</span>
+
+<!--
+<br><br>
+<div>
+<INPUT type="text" ID=selectedISPName style="display:none" READONLY value="" style="" size=45 TABINDEX=-1>
+</div>
+-->
+
+<br><br>
+<table border=0>
+<tr>
+    <td width=80>&nbsp</td>
+    <td>
+    <select id=selISPDropList style="display:none" size=5 width=450 ACCESSKEY="Λ">
+    <script language="javascript">
+    document.write(window.parent.external.get_ISPList);
+    </script>
+    <OPTION><ID id="isp2_option">Η υπηρεσία παροχής Internet δεν βρίσκεται στη λίστα</ID>
+    </select>
+    </td>
+</tr>
+</table>
+
+
+<br>
+<span class="text-primary" ID="drdyisp_4_spanID" style="display:none">
+<ID id="drdyref_4">Αν η ISP σας δεν είναι στη λίστα, αλλά έχει ήδη πρόχειρες τις πληροφορίες του λογαριασμού σας Internet, συμπεριλαμβανομένου του ονόματος χρήστη, κωδικού πρόσβασης και αριθμού τηλεφώνου της ISP, κάντε κλικ εδώ: </id>
+</span>
+
+<br>
+<center>
+    <table border=0>
+    <tr>
+        <td><BUTTON ID="btnManual" class="newbuttonsNext" TABINDEX=1 ACCESSKEY="χ" style="display:none;"></BUTTON></td>
+        <td nowrap valign=middle class="text-primary"><span id="ManualBtnLocalText01" style="display:none;"><ID id=miglist_havesettings>Έ<u>χ</u>ω τις ρυθμίσεις</id></span></td>
+    </tr>
+    </table>
+</center>
+
+<br>
+<span id=MigListTxt2 style="display:none" class="text-primary">
+<ID id="isp2_txt2">Για να συνεχίσετε τη ρύθμιση ενός λογαριασμού Internet με την υπηρεσία παροχής Internet που επιλέξατε, κάντε κλικ στο κουμπί \"Επόμενο\".<br><br>Αν η υπηρεσία παροχής Internet που θέλετε να χρησιμοποιήσετε σας ζητά να κάνετε εγκατάσταση του δικού της λογισμικού, κάντε κλικ στο κουμπί \"Παράλειψη\".<br>(Αυτό το γνωρίζετε επειδή σας έχει δοθεί ένα CD από τη συγκεκριμένη υπηρεσία παροχής Internet.)<br>Στη συνέχεια ρυθμίστε τον υπολογιστή σας για πρόσβαση στο Internet μετά την ολοκλήρωση της ρύθμισης των Windows.</ID>
+</span>
+
+    <table border=0 class="newbuttonposition">
+    <tr>
+        <td width=10>&nbsp;&nbsp;</td>
+        <td><BUTTON ID="btnBack" class="newbuttonsBack" TABINDEX=2  ACCESSKEY="Ω" style="visibility:visible;"></BUTTON></td>
+        <td nowrap valign=middle class="text-primary"><span id="BackBtnLocalText" style="visibility:visible;"><label for=btnBack><id id="LocalBtnBack_Text">Πίσ<u>ω</u></id></label></span></td>
+
+        <td width=99%>&nbsp;</td>
+        <td nowrap valign=middle class="text-primary"><span id="SkipBtnLocalText" style="visibility:visible;"><label for=btnSkip><id id="LocalBtnSkip_Text"><U>Π</U>αράλειψη</id></label></span></td>
+        <td><BUTTON ID="btnSkip" class="newbuttonsSkip" TABINDEX=3  ACCESSKEY="Π" style="visibility:visible;"></BUTTON></td>
+
+        <td width=10>&nbsp;&nbsp;</td>
+        <td nowrap valign=middle class="text-primary"><span id="NextBtnLocalText" style="visibility:visible;"><label for=btnNext><id id="LocalBtnNext_Text"><u>Ε</u>πόμενο</id></label></span></td>
+        <td><BUTTON ID="btnNext" class="newbuttonsNext" TABINDEX=4  ACCESSKEY="Ε" style="visibility:visible;"></BUTTON></td>
+    </tr>
+    </table>
+
+    </td>
+</tr>
+</table>
+
+
+</body>
+</html>

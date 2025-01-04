@@ -33,7 +33,6 @@
 	;COMMENT                 = "One-Core-API D3D Runtime [See Q100000 for more information]"
 	SERVICEPACKSOURCEFILES  = "One-Core-API D3D Runtime"
 	LatestBaseUpdateFail    = "Please Install latest One-Core-API Base first!"
-	LatestBrandingUpdateFail  = "Please Install latest One-Core-API Windows Modern Branding first!"
     PARENT_DISPLAY_NAME     = "One-Core-API"
 	FNTCACHESVC_DISPLAY_NAME="Windows Font Cache Service"
 	FNTCACHESVC_DESCRIPTION ="Optimizes performance of applications by caching commonly used font data. Applications will start this service if it is not already running. It can be disabled, though doing so will degrade application performance."
@@ -41,15 +40,10 @@
 
 [Prerequisite]
 	condition=SingleOp,LatestUpdateCheck1.Section
-	condition=SingleOp,LatestUpdateCheck2.Section
 	
 [LatestUpdateCheck1.Section]
     EqualOp=CheckReg,HKLM,"SOFTWARE\Microsoft\Windows NT\CurrentVersion\HotFix\OCAB",Installed,0x10001,==,1
     Display_String="%LatestBaseUpdateFail%"
-
-[LatestUpdateCheck2.Section]
-    EqualOp=CheckReg,HKLM,"SOFTWARE\Microsoft\Windows NT\CurrentVersion\HotFix\OCAWMB",Installed,0x10001,==,1
-    Display_String="%LatestBrandingUpdateFail%"	
 	
 [Product.Add.Reg]
 	HKLM,"SOFTWARE\Microsoft\Windows NT\CurrentVersion\Hotfix\%SP_SHORT_TITLE%","Installed",0x10001,1
@@ -103,11 +97,14 @@
 	d3d10core.dll,amd64/d3d10core.dll
 	d3d10level9.dll,amd64/d3d10level9.dll
 	d3d11.dll,amd64/d3d11.dll
+	d3d12.dll,amd64/d3d12.dll
+	d3d12core.dll,amd64/d3d12core.dll
 	d3dcompiler_47.dll,amd64/d3dcompiler_47.dll
 	dwrite.dll,amd64/dwrite.dll
 	dxdiag.exe,amd64/dxdiag.exe
 	dxdiagn.dll,amd64/dxdiagn.dll	
 	dxgi.dll,amd64/dxgi.dll
+	dxgiext.dll,amd64/dxgiext.dll
 	fntcache.dll,amd64/fntcache.dll
 	vcruntime140.dll,amd64/vcruntime140.dll
 	wined3d.dll,amd64/wined3d.dll
@@ -123,11 +120,14 @@
 	d3d10core.dll,i386/wd3d10core.dll
 	d3d10level9.dll,i386/wd3d10level9.dll
 	d3d11.dll,i386/wd3d11.dll
+	d3d12.dll,i386/wd3d12.dll
+	d3d12core.dll,i386/wd3d12core.dll
 	d3dcompiler_47.dll,i386/wd3dcompiler_47.dll
 	dwrite.dll,i386/wdwrite.dll
 	dxdiag.exe,i386/wdxdiag.exe
 	dxdiagn.dll,i386/wdxdiagn.dll	
 	dxgi.dll,i386/wdxgi.dll
+	dxgiext.dll,i386/wdxgiext.dll
 	fntcache.dll,i386/wfntcache.dll
 	vcruntime140.dll,i386/wvcruntime140.dll
 	wined3d.dll,i386/wwined3d.dll

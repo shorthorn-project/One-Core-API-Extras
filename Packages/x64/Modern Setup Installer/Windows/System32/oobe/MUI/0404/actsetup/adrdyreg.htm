@@ -1,0 +1,102 @@
+
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=big5">
+<title>全新感受</title>
+    <LINK REL="stylesheet" TYPE="text/css" HREF="aregstyl.css" id=deskstyle1>
+    <LINK REL="stylesheet" TYPE="text/css" HREF="aregsty2.css" id=deskstyle2 disabled>
+    <META HTTP-EQUIV="MSThemeCompatible" CONTENT="Yes">
+</head>
+
+<body style="background-Color: transparent; background-repeat: no-repeat;"  topmargin=0 leftmargin=0 TABINDEX=-1
+      onload="window.parent.RegDialRdy_LoadMe();">
+
+<table border=0 cellpadding=0 cellspacing=0 width="100%" height="100%">
+<tr>
+
+    <td ID=leftmargincell width=5% height=99%></td>
+    <td ID=maincell valign=top class="text-primary">
+
+
+    <span ID=Title_Text class="title" style="display:none;"><ID id="drdyoem_1">正在準備進行線上啟用</ID></span>
+
+    <br>
+    <span id=RegDialReadyIntro class="text-primary">
+        <ID id="drdyoem_2a">Windows 會立即撥接到 Microsoft 來啟用 Windows。</id>
+    </span>
+
+    <br><br>
+    <span id="DialRdy_ctrl1" style="visibility:hidden;">
+
+        
+        <span class="text-primary"><ID id="drdyoem_4">如果要繼續，請提供資訊，然後按 <b>[下一步]</b>。如果要繼續但不想撥電話，請按 <b>[稍後再提醒我]</b>。</id></span>
+        <br><br>        
+        <span class="text-primary"><ID id="drdyoem_8">請選取您所在的國家 (地區)。請按向下鍵，或按鍵盤上的 ALT + &quot;向下鍵&quot; 來檢視地區清單(<U>C</U>)。</id></span>
+        <br><br>
+        <select id=selCountry TABINDEX=1 ACCESSKEY="C">
+            <script language="javascript">
+            document.write(window.parent.external.Tapi.get_AllCountryName);
+            </script>
+        </select>
+        
+
+        <br><br>
+        <span class="text-primary"><ID id="drdyoem_11">請輸入您的電話區碼 (例如，425-555-1212 中的 425)(<u>A</u>)。<id></span>
+        <input style="ime-mode:disabled" id=edtAreaCode ACCESSKEY="A" TABINDEX=2 type="text" name="textfield" size="7" maxlength="7" onkeypress="window.parent.KeyPressIsNumeric();">
+        
+        <br>
+        <span id="PulseToneDialing" style="visibility:hidden">
+        <LABEL TABINDEX=-1 ACCESSKEY="T" id=Tapi_TOUCHTONE for="radioTouchToneYes">您有按鍵式電話的服務嗎(<U>T</U>)?</label>
+        <input TABINDEX=3 type="radio" name=TouchTone checked id=radioTouchToneYes>
+        <LABEL TABINDEX=-1 id="Tapi_TOUCHTONE_YES" for="radioTouchToneYes">是</LABEL>
+        <input TABINDEX=4 type="radio" name=TouchTone  id=radioTouchToneNo>
+        <LABEL TABINDEX=-1 id="Tapi_TOUCHTONE_NO" for="radioTouchToneNo">否</LABEL>
+        </span>
+
+    </span>
+
+
+    <!-- OUTSIDE LINE -->
+    <br>
+    <span id="spnOutsideLine" style="visibility:hidden;">
+        <LABEL TABINDEX=-1 ACCESSKEY="O" id="drdyref_OUTSIDELINE1" for="radioOutSideLineYes">您需要先撥某個號碼才能存取外線嗎(<U>O</U>)?</label>
+        <input TABINDEX=5 type="radio" checked name=OutsideLine id=radioOutsideLineYes>
+        <LABEL TABINDEX=-1 id="drdyref_OUTSIDELINE_YES" for="radioOutsideLineYes">是</LABEL>
+        <input TABINDEX=6 type="radio" name=OutsideLine id=radioOutsideLineNo>
+        <LABEL TABINDEX=-1 id="drdyref_OUTSIDELINE_NO" for="radioOutSideLineNo">否</LABEL>
+    </span>
+    <br>
+    <SPAN TABINDEX=-1 id="spnOutsideLineNumber" style="visibility:hidden; position:relative;">                  
+        <LABEL TABINDEX=-1 ACCESSKEY="W" ID="drdyref_OUTSIDELINE2" for=edtOutsideLineNumber>這個號碼是什麼(<U>W</U>)?</LABEL>
+        <input TABINDEX=7 style="ime-mode:disabled;" type="text" id=edtOutsideLineNumber maxlength=10 size="4" onkeypress="window.parent.KeyPressIsNumeric();">
+    </SPAN>
+
+    </td>
+
+    <td ID=rightmargincell width=7%>
+    </td>
+</tr>
+<tr>
+    <td colspan=3>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="text-primary"><ID id="drdyoem_2b">請按 <b>[下一步]</b> 開始撥號。</id></span>
+    <br>
+    <table border=0 class="buttonpositionnew">
+    <tr>
+        <td width=99%>&nbsp;</td>
+        <td>
+        <BUTTON ID="btnBack" class="buttons" TABINDEX=8 ACCESSKEY="B"><label for=btnBack><id id="LocalBtnBack_Text">上一步(<u>B</u>)</id></label></BUTTON>
+        </td>
+        <td>
+        <BUTTON ID="btnSkip" class="buttons" TABINDEX=9 ACCESSKEY="S"><label for=btnSkip><id id="LocalBtnSkip_Text">跳過(<U>S</U>)</id></label></BUTTON>
+        </td>
+        <td>
+        <BUTTON ID="btnNext" class="buttons" TABINDEX=10 ACCESSKEY="N"><label for=btnNext><id id="LocalBtnNext_Text">下一步(<u>N</u>)</id></label></BUTTON>
+        </td>
+    </tr>
+    </table>
+    </td>
+</tr>
+</table>
+
+</body>
+</html>

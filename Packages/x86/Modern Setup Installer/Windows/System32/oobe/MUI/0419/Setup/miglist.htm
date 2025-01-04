@@ -1,0 +1,97 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1251">
+    <title>out of box experience</title>
+    <LINK REL="stylesheet" TYPE="text/css" HREF="oobestyl.css">
+
+</head>
+
+<body style="background-Color: transparent; background-repeat: no-repeat;" TABINDEX=-1
+      onload="window.parent.Miglist_LoadMe();window.parent.Agent_Activate('MigList');"
+      onunload="window.parent.Agent_Deactivate();">
+
+<table border=0 cellpadding=0 cellspacing=0 width=100% height=100%><tr><td ID=leftmargincell width=7%></td>
+<td ID=maincell valign=middle class="text-primary">
+<br><br>
+
+<span id=MigListTitle   style="display:none" class="title"><ID id="isp2_intro">Выберите поставщика услуг Интернета</ID></span>
+<span id=MigListNoOffer style="display:none" class="title"><ID id="isp2_intro2">Обратитесь к поставщику услуг Интернета</ID></span>
+
+<br>
+<span id=MigListTxt style="display:none" class="text-primary">
+<ID id="isp2_txt1">Ниже указан частичный список общенациональных поставщиков услуг Интернета (ISP) в вашем городе или области. Поставщики, которые не оказывают общенациональных услуг в списке отсутствуют.<br><br>В<u>ы</u>берите поставщика услуг Интернета, щелкнув его имя.</id>
+</span>
+
+<span id=MigListTxtNoOffer style="display:none" class="text-primary">
+<ID id="isp2_txt2">Программе приветствия Windows не удается загрузить параметры вашей учетной записи у поставщика услуг Интернета. После завершения программы свяжитесь с поставщиком услуг Интернета, чтобы получить помощь в настройке учетной записи на данном компьютере.</ID>
+</span>
+
+<!--
+<br><br>
+<div>
+<INPUT type="text" ID=selectedISPName style="display:none" READONLY value="" style="" size=45 TABINDEX=-1>
+</div>
+-->
+
+<br><br>
+<table border=0>
+<tr>
+    <td width=80>&nbsp</td>
+    <td>
+    <select id=selISPDropList style="display:none" size=5 width=450 ACCESSKEY="В">
+    <script language="javascript">
+    document.write(window.parent.external.get_ISPList);
+    </script>
+    <OPTION><ID id="isp2_option">Нужный поставщик отсутствует в списке</ID>
+    </select>
+    </td>
+</tr>
+</table>
+
+
+<br>
+<span class="text-primary" ID="drdyisp_4_spanID" style="display:none">
+<ID id="drdyref_4">Если ваш поставщик услуг Интернета не находится в списке ISP, но у вас есть вся необходимая информация (имя учетной записи, пароль и номер телефона поставщика Интернета), щелкните здесь: </id>
+</span>
+
+<br>
+<center>
+    <table border=0>
+    <tr>
+        <td><BUTTON ID="btnManual" class="newbuttonsNext" TABINDEX=1 ACCESSKEY="р" style="display:none;"></BUTTON></td>
+        <td nowrap valign=middle class="text-primary"><span id="ManualBtnLocalText01" style="display:none;"><ID id=miglist_havesettings>Па<u>р</u>аметры подключения известны</id></span></td>
+    </tr>
+    </table>
+</center>
+
+<br>
+<span id=MigListTxt2 style="display:none" class="text-primary">
+<ID id="isp2_txt2">Чтобы продолжить установку параметров учетной записи Интернета у выбранного поставщика услуг, щелкните <b>Далеe</b>.<br><br>Если  используемый поставщик требует установить его программное обеспечение (например, с распространяемого им компакт-диска), щелкните <b>Пропустить</b>.<br>Установите доступ к Интернету после окончания настройки параметров Windows.</ID>
+</span>
+
+    <table border=0 class="newbuttonposition">
+    <tr>
+        <td width=10>&nbsp;&nbsp;</td>
+        <td><BUTTON ID="btnBack" class="newbuttonsBack" TABINDEX=2  ACCESSKEY="н" style="visibility:visible;"></BUTTON></td>
+        <td nowrap valign=middle class="text-primary"><span id="BackBtnLocalText" style="visibility:visible;"><label for=btnBack><id id="LocalBtnBack_Text"><u>Н</u>азад</id></label></span></td>
+
+        <td width=99%>&nbsp;</td>
+        <td nowrap valign=middle class="text-primary"><span id="SkipBtnLocalText" style="visibility:visible;"><label for=btnSkip><id id="LocalBtnSkip_Text"><u>П</u>ропустить</id></label></span></td>
+        <td><BUTTON ID="btnSkip" class="newbuttonsSkip" TABINDEX=3  ACCESSKEY="П" style="visibility:visible;"></BUTTON></td>
+
+        <td width=10>&nbsp;&nbsp;</td>
+        <td nowrap valign=middle class="text-primary"><span id="NextBtnLocalText" style="visibility:visible;"><label for=btnNext><id id="LocalBtnNext_Text"><u>Д</u>алее</id></label></span></td>
+        <td><BUTTON ID="btnNext" class="newbuttonsNext" TABINDEX=4  ACCESSKEY="Д" style="visibility:visible;"></BUTTON></td>
+    </tr>
+    </table>
+
+    </td>
+</tr>
+</table>
+
+
+</body>
+</html>

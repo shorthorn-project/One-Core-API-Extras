@@ -1,0 +1,138 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1253">
+    <title>πρώτη επαφή</title>
+    <LINK REL="stylesheet" TYPE="text/css" HREF="../setup/oobestyl.css">
+</head>
+
+<body style="background-Color: transparent; background-repeat: no-repeat;" TABINDEX=-1
+      onload="window.parent.NewToobusy_LoadMe();window.parent.Agent_Activate('TooBusy');"
+      onunload="window.parent.Agent_Deactivate();">
+
+<table border=0 cellpadding=0 cellspacing=0 width=100% height=100%>
+<tr>
+    <td ID=leftmargincell width=7%></td>
+    <td ID=maincell valign=middle class="text-primary">
+
+    <br><br>
+    <span class="title"><id id="tb1">Ο αριθμός τηλεφώνου είναι απασχολημένος ή δεν απάντά</id></span><br>
+
+    <br>
+    <span class="text-primary" id="tbpar1"><id id="tb2">Το πρόγραμμα εγκατάστασης δεν μπορεί να συνδεθεί με αυτόν τον αριθμό για να ενεργοποιήσει τον υπολογιστή σας.</id></span>
+    <SPAN ID="spanDisplayNumber" class="text-primary"></SPAN>
+
+    <br>
+    <span class="text-primary"><id id="tb3">Ίσως το τηλέφωνο είναι απασχολημένο ή πιθανόν ο αριθμός είναι εσφαλμένος.</id></span>
+
+    <br><br>
+    <span class="text-primary"><id id="tb4">Εάν ο αριθμός είναι σωστός, περιμένετε για μερικά λεπτά και κάντε κλικ στο <B>Επανάληψη Κλήσης</B>.</id></span>
+
+    <br><br>
+    <span class="text-primary"><id id="tb5">Αν ο αριθμός είναι εσφαλμένος, εισαγάγετε τις νέες ρυθμίσεις και κάντε κλικ στο κουμπί <B>Επανάληψη κλήσης</B>.</id></span>
+
+    <table>
+    <tr>
+        <td width=15>&nbsp;</td>
+
+        <td>
+        <INPUT tabindex="1" type="checkbox" ACCESSKEY="Κ" value="" id="cb_altnumber" onclick="window.parent.Check_cb_altnumber();">
+        </td>
+
+        <td>
+        <LABEL id="lbl_altnumber" for="cb_altnumber" class="text-primary">
+        <ID id="lbl_altnumber_text"><u>Κ</u>λήση αυτού του εναλλακτικού αριθμού:</ID>
+        </LABEL>&nbsp;&nbsp;
+        </td>
+
+        <td>
+        <INPUT type="text" value="" id="edt_altnumber" size=15 onFocus="if (!cb_altnumber.checked)this.blur();" style="ime-mode:disabled; background-Color:#dddddd" tabindex=-1>
+        </td>
+    </tr>
+    <tr>
+        <td width=15>&nbsp;</td>
+
+        <td>
+        <INPUT tabindex="2" type="checkbox" ACCESSKEY="ξ" value="" id="cb_outsideline" onclick="window.parent.Check_cb_outsideline();">
+        </td>
+
+        <td>
+        <LABEL id="lbl_outsideline" for="cb_outsideline" class="text-primary">
+        <ID id="lbl_outsideline_text">Συμπερίληψη αυτού του αριθμού για λήψη ε<u>ξ</u>ωτερικής γραμμής:</ID>
+        </LABEL>&nbsp;&nbsp;
+        </td>
+
+        <td>
+        <INPUT type="text" value="" id="edt_outsideline" size=5 onFocus="if (!cb_outsideline.checked)this.blur();" style="ime-mode:disabled; background-Color:#dddddd" tabindex=-1>
+        </td>
+    </tr>
+    <tr>
+        <td width=15>&nbsp;</td>
+
+        <td>
+        <INPUT tabindex="3" type="checkbox" ACCESSKEY="α" value="" id="cb_callwaiting" onclick="window.parent.Check_cb_callwaiting();">
+        </td>
+
+        <td>
+        <LABEL id="lbl_callwaiting" for="cb_callwaiting" class="text-primary">
+        <ID id="lbl_callwaiting_text">Απενεργοποίηση <u>α</u>ναμονής κλήσης:</ID>
+        </LABEL>&nbsp;&nbsp;
+        </td>
+
+        <td>
+        <INPUT type="text" value="" id="edt_callwaiting" size=5 onFocus="if (!cb_callwaiting.checked)this.blur();" style="ime-mode:disabled; background-Color:#dddddd" tabindex=-1>
+        </td>
+    </tr>
+    <tr>
+        <td width=15>&nbsp;</td>
+        
+        <td colspan=2>
+            <table width=100%>
+            <tr>
+                <td><LABEL id="lbl_dialsignal" for="cb_dialsignal" class="text-primary"><ID id="lbl_dialsignal_text">Τύπος κλήσης:</ID></LABEL></td>
+                <td><input name="DialSignalChoice" type="radio" tabindex="4" id="DialTone" CHECKED><LABEL TABINDEX=-1 ACCESSKEY="Τ" id="spn_staticDialTone" for="DialTone" class="text-primary"><id id="Set_Tone_text"><u>Τ</u>ονική</id></LABEL></td>
+                <td><input name="DialSignalChoice" type="radio" tabindex="5" id="DialPulse"><LABEL TABINDEX=-1 ACCESSKEY="Λ" id="spn_staticDialPulse" for="DialPulse" class="text-primary"><id id="Set_Pulse_text">Πα<u>λ</u>μική</id></LABEL></td>
+            </tr>
+            </table>
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+
+    </table>
+
+    <br><br>
+    <span class="text-error" id="tberrspan1" style="visibility:hidden;"><id id="tberr1">* Εισαγάγετε έναν εναλλακτικό αριθμό.</id></span>
+    <br>
+    <span class="text-error" id="tberrspan2" style="visibility:hidden;"><id id="tberr2">* Εισαγάγετε έναν αριθμό για πρόσβαση σε εξωτερική γραμμή.</id></span>
+    <br>
+    <span class="text-error" id="tberrspan3" style="visibility:hidden;"><id id="tberr3">* Εισαγάγετε έναν αριθμό για απενεργοποίηση αναμονής κλήσης.</id></span>
+
+
+    <br>
+    <span class="text-primary-btndesc" id="tbpar2"><id id="tb6">Για να συνεχίσετε χωρίς να ενεργοποιήσετε τον υπολογιστή σας, κάντε κλικ στο κουμπί <b>Παράλειψη</b>.</id></span>
+
+    <br>
+    <table border=0 class="newbuttonposition">
+    <tr>
+        <td width=10>&nbsp;&nbsp;</td>
+        <td><BUTTON ID="btnPlaceholder" class="newbuttonsNext" TABINDEX=6 ACCESSKEY="φ" style="visibility:hidden;" onclick="window.parent.RestoreDialRule();"></BUTTON></td>
+        <td nowrap valign=middle class="text-primary"><span id="BackBtnLocalText" style="visibility:hidden;"><label for=btnPlaceholder><id id="LocalBtnPlaceholder_Text">Επανα<u>φ</u>ορά</id></label></span></td>
+
+        <td width=99%>&nbsp;</td>
+        <td nowrap valign=middle class="text-primary"><span id="SkipBtnLocalText" style="visibility:visible;"><label for=btnSkip><id id="LocalBtnSkip_Text"><U>Π</U>αράλειψη</id></label></span></td>
+        <td><BUTTON ID="btnSkip" class="newbuttonsSkip" TABINDEX=7 ACCESSKEY="Π" style="visibility:visible;"></BUTTON></td>
+
+        <td width=10>&nbsp;&nbsp;</td>
+        <td nowrap valign=middle class="text-primary"><span id="NextBtnLocalText" style="visibility:visible;"><label for=btnNext><id id="LocalBtnRedial_Text"><u>Ε</u>πανάληψη κλήσης</id></label></span></td>
+        <td><BUTTON ID="btnNext" class="newbuttonsNext" TABINDEX=8 ACCESSKEY="ε" style="visibility:visible;"></BUTTON></td>
+    </tr>
+    </table>
+
+    </td>
+</tr>
+</table>
+
+</body>
+</html>

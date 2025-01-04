@@ -1,0 +1,97 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=ks_c_5601-1987">
+    <title>OOBE</title>
+    <LINK REL="stylesheet" TYPE="text/css" HREF="aregstyl.css" id=deskstyle1>
+    <LINK REL="stylesheet" TYPE="text/css" HREF="aregsty2.css" id=deskstyle2 disabled>
+    <META HTTP-EQUIV="MSThemeCompatible" CONTENT="Yes">
+</head>
+
+<body style="background-Color: transparent; background-repeat: no-repeat;" topMargin=0 rightmargin=0 leftmargin=0 tabindex=-1
+      onload="window.parent.ActLan_LoadMe();">
+
+<table border=0 cellpadding=0 cellspacing=0 width="100%" height="100%">
+<tr>
+    <td ID=leftmargincell width=5% height=99%></td>
+    <td ID=maincell valign=top class="text-primary">
+
+    <span ID=Title_Text class="title" style="display:none;">
+    <ID id=Activation_Title_Text1>네트워크 설정 구성</ID>
+    </span>
+
+    <br>
+    <span id="actlan_spn01" class="text-primary">
+        <ID id=actcon_paragraph1>인터넷에 연결하기 위해 프록시 서버를 구성해야 하면 아래에 이 설정을 제공하십시오. 어떤 설정을 사용해야 하는지는 네트워크 관리자에게 문의하십시오.</id>
+
+        <br><br>
+        <table class="text-primary">
+        <tr>
+            <td colspan="5"><ID id="actconn_set1"><b>자동 구성</b></ID></td>
+        </tr>
+        <tr>
+            <td colspan="5"><ID id="actconn_desc1">자동 구성은 수동 구성보다 우선할 수 있습니다. 프록시 설정을 입력할 경우, 변경 내용을 확실히 적용하기 위해 [자동으로 설정 검색] 확인란을 지우십시오.</ID></td>
+        </tr>
+        <tr>
+            <td width="0"><input type="checkbox" name="cb_auto_detect" TABINDEX=1 ACCESSKEY="A"></td>
+            <td width="100%" colspan="4"><label id="lbl_auto_detect" for="cb_auto_detect">자동으로 설정 검색(<u>A</u>)</label></td>
+        </tr>
+        <tr>
+            <td colspan="5">&nbsp;</td>
+        </tr>
+        <tr>
+            <td colspan="5"><ID id="actconn_set2"><b>프록시 서버</b></ID></td>
+        </tr>
+        <tr>
+            <td width="0"><input type="checkbox" name="cb_use_proxy" TABINDEX=2 ACCESSKEY="X" onClick="window.parent.ActLan_upClickHandler();"></td>
+            <td width="100%" colspan="4"><label id="lbl_use_proxy" for="cb_use_proxy">프록시 서버 사용(<u>X</u>)</label></td>
+        </tr>
+        <tr>
+            <td width="0">&nbsp;</td>
+            <td width="0" id="lblProxyUrl" nowrap><label id="lbl_proxy_url" for="txt_proxy_url">주소(<u>R</u>):</label></td>
+            <td width="40%"><input type="text" id="txt_proxy_url" size="25"  TABINDEX=3 ACCESSKEY="R" style="ime-mode:disabled; background-Color:'#dddddd'"></td>
+            <td width="0" id="lblProxyPort" nowrap><label id="lbl_proxy_port" for="txt_proxy_port">포트(<u>T</u>):</label></td>
+            <td width="60%"><input type="text" id="txt_proxy_port" size="6" TABINDEX=4 ACCESSKEY="T" style="ime-mode:disabled; background-Color:'#dddddd'"></td>
+        </tr>
+        </table>
+
+
+        <br><br>
+        <ID id=activation_paragraph2>계속하려면 <b>다음</b>을 클릭하십시오.</id>
+    </span>
+    </td>
+
+    <td ID=rightmargincell width=7%>
+    </td>
+</tr>
+<tr>
+    <td colspan=3>
+    <br>
+    <table border=0 class="buttonpositionnew">
+    <tr>
+        <td width="99%">&nbsp;</td>
+        <td>
+        <table border=0 width="100">
+        <tr>
+            <td>
+            <BUTTON ID="btnSkip" class="buttons" TABINDEX=5 ACCESSKEY="S"><label for=btnSkip><id id="LocalBtnSkip_Text">건너뛰기(<u>S</u>)</id></label></BUTTON>
+            </td>
+            <td>
+            <BUTTON ID="btnBack" class="buttons" TABINDEX=6 ACCESSKEY="B"><label for=btnBack><id id="LocalBtnBack_Text">뒤로(<u>B</u>)</id></label></BUTTON>
+            </td>
+            <td>
+            <BUTTON ID="btnNext" class="buttons" TABINDEX=7 ACCESSKEY="N"><label for=btnNext><id id="LocalBtnNext_Text">다음(<u>N</u>)</id></label></BUTTON>
+            </td>
+        </tr>
+        </table>
+        </td>
+    </tr>
+    </table>
+    </td>
+</tr>
+</table>
+
+</body>
+</html>
+

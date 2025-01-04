@@ -1,0 +1,220 @@
+[Version]
+	LanguageType 		  = %LANGTYPEVALUE%
+	MaxNtBuildToUpdate        = 9600
+	MaxNtMajorVersionToUpdate = 6
+	MaxNtMinorVersionToUpdate = 3
+	MaxNtServicePackVersion   = 1024
+	MinNtServicePackVersion   = 0
+	NtBuildToUpdate           = 2600
+	NtMajorVersionToUpdate    = 5
+	NtMinorVersionToUpdate    = 1
+	Signature                 = "$Windows NT$"
+	MachineType				  = 64
+
+[Configuration]
+    InstallationType     = Hotfix
+    InstallLogFileName   = %SP_SHORT_TITLE%.log
+    EventLogKeyName      = NtServicePack
+    EventLogDllName      = spmsg.dll
+    NoPNPFiles           = 1
+    UnInstallLogFileName = %SP_SHORT_TITLE%Uninst.log
+    UnInstallDirName     = $NtUninstall%SP_SHORT_TITLE%$
+    ServiceFileInUseDetect    = 1
+    AppFileinUseDetect        = 3
+	
+[Strings]
+	D3DR_VERSION            = "1.0.0"
+	SP_TITLE                = "One-Core-API New Fonts"
+	LANGTYPEVALUE           = 0x0
+	SP_SHORT_TITLE          = "OCANF"
+	SERVICE_PACK_NUMBER     = 3
+	SERVICEPACKSOURCEFILES  = "One-Core-API New Fonts"
+	Msft                    = "Microsoft"
+	ARP_Link                = "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\"
+	PARENT_DISPLAY_NAME     = "One-Core-API"
+	
+[Product.Add.Reg]
+	HKLM,"SOFTWARE\Microsoft\Windows NT\CurrentVersion\Hotfix\%SP_SHORT_TITLE%","Installed",0x10001,1
+	HKLM,"SOFTWARE\Microsoft\Windows NT\CurrentVersion\Hotfix\%SP_SHORT_TITLE%","Backup Dir",0,""
+	HKLM,"SOFTWARE\Microsoft\Windows NT\CurrentVersion\Hotfix\%SP_SHORT_TITLE%","Installed By",0,""
+	HKLM,"SOFTWARE\Microsoft\Windows NT\CurrentVersion\Hotfix\%SP_SHORT_TITLE%","Installed On",0,""
+	HKLM,"SOFTWARE\Microsoft\Windows NT\CurrentVersion\Hotfix\%SP_SHORT_TITLE%","Service Pack",0x10001,%SERVICE_PACK_NUMBER%
+	HKLM,"SOFTWARE\Microsoft\Windows NT\CurrentVersion\Hotfix\%SP_SHORT_TITLE%","Valid",0x10001,1
+	HKLM,"SOFTWARE\Microsoft\Windows NT\CurrentVersion\Hotfix\%SP_SHORT_TITLE%\File 1\","Flags",0,""
+	HKLM,"SOFTWARE\Microsoft\Windows NT\CurrentVersion\Hotfix\%SP_SHORT_TITLE%\File 1\","New File",0,""
+	HKLM,"SOFTWARE\Microsoft\Windows NT\CurrentVersion\Hotfix\%SP_SHORT_TITLE%\File 1\","New Link Date",0,""
+	HKLM,"SOFTWARE\Microsoft\Windows NT\CurrentVersion\Hotfix\%SP_SHORT_TITLE%\File 1\","Old Link Date",0,""
+	HKLM,"SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\%SP_SHORT_TITLE%","DisplayName",0x00000000,"%SP_TITLE%"
+	HKLM,"SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\%SP_SHORT_TITLE%","ParentKeyName",0x00000000,"OperatingSystem"
+    HKLM,"SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\%SP_SHORT_TITLE%","ParentDisplayName",0x00000000,"%PARENT_DISPLAY_NAME%"	
+	HKLM,"SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\%SP_SHORT_TITLE%","ReleaseType",0x00000000,"HotFix"
+	HKLM,"SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\%SP_SHORT_TITLE%","DisplayVersion",0x00000000,%D3DR_VERSION%
+	HKLM,"SOFTWARE\Microsoft\%SP_TITLE%","InstalledVersion",0x00000000,"%D3DR_VERSION%"
+	HKLM,"SYSTEM\CurrentControlSet\Services\FontCache","Description",0x00000000,"%FNTCACHESVC_DESCRIPTION%"
+	HKLM,"SYSTEM\CurrentControlSet\Services\FontCache","DisplayName",0x00000000,"%FNTCACHESVC_DISPLAY_NAME%"
+	HKLM,"SYSTEM\CurrentControlSet\Services\FontCache","ErrorControl",0x00010001,1
+	HKLM,"SYSTEM\CurrentControlSet\Services\FontCache","ImagePath",0x00020000,"%SystemRoot%\system32\svchost.exe -k LocalService"
+	HKLM,"SYSTEM\CurrentControlSet\Services\FontCache","ObjectName",0x00000000,"NT AUTHORITY\LocalService"
+	HKLM,"SYSTEM\CurrentControlSet\Services\FontCache","Start",0x00010001,2
+	HKLM,"SYSTEM\CurrentControlSet\Services\FontCache","Type",0x00010001,20	
+	HKLM,"SYSTEM\CurrentControlSet\services\FontCache\Parameters","ServiceDll",0x20000,"%%SystemRoot%%\system32\FntCache.dll"
+	HKLM,"SYSTEM\CurrentControlSet\Services\FontCache\Parameters", "ServiceDllUnloadOnStop", 0x00010001, 1	
+	HKLM,"SOFTWARE\Microsoft\Windows NT\CurrentVersion\svchost", "LocalService", 0x00010008, "FontCache"	
+	
+[ProductInstall.DontDelayUntilReboot]
+    CopyFiles=MustReplace.System32.files
+	CopyFiles=MustReplace.Windows.files	
+	
+[ProductInstall.CopyFilesAlways]
+    CopyFiles                  = CopyAlways.System32.files	
+	
+[ProductInstall.GlobalRegistryChanges.Install]
+    AddReg=Product.Add.Reg
+
+[ProductInstall.GlobalRegistryChanges.ReInstall]
+    AddReg=Product.Add.Reg	
+	
+[ProductInstall.CopyFilesAlways]
+    CopyFiles=Fonts.files	
+
+[DestinationDirs]
+    Fonts.files=20                  ; %windir%\fonts    (replace if exist)
+
+[Fonts.files]
+    calibri.ttf,fonts\calibri.ttf
+	calibrib.ttf,fonts\calibrib.ttf
+	calibrii.ttf,fonts\calibrii.ttf
+	calibril.ttf,fonts\calibril.ttf
+	calibrili.ttf,fonts\calibrili.ttf
+	calibriz.ttf,fonts\calibriz.ttf
+	cambria.ttc,fonts\cambria.ttc
+	cambriab.ttf,fonts\cambriab.ttf
+	cambriai.ttf,fonts\cambriai.ttf
+	cambriaz.ttf,fonts\cambriaz.ttf
+	Candara.ttf,fonts\Candara.ttf
+	Candarab.ttf,fonts\Candarab.ttf
+	Candarai.ttf,fonts\Candarai.ttf
+	Candaraz.ttf,fonts\Candaraz.ttf
+	consola.ttf,fonts\consola.ttf
+	consolab.ttf,fonts\consolab.ttf
+	consolai.ttf,fonts\consolai.ttf
+	consolaz.ttf,fonts\consolaz.ttf
+	constan.ttf,fonts\constan.ttf
+	constanb.ttf,fonts\constanb.ttf
+	constani.ttf,fonts\constani.ttf
+	constanz.ttf,fonts\constanz.ttf
+	corbel.ttf,fonts\corbel.ttf
+	corbelb.ttf,fonts\corbelb.ttf
+	corbeli.ttf,fonts\corbeli.ttf
+	corbelz.ttf,fonts\corbelz.ttf
+	Gabriola.ttf,fonts\Gabriola.ttf
+	malgun.ttf,fonts\malgun.ttf
+	malgunbd.ttf,fonts\malgunbd.ttf
+	mingliub.ttc,fonts\mingliub.ttc
+	msjh.ttc,fonts\msjh.ttc
+	msjhbd.ttc,fonts\msjhbd.ttc
+	msjhl.ttc,fonts\msjhl.ttc
+    msyh.ttc,fonts\msyh.ttc
+	msyhbd.ttc,fonts\msyhbd.ttc
+	msyhl.ttc,fonts\msyhl.ttc
+	SegoeMarker.ttf,fonts\SegoeMarker.ttf
+	segoepr.ttf,fonts\segoepr.ttf
+	segoeprb.ttf,fonts\segoeprb.ttf
+	segoesc.ttf,fonts\segoesc.ttf
+	segoescb.ttf,fonts\segoescb.ttf
+	segoeui.ttf,fonts\segoeui.ttf
+	segoeuib.ttf,fonts\segoeuib.ttf
+	segoeuii.ttf,fonts\segoeuii.ttf
+	segoeuil.ttf,fonts\segoeuil.ttf
+	SEGOEUISL.ttf,fonts\SEGOEUISL.ttf
+	segoeuiz.ttf,fonts\segoeuiz.ttf
+	seguiemj.ttf,fonts\seguiemj.ttf
+	seguisb.ttf,fonts\seguisb.ttf
+	seguisym.ttf,fonts\seguisym.ttf
+	simsun.ttc,fonts\simsun.ttc
+	simsunb.ttf,fonts\simsunb.ttf
+	YuGothB.ttc,fonts\YuGothB.ttc
+	YuGothL.ttc,fonts\YuGothL.ttc
+	YuGothM.ttc,fonts\YuGothM.ttc
+	YuGothR.ttc,fonts\YuGothR.ttc
+	
+[SourceDisksNames]
+    1=%ServicePackSourceFiles%
+
+[SourceDisksFiles]
+    calibri.ttf = 1
+	calibrib.ttf = 1
+	calibrii.ttf = 1
+	calibril.ttf = 1
+	calibrili.ttf = 1
+	calibriz.ttf = 1
+	cambria.ttc = 1
+	cambriab.ttf = 1
+	cambriai.ttf = 1
+	cambriaz.ttf = 1
+	Candara.ttf = 1
+	Candarab.ttf = 1
+	Candarai.ttf = 1
+	Candaraz.ttf = 1
+	consola.ttf = 1
+	consolab.ttf = 1
+	consolai.ttf = 1
+	consolaz.ttf = 1
+	constan.ttf = 1
+	constanb.ttf = 1
+	constani.ttf = 1
+	constanz.ttf = 1
+	corbel.ttf = 1
+	corbelb.ttf = 1
+	corbeli.ttf = 1
+	corbelz.ttf = 1
+	Gabriola.ttf = 1
+	malgun.ttf = 1
+	malgunbd.ttf = 1
+	mingliub.ttf = 1
+	msjh.ttf = 1
+	msjhbd.ttf = 1
+	msjhl.ttc = 1
+	msyh.ttf = 1
+	msyhbd.ttf = 1
+	msyhl.ttf = 1
+	SegoeMarker.ttf = 1
+	segoepr.ttf = 1
+	segoeprb.ttf = 1
+	segoesc.ttf = 1
+	segoescb.ttf = 1
+	segoeui.ttf = 1
+	segoeuib.ttf = 1
+	segoeuii.ttf = 1
+	segoeuil.ttf = 1
+	SEGOEUISL.ttf = 1
+	segoeuiz.ttf = 1
+	seguisb.ttf = 1
+	seguisym.ttf = 1
+	simsun.ttf = 1
+	simsunb.ttf = 1
+	YuGothB.ttc = 1
+	YuGothL.ttc = 1
+	YuGothM.ttc = 1
+	YuGothR.ttc = 1
+	
+[UninstallSections]
+    GlobalRegistryChanges, GlobalRegistryChanges.UnInstall
+    Add.Reg, Add.Reg.Uninstall
+    Del.Reg, Del.Reg.Uninstall  	
+	
+[Add.Reg.Uninstall]
+
+[Save.Reg.For.Uninstall]
+	HKLM,"SOFTWARE\Microsoft\Windows NT\CurrentVersion\Hotfix\%SP_SHORT_TITLE%"
+	HKLM,"SOFTWARE\Microsoft\%SP_TITLE%","InstalledVersion"
+
+[GlobalRegistryChanges.UnInstall]
+    AddReg=Add.Reg
+    DelReg=Del.Reg	
+
+[Del.Reg.Uninstall]
+	HKLM,SOFTWARE\Microsoft\Updates\Windows Server 2003\SP%SERVICE_PACK_NUMBER%\%SP_SHORT_TITLE%
+	HKLM,SOFTWARE\Microsoft\Updates\Windows XP\SP%SERVICE_PACK_NUMBER%\%SP_SHORT_TITLE%
+	HKLM,SOFTWARE\Microsoft\Updates\Windows XP Version 2003\SP%SERVICE_PACK_NUMBER%\%SP_SHORT_TITLE%
+	

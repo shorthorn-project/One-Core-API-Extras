@@ -1,0 +1,254 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1251">
+    <title>out of box experience</title>
+    <LINK REL="stylesheet" TYPE="text/css" HREF="aregstyl.css" id=deskstyle1>
+    <LINK REL="stylesheet" TYPE="text/css" HREF="aregsty2.css" id=deskstyle2 disabled>
+    <META HTTP-EQUIV="MSThemeCompatible" CONTENT="Yes">
+</head>
+
+<body style="background-Color: transparent; background-repeat: no-repeat;" topMargin=0 rightmargin=0 leftmargin=0 tabindex=-1
+      onload="window.parent.act_desktop_error_LoadMe();" >
+
+<table valign=middle border=0 cellpadding=0 cellspacing=0 width="100%" height="100%">
+<tr>
+    <td ID=leftmargincell width=5% height=99%></td>
+    <td ID=maincell valign=top class="text-primary">
+
+    <span ID=Title_Text class="title" style="display:none;">
+        <ID id=acterror_s1>Активация Windows</ID>
+    </span>
+
+    <br>
+    <!-- Prepare the different error scenes, all are hidden -->
+
+        <span ID=acterror_description_SUCCESS1 class="text-primary" style="display:none;">
+            <ID id="txtActivDeskSUCCESS1">Данная копия Windows успешно активирована и зарегистрирована.</ID>
+        </span>
+
+        <span ID=acterror_description_SUCCESS2 class="text-primary" style="display:none;">
+            <ID id="txtActivDeskSUCCESS2">Данная копия Windows успешно активирована.</ID>
+        </span>
+
+
+        <!-- Pre-expiration -->
+        <span ID=acterror_description1Pre class="text-primary" style="display:none;">
+            <ID id="txtActivDeskErr">В этот раз активацию через Интернет завершить не удалось.</ID>
+            <br><br>
+            <id id="txtActivDeskerr0">Можно использовать Windows XP без активации в течение еще <span id=NumberDaysLeft1 class="text-primary"></span>&nbsp;дней.</id>
+            <br><br>
+            <ID id="txtActivDeskErr1">В течение этого времени мы будем периодически напоминать о необходимости активации Windows при помощи мастера активации.<br><br>В случае возникновения проблем с доступом к центру активации через Интернет, можно обратиться в центр активации по телефону.</ID>
+            <br><br>
+            <ID id="txtActivDeskErr2">Для получения номера для вашего региона щелкните <b>Телефон</b>.</ID>
+        </span>
+        <!-- Post-expiration -->
+        <span ID=acterror_description1Post class="text-primary" style="display:none;">
+            <ID id="txtActivDeskErrPost">Не удалось активировать Windows через Интернет.</ID>
+            <br><br>
+            <id id="txtActivDeskerr0Post">Период активации истек. Для дальнейшего использования Windows необходимо активировать продукт.</id>
+            <br><br>
+            <ID id="txtActivDeskErr1Post">Вы можете активировать продукт по телефону, свяжитесь с центром активации. Для получения номера для вашего региона щелкните Телефон.</ID>
+        </span>
+
+
+        <!-- Retail mode -->
+        <span ID=acterror_description2_RETAIL class="text-primary" style="display:none;">
+            <ID id="txtActivDeskErr3retail">Если ключ продукта введен неправильно, исправьте его и щелкните <B>Повторить</B>.</ID>
+            <br><br>
+            <ID id="txtActivDeskErr4retail">25-значный ключ продукта находится на задней стороне упаковки компакт-диска Windows XP на наклейке, которая выглядит примерно так:</ID>
+            <br><br>
+            <center><img src="../images/prodkey.gif"></center>
+        </span>
+        <!-- OEM mode -->
+        <span ID=acterror_description2_OEM class="text-primary" style="display:none;">
+            <ID id="txtActivDeskErr3OEM">Если ключ продукта введен неправильно, исправьте его и щелкните <B>Повторить</B>.</ID>
+            <br><br>
+            <ID id="txtActivDeskErr4OEM">25-значный ключ продукта находится на этикетке сертификата подлинности (Certificate of Authenticity), наклеенной на корпус компьютера или документацию Windows. Этикетка выглядит примерно так</ID>
+            <br><br>
+            <center><img src="../images/oemcoa.jpg"></center>
+        </span>
+
+
+        <!-- Retail mode -->
+        <span ID=acterror_description3Retail class="text-primary" style="display:none;">
+            <ID id="txtActivDeskErr5a_retail">По имеющимся данным, этот ключ продукта уже был использован для активации Windows предельное число раз. Пожалуйста, введите другой ключ продукта и щелкните <B>Повторить</B>.</ID>
+            <ID id="txtActivDeskErr5b_retail">25-значный ключ продукта находится на задней стороне упаковки компакт-диска Windows XP на наклейке, которая выглядит примерно так:</ID>
+            <br><br>
+            <center><img src="../images/prodkey.gif"></center>
+        </span>
+        <!-- OEM mode -->
+        <span ID=acterror_description3OEM class="text-primary" style="display:none;">
+            <ID id="txtActivDeskErr5a_OEM">По имеющимся данным, этот ключ продукта уже был использован для активации Windows предельное число раз. Пожалуйста, введите другой ключ продукта и щелкните <B>Повторить</B>.</ID>
+            <ID id="txtActivDeskErr5b_OEM">25-значный ключ продукта находится на этикетке сертификата подлинности (Certificate of Authenticity), наклеенной на корпус компьютера или документацию Windows. Этикетка выглядит примерно так</ID>
+            <br><br>
+            <center><img src="../images/oemcoa.jpg"></center>
+        </span>
+
+
+        <!-- Pre-expiration -->
+        <span ID=acterror_description4Pre class="text-primary" style="display:none;">
+            <ID id="txtActivDeskErr6">В этот раз активацию через Интернет завершить не удалось.</ID>
+            <br><br>
+            <ID id="txtActivDeskErr7">Можно использовать Windows XP без активации в течение еще <span id=NumberDaysLeft2 class="text-primary"></span>&nbsp;дней.</ID>
+            <br><br>
+            <id id="txtActivdeskErr71">В течение этого времени мы будем периодически напоминать о необходимости активации Windows при помощи мастера активации.<br><br>В случае возникновения проблем с доступом к центру активации через Интернет, можно обратиться в центр активации по телефону.</id>
+            <br><br>
+            <id id="txtActivDeskErr72">Для получения номера для вашего региона, щелкните <b>Телефон</b>.</id>
+        </span>
+        <!-- Post-expiration -->
+        <span ID=acterror_description4Post class="text-primary" style="display:none;">
+            <ID id="txtActivDeskErr7Post">Не удалось активировать Windows через Интернет.</ID>
+            <br><br>
+            <id id="txtActivDeskerr71Post">Период активации истек. Для дальнейшего использования Windows необходимо активировать продукт.</id>
+            <br><br>
+            <ID id="txtActivDeskErr72Post">Вы можете активировать продукт по телефону, свяжитесь с центром активации. Для получения номера для вашего региона щелкните Телефон.</ID>
+        </span>
+
+
+        <!-- Retail mode -->
+        <span ID=acterror_description5Retail class="text-primary" style="display:none;">
+            <ID id="txtActivDeskErr8a_retail">Данный ключ продукта не прошел проверку. Активация не может быть продолжена, пока на будет введен правильный ключ продукта.</ID>
+            <ID id="txtActivDeskErr8b_retail">25-значный ключ продукта находится на задней стороне упаковки компакт-диска Windows XP на наклейке, которая выглядит примерно  как на рисунке. Проверьте правильность ключа продукта и щелкните <B>Повторить</B>.</ID>
+            <br><br>
+            <center><img src="../images/prodkey.gif"></center>
+        </span>
+        <!-- OEM mode -->
+        <span ID=acterror_description5OEM class="text-primary" style="display:none;">
+            <ID id="txtActivDeskErr8a_OEM">Данный ключ продукта не прошел проверку. Активация не может быть продолжена, пока на будет введен правильный ключ продукта.</ID>
+            <ID id="txtActivDeskErr8b_OEM">25-значный ключ продукта находится на этикетке сертификата подлинности (Certificate of Authenticity), наклеенной на корпус компьютера или документацию Windows. Этикетка выглядит примерно как на рисунке. Проверьте правильность ключа продукта и щелкните <B>Повторить</B>.</ID>
+            <br><br>
+            <center><img src="../images/oemcoa.jpg"></center>
+        </span>
+
+
+        <span ID=acterror_description6 class="text-primary" style="display:none;">
+            <ID id="txtActivDeskErr10">Существующая активация Windows повреждена или более недействительна.</ID>
+            <br><br>
+            <ID id="txtActivDeskErr11">Можно использовать Windows XP без активации в течение еще&nbsp;<span id=NumberDaysLeft3 class="text-primary" ></span>&nbsp;дней. По истечении этого времени, активация станет обязательной.</ID>
+            <br><br>
+            <id id="txtActivDeskErr111">В течение этого времени мы будем напоминать каждые несколько дней о необходимости активации Windows с помощью мастера активации продукта, который находится в меню <b>Пуск</b>. Если при повторной попытке проблемы с доступом к центру активации через Интернет сохранятся, следует активировать Windows по телефону.</id>
+            <br><br>
+            <id id="txtactivDeskErr112">Для получения номера для вашего региона щелкните <b>Телефон</b>.</id>
+        </span>
+
+
+        <span ID=acterror_description7 class="text-primary" style="display:none;">
+            <ID id="txtActivDeskErr12">Не удалось установить подключение к серверу активации. Проверьте сетевые параметры, убедитесь, что вы можете подключиться к Интернету, и повторите попытку.</ID>
+        </span>
+
+
+        <!-- Retail mode -->
+        <span ID=acterror_description_dedicated_pid_RETAIL class="text-primary" style="display:none;">
+            <ID id="txtActivDeskErrDedicatedPid1">Если нужно исправить ключ продукта, введите его в расположенные ниже текстовые поля и щелкните <B>Обновить</B>. Если исправлять ключ продукта не требуется, щелкните кнопку <B>Телефон</B>, чтобы вернуться к предыдущей странице активации.</ID>
+            <br><br>
+            <ID id="txtActivDeskErrDedicatedPid2">25-значный ключ продукта находится на задней стороне упаковки компакт-диска Windows XP на наклейке, которая выглядит примерно так:</ID>
+            <br><br>
+            <center><img src="../images/prodkey.gif"></center>
+        </span>
+        <!-- OEM mode -->
+        <span ID=acterror_description_dedicated_pid_OEM class="text-primary" style="display:none;">
+            <ID id="txtActivDeskErrDedicatedPid1x">Если нужно исправить ключ продукта, введите его в расположенные ниже текстовые поля и щелкните <B>Обновить</B>. Если исправлять ключ продукта не требуется, щелкните кнопку <B>Телефон</B>, чтобы вернуться к предыдущей странице активации.</ID>
+            <br><br>
+            <ID id="txtActivDeskErrDedicatedPid2x">25-значный ключ продукта находится на этикетке сертификата подлинности (Certificate of Authenticity), наклеенной на корпус компьютера или документацию Windows. Этикетка выглядит примерно так:</ID>
+            <br><br>
+            <center><img src="../images/oemcoa.jpg"></center>
+        </span>
+
+
+        <!-- PID ENTRY -->
+        <span ID=acterror_pid_entry class="text-primary" style="display:none;">
+            <br>
+            <table ID=PidBox border=0 DIR=ltr style="font-family:Courier New; FONT-SIZE: 16pt;">
+            <tr>
+                <td nowrap width=10>&nbsp;</td>
+                <td nowrap class="text-primary" >
+                <span ID=acterror_description_verify_key class="text-primary"><ID id="txtverifykey">Проверьте ключ:</id></span>&nbsp;
+                </td>
+                <td>
+                <input style="ime-mode:Отключено" id=pid1 type="text" size=6 maxlength=5 class=pid-box TABINDEX=1 name="edtProductKey"
+                onkeydown="window.parent.ProductIDKeyDown();" onpropertychange="window.parent.ProductIDPropertyChange();"
+                onkeypress="window.parent.ProductIDKeyPress();" onkeyup="window.parent.ProductIDKeyUp();" onfocus="window.parent.OnFocus();">
+                </td><td class="text-primary">-</td><td>
+                <input style="ime-mode:Отключено" id=pid2 type="text" size=6 maxlength=5 class=pid-box TABINDEX=2 name="edtProductKey"
+                onkeydown="window.parent.ProductIDKeyDown();" onpropertychange="window.parent.ProductIDPropertyChange();"
+                onkeypress="window.parent.ProductIDKeyPress();" onkeyup="window.parent.ProductIDKeyUp();" onfocus="window.parent.OnFocus();">
+                </td><td class="text-primary">-</td><td>
+                <input style="ime-mode:Отключено" id=pid3 type="text" size=6 maxlength=5 class=pid-box TABINDEX=3  name="edtProductKey"
+                onkeydown="window.parent.ProductIDKeyDown();" onpropertychange="window.parent.ProductIDPropertyChange();"
+                onkeypress="window.parent.ProductIDKeyPress();" onkeyup="window.parent.ProductIDKeyUp();" onfocus="window.parent.OnFocus();">
+                </td><td class="text-primary">-</td><td>
+                <input style="ime-mode:Отключено" id=pid4 type="text" size=6 maxlength=5 class=pid-box TABINDEX=4  name="edtProductKey"
+                onkeydown="window.parent.ProductIDKeyDown();" onpropertychange="window.parent.ProductIDPropertyChange();"
+                onkeypress="window.parent.ProductIDKeyPress();" onkeyup="window.parent.ProductIDKeyUp();" onfocus="window.parent.OnFocus();">
+                </td><td class="text-primary">-</td><td>
+                <input style="ime-mode:Отключено" id=pid5 type="text" size=6 maxlength=5 class=pid-box TABINDEX=5  name="edtProductKey"
+                onkeydown="window.parent.ProductIDKeyDown();" onpropertychange="window.parent.ProductIDPropertyChange();"
+                onkeypress="window.parent.ProductIDKeyPress();" onkeyup="window.parent.ProductIDKeyUp();" onfocus="window.parent.OnFocus();">
+                </td>
+            </tr>
+            </table>
+        </span>
+
+
+        <!-- AFTER PID ENTRY TEXT -->
+        <span ID=acterror_after_pid_entry_OEMText class="text-primary" style="display:none;">
+            <br>
+            <ID id="txtActivDeskErrOEMText">Если вам не удается найти сертификат подлинности (Certificate of Authenticity), свяжитесь с производителем компьютера.</ID><br>
+        </span>
+
+        <span ID=acterror_after_pid_entry_text1 class="text-primary" style="display:none;">
+            <br>
+            <ID id="txtActivDeskErr14">Если вы убеждены, что ключ продукта введен правильно и вы не должны получать это сообщение, обратитесь в центр активации. Чтобы получить номер телефона, щелкните <B>Телефон</B>.</ID>
+        </span>
+
+
+        <span ID=acterror_after_pid_entry_text2 class="text-primary" style="display:none;">
+            <br>
+            <ID id="txtActivDeskErr15">Если вы убеждены, что получили это сообщение по ошибке, обратитесь в центр активации. Чтобы получить номер телефона, щелкните <B>Телефон</B>.</ID>
+        </span>
+
+        <span ID=acterror_after_pid_entry_text3 class="text-primary" style="display:none;">
+            <br>
+            <ID id="txtActivDeskErr16">Каждая копия Windows может быть установлена единовременно только на один компьютер. Если вы убеждены, что получили это сообщение по ошибке, свяжитесь с сотрудником центра активации. Чтобы выбрать номер телефона, щелкните <B>Телефон</B>.</ID>
+        </span>
+
+        <span ID=acterror_after_pid_entry_text4 class="text-primary" style="display:none;">
+            <br>
+            <ID id="txtActivDeskErr17">Если вводить ключ продукта не требуется, щелкните кнопку <B>Телефон</B>, чтобы вернуться к предыдущей странице активации.</ID>
+        </span>
+
+    <!-- End -->
+    </td>
+
+    <td ID=rightmargincell width=7%>
+    </td>
+</tr>
+<tr>
+    <td colspan=3>
+    <br>
+    <table border=0 class="buttonpositionnew">
+    <tr>
+        <td width=99%>
+            &nbsp;&nbsp;
+            <span ID=acterror_specific_error_code class="text-primary" style="display:none; z-index:10;">
+            </span>
+        </td>
+        <td>
+        <BUTTON ID="btnTelephone" class="buttons" TABINDEX=6 ACCESSKEY="Т"><label for=btnTelephone><id id="LocalBtnTel_Text"><u>Т</u>елефон</id></label></BUTTON>
+        </td>
+        <td>
+        <BUTTON ID="btnQuit" class="buttons" TABINDEX=7 ACCESSKEY="Н"><label for=btnQuit><id id="LocalBtnQuit_Text"><u>Н</u>апомнить позже</id></label></BUTTON>
+        </td>
+        <td>
+        <BUTTON ID="btnNext" class="buttons" TABINDEX=8 ACCESSKEY="О"><label for=btnNext><id id="LocalBtnRetry_Text">П<u>о</u>вторить</id></label></BUTTON>
+        </td>
+    </tr>
+    </table>
+    </td>
+</tr>
+</table>
+
+</body>
+</html>

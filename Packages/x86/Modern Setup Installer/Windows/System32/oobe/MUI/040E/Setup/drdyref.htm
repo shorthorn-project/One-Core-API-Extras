@@ -1,0 +1,133 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1250">
+    <title>kezdőélmény</title>
+    <LINK REL="stylesheet" TYPE="text/css" HREF="oobestyl.css">
+</head>
+
+<body style="background-Color: transparent; background-repeat: no-repeat;" TABINDEX=-1
+      onload="window.parent.drdyref_LoadMe();window.parent.Agent_Activate('RefDial');"
+      onunload="maincell.style.visibility='hidden'; window.parent.ProcessQueuedEvents(); window.parent.Agent_Deactivate();">
+
+<table border=0 cellpadding=0 cellspacing=0 width=100% height=100%>
+<tr>
+    <td ID=leftmargincell width=7%></td>
+    <td ID=maincell valign=middle class="text-primary">
+
+        <br><br>
+        <span class="title">
+        <table width="100%" height="40px">
+        <tr><td class="title" valign=top>
+            <ID id="drdyref_1">Szüksége van segítségre internetszolgáltató választásában?</id>
+        </td></tr>
+        </table>
+        </span>
+
+        <br><br>
+        <span class="text-primary" ID="drdyref_2_spanID">
+        <ID id="drdyref_2">Ha segítségre van szüksége ahhoz, hogy internetfiókjának erre a számítógépre másolásához megtalálja internetszolgáltatójának adatait, az internetszolgáltatót meg lehet keresni a Microsoft Referral Service hívásával.</id>
+        </span>
+        
+        <br><br>
+        <span class="text-primary" ID="drdyisp_4_spanID">
+        <ID id="drdyref_4">Szüksége van segítségre az internetfiók beállításában?</id>
+        </span>
+        
+        <br>
+        <table border=0 cellpadding=0 cellpadding=0>
+        <tr>
+            <td valign=top width="5%">&nbsp;&nbsp;
+            <input TABINDEX=2 type="radio" name="ISPSetupMethodType" ID="radioYesISPAuto" onClick="window.parent.checkISPSetupType();" onfocus="window.parent.OnFocus();">
+            </td>
+            <td valign=top width="95%">
+                <LABEL TABINDEX=-1 ACCESSKEY="I" id=text_yesISPAuto for="radioYesISPAuto" class="text-primary">
+                <u>I</u>gen, segítségre van szükségem a fiókadatok megkereséséhez
+                </LABEL>
+            </td>
+        </tr>
+        <tr>
+            <td valign=top width="5%">&nbsp;&nbsp;
+            <input TABINDEX=4 type="radio" name="ISPSetupMethodType" ID="radioNoISPAuto" onClick="window.parent.checkISPSetupType();" onfocus="window.parent.OnFocus();">
+            </td>
+            <td valign=top width="95%">
+                <LABEL TABINDEX=-1 ACCESSKEY="N" id=text_noISPAuto for="radioNoISPAuto" class="text-primary">
+                <u>N</u>em, kéznél van a felhasználónevem, a jelszavam, illetve az internetszolgáltató neve és hívószáma
+                </LABEL>
+            </td>
+        </tr>
+        </table>
+
+        <span id="drdyref_ctrl1" style="visibility:hidden">
+            <span class="text-primary" ID="drdyref_4_spanID"><ID id="drdyref_5">A folytatáshoz adja meg a szükséges információkat, majd kattintson a <b>Tovább</b> gombra. Ha tárcsázás nélkül kívánja folytatni, kattintson a <b>Kihagyás</b> gombra.</id>
+            <br><br>
+            </span>
+            <span class="text-primary"><ID id="drdyref_8">Válassza ki a megfelelő <u>o</u>rszágot vagy területet. A területek listájának megjelenítéséhez kattintson a lefelé mutató nyílra vagy nyomja meg az ALT + &quot;LE&quot; billentyűkombinációt.</id>
+            </span><br><br>
+            <select TABINDEX=2 id=selCountry ACCESSKEY="o" onfocus="window.parent.OnFocus();" onclick="window.parent.OnClick();">
+                <script language="javascript">
+                document.write(window.parent.external.Tapi.get_AllCountryName);
+                </script>
+            </select>
+
+            <!-- AREA CODE -->
+            <br><br>
+            <span class="text-primary"><ID id="drdyref_11">Adja meg a <u>k</u>örzetszámot (a 88 555-121 szám esetén például 88).<id>
+            </span>
+            <input style="ime-mode:disabled" ACCESSKEY="k" TABINDEX=3 id=edtAreaCode type="text" name="textfield" size="7" maxlength="7" onkeypress="window.parent.KeyPressIsNumeric();" onfocus="window.parent.OnFocus();">
+
+            <!-- PULSE/TONE DIALING -->
+            <br>
+            <span id="PulseToneDialing" style="visibility:hidden">
+                <LABEL TABINDEX=-1 ACCESSKEY="h" id=Tapi_TOUCHTONE for="radioTouchToneYes">Lehet Önnél <U>h</U>angfrekvenciás tárcsázást használni?</label>
+                <input TABINDEX=4 type="radio" name=TouchTone checked id=radioTouchToneYes onfocus="window.parent.OnFocus();">
+                <LABEL TABINDEX=-1 id="Tapi_TOUCHTONE_YES" for="radioTouchToneYes">Igen</LABEL>
+                <input TABINDEX=4 type="radio" name=TouchTone  id=radioTouchToneNo onfocus="window.parent.OnFocus();">
+                <LABEL TABINDEX=-1 id="Tapi_TOUCHTONE_NO" for="radioTouchToneNo">Nem</LABEL>
+            </span>
+        </span>
+
+        <!-- OUTSIDE LINE -->
+        <br>
+        <span id="spnOutsideLine" style="visibility:hidden">
+            <LABEL TABINDEX=-1 ACCESSKEY="v" id="drdyref_OUTSIDELINE1" for="radioOutSideLineYes">Külső <U>v</U>onal eléréséhez kell számot tárcsáznia?</label>
+            <input TABINDEX=4 type="radio" checked name=OutsideLine id=radioOutsideLineYes onclick="window.parent.drdyref_OutsideLineClicked();">
+            <LABEL TABINDEX=-1 id="drdyref_OUTSIDELINE_YES" for="radioOutsideLineYes">Igen</LABEL>
+            <input TABINDEX=4 type="radio" name=OutsideLine id=radioOutsideLineNo onclick="window.parent.drdyref_OutsideLineClicked();">
+            <LABEL TABINDEX=-1 id="drdyref_OUTSIDELINE_NO" for="radioOutSideLineNo">Nem</LABEL>
+        </span>
+        <br>
+        <SPAN TABINDEX=-1 id="spnOutsideLineNumber" style="visibility:hidden; position:relative;">                  
+            <LABEL TABINDEX=-1 ACCESSKEY="s" ID="drdyref_OUTSIDELINE2" for=edtOutsideLineNumber>Mi ez a <U>s</U>zám?</LABEL>
+            <input TABINDEX=5 style="ime-mode:disabled;" type="text" id=edtOutsideLineNumber maxlength=10 size="4" onkeypress="window.parent.KeyPressIsNumeric();">
+        </SPAN>
+
+        <br><br>
+        <span class="text-primary" ID="drdyisp_9_spanID">
+        <ID id="drdyref_9"></id>
+        </span>
+
+    <table border=0 class="newbuttonposition">
+    <tr>
+        <td width=10>&nbsp;&nbsp;</td>
+        <td><BUTTON ID="btnBack" class="newbuttonsBack" TABINDEX=6  ACCESSKEY="V" style="visibility:visible;"></BUTTON></td>
+        <td nowrap valign=middle class="text-primary"><span id="BackBtnLocalText" style="visibility:visible;"><label for=btnBack><id id="LocalBtnBack_Text"><u>V</u>issza</id></label></span></td>
+
+        <td width=99%>&nbsp;</td>
+        <td nowrap valign=middle class="text-primary"><span id="SkipBtnLocalText" style="visibility:visible;"><label for=btnSkip><id id="LocalBtnSkip_Text"><u>K</u>ihagyás</id></label></span></td>
+        <td><BUTTON ID="btnSkip" class="newbuttonsSkip" TABINDEX=7  ACCESSKEY="K" style="visibility:visible;"></BUTTON></td>
+
+        <td width=10>&nbsp;&nbsp;</td>
+        <td nowrap valign=middle class="text-primary"><span id="NextBtnLocalText" style="visibility:visible;"><label for=btnNext><id id="LocalBtnNext_Text"><u>T</u>ovább</id></label></span></td>
+        <td><BUTTON ID="btnNext" class="newbuttonsNext" TABINDEX=8  ACCESSKEY="T" style="visibility:visible;"></BUTTON></td>
+    </tr>
+    </table>
+
+    </td>
+</tr>
+</table>
+
+</body>
+</html>

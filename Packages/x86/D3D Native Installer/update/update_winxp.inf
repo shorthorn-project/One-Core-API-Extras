@@ -23,15 +23,10 @@
 	
 [Prerequisite]
 	condition=SingleOp,LatestUpdateCheck1.Section
-	condition=SingleOp,LatestUpdateCheck2.Section
 	
 [LatestUpdateCheck1.Section]
     EqualOp=CheckReg,HKLM,"SOFTWARE\Microsoft\Windows NT\CurrentVersion\HotFix\OCAB",Installed,0x10001,==,1
     Display_String="%LatestBaseUpdateFail%"
-
-[LatestUpdateCheck2.Section]
-    EqualOp=CheckReg,HKLM,"SOFTWARE\Microsoft\Windows NT\CurrentVersion\HotFix\OCAWMB",Installed,0x10001,==,1
-    Display_String="%LatestBrandingUpdateFail%"
 	
 [Strings]
 	D3DR_VERSION            = "1.0.0"
@@ -44,7 +39,6 @@
 	ARP_Link                = "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\"
 	PARENT_DISPLAY_NAME     = "One-Core-API"
 	LatestBaseUpdateFail    = "Please Install latest One-Core-API Base first!"
-	LatestBrandingUpdateFail  = "Please Install latest One-Core-API Windows Modern Branding first!"
 	FNTCACHESVC_DISPLAY_NAME= "Windows Font Cache Service"
 	FNTCACHESVC_DESCRIPTION = "Optimizes performance of applications by caching commonly used font data. Applications will start this service if it is not already running. It can be disabled, though doing so will degrade application performance."
 	SERVICE_DEMAND_START=0x3
@@ -109,10 +103,13 @@
 	d3d10core.dll
 	d3d10level9.dll
 	d3d11.dll
+	d3d12.dll
+	d3d12core.dll
 	dwrite.dll
 	dxdiag.exe
 	dxdiagn.dll	
 	dxgi.dll
+	dxgiext.dll
 	D3DCompiler_47.dll
 	fntcache.dll
 	vcruntime140.dll
@@ -132,10 +129,13 @@
 	d3d10core.dll = 1
 	d3d10level9.dll = 1
 	d3d11.dll = 1
+	d3d12.dll = 1
+	d3d12core.dll = 1
 	dwrite.dll = 1
 	dxdiag.exe = 1
 	dxdiagn.dll = 1		
 	dxgi.dll = 1
+	dxgiext.dll = 1
 	D3DCompiler_47.dll = 1
 	fntcache.dll = 1
 	vcruntime140.dll = 1

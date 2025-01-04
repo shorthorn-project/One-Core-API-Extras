@@ -1,0 +1,97 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+    <title>out of box experience</title>
+    <LINK REL="stylesheet" TYPE="text/css" HREF="oobestyl.css">
+
+</head>
+
+<body style="background-Color: transparent; background-repeat: no-repeat;" TABINDEX=-1
+      onload="window.parent.Miglist_LoadMe();window.parent.Agent_Activate('MigList');"
+      onunload="window.parent.Agent_Deactivate();">
+
+<table border=0 cellpadding=0 cellspacing=0 width=100% height=100%><tr><td ID=leftmargincell width=7%></td>
+<td ID=maincell valign=middle class="text-primary">
+<br><br>
+
+<span id=MigListTitle   style="display:none" class="title"><ID id="isp2_intro">Velg Internett-leverandør</ID></span>
+<span id=MigListNoOffer style="display:none" class="title"><ID id="isp2_intro2">Kontakt Internett-leverandøren din</ID></span>
+
+<br>
+<span id=MigListTxt style="display:none" class="text-primary">
+<ID id="isp2_txt1">Nedenfor finner du en ufullstendig liste over Internett-leverandører (ISPer) i ditt område. Leverandører som ikke har et nasjonalt tjenestetilbud, vises ikke i listen.<br><br><u>V</u>elg en leverandør (Klikk en.)</id>
+</span>
+
+<span id=MigListTxtNoOffer style="display:none" class="text-primary">
+<ID id="isp2_txt2">Velkommen til Windows kan ikke hente kontoinnstillingene dine fra Internett-leverandøren. Når du har fullført Windows-vekomsten, kontakter du Internett-leverandøren for å få hjelp til å konfigurere Internett-kontoen på nytt på denne datamaskinen.</ID>
+</span>
+
+<!--
+<br><br>
+<div>
+<INPUT type="text" ID=selectedISPName style="display:none" READONLY value="" style="" size=45 TABINDEX=-1>
+</div>
+-->
+
+<br><br>
+<table border=0>
+<tr>
+    <td width=80>&nbsp</td>
+    <td>
+    <select id=selISPDropList style="display:none" size=5 width=450 ACCESSKEY="V">
+    <script language="javascript">
+    document.write(window.parent.external.get_ISPList);
+    </script>
+    <OPTION><ID id="isp2_option">Min Internett-leverandør står ikke på listen</ID>
+    </select>
+    </td>
+</tr>
+</table>
+
+
+<br>
+<span class="text-primary" ID="drdyisp_4_spanID" style="display:none">
+<ID id="drdyref_4">Hvis Internett-leverandøren din ikke finnes i listen, men du allerede har informasjonen om Internett-kontoen, inkludert brukernavn, passord og navn på og telefonnummer til Internett-leverandøren, klikker du her: </id>
+</span>
+
+<br>
+<center>
+    <table border=0>
+    <tr>
+        <td><BUTTON ID="btnManual" class="newbuttonsNext" TABINDEX=1 ACCESSKEY="H" style="display:none;"></BUTTON></td>
+        <td nowrap valign=middle class="text-primary"><span id="ManualBtnLocalText01" style="display:none;"><ID id=miglist_havesettings><u>H</u>ar innstillinger</id></span></td>
+    </tr>
+    </table>
+</center>
+
+<br>
+<span id=MigListTxt2 style="display:none" class="text-primary">
+<ID id="isp2_txt2">Hvis du vil fortsette å konfigurere en Internett-konto med Internett-leverandøren du valgte, klikker du Neste.<br><br>Hvis Internett-leverandøren du vil bruke, krever at du installerer deres programvare, klikker du Hopp over.<br>(Dette vet du hvis du allerede har en CD-ROM fra Internett-leverandøren.)<br>Deretter konfigurerer du datamaskinen for Internett-tilgang etter at du har konfigurert Windows.</ID>
+</span>
+
+    <table border=0 class="newbuttonposition">
+    <tr>
+        <td width=10>&nbsp;&nbsp;</td>
+        <td><BUTTON ID="btnBack" class="newbuttonsBack" TABINDEX=2  ACCESSKEY="T" style="visibility:visible;"></BUTTON></td>
+        <td nowrap valign=middle class="text-primary"><span id="BackBtnLocalText" style="visibility:visible;"><label for=btnBack><id id="LocalBtnBack_Text"><u>T</u>ilbake</id></label></span></td>
+
+        <td width=99%>&nbsp;</td>
+        <td nowrap valign=middle class="text-primary"><span id="SkipBtnLocalText" style="visibility:visible;"><label for=btnSkip><id id="LocalBtnSkip_Text"><u>H</u>opp over</id></label></span></td>
+        <td><BUTTON ID="btnSkip" class="newbuttonsSkip" TABINDEX=3  ACCESSKEY="H" style="visibility:visible;"></BUTTON></td>
+
+        <td width=10>&nbsp;&nbsp;</td>
+        <td nowrap valign=middle class="text-primary"><span id="NextBtnLocalText" style="visibility:visible;"><label for=btnNext><id id="LocalBtnNext_Text"><u>N</u>este</id></label></span></td>
+        <td><BUTTON ID="btnNext" class="newbuttonsNext" TABINDEX=4  ACCESSKEY="N" style="visibility:visible;"></BUTTON></td>
+    </tr>
+    </table>
+
+    </td>
+</tr>
+</table>
+
+
+</body>
+</html>

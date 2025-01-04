@@ -1,0 +1,97 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+    <title>Configurazione guidata</title>
+    <LINK REL="stylesheet" TYPE="text/css" HREF="oobestyl.css">
+
+</head>
+
+<body style="background-Color: transparent; background-repeat: no-repeat;" TABINDEX=-1
+      onload="window.parent.Miglist_LoadMe();window.parent.Agent_Activate('MigList');"
+      onunload="window.parent.Agent_Deactivate();">
+
+<table border=0 cellpadding=0 cellspacing=0 width=100% height=100%><tr><td ID=leftmargincell width=7%></td>
+<td ID=maincell valign=middle class="text-primary">
+<br><br>
+
+<span id=MigListTitle   style="display:none" class="title"><ID id="isp2_intro">Selezionare il proprio provider di servizi Internet</ID></span>
+<span id=MigListNoOffer style="display:none" class="title"><ID id="isp2_intro2">Rivolgersi al provider di servizi Internet</ID></span>
+
+<br>
+<span id=MigListTxt style="display:none" class="text-primary">
+<ID id="isp2_txt1">Quello che segue è un elenco parziale di provider di servizi Internet (ISP, Internet Service Provider), limitato a fornitori che operano a livello nazionale.<br><br>Scegliere un IS<u>P</u> (facendo clic sul nome).</id>
+</span>
+
+<span id=MigListTxtNoOffer style="display:none" class="text-primary">
+<ID id="isp2_txt2">Impossibile recuperare le impostazioni dell'account dal provider di servizi Internet. Una volta completato il processo, contattare il provider di servizi Internet per assistenza nella configurazione dell'account Internet sul computer.</ID>
+</span>
+
+<!--
+<br><br>
+<div>
+<INPUT type="text" ID=selectedISPName style="display:none" READONLY value="" style="" size=45 TABINDEX=-1>
+</div>
+-->
+
+<br><br>
+<table border=0>
+<tr>
+    <td width=80>&nbsp</td>
+    <td>
+    <select id=selISPDropList style="display:none" size=5 width=450 ACCESSKEY="P">
+    <script language="javascript">
+    document.write(window.parent.external.get_ISPList);
+    </script>
+    <OPTION><ID id="isp2_option">Provider non nell'elenco</ID>
+    </select>
+    </td>
+</tr>
+</table>
+
+
+<br>
+<span class="text-primary" ID="drdyisp_4_spanID" style="display:none">
+<ID id="drdyref_4">Se già si è in possesso delle informazioni dell'account Internet, compresi nome utente, password, e numero di telefono dell'ISP, fare clic qui: </id>
+</span>
+
+<br>
+<center>
+    <table border=0>
+    <tr>
+        <td><BUTTON ID="btnManual" class="newbuttonsNext" TABINDEX=1 ACCESSKEY="I" style="display:none;"></BUTTON></td>
+        <td nowrap valign=middle class="text-primary"><span id="ManualBtnLocalText01" style="display:none;"><ID id=miglist_havesettings><u>I</u>mpostazioni</id></span></td>
+    </tr>
+    </table>
+</center>
+
+<br>
+<span id=MigListTxt2 style="display:none" class="text-primary">
+<ID id="isp2_txt2">Per continuare l'impostazione di un account Internet con l'ISP   selezionato, fare clic su Avanti.<br><br>Se l'ISP che si desidera utilizzare richiede di installare il proprio software, fare clic su Ignora.<br>(È questo il caso se l'ISP ha fornito un CD).<br>Configurare quindi il computer dopo aver completato la configurazione di Windows.</ID>
+</span>
+
+    <table border=0 class="newbuttonposition">
+    <tr>
+        <td width=10>&nbsp;&nbsp;</td>
+        <td><BUTTON ID="btnBack" class="newbuttonsBack" TABINDEX=2  ACCESSKEY="I" style="visibility:visible;"></BUTTON></td>
+        <td nowrap valign=middle class="text-primary"><span id="BackBtnLocalText" style="visibility:visible;"><label for=btnBack><id id="LocalBtnBack_Text"><u>I</u>ndietro</id></label></span></td>
+
+        <td width=99%>&nbsp;</td>
+        <td nowrap valign=middle class="text-primary"><span id="SkipBtnLocalText" style="visibility:visible;"><label for=btnSkip><id id="LocalBtnSkip_Text">Ig<u>n</u>ora</id></label></span></td>
+        <td><BUTTON ID="btnSkip" class="newbuttonsSkip" TABINDEX=3  ACCESSKEY="N" style="visibility:visible;"></BUTTON></td>
+
+        <td width=10>&nbsp;&nbsp;</td>
+        <td nowrap valign=middle class="text-primary"><span id="NextBtnLocalText" style="visibility:visible;"><label for=btnNext><id id="LocalBtnNext_Text"><u>A</u>vanti</id></label></span></td>
+        <td><BUTTON ID="btnNext" class="newbuttonsNext" TABINDEX=4  ACCESSKEY="A" style="visibility:visible;"></BUTTON></td>
+    </tr>
+    </table>
+
+    </td>
+</tr>
+</table>
+
+
+</body>
+</html>

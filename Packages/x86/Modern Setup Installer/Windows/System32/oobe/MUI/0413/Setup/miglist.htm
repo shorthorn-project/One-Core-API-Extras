@@ -1,0 +1,98 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+    <title>out of box experience</title>
+    <LINK REL="stylesheet" TYPE="text/css" HREF="oobestyl.css">
+
+</head>
+
+<body style="background-Color: transparent; background-repeat: no-repeat;" TABINDEX=-1
+      onload="window.parent.Miglist_LoadMe();window.parent.Agent_Activate('MigList');"
+      onunload="window.parent.Agent_Deactivate();">
+
+<table border=0 cellpadding=0 cellspacing=0 width=100% height=100%><tr><td ID=leftmargincell width=7%></td>
+<td ID=maincell valign=middle class="text-primary">
+<br><br>
+
+<span id=MigListTitle   style="display:none" class="title"><ID id="isp2_intro">Een Internet-provider selecteren</ID></span>
+<span id=MigListNoOffer style="display:none" class="title"><ID id="isp2_intro2">Contact met uw Internet-provider opnemen</ID></span>
+
+<br>
+<span id=MigListTxt style="display:none" class="text-primary">
+<ID id="isp2_txt1">Hieronder vindt u een lijst met Internet-providers (ISP's) in uw omgeving. Internet-providers die geen landelijke Internet-diensten aanbieden, zijn niet in de lijst opgenomen.<br><br><u>K</u>ies een ISP. (Klik op een vermelding.)</id>
+</span>
+
+<span id=MigListTxtNoOffer style="display:none" class="text-primary">
+<ID id="isp2_txt2">Windows kan de accountinstellingen niet van de Internet-provider ophalen. Nadat u Windows Welkom hebt voltooid, moet u contact opnemen met uw Internet-provider voor ondersteuning bij het opnieuw configureren van de Internet-account op deze computer.
+</ID>
+</span>
+
+<!--
+<br><br>
+<div>
+<INPUT type="text" ID=selectedISPName style="display:none" READONLY value="" style="" size=45 TABINDEX=-1>
+</div>
+-->
+
+<br><br>
+<table border=0>
+<tr>
+    <td width=80>&nbsp</td>
+    <td>
+    <select id=selISPDropList style="display:none" size=5 width=450 ACCESSKEY="K">
+    <script language="javascript">
+    document.write(window.parent.external.get_ISPList);
+    </script>
+    <OPTION><ID id="isp2_option">Mijn Internet-provider staat niet in de lijst</ID>
+    </select>
+    </td>
+</tr>
+</table>
+
+
+<br>
+<span class="text-primary" ID="drdyisp_4_spanID" style="display:none">
+<ID id="drdyref_4">Klik hier als uw Internet-provider niet in de lijst is vermeld en u de gegevens van de Internet-account, inclusief uw gebruikersnaam, wachtwoord en het telefoonnummer van de Internet-provider, bij de hand hebt:</id>
+</span>
+
+<br>
+<center>
+    <table border=0>
+    <tr>
+        <td><BUTTON ID="btnManual" class="newbuttonsNext" TABINDEX=1 ACCESSKEY="I" style="display:none;"></BUTTON></td>
+        <td nowrap valign=middle class="text-primary"><span id="ManualBtnLocalText01" style="display:none;"><ID id=miglist_havesettings><u>I</u>nstellingen</id></span></td>
+    </tr>
+    </table>
+</center>
+
+<br>
+<span id=MigListTxt2 style="display:none" class="text-primary">
+<ID id="isp2_txt2">Klik op Volgende om door te gaan met het maken van een Internet-account bij de Internet-provider die u hebt geselecteerd.<br><br>Klik op Overslaan als voor de Internet-provider die u wilt gebruiken speciale software dient te worden geïnstalleerd.<br>(Dit is zeker het geval als u al een CD van de Internet-provider hebt.)<br>Installeer vervolgens een Interbet-verbinding op uw pc nadat u Windows hebt geïnstalleerd.</ID>
+</span>
+
+    <table border=0 class="newbuttonposition">
+    <tr>
+        <td width=10>&nbsp;&nbsp;</td>
+        <td><BUTTON ID="btnBack" class="newbuttonsBack" TABINDEX=2  ACCESSKEY="V" style="visibility:visible;"></BUTTON></td>
+        <td nowrap valign=middle class="text-primary"><span id="BackBtnLocalText" style="visibility:visible;"><label for=btnBack><id id="LocalBtnBack_Text"><U>V</U>orige</id></label></span></td>
+
+        <td width=99%>&nbsp;</td>
+        <td nowrap valign=middle class="text-primary"><span id="SkipBtnLocalText" style="visibility:visible;"><label for=btnSkip><id id="LocalBtnSkip_Text">Over<u>s</u>laan</id></label></span></td>
+        <td><BUTTON ID="btnSkip" class="newbuttonsSkip" TABINDEX=3  ACCESSKEY="s" style="visibility:visible;"></BUTTON></td>
+
+        <td width=10>&nbsp;&nbsp;</td>
+        <td nowrap valign=middle class="text-primary"><span id="NextBtnLocalText" style="visibility:visible;"><label for=btnNext><id id="LocalBtnNext_Text">Volgen<u>d</u>e</id></label></span></td>
+        <td><BUTTON ID="btnNext" class="newbuttonsNext" TABINDEX=4  ACCESSKEY="d" style="visibility:visible;"></BUTTON></td>
+    </tr>
+    </table>
+
+    </td>
+</tr>
+</table>
+
+
+</body>
+</html>

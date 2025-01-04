@@ -1,0 +1,138 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=big5">
+    <title>全新感受</title>
+    <LINK REL="stylesheet" TYPE="text/css" HREF="../setup/oobestyl.css">
+</head>
+
+<body style="background-Color: transparent; background-repeat: no-repeat;" TABINDEX=-1
+      onload="window.parent.NewToobusy_LoadMe();window.parent.Agent_Activate('TooBusy');"
+      onunload="window.parent.Agent_Deactivate();">
+
+<table border=0 cellpadding=0 cellspacing=0 width=100% height=100%>
+<tr>
+    <td ID=leftmargincell width=7%></td>
+    <td ID=maincell valign=middle class="text-primary">
+
+    <br><br>
+    <span class="title"><id id="tb1">電話忙線中或未接聽</id></span><br>
+
+    <br>
+    <span class="text-primary" id="tbpar1"><id id="tb2">安裝程式無法連線到這個號碼，來啟用您的電腦。</id></span>
+    <SPAN ID="spanDisplayNumber" class="text-primary"></SPAN>
+
+    <br>
+    <span class="text-primary"><id id="tb3">電話可能正在忙線中，或是號碼不正確。</id></span>
+
+    <br><br>
+    <span class="text-primary"><id id="tb4">如果這個號碼正確無誤，請等候數分鐘，然後按 <B>[重撥]</B>。</id></span>
+
+    <br><br>
+    <span class="text-primary"><id id="tb5">如果號碼不正確，請輸入新的設定，然後按 <B>[重撥]</B>。</id></span>
+
+    <table>
+    <tr>
+        <td width=15>&nbsp;</td>
+
+        <td>
+        <INPUT tabindex="1" type="checkbox" ACCESSKEY="D" value="" id="cb_altnumber" onclick="window.parent.Check_cb_altnumber();">
+        </td>
+
+        <td>
+        <LABEL id="lbl_altnumber" for="cb_altnumber" class="text-primary">
+        <ID id="lbl_altnumber_text">請撥這個其他號碼(<u>D</u>):</ID>
+        </LABEL>&nbsp;&nbsp;
+        </td>
+
+        <td>
+        <INPUT type="text" value="" id="edt_altnumber" size=15 onFocus="if (!cb_altnumber.checked)this.blur();" style="ime-mode:disabled; background-Color:#dddddd" tabindex=-1>
+        </td>
+    </tr>
+    <tr>
+        <td width=15>&nbsp;</td>
+
+        <td>
+        <INPUT tabindex="2" type="checkbox" ACCESSKEY="O" value="" id="cb_outsideline" onclick="window.parent.Check_cb_outsideline();">
+        </td>
+
+        <td>
+        <LABEL id="lbl_outsideline" for="cb_outsideline" class="text-primary">
+        <ID id="lbl_outsideline_text">包含這個號碼以撥接外線(<u>O</u>):</ID>
+        </LABEL>&nbsp;&nbsp;
+        </td>
+
+        <td>
+        <INPUT type="text" value="" id="edt_outsideline" size=5 onFocus="if (!cb_outsideline.checked)this.blur();" style="ime-mode:disabled; background-Color:#dddddd" tabindex=-1>
+        </td>
+    </tr>
+    <tr>
+        <td width=15>&nbsp;</td>
+
+        <td>
+        <INPUT tabindex="3" type="checkbox" ACCESSKEY="C" value="" id="cb_callwaiting" onclick="window.parent.Check_cb_callwaiting();">
+        </td>
+
+        <td>
+        <LABEL id="lbl_callwaiting" for="cb_callwaiting" class="text-primary">
+        <ID id="lbl_callwaiting_text">停用電話插撥功能(<u>C</u>):</ID>
+        </LABEL>&nbsp;&nbsp;
+        </td>
+
+        <td>
+        <INPUT type="text" value="" id="edt_callwaiting" size=5 onFocus="if (!cb_callwaiting.checked)this.blur();" style="ime-mode:disabled; background-Color:#dddddd" tabindex=-1>
+        </td>
+    </tr>
+    <tr>
+        <td width=15>&nbsp;</td>
+        
+        <td colspan=2>
+            <table width=100%>
+            <tr>
+                <td><LABEL id="lbl_dialsignal" for="cb_dialsignal" class="text-primary"><ID id="lbl_dialsignal_text">撥接方式:</ID></LABEL></td>
+                <td><input name="DialSignalChoice" type="radio" tabindex="4" id="DialTone" CHECKED><LABEL TABINDEX=-1 ACCESSKEY="T" id="spn_staticDialTone" for="DialTone" class="text-primary"><id id="Set_Tone_text">按鍵式(<u>T</u>)</id></LABEL></td>
+                <td><input name="DialSignalChoice" type="radio" tabindex="5" id="DialPulse"><LABEL TABINDEX=-1 ACCESSKEY="P" id="spn_staticDialPulse" for="DialPulse" class="text-primary"><id id="Set_Pulse_text">轉盤式(<u>P</u>)</id></LABEL></td>
+            </tr>
+            </table>
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+
+    </table>
+
+    <br><br>
+    <span class="text-error" id="tberrspan1" style="visibility:hidden;"><id id="tberr1">* 請輸入其他的電話號碼。</id></span>
+    <br>
+    <span class="text-error" id="tberrspan2" style="visibility:hidden;"><id id="tberr2">* 請輸入用來撥接外線的號碼。</id></span>
+    <br>
+    <span class="text-error" id="tberrspan3" style="visibility:hidden;"><id id="tberr3">* 請輸入用來停用電話插撥功能的號碼。</id></span>
+
+
+    <br>
+    <span class="text-primary-btndesc" id="tbpar2"><id id="tb6">如果要繼續而不啟用您的電腦，請按 <b>[跳過]</b>。</id></span>
+
+    <br>
+    <table border=0 class="newbuttonposition">
+    <tr>
+        <td width=10>&nbsp;&nbsp;</td>
+        <td><BUTTON ID="btnPlaceholder" class="newbuttonsNext" TABINDEX=6 ACCESSKEY="E" style="visibility:hidden;" onclick="window.parent.RestoreDialRule();"></BUTTON></td>
+        <td nowrap valign=middle class="text-primary"><span id="BackBtnLocalText" style="visibility:hidden;"><label for=btnPlaceholder><id id="LocalBtnPlaceholder_Text">還原(<u>E</u>)</id></label></span></td>
+
+        <td width=99%>&nbsp;</td>
+        <td nowrap valign=middle class="text-primary"><span id="SkipBtnLocalText" style="visibility:visible;"><label for=btnSkip><id id="LocalBtnSkip_Text">跳過(<U>S</U>)</id></label></span></td>
+        <td><BUTTON ID="btnSkip" class="newbuttonsSkip" TABINDEX=7 ACCESSKEY="S" style="visibility:visible;"></BUTTON></td>
+
+        <td width=10>&nbsp;&nbsp;</td>
+        <td nowrap valign=middle class="text-primary"><span id="NextBtnLocalText" style="visibility:visible;"><label for=btnNext><id id="LocalBtnRedial_Text">重撥(<u>R</u>)</id></label></span></td>
+        <td><BUTTON ID="btnNext" class="newbuttonsNext" TABINDEX=8 ACCESSKEY="R" style="visibility:visible;"></BUTTON></td>
+    </tr>
+    </table>
+
+    </td>
+</tr>
+</table>
+
+</body>
+</html>

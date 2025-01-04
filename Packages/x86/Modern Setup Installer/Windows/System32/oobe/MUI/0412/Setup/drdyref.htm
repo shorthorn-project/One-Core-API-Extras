@@ -1,0 +1,133 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=ks_c_5601-1987">
+    <title>OOBE</title>
+    <LINK REL="stylesheet" TYPE="text/css" HREF="oobestyl.css">
+</head>
+
+<body style="background-Color: transparent; background-repeat: no-repeat;" TABINDEX=-1
+      onload="window.parent.drdyref_LoadMe();window.parent.Agent_Activate('RefDial');"
+      onunload="maincell.style.visibility='hidden'; window.parent.ProcessQueuedEvents(); window.parent.Agent_Deactivate();">
+
+<table border=0 cellpadding=0 cellspacing=0 width=100% height=100%>
+<tr>
+    <td ID=leftmargincell width=7%></td>
+    <td ID=maincell valign=middle class="text-primary">
+
+        <br><br>
+        <span class="title">
+        <table width="100%" height="40px">
+        <tr><td class="title" valign=top>
+            <ID id="drdyref_1">인터넷 서비스 공급자를 찾는 데 도움이 필요하십니까?</id>
+        </td></tr>
+        </table>
+        </span>
+
+        <br><br>
+        <span class="text-primary" ID="drdyref_2_spanID">
+        <ID id="drdyref_2">인터넷 계정을 이 컴퓨터로 복사하기 위해 인터넷 서비스 공급자를 찾는 데 도움이 필요하면 Microsoft 조회 서비스에 연결한 후, 전화로 문의할 수 있습니다.</id>
+        </span>
+        
+        <br><br>
+        <span class="text-primary" ID="drdyisp_4_spanID">
+        <ID id="drdyref_4">인터넷 계정을 설정하는 데 도움이 필요하십니까?</id>
+        </span>
+        
+        <br>
+        <table border=0 cellpadding=0 cellpadding=0>
+        <tr>
+            <td valign=top width="5%">&nbsp;&nbsp;
+            <input TABINDEX=2 type="radio" name="ISPSetupMethodType" ID="radioYesISPAuto" onClick="window.parent.checkISPSetupType();" onfocus="window.parent.OnFocus();">
+            </td>
+            <td valign=top width="95%">
+                <LABEL TABINDEX=-1 ACCESSKEY="Y" id=text_yesISPAuto for="radioYesISPAuto" class="text-primary">
+                예, 계정 정보를 찾는 데 도움이 필요합니다(<u>Y</u>).
+                </LABEL>
+            </td>
+        </tr>
+        <tr>
+            <td valign=top width="5%">&nbsp;&nbsp;
+            <input TABINDEX=4 type="radio" name="ISPSetupMethodType" ID="radioNoISPAuto" onClick="window.parent.checkISPSetupType();" onfocus="window.parent.OnFocus();">
+            </td>
+            <td valign=top width="95%">
+                <LABEL TABINDEX=-1 ACCESSKEY="O" id=text_noISPAuto for="radioNoISPAuto" class="text-primary">
+                아니오, 사용자 이름, 암호, ISP 이름 및 전화 번호가 있습니다(<u>O</u>).
+                </LABEL>
+            </td>
+        </tr>
+        </table>
+
+        <span id="drdyref_ctrl1" style="visibility:hidden">
+            <span class="text-primary" ID="drdyref_4_spanID"><ID id="drdyref_5">계속하려면 아래에 정보를 입력하고 <b>다음</b>을 클릭하십시오. 전화를 걸지 않고 계속 진행하려면 <b>건너뛰기</b>를 클릭하십시오.</id>
+            <br><br>
+            </span>
+            <span class="text-primary"><ID id="drdyref_8">사용자가 거주하는 국가/지역을 선택하십시오. 국가 목록을 보려면 아래쪽 화살표를 클릭하거나 Alt+아래쪽 화살표 키를 누르십시오.(<U>C</U>).</id>
+            </span><br><br>
+            <select TABINDEX=2 id=selCountry ACCESSKEY="C" onfocus="window.parent.OnFocus();" onclick="window.parent.OnClick();">
+                <script language="javascript">
+                document.write(window.parent.external.Tapi.get_AllCountryName);
+                </script>
+            </select>
+
+            <!-- AREA CODE -->
+            <br><br>
+            <span class="text-primary"><ID id="drdyref_11">지역 번호를 입력하십시오(예: 02-123-1427의 경우, 02)(<u>A</u>).<id>
+            </span>
+            <input style="ime-mode:disabled" ACCESSKEY="A" TABINDEX=3 id=edtAreaCode type="text" name="textfield" size="7" maxlength="7" onkeypress="window.parent.KeyPressIsNumeric();" onfocus="window.parent.OnFocus();">
+
+            <!-- PULSE/TONE DIALING -->
+            <br>
+            <span id="PulseToneDialing" style="visibility:hidden">
+                <LABEL TABINDEX=-1 ACCESSKEY="T" id=Tapi_TOUCHTONE for="radioTouchToneYes">터치톤 서비스를 사용하십니까(<U>T</U>)?</label>
+                <input TABINDEX=4 type="radio" name=TouchTone checked id=radioTouchToneYes onfocus="window.parent.OnFocus();">
+                <LABEL TABINDEX=-1 id="Tapi_TOUCHTONE_YES" for="radioTouchToneYes">예</LABEL>
+                <input TABINDEX=4 type="radio" name=TouchTone  id=radioTouchToneNo onfocus="window.parent.OnFocus();">
+                <LABEL TABINDEX=-1 id="Tapi_TOUCHTONE_NO" for="radioTouchToneNo">아니오</LABEL>
+            </span>
+        </span>
+
+        <!-- OUTSIDE LINE -->
+        <br>
+        <span id="spnOutsideLine" style="visibility:hidden">
+            <LABEL TABINDEX=-1 ACCESSKEY="O" id="drdyref_OUTSIDELINE1" for="radioOutSideLineYes">외부 회선에 액세스하기 위해 번호를 사용합니까(<U>O</U>)?</label>
+            <input TABINDEX=4 type="radio" checked name=OutsideLine id=radioOutsideLineYes onclick="window.parent.drdyref_OutsideLineClicked();">
+            <LABEL TABINDEX=-1 id="drdyref_OUTSIDELINE_YES" for="radioOutsideLineYes">예</LABEL>
+            <input TABINDEX=4 type="radio" name=OutsideLine id=radioOutsideLineNo onclick="window.parent.drdyref_OutsideLineClicked();">
+            <LABEL TABINDEX=-1 id="drdyref_OUTSIDELINE_NO" for="radioOutSideLineNo">아니오</LABEL>
+        </span>
+        <br>
+        <SPAN TABINDEX=-1 id="spnOutsideLineNumber" style="visibility:hidden; position:relative;">                  
+            <LABEL TABINDEX=-1 ACCESSKEY="W" ID="drdyref_OUTSIDELINE2" for=edtOutsideLineNumber>사용하는 번호를 알려 주십시오(<U>W</U>).</LABEL>
+            <input TABINDEX=5 style="ime-mode:disabled;" type="text" id=edtOutsideLineNumber maxlength=10 size="4" onkeypress="window.parent.KeyPressIsNumeric();">
+        </SPAN>
+
+        <br><br>
+        <span class="text-primary" ID="drdyisp_9_spanID">
+        <ID id="drdyref_9"></id>
+        </span>
+
+    <table border=0 class="newbuttonposition">
+    <tr>
+        <td width=10>&nbsp;&nbsp;</td>
+        <td><BUTTON ID="btnBack" class="newbuttonsBack" TABINDEX=6  ACCESSKEY="B" style="visibility:visible;"></BUTTON></td>
+        <td nowrap valign=middle class="text-primary"><span id="BackBtnLocalText" style="visibility:visible;"><label for=btnBack><id id="LocalBtnBack_Text">뒤로(<u>B</u>)</id></label></span></td>
+
+        <td width=99%>&nbsp;</td>
+        <td nowrap valign=middle class="text-primary"><span id="SkipBtnLocalText" style="visibility:visible;"><label for=btnSkip><id id="LocalBtnSkip_Text">건너뛰기(<u>S</u>)</id></label></span></td>
+        <td><BUTTON ID="btnSkip" class="newbuttonsSkip" TABINDEX=7  ACCESSKEY="S" style="visibility:visible;"></BUTTON></td>
+
+        <td width=10>&nbsp;&nbsp;</td>
+        <td nowrap valign=middle class="text-primary"><span id="NextBtnLocalText" style="visibility:visible;"><label for=btnNext><id id="LocalBtnNext_Text">다음(<u>N</u>)</id></label></span></td>
+        <td><BUTTON ID="btnNext" class="newbuttonsNext" TABINDEX=8  ACCESSKEY="N" style="visibility:visible;"></BUTTON></td>
+    </tr>
+    </table>
+
+    </td>
+</tr>
+</table>
+
+</body>
+</html>

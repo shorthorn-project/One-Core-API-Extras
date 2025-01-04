@@ -1,0 +1,133 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1251">
+    <title>out of box experience</title>
+    <LINK REL="stylesheet" TYPE="text/css" HREF="oobestyl.css">
+</head>
+
+<body style="background-Color: transparent; background-repeat: no-repeat;" TABINDEX=-1
+      onload="window.parent.drdyref_LoadMe();window.parent.Agent_Activate('RefDial');"
+      onunload="maincell.style.visibility='hidden'; window.parent.ProcessQueuedEvents(); window.parent.Agent_Deactivate();">
+
+<table border=0 cellpadding=0 cellspacing=0 width=100% height=100%>
+<tr>
+    <td ID=leftmargincell width=7%></td>
+    <td ID=maincell valign=middle class="text-primary">
+
+        <br><br>
+        <span class="title">
+        <table width="100%" height="40px">
+        <tr><td class="title" valign=top>
+            <ID id="drdyref_1">Нужна помощь в поиске поставщика услуг Интернета?</id>
+        </td></tr>
+        </table>
+        </span>
+
+        <br><br>
+        <span class="text-primary" ID="drdyref_2_spanID">
+        <ID id="drdyref_2">Если вам нужна помощь в поиске информации о вашем поставщике услуг Интернета (ISP) для того, чтобы скопировать вашу учетную запись Интернета на этот компьютер, можно сделать звонок в справочную службу корпорации Майкрософт.</id>
+        </span>
+        
+        <br><br>
+        <span class="text-primary" ID="drdyisp_4_spanID">
+        <ID id="drdyref_4">Нужна помощь при установке существующей учетной записи Интернета?</id>
+        </span>
+        
+        <br>
+        <table border=0 cellpadding=0 cellpadding=0>
+        <tr>
+            <td valign=top width="5%">&nbsp;&nbsp;
+            <input TABINDEX=2 type="radio" name="ISPSetupMethodType" ID="radioYesISPAuto" onClick="window.parent.checkISPSetupType();" onfocus="window.parent.OnFocus();">
+            </td>
+            <td valign=top width="95%">
+                <LABEL TABINDEX=-1 ACCESSKEY="а" id=text_yesISPAuto for="radioYesISPAuto" class="text-primary">
+                Д<u>а</u>, помочь с поиском информации о моей учетной записи
+                </LABEL>
+            </td>
+        </tr>
+        <tr>
+            <td valign=top width="5%">&nbsp;&nbsp;
+            <input TABINDEX=4 type="radio" name="ISPSetupMethodType" ID="radioNoISPAuto" onClick="window.parent.checkISPSetupType();" onfocus="window.parent.OnFocus();">
+            </td>
+            <td valign=top width="95%">
+                <LABEL TABINDEX=-1 ACCESSKEY="е" id=text_noISPAuto for="radioNoISPAuto" class="text-primary">
+                Н<u>е</u>т, мне известно имя пользователя, пароль, название и телефоны поставщика услуг Интернета
+                </LABEL>
+            </td>
+        </tr>
+        </table>
+
+        <span id="drdyref_ctrl1" style="visibility:hidden">
+            <span class="text-primary" ID="drdyref_4_spanID"><ID id="drdyref_5">Чтобы набрать номер, укажите внизу нужные сведения и нажмите кнопку <b>Далее</b>. Чтобы продолжить работу без подключения к телефонной линии, нажмите кнопку <b>Пропустить</b>.</id>
+            <br><br>
+            </span>
+            <span class="text-primary"><ID id="drdyref_8">Выберите <u>с</u>трану или регион, в котором вы сейчас находитесь.  Для просмотра списка регионов щелкните кнопку со стрелкой или нажмите клавиши ALT + &quot;СТРЕЛКА ВНИЗ&quot;.</id>
+            </span><br><br>
+            <select TABINDEX=2 id=selCountry ACCESSKEY="с" onfocus="window.parent.OnFocus();" onclick="window.parent.OnClick();">
+                <script language="javascript">
+                document.write(window.parent.external.Tapi.get_AllCountryName);
+                </script>
+            </select>
+
+            <!-- AREA CODE -->
+            <br><br>
+            <span class="text-primary"><ID id="drdyref_11">Укажите код <u>г</u>орода (пример: 812 для (812) 555-1212).<id>
+            </span>
+            <input style="ime-mode:Отключено" ACCESSKEY="г" TABINDEX=3 id=edtAreaCode type="text" name="textfield" size="7" maxlength="7" onkeypress="window.parent.KeyPressIsNumeric();" onfocus="window.parent.OnFocus();">
+
+            <!-- PULSE/TONE DIALING -->
+            <br>
+            <span id="PulseToneDialing" style="visibility:hidden">
+                <LABEL TABINDEX=-1 ACCESSKEY="Т" id=Tapi_TOUCHTONE for="radioTouchToneYes">Имеется ли у вас <U>т</U>елефон с титрами?</label>
+                <input TABINDEX=4 type="radio" name=TouchTone checked id=radioTouchToneYes onfocus="window.parent.OnFocus();">
+                <LABEL TABINDEX=-1 id="Tapi_TOUCHTONE_YES" for="radioTouchToneYes">Да</LABEL>
+                <input TABINDEX=4 type="radio" name=TouchTone  id=radioTouchToneNo onfocus="window.parent.OnFocus();">
+                <LABEL TABINDEX=-1 id="Tapi_TOUCHTONE_NO" for="radioTouchToneNo">Нет</LABEL>
+            </span>
+        </span>
+
+        <!-- OUTSIDE LINE -->
+        <br>
+        <span id="spnOutsideLine" style="visibility:hidden">
+            <LABEL TABINDEX=-1 ACCESSKEY="К" id="drdyref_OUTSIDELINE1" for="radioOutSideLineYes">Нужен ли <U>к</U>од для выхода на внешнюю линию?</label>
+            <input TABINDEX=4 type="radio" checked name=OutsideLine id=radioOutsideLineYes onclick="window.parent.drdyref_OutsideLineClicked();">
+            <LABEL TABINDEX=-1 id="drdyref_OUTSIDELINE_YES" for="radioOutsideLineYes">Да</LABEL>
+            <input TABINDEX=4 type="radio" name=OutsideLine id=radioOutsideLineNo onclick="window.parent.drdyref_OutsideLineClicked();">
+            <LABEL TABINDEX=-1 id="drdyref_OUTSIDELINE_NO" for="radioOutSideLineNo">Нет</LABEL>
+        </span>
+        <br>
+        <SPAN TABINDEX=-1 id="spnOutsideLineNumber" style="visibility:hidden; position:relative;">                  
+            <LABEL TABINDEX=-1 ACCESSKEY="У" ID="drdyref_OUTSIDELINE2" for=edtOutsideLineNumber><U>У</U>кажите этот код:</LABEL>
+            <input TABINDEX=5 style="ime-mode:Отключено;" type="text" id=edtOutsideLineNumber maxlength=10 size="4" onkeypress="window.parent.KeyPressIsNumeric();">
+        </SPAN>
+
+        <br><br>
+        <span class="text-primary" ID="drdyisp_9_spanID">
+        <ID id="drdyref_9"></id>
+        </span>
+
+    <table border=0 class="newbuttonposition">
+    <tr>
+        <td width=10>&nbsp;&nbsp;</td>
+        <td><BUTTON ID="btnBack" class="newbuttonsBack" TABINDEX=6  ACCESSKEY="н" style="visibility:visible;"></BUTTON></td>
+        <td nowrap valign=middle class="text-primary"><span id="BackBtnLocalText" style="visibility:visible;"><label for=btnBack><id id="LocalBtnBack_Text"><u>Н</u>азад</id></label></span></td>
+
+        <td width=99%>&nbsp;</td>
+        <td nowrap valign=middle class="text-primary"><span id="SkipBtnLocalText" style="visibility:visible;"><label for=btnSkip><id id="LocalBtnSkip_Text"><u>П</u>ропустить</id></label></span></td>
+        <td><BUTTON ID="btnSkip" class="newbuttonsSkip" TABINDEX=7  ACCESSKEY="П" style="visibility:visible;"></BUTTON></td>
+
+        <td width=10>&nbsp;&nbsp;</td>
+        <td nowrap valign=middle class="text-primary"><span id="NextBtnLocalText" style="visibility:visible;"><label for=btnNext><id id="LocalBtnNext_Text"><u>Д</u>алее</id></label></span></td>
+        <td><BUTTON ID="btnNext" class="newbuttonsNext" TABINDEX=8  ACCESSKEY="Д" style="visibility:visible;"></BUTTON></td>
+    </tr>
+    </table>
+
+    </td>
+</tr>
+</table>
+
+</body>
+</html>

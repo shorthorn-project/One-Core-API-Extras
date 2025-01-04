@@ -1,0 +1,99 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+    <title>out of box experience</title>
+    <LINK REL="stylesheet" TYPE="text/css" HREF="../setup/oobestyl.css">
+</head>
+
+<body style="background-Color: transparent; background-repeat: no-repeat;" TABINDEX=-1
+      onload="window.parent.NoAnsw_LoadMe();window.parent.Agent_Activate('NoAnswer');"
+      onunload="window.parent.Agent_Deactivate();">
+
+<table border=0 cellpadding=0 cellspacing=0 width=100% height=100%><tr><td ID=leftmargincell width=7%></td>
+<td ID=maincell valign=middle class="text-primary">
+<br><br>
+
+    <span class="title"><id id="na1">Notre centre d'appel n'a pas pu être joint</id></span><br>
+    <br>
+    <p><span class="text-primary"><id id="na2">Pour restaurer le numéro de téléphone qui était affiché dans la zone de texte ci-dessus, cliquez sur <b>Restaurer</b> :</id></span>
+
+         <table border=0 cellspacing=0 cellpadding=0>
+           <tr>
+            <td valign="top">
+              <span class="text-primary"><id id="na3">Le numéro composé était le </id></span>
+            </td>
+            <td valign="top">
+             <SPAN ID="spanDisplayNumber" class="text-primary" DIR="LTR"></SPAN>
+            </td>
+           </tr>
+           <tr>
+            <td style="padding-left: 1em;"><input ACCESSKEY="x" type="radio" id="DialRuleYes" name="DialRuleChoice" CHECKED TABINDEX=1 onclick="window.parent.SelectDialRule(); edtPhoneNumber.focus();">
+                <span id="spn_staticDialRuleYes" class="text-primary" onclick="document.all.DialRuleYes.click();">Composer e<u>x</u>actement ce numéro : </span>
+            </td>
+            <td style="padding-left: 2em;">
+                <input DIR=LTR TABINDEX=2 class="dial-number-box" type="text" id="edtPhoneNumber" onfocus="this.select();" name="textfield" size="23" maxlength="25">
+            </td>
+           </tr>
+           <tr>
+            <td style="padding-left: 1em;"><input ACCESSKEY="n" type="radio" id="DialRuleNo" name="DialRuleChoice" TABINDEX=3 onclick="window.parent.SelectDialRule(); edtCallWaiting.focus();">
+                <span id="spn_staticDialRuleNo" class="text-primary" onclick="document.all.DialRuleNo.click();">Composer un <u>n</u>uméro avec ces règles : </span>
+            </td>
+            <td style="padding-left: 2em;">
+                <span id="spn_staticDialRuleNoa" class="text-secondary"><id id="Disable_call_waiting_text">Désactiver l'a<u>t</u>tente d'appel </id></span><input DIR=LTR ACCESSKEY="t" class="dial-number-box" type="text" id="edtCallWaiting" onfocus="this.select();" name="textfield" size="7" maxlength="10" TABINDEX=4>
+            </td>
+           </tr>
+           <tr>
+            <td>&nbsp;</td>
+            <td style="padding-left: 2em;">
+                <span id="spn_staticDialRuleNob" class="text-secondary"><id id="Set_Outside_line_text">Ligne e<u>x</u>térieure </id></span><input DIR=LTR ACCESSKEY="x" class="dial-number-box" type="text" id="edtOutsideLine" onfocus="this.select();" name="textfield" size="4" maxlength="4" TABINDEX=5>
+            </td>
+           </tr>
+           <tr>
+            <td colspan=2>
+                <span style="padding-left: 1.8em;" id="spn_staticDialRuleNoc" class="text-primary"><id id="Set_Dial_Signal_text">Numéroter en utilisant :</id></span>
+                <span style="padding-left: 1em;"><input name="DialSignalChoice" type="radio" tabindex="6" id="DialTone" CHECKED><LABEL TABINDEX=-1 ACCESSKEY="T" id="spn_staticDialTone" for="DialTone" class="text-secondary"><id id="Set_Tone_text"><u>T</u>onalités</id></LABEL></span>
+                <span style="padding-left: 2em;"><input name="DialSignalChoice" type="radio" tabindex="7" id="DialPulse"><LABEL TABINDEX=-1 ACCESSKEY="I" id="spn_staticDialPulse" for="DialPulse" class="text-secondary"><id id="Set_Pulse_text"><u>I</u>mpulsions</id></LABEL></span>
+            </td>
+           </tr>
+
+         </table>
+         <br>
+         <span class="text-primary"><id id="txtNoAnswerHints">Voici quelques astuces avant de tenter à nouveau de vous connecter :</id></span>
+         <ul>
+         <li><span class="text-primary"><id id="na31">Si ce numéro est correct, patientez quelques minutes puis cliquez sur <b>Renuméroter</b>.</id></span></li><br>
+         <li><span class="text-primary"><id id="na32">Si ce numéro n'est pas le bon, entrez un autre numéro dans la zone de texte ci-dessus. Si vous devez composer un numéro pour obtenir une ligne extérieure, placez-le au début du numéro de téléphone.</id></span></li><br>
+         <li><span class="text-primary"><id id="na33"> Si ce numéro de téléphone n'est pas un numéro local, faites-le précéder d'un 1 suivi de l'indicatif régional. Vous aurez besoin d'un service téléphonique longue distance pour passer cet appel.</id></span></li>
+         </ul>
+         <p><span class="text-primary-btndesc"><id id="na4">Cliquez sur <b>Renuméroter</b> pour retenter la connexion. Cliquez sur <b>Ignorer</b> pour passer cette étape.</id></span></p>
+       </span></p>
+    <DIV class="text-error" ID=error_mesg style="display:none; padding-top:20px"></div>
+    <br>
+    <br>
+    </span><br>
+
+    <table border=0 class="newbuttonposition">
+    <tr>
+        <td width=10>&nbsp;&nbsp;</td>
+        <td><BUTTON ID="btnRestore" class="newbuttonsNext" TABINDEX=8 ACCESSKEY="e"  style="visibility:visible;" onclick="window.parent.RestoreDialRule();"></BUTTON></td>
+        <td nowrap valign=middle class="text-primary"><span id="RestoreBtnLocalText" style="visibility:visible;"><label for=btnRestore><ID id=noanswer_restore>R<u>e</u>staurer</ID></label></span></td>
+
+        <td width=99%>&nbsp;</td>
+        <td nowrap valign=middle class="text-primary"><span id="SkipBtnLocalText" style="visibility:visible;"><label for=btnSkip><id id="LocalBtnSkip_Text"><u>I</u>gnorer</id></label></span></td>
+        <td><BUTTON ID="btnSkip" class="newbuttonsSkip" TABINDEX=9  ACCESSKEY="I" style="visibility:visible;"></BUTTON></td>
+
+        <td width=10>&nbsp;&nbsp;</td>
+        <td nowrap valign=middle class="text-primary"><span id="NextBtnLocalText" style="visibility:visible;"><label for=btnNext><id id="LocalBtnRedial_Text"><u>R</u>ecomposer</id></label></span></td>
+        <td><BUTTON ID="btnNext" class="newbuttonsNext" TABINDEX=10  ACCESSKEY="R" style="visibility:visible;"></BUTTON></td>
+    </tr>
+    </table>
+
+    </td>
+</tr>
+</table>
+
+
+</body>
+</html>

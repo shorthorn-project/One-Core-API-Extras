@@ -1,0 +1,103 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1253">
+<title>πρώτη επαφή</title>
+<LINK REL="stylesheet" TYPE="text/css" HREF="oobestyl.css">
+</head>
+
+<body style="background-Color: transparent; background-repeat: no-repeat;" TABINDEX=-1
+      onload="window.parent.IspLoadMe();window.parent.Agent_Activate('ISP');"
+      onunload="window.parent.IspUnLoad();window.parent.Agent_Deactivate();">
+
+<table border=0 cellpadding=0 cellspacing=0 width=100% height=100%>
+<tr>
+    <td ID=leftmargincell width=7%></td>
+    <td ID=maincell valign=middle class="text-primary">
+
+    <br><br>
+    <span class="title">
+    <ID id= "ISP_str1">Ας μπούμε στο Internet</ID>
+    </span>
+
+    <br><br>
+    <span class="text-primary">
+    <ID id="ISP_str2">Είτε δεν είχατε ποτέ πριν ένα λογαριασμό Internet, είτε είχατε έναν για κάποιον άλλον υπολογιστή, ας ρυθμίσουμε αυτόν τον υπολογιστή για πρόσβαση στο Internet.</ID>
+    <br><br>
+    <ID id="ISP_str3">Με ποιον τρόπο συνδέεται αυτός ο υπολογιστής με το Internet;</ID>
+    <!--<ID id= "ISP_str4">Please select an option and click</ID>
+    <span class="emphasis-lesser"><ID id=xx351> Next </ID></span>
+    <ID id=xy123>to continue.</ID>-->
+    </span>
+
+    <br><br>
+    <SPAN TABINDEX=-1 CLASS="contents">
+    <table border=0 cellpadding=4 cellspacing=0>
+
+    <tr>
+        <td valign="top">
+        <input ID="radioGetNewISP" style="display:none" TABINDEX=1 name="ISP" type="radio" onClick="window.parent.OnClick();" onfocus="this.select(); window.parent.OnFocus();">
+        </td>
+
+        <td valign="top">
+        <LABEL id=ISP_New for="radioGetNewISP" style="display:none" TABINDEX=-1 ACCESSKEY="Σ" class="text-primary">
+        <ID id="IDNew"><b><u>Σ</u>υνδεθείτε με το MSN (νέα και υπάρχοντα μέλη)</b><br>Τρεις δωρεάν μήνες σύνδεσης μέσω τηλεφώνου στο Internet μέσω MSN για νέα μέλη στις Ηνωμένες Πολιτείες Αμερικής.</ID>
+        </LABEL>
+        </td>
+    </tr>
+    <tr>
+        <td valign="top">
+        <input TABINDEX=2 ID="radioMigrateISP" name="ISP" type="radio" onClick="window.parent.OnClick();" onfocus="this.select(); window.parent.OnFocus();">
+        </td>
+
+        <td valign="top">
+        <LABEL TABINDEX=-1 ACCESSKEY="Υ" id=ISP_Migrate for=radioMigrateISP class="text-primary">
+        <ID id="ISP_str7"><b>Χρήση του <u>υ</u>πάρχοντος λογαριασμού Internet με άλλη υπηρεσία παροχής.</b><br>Ενεργοποιήστε αυτήν την επιλογή αν έχετε ήδη ένα λογαριασμό Internet, ακόμα και αν δεν συνδεθήκατε ποτέ στο Internet από αυτόν τον υπολογιστή.</ID>
+        </LABEL>
+        </td>
+    </tr>
+    <tr>
+        <td valign="top">
+        <input TABINDEX=3 ID="radioSkip" name="ISP" type="radio" onClick="window.parent.OnClick();" onfocus="this.select(); window.parent.OnFocus();">
+        </td>
+
+        <td valign="top">
+        <LABEL TABINDEX=-1 ACCESSKEY="Δ" id=skipISP for=radioSkip class="text-primary">
+        <ID id="ISP_str73"><b><u>Δ</u>ημιουργία νέου λογαριασμού Internet μετά την ολοκλήρωση της ρύθμισης των Windows</b><br>Ενεργοποιήστε αυτή την επιλογή αν θέλετε να εγγραφείτε για έναν νέο λογαριασμό Internet. Μετά τη ρύθμιση των Windows, κάντε κλικ στην επιλογή <B>Internet</B> από το μενού <B>Έναρξη</B> και ακολουθήστε τα βήματα, για να δημιουργήσετε έναν νέο λογαριασμό.</ID>
+        </LABEL>                                                                                                                                                                                              
+        </td>
+    </tr>
+    </table>
+    </SPAN>
+
+    <script>
+    document.write(window.parent.g_ClickNextStr);
+    </script>
+
+    <table border=0 class="newbuttonposition">
+    <tr>
+        <td width=10>&nbsp;&nbsp;</td>
+        <td><BUTTON ID="btnBack" class="newbuttonsBack" TABINDEX=6  ACCESSKEY="Ω" style="visibility:visible;"></BUTTON></td>
+        <td nowrap valign=middle class="text-primary"><span id="BackBtnLocalText" style="visibility:visible;"><label for=btnBack><id id="LocalBtnBack_Text">Πίσ<u>ω</u></id></label></span></td>
+
+        <td width=99%>&nbsp;</td>
+        <td nowrap valign=middle class="text-primary"><span id="SkipBtnLocalText" style="visibility:hidden;"><label for=btnSkip><id id="LocalBtnSkip_Text"><U>Π</U>αράλειψη</id></label></span></td>
+        <td><BUTTON ID="btnSkip" class="newbuttonsSkip" TABINDEX=-1 ACCESSKEY="Π" style="visibility:hidden;"></BUTTON></td>
+
+        <td width=10>&nbsp;&nbsp;</td>
+        <td nowrap valign=middle class="text-primary"><span id="NextBtnLocalText" style="visibility:visible;"><label for=btnNext><id id="LocalBtnNext_Text"><u>Ε</u>πόμενο</id></label></span></td>
+        <td><BUTTON ID="btnNext" class="newbuttonsNext" TABINDEX=7  ACCESSKEY="Ε" style="visibility:visible;"></BUTTON></td>
+    </tr>
+    </table>
+
+    </td>
+</tr>
+</table>
+
+</body>
+</html>
+
+
+
+

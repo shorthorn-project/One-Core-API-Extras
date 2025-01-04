@@ -109,10 +109,13 @@
 	d3d10core.dll
 	d3d10level9.dll
 	d3d11.dll
+	d3d12.dll
+	d3d12core.dll
 	dwrite.dll
 	dxdiag.exe
 	dxdiagn.dll	
 	dxgi.dll
+	dxgiext.dll
 	D3DCompiler_47.dll
 	fntcache.dll
 	vcruntime140.dll	
@@ -132,10 +135,13 @@
 	d3d10core.dll = 1
 	d3d10level9.dll = 1
 	d3d11.dll = 1
+	d3d12.dll = 1
+	d3d12core.dll = 1
 	dwrite.dll = 1
 	dxdiag.exe = 1
 	dxdiagn.dll = 1		
 	dxgi.dll = 1
+	dxgiext.dll = 1
 	D3DCompiler_47.dll = 1
 	fntcache.dll = 1
 	vcruntime140.dll = 1

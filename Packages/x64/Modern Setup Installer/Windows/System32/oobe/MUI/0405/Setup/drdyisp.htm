@@ -1,0 +1,96 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1250">
+    <title>Počáteční nastavení počítače</title>
+    <LINK REL="stylesheet" TYPE="text/css" HREF="oobestyl.css">
+
+</head>
+
+<body style="background-Color: transparent; background-repeat: no-repeat;" TABINDEX=-1
+      onload="window.parent.DialRdy_LoadMe();window.parent.Agent_Activate('ISPDial');"
+      onunload="maincell.style.visibility='hidden'; window.parent.ProcessQueuedEvents(); window.parent.Agent_Deactivate();">
+
+    <table border=0 cellpadding=0 cellspacing=0 width=100% height=100%><tr>
+        <td ID=leftmargincell width=7%>
+        </td>
+
+    <td ID=maincell valign=middle class="text-primary">
+        <p><br>
+        <br>
+        <span class="title"><id id="drdyisp1">Chcete získat účet v Internetu?</id></span> <br>
+        <br>
+        <span class="text-primary"><id id="drdyisp2">Systém nyní vytočí telefonní číslo a zapíše vás k používání účtu sítě Internet.</ID></span>
+        <br><br><br></P>
+
+        <span id="DialRdy_ctrl1" style="visibility:hidden">
+        <p><span class="text-primary"><ID id="drdyisp_4"> Chcete-li pokračovat, zadejte informace níže a klepněte na tlačítko <b>Další</b>. Pokud chcete pokračovat bez vytočení telefonního čísla, klepněte na tlačítko <b>Přeskočit</b>. </ID></span></p>
+        <p><span class="text-primary"><ID id="drdyisp_8">Vyberte zemi, ve které se nyní nacházíte. Klepnutím na šipku dolů nebo stisknutím kláves Alt+Šipka dolů zobrazíte seznam zemí.</id></span></p>
+        <p>
+        <select TABINDEX=1 id=selCountry onfocus="window.parent.OnFocus();" onclick="window.parent.OnClick();">
+            <script language="javascript">
+            document.write(window.parent.external.Tapi.get_AllCountryName);
+            </script>
+        </select>
+        </p>
+        <p><span class="text-primary"><ID id="drdyisp_11">Zadejte směrové číslo oblasti (např. 05 v čísle (05) 45 55 12 12).<id></span></p>
+        <p><input style="ime-mode:disabled" TABINDEX=2 id=edtAreaCode type="text" name="textfield" size="7" maxlength="7" onkeypress="window.parent.KeyPressIsNumeric();" onfocus="window.parent.OnFocus();"></p>
+
+        <span id="PulseToneDialing" style="visibility:hidden">
+        <LABEL TABINDEX=-1 ACCESSKEY="T" id=Tapi_TOUCHTONE for="radioTouchToneYes">Používáte <U>t</U>ónovou provolbu?</label>
+        <input TABINDEX=3 type="radio" name=TouchTone checked id=radioTouchToneYes onfocus="window.parent.OnFocus();">
+        <LABEL TABINDEX=-1 id="Tapi_TOUCHTONE_YES" for="radioTouchToneYes">Ano</LABEL>
+        <input TABINDEX=3 type="radio" name=TouchTone  id=radioTouchToneNo onfocus="window.parent.OnFocus();">
+        <LABEL TABINDEX=-1 id="Tapi_TOUCHTONE_NO" for="radioTouchToneNo">Ne</LABEL>
+        </span>
+
+        <p>&nbsp;</p>
+        </span>
+
+        <!-- OUTSIDE LINE -->
+
+          <span id="spnOutsideLine" style="visibility:hidden">
+                            <LABEL TABINDEX=-1 ACCESSKEY="P" id="DialRdy_OUTSIDELINE1" for="radioOutSideLineYes">Vytáčíte číslo pro <U>p</U>řístup k vnější lince?</label>
+                            <input TABINDEX=3 type="radio" checked name=OutsideLine
+          id=radioOutsideLineYes onclick="window.parent.DialRdy_OutsideLineClicked();">
+                            <LABEL TABINDEX=-1 id="DialRdy_OUTSIDELINE_YES" for="radioOutsideLineYes">Ano</LABEL>
+                            <input TABINDEX=3 type="radio" name=OutsideLine id=radioOutsideLineNo onclick="window.parent.DialRdy_OutsideLineClicked();">
+                <LABEL TABINDEX=-1 id="DialRdy_OUTSIDELINE_NO" for="radioOutSideLineNo">Ne</LABEL>
+          </span>
+                            <br>
+                            <SPAN TABINDEX=-1 id="spnOutsideLineNumber" style="visibility:hidden; position:relative;">                  
+                                <LABEL TABINDEX=-1 ACCESSKEY="J" ID="DialRdy_OUTSIDELINE2"
+                for=edtOutsideLineNumber>Čí <U>j</U>e toto číslo?</LABEL>
+                                <input TABINDEX=4 style="ime-mode:disabled;" type="text"
+            id=edtOutsideLineNumber maxlength=10 size="4" onkeypress="window.parent.KeyPressIsNumeric();">
+                            </SPAN>
+
+    <br><br>
+    </span>
+
+    <table border=0 class="newbuttonposition">
+    <tr>
+        <td width=10>&nbsp;&nbsp;</td>
+        <td><BUTTON ID="btnBack" class="newbuttonsBack" TABINDEX=4  ACCESSKEY="Z" style="visibility:visible;"></BUTTON></td>
+        <td nowrap valign=middle class="text-primary"><span id="BackBtnLocalText" style="visibility:visible;"><label for=btnBack><id id="LocalBtnBack_Text"><u>Z</u>pět</id></label></span></td>
+
+        <td width=99%>&nbsp;</td>
+        <td nowrap valign=middle class="text-primary"><span id="SkipBtnLocalText" style="visibility:visible;"><label for=btnSkip><id id="LocalBtnSkip_Text"><U>P</U>řeskočit</id></label></span></td>
+        <td><BUTTON ID="btnSkip" class="newbuttonsSkip" TABINDEX=5  ACCESSKEY="P" style="visibility:visible;"></BUTTON></td>
+
+        <td width=10>&nbsp;&nbsp;</td>
+        <td nowrap valign=middle class="text-primary"><span id="NextBtnLocalText" style="visibility:visible;"><label for=btnNext><id id="LocalBtnNext_Text"><U>D</U>alší</id></label></span></td>
+        <td><BUTTON ID="btnNext" class="newbuttonsNext" TABINDEX=6  ACCESSKEY="D" style="visibility:visible;"></BUTTON></td>
+    </tr>
+    </table>
+
+    </td>
+</tr>
+</table>
+
+
+</body>
+</html>
+

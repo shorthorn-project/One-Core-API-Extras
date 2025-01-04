@@ -1,0 +1,96 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+    <title>Configurazione guidata</title>
+    <LINK REL="stylesheet" TYPE="text/css" HREF="oobestyl.css">
+
+</head>
+
+<body style="background-Color: transparent; background-repeat: no-repeat;" TABINDEX=-1
+      onload="window.parent.DialRdy_LoadMe();window.parent.Agent_Activate('ISPDial');"
+      onunload="maincell.style.visibility='hidden'; window.parent.ProcessQueuedEvents(); window.parent.Agent_Deactivate();">
+
+    <table border=0 cellpadding=0 cellspacing=0 width=100% height=100%><tr>
+        <td ID=leftmargincell width=7%>
+        </td>
+
+    <td ID=maincell valign=middle class="text-primary">
+        <p><br>
+        <br>
+        <span class="title"><id id="drdyisp1">Preparazione per la connessione a Internet</id></span> <br>
+        <br>
+        <span class="text-primary"><id id="drdyisp2">Verrà ora effettuata una chiamata che consentirà di sottoscrivere un abbonamento per un account Internet.</ID></span>
+        <br><br><br></P>
+
+        <span id="DialRdy_ctrl1" style="visibility:hidden">
+        <p><span class="text-primary"><ID id="drdyisp_4"> Per continuare, inserire le informazioni richieste e fare clic su <b>Avanti</b>. Per continuare senza comporre il numero, fare clic su <b>Ignora</b>. </ID></span></p>
+        <p><span class="text-primary"><ID id="drdyisp_8">Selezionare il paese in cui ci si trova. Fare clic sul pulsante con la freccia rivolta verso il basso o premere la combinazione di tasti ALT + &quot;freccia GIÙ&quot; per visualizzare l'elenco dei paesi.</id></span></p>
+        <p>
+        <select TABINDEX=1 id=selCountry onfocus="window.parent.OnFocus();" onclick="window.parent.OnClick();">
+            <script language="javascript">
+            document.write(window.parent.external.Tapi.get_AllCountryName);
+            </script>
+        </select>
+        </p>
+        <p><span class="text-primary"><ID id="drdyisp_11">Immettere l'indicativo di località (ad esempio 06 in 06-5555555).<id></span></p>
+        <p><input style="ime-mode:disabled" TABINDEX=2 id=edtAreaCode type="text" name="textfield" size="7" maxlength="7" onkeypress="window.parent.KeyPressIsNumeric();" onfocus="window.parent.OnFocus();"></p>
+
+        <span id="PulseToneDialing" style="visibility:hidden">
+        <LABEL TABINDEX=-1 ACCESSKEY="S" id=Tapi_TOUCHTONE for="radioTouchToneYes">Si utilizza il <U>s</U>ervizio telefonico a toni?</label>
+        <input TABINDEX=3 type="radio" name=TouchTone checked id=radioTouchToneYes onfocus="window.parent.OnFocus();">
+        <LABEL TABINDEX=-1 id="Tapi_TOUCHTONE_YES" for="radioTouchToneYes">Sì</LABEL>
+        <input TABINDEX=3 type="radio" name=TouchTone  id=radioTouchToneNo onfocus="window.parent.OnFocus();">
+        <LABEL TABINDEX=-1 id="Tapi_TOUCHTONE_NO" for="radioTouchToneNo">No</LABEL>
+        </span>
+
+        <p>&nbsp;</p>
+        </span>
+
+        <!-- OUTSIDE LINE -->
+
+          <span id="spnOutsideLine" style="visibility:hidden">
+                            <LABEL TABINDEX=-1 ACCESSKEY="E" id="DialRdy_OUTSIDELINE1" for="radioOutSideLineYes">Si compone un numero per accedere a una linea <U>e</U>sterna?</label>
+                            <input TABINDEX=3 type="radio" checked name=OutsideLine
+          id=radioOutsideLineYes onclick="window.parent.DialRdy_OutsideLineClicked();">
+                            <LABEL TABINDEX=-1 id="DialRdy_OUTSIDELINE_YES" for="radioOutsideLineYes">Sì</LABEL>
+                            <input TABINDEX=3 type="radio" name=OutsideLine id=radioOutsideLineNo onclick="window.parent.DialRdy_OutsideLineClicked();">
+                <LABEL TABINDEX=-1 id="DialRdy_OUTSIDELINE_NO" for="radioOutSideLineNo">No</LABEL>
+          </span>
+                            <br>
+                            <SPAN TABINDEX=-1 id="spnOutsideLineNumber" style="visibility:hidden; position:relative;">                  
+                                <LABEL TABINDEX=-1 ACCESSKEY="Q" ID="DialRdy_OUTSIDELINE2"
+                for=edtOutsideLineNumber><U>Q</U>uale?</LABEL>
+                                <input TABINDEX=4 style="ime-mode:disabled;" type="text"
+            id=edtOutsideLineNumber maxlength=10 size="4" onkeypress="window.parent.KeyPressIsNumeric();">
+                            </SPAN>
+
+    <br><br>
+    </span>
+
+    <table border=0 class="newbuttonposition">
+    <tr>
+        <td width=10>&nbsp;&nbsp;</td>
+        <td><BUTTON ID="btnBack" class="newbuttonsBack" TABINDEX=4  ACCESSKEY="I" style="visibility:visible;"></BUTTON></td>
+        <td nowrap valign=middle class="text-primary"><span id="BackBtnLocalText" style="visibility:visible;"><label for=btnBack><id id="LocalBtnBack_Text"><u>I</u>ndietro</id></label></span></td>
+
+        <td width=99%>&nbsp;</td>
+        <td nowrap valign=middle class="text-primary"><span id="SkipBtnLocalText" style="visibility:visible;"><label for=btnSkip><id id="LocalBtnSkip_Text">Ig<u>n</u>ora</id></label></span></td>
+        <td><BUTTON ID="btnSkip" class="newbuttonsSkip" TABINDEX=5  ACCESSKEY="N" style="visibility:visible;"></BUTTON></td>
+
+        <td width=10>&nbsp;&nbsp;</td>
+        <td nowrap valign=middle class="text-primary"><span id="NextBtnLocalText" style="visibility:visible;"><label for=btnNext><id id="LocalBtnNext_Text"><u>A</u>vanti</id></label></span></td>
+        <td><BUTTON ID="btnNext" class="newbuttonsNext" TABINDEX=6  ACCESSKEY="A" style="visibility:visible;"></BUTTON></td>
+    </tr>
+    </table>
+
+    </td>
+</tr>
+</table>
+
+
+</body>
+</html>
+

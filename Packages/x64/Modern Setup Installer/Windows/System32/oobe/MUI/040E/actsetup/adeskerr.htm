@@ -1,0 +1,254 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1250">
+    <title>kezdőélmény</title>
+    <LINK REL="stylesheet" TYPE="text/css" HREF="aregstyl.css" id=deskstyle1>
+    <LINK REL="stylesheet" TYPE="text/css" HREF="aregsty2.css" id=deskstyle2 disabled>
+    <META HTTP-EQUIV="MSThemeCompatible" CONTENT="Yes">
+</head>
+
+<body style="background-Color: transparent; background-repeat: no-repeat;" topMargin=0 rightmargin=0 leftmargin=0 tabindex=-1
+      onload="window.parent.act_desktop_error_LoadMe();" >
+
+<table valign=middle border=0 cellpadding=0 cellspacing=0 width="100%" height="100%">
+<tr>
+    <td ID=leftmargincell width=5% height=99%></td>
+    <td ID=maincell valign=top class="text-primary">
+
+    <span ID=Title_Text class="title" style="display:none;">
+        <ID id=acterror_s1>A Windows aktiválása</ID>
+    </span>
+
+    <br>
+    <!-- Prepare the different error scenes, all are hidden -->
+
+        <span ID=acterror_description_SUCCESS1 class="text-primary" style="display:none;">
+            <ID id="txtActivDeskSUCCESS1">Sikeresen aktiválta és regisztrálta ezt a Windows-példányt.</ID>
+        </span>
+
+        <span ID=acterror_description_SUCCESS2 class="text-primary" style="display:none;">
+            <ID id="txtActivDeskSUCCESS2">Sikeresen aktiválta ezt a Windows-példányt.</ID>
+        </span>
+
+
+        <!-- Pre-expiration -->
+        <span ID=acterror_description1Pre class="text-primary" style="display:none;">
+            <ID id="txtActivDeskErr">Jelenleg nem lehet elvégezni az internetes aktiválást.</ID>
+            <br><br>
+            <id id="txtActivDeskerr0">Még <span id=NumberDaysLeft1 class="text-primary"></span>&nbsp;napig használhatja a Windows XP rendszert anélkül, hogy aktiválná.</id>
+            <br><br>
+            <ID id="txtActivDeskErr1">Ezen időtartam alatt rendszeresen emlékeztetni fogjuk arra, hogy aktiválja a rendszert A Windows aktiválása varázslóval. (A Start menüben találhatja meg.)<br><br>Ha továbbra sem sikerül elérnie aktiválóközpontunkat, telefonon keresztül is aktiválhatja a rendszert az ügyfélszolgálat egyik munkatársának a segítségével.</ID>
+            <br><br>
+            <ID id="txtActivDeskErr2">A lakhelyéhez közeli telefonszámot a Telefon gombra való rákattintás után tudhatja meg.</ID>
+        </span>
+        <!-- Post-expiration -->
+        <span ID=acterror_description1Post class="text-primary" style="display:none;">
+            <ID id="txtActivDeskErrPost">A Windows nem tudta elvégezni az internetes aktiválást.</ID>
+            <br><br>
+            <id id="txtActivDeskerr0Post">Az aktiválási időszak lejárt. Csak akkor használhatja tovább a Window rendszert, ha most aktiválja a számítógépet.</id>
+            <br><br>
+            <ID id="txtActivDeskErr1Post">Telefonon keresztül végezheti el az aktiválást az ügyfélszolgálat egyik munkatársának a segítségével. A lakhelyéhez közeli telefonszámot a Telefon gombra való rákattintás után tudhatja meg.</ID>
+        </span>
+
+
+        <!-- Retail mode -->
+        <span ID=acterror_description2_RETAIL class="text-primary" style="display:none;">
+            <ID id="txtActivDeskErr3retail">Ha az alábbi termékkulcs el van írva, javítsa ki, majd kattintson az <B>Újra</B> gombra.</ID>
+            <br><br>
+            <ID id="txtActivDeskErr4retail">A 25 jegyű termékazonosító kulcsnak a Windows XP CD-tokjának hátuljára ragasztott, a következőhöz hasonló matricán kell lennie:</ID>
+            <br><br>
+            <center><img src="../images/prodkey.gif"></center>
+        </span>
+        <!-- OEM mode -->
+        <span ID=acterror_description2_OEM class="text-primary" style="display:none;">
+            <ID id="txtActivDeskErr3OEM">Ha az alábbi termékkulcs el van írva, javítsa ki, majd kattintson az <B>Újra</B> gombra.</ID>
+            <br><br>
+            <ID id="txtActivDeskErr4OEM">A 25 jegyű termékazonosító kulcs (Product Key) a számítógépre vagy a Windows kézikönyvre felragasztott eredetiséget tanúsító igazolás (Certificate of Authenticity) matricán található. A következő példára kell hasonlítania.</ID>
+            <br><br>
+            <center><img src="../images/oemcoa.jpg"></center>
+        </span>
+
+
+        <!-- Retail mode -->
+        <span ID=acterror_description3Retail class="text-primary" style="display:none;">
+            <ID id="txtActivDeskErr5a_retail">A nyilvántartásunk szerint már elérték az ezzel a termékazonosító kulccsal engedélyezett Windows-aktiválások számát. Adjon meg másik termékazonosító kulcsot, majd kattintson az <B>Újra</B> gombra.</ID>
+            <ID id="txtActivDeskErr5b_retail">A 25 jegyű termékazonosító kulcsnak a Windows XP CD-tokjának hátuljára ragasztott, a következőhöz hasonló matricán kell lennie:</ID>
+            <br><br>
+            <center><img src="../images/prodkey.gif"></center>
+        </span>
+        <!-- OEM mode -->
+        <span ID=acterror_description3OEM class="text-primary" style="display:none;">
+            <ID id="txtActivDeskErr5a_OEM">A nyilvántartásunk szerint már elérték az ezzel a termékazonosító kulccsal engedélyezett Windows-aktiválások számát. Adjon meg másik termékazonosító kulcsot, majd kattintson az <B>Újra</B> gombra.</ID>
+            <ID id="txtActivDeskErr5b_OEM">A 25 jegyű termékazonosító kulcs (Product Key) a számítógépre vagy a Windows kézikönyvre felragasztott eredetiséget tanúsító igazolás (Certificate of Authenticity) matricán található. A következő példára kell hasonlítania.</ID>
+            <br><br>
+            <center><img src="../images/oemcoa.jpg"></center>
+        </span>
+
+
+        <!-- Pre-expiration -->
+        <span ID=acterror_description4Pre class="text-primary" style="display:none;">
+            <ID id="txtActivDeskErr6">Jelenleg nem lehet elvégezni az internetes aktiválást.</ID>
+            <br><br>
+            <ID id="txtActivDeskErr7">Még <span id=NumberDaysLeft2 class="text-primary"></span>&nbsp;napig használhatja a Windows XP rendszert anélkül, hogy aktiválná.</ID>
+            <br><br>
+            <id id="txtActivdeskErr71">Ezen időtartam alatt rendszeresen emlékeztetni fogjuk arra, hogy aktiválja a rendszert A Windows aktiválása varázslóval. (A Start menüben találhatja meg.)<br><br>Ha továbbra sem sikerül elérnie aktiválóközpontunkat, telefonon keresztül is aktiválhatja a rendszert az ügyfélszolgálat egyik munkatársának segítségével.</id>
+            <br><br>
+            <id id="txtActivDeskErr72">A lakhelyéhez közeli telefonszámot a <b>Telefon</b> gombra való rákattintás után tudhatja meg.</id>
+        </span>
+        <!-- Post-expiration -->
+        <span ID=acterror_description4Post class="text-primary" style="display:none;">
+            <ID id="txtActivDeskErr7Post">A Windows nem tudta elvégezni az internetes aktiválást.</ID>
+            <br><br>
+            <id id="txtActivDeskerr71Post">Az aktiválási időszak lejárt. Csak akkor használhatja tovább a Window rendszert, ha most aktiválja a számítógépet.</id>
+            <br><br>
+            <ID id="txtActivDeskErr72Post">Telefonon keresztül végezheti el az aktiválást az ügyfélszolgálati egyik munkatársának a segítségével. A lakhelyéhez közeli telefonszámot a Telefon gombra való rákattintás után tudhatja meg.</ID>
+        </span>
+
+
+        <!-- Retail mode -->
+        <span ID=acterror_description5Retail class="text-primary" style="display:none;">
+            <ID id="txtActivDeskErr8a_retail">Ez a termékazonosító kulcs nincs engedélyezve. Az aktiválás nem végezhető el, amíg egy érvényes termékazonosító kulcsot nem ad meg.</ID>
+            <ID id="txtActivDeskErr8b_retail">A 25 jegyű termékazonosító kulcsnak a Windows XP CD-tokjának hátuljára ragasztott, az alábbi példához hasonló matricán kell lennie: Javítsa ki az alábbi termékazonosító kulcsot, vagy írjon be egy érvényes termékazonosító kulcsot, majd kattintson az <B>Újra</B> gombra.</ID>
+            <br><br>
+            <center><img src="../images/prodkey.gif"></center>
+        </span>
+        <!-- OEM mode -->
+        <span ID=acterror_description5OEM class="text-primary" style="display:none;">
+            <ID id="txtActivDeskErr8a_OEM">Ez a termékazonosító kulcs nincs engedélyezve. Az aktiválás nem végezhető el, amíg egy érvényes termékazonosító kulcsot nem ad meg.</ID>
+            <ID id="txtActivDeskErr8b_OEM">A 25 jegyű termékazonosító kulcs (Product Key) a számítógépre vagy a Windows kézikönyvre felragasztott eredetiséget tanúsító igazolás (Certificate of Authenticity) matricán található. Az alábbi példára kell hasonlítania. Javítsa ki az alábbi termékazonosító kulcsot, vagy írjon be egy érvényes termékazonosító kulcsot, majd kattintson az <B>Újra</B> gombra.</ID>
+            <br><br>
+            <center><img src="../images/oemcoa.jpg"></center>
+        </span>
+
+
+        <span ID=acterror_description6 class="text-primary" style="display:none;">
+            <ID id="txtActivDeskErr10">A meglévő Windows-aktiválása sérült, vagy már nem érvényes.</ID>
+            <br><br>
+            <ID id="txtActivDeskErr11">Ám ne aggódjon, még <span id=NumberDaysLeft3 class="text-primary"></span>&nbsp;napig használhatja a Windows rendszert anélkül, hogy aktiválná.</ID>
+            <br><br>
+            <id id="txtActivDeskErr111">Ezen időtartam alatt pár naponta emlékeztetni fogjuk arra, hogy aktiválja a rendszert az aktiválási varázslóval. (A Start menüben találhatja meg.) Ha még akkor sem sikerül elérnie aktiválási központunkat, telefonon keresztül aktiválhatja a rendszert.</id>
+            <br><br>
+            <id id="txtactivDeskErr112">A lakhelyéhez közeli telefonszámot a Telefon gombra való rákattintás után tudhatja meg.</id>
+        </span>
+
+
+        <span ID=acterror_description7 class="text-primary" style="display:none;">
+            <ID id="txtActivDeskErr12">Nem sikerült kapcsolatot létesíteni az aktiválókiszolgálóval. Ellenőrizze a hálózati beállításokat, győződjön meg arról, hogy képes kapcsolódni az internethez, majd próbálja meg újra.</ID>
+        </span>
+
+
+        <!-- Retail mode -->
+        <span ID=acterror_description_dedicated_pid_RETAIL class="text-primary" style="display:none;">
+            <ID id="txtActivDeskErrDedicatedPid1">Ha módosítania kell a termékazonosító kulcsot, írja be az alább látható mezőkbe, majd kattintson a <B>Frissítés</B> gombra. Ha nem, kattintson a <B>Telefon</B> gombra. Azzal visszajut az előző aktiválási oldalra.</ID>
+            <br><br>
+            <ID id="txtActivDeskErrDedicatedPid2">A 25 jegyű termékazonosító kulcsnak a Windows XP CD-tokjának hátuljára ragasztott, a következőhöz hasonló matricán kell lennie:</ID>
+            <br><br>
+            <center><img src="../images/prodkey.gif"></center>
+        </span>
+        <!-- OEM mode -->
+        <span ID=acterror_description_dedicated_pid_OEM class="text-primary" style="display:none;">
+            <ID id="txtActivDeskErrDedicatedPid1x">Ha módosítania kell a termékazonosító kulcsot, írja be az alább látható mezőkbe, majd kattintson a <B>Frissítés</B> gombra. Ha nem, kattintson a <B>Telefon</B> gombra. Azzal visszajut az előző aktiválási oldalra.</ID>
+            <br><br>
+            <ID id="txtActivDeskErrDedicatedPid2x">A 25 jegyű termékazonosító kulcs (Product Key) a számítógépre vagy a Windows kézikönyvre felragasztott eredetiséget tanúsító igazolás (Certificate of Authenticity) matricán található. A következő példára kell hasonlítania.</ID>
+            <br><br>
+            <center><img src="../images/oemcoa.jpg"></center>
+        </span>
+
+
+        <!-- PID ENTRY -->
+        <span ID=acterror_pid_entry class="text-primary" style="display:none;">
+            <br>
+            <table ID=PidBox border=0 DIR=ltr style="font-family:Courier New; FONT-SIZE: 16pt;">
+            <tr>
+                <td nowrap width=10>&nbsp;</td>
+                <td nowrap class="text-primary" >
+                <span ID=acterror_description_verify_key class="text-primary"><ID id="txtverifykey">Ellenőrizze a kulcsot:</id></span>&nbsp;
+                </td>
+                <td>
+                <input style="ime-mode:disabled" id=pid1 type="text" size=6 maxlength=5 class=pid-box TABINDEX=1 name="edtProductKey"
+                onkeydown="window.parent.ProductIDKeyDown();" onpropertychange="window.parent.ProductIDPropertyChange();"
+                onkeypress="window.parent.ProductIDKeyPress();" onkeyup="window.parent.ProductIDKeyUp();" onfocus="window.parent.OnFocus();">
+                </td><td class="text-primary">-</td><td>
+                <input style="ime-mode:disabled" id=pid2 type="text" size=6 maxlength=5 class=pid-box TABINDEX=2 name="edtProductKey"
+                onkeydown="window.parent.ProductIDKeyDown();" onpropertychange="window.parent.ProductIDPropertyChange();"
+                onkeypress="window.parent.ProductIDKeyPress();" onkeyup="window.parent.ProductIDKeyUp();" onfocus="window.parent.OnFocus();">
+                </td><td class="text-primary">-</td><td>
+                <input style="ime-mode:disabled" id=pid3 type="text" size=6 maxlength=5 class=pid-box TABINDEX=3  name="edtProductKey"
+                onkeydown="window.parent.ProductIDKeyDown();" onpropertychange="window.parent.ProductIDPropertyChange();"
+                onkeypress="window.parent.ProductIDKeyPress();" onkeyup="window.parent.ProductIDKeyUp();" onfocus="window.parent.OnFocus();">
+                </td><td class="text-primary">-</td><td>
+                <input style="ime-mode:disabled" id=pid4 type="text" size=6 maxlength=5 class=pid-box TABINDEX=4  name="edtProductKey"
+                onkeydown="window.parent.ProductIDKeyDown();" onpropertychange="window.parent.ProductIDPropertyChange();"
+                onkeypress="window.parent.ProductIDKeyPress();" onkeyup="window.parent.ProductIDKeyUp();" onfocus="window.parent.OnFocus();">
+                </td><td class="text-primary">-</td><td>
+                <input style="ime-mode:disabled" id=pid5 type="text" size=6 maxlength=5 class=pid-box TABINDEX=5  name="edtProductKey"
+                onkeydown="window.parent.ProductIDKeyDown();" onpropertychange="window.parent.ProductIDPropertyChange();"
+                onkeypress="window.parent.ProductIDKeyPress();" onkeyup="window.parent.ProductIDKeyUp();" onfocus="window.parent.OnFocus();">
+                </td>
+            </tr>
+            </table>
+        </span>
+
+
+        <!-- AFTER PID ENTRY TEXT -->
+        <span ID=acterror_after_pid_entry_OEMText class="text-primary" style="display:none;">
+            <br>
+            <ID id="txtActivDeskErrOEMText">Ha nem találja az eredetiséget igazoló tanúsítvány matricáját, lépjen kapcsolatba a számítógépe gyártójával.</ID><br>
+        </span>
+
+        <span ID=acterror_after_pid_entry_text1 class="text-primary" style="display:none;">
+            <br>
+            <ID id="txtActivDeskErr14">Ha úgy véli, hogy helyes termékazonosító kulcsot írt be, és ezt az üzenetet tévesen kapta, lépjen kapcsolatba az ügyfélszolgálatunkkal. A lakhelyéhez közeli telefonszámot a <B>Telefon</B> gombra való rákattintás után tudhatja meg.</ID>
+        </span>
+
+
+        <span ID=acterror_after_pid_entry_text2 class="text-primary" style="display:none;">
+            <br>
+            <ID id="txtActivDeskErr15">Ha úgy véli, hogy indokolatlanul kapta ezt az üzenetet, vegye fel a kapcsolatot az ügyfélszolgálatunkkal. A lakhelyéhez közeli telefonszámot a <B>Telefon</B> gombra való rákattintás után tudhatja meg.</ID>
+        </span>
+
+        <span ID=acterror_after_pid_entry_text3 class="text-primary" style="display:none;">
+            <br>
+            <ID id="txtActivDeskErr16">Minden Windows-példány egyszerre csak egy számítógépen lehet telepítve. Ha úgy véli, hogy indokolatlanul kapta ezt az üzenetet, a <B>Telefon</B> gombra való rákattintást követően vegye fel a kapcsolatot ügyfélszolgálatunkkal.</ID>
+        </span>
+
+        <span ID=acterror_after_pid_entry_text4 class="text-primary" style="display:none;">
+            <br>
+            <ID id="txtActivDeskErr17">Ha nem kell megadnia a termékazonosító kulcsot, kattintson a <B>Telefon</B> gombra. Azzal visszatér az előző aktiválási képernyőre.</ID>
+        </span>
+
+    <!-- End -->
+    </td>
+
+    <td ID=rightmargincell width=7%>
+    </td>
+</tr>
+<tr>
+    <td colspan=3>
+    <br>
+    <table border=0 class="buttonpositionnew">
+    <tr>
+        <td width=99%>
+            &nbsp;&nbsp;
+            <span ID=acterror_specific_error_code class="text-primary" style="display:none; z-index:10;">
+            </span>
+        </td>
+        <td>
+        <BUTTON ID="btnTelephone" class="buttons" TABINDEX=6 ACCESSKEY="l"><label for=btnTelephone><id id="LocalBtnTel_Text">Te<u>l</u>elefonos aktiválás</id></label></BUTTON>
+        </td>
+        <td>
+        <BUTTON ID="btnQuit" class="buttons" TABINDEX=7 ACCESSKEY="E"><label for=btnQuit><id id="LocalBtnQuit_Text"><u>E</u>mlékeztessen később</id></label></BUTTON>
+        </td>
+        <td>
+        <BUTTON ID="btnNext" class="buttons" TABINDEX=8 ACCESSKEY="j"><label for=btnNext><id id="LocalBtnRetry_Text">Ú<u>j</u>ra</id></label></BUTTON>
+        </td>
+    </tr>
+    </table>
+    </td>
+</tr>
+</table>
+
+</body>
+</html>

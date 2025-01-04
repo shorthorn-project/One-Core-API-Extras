@@ -1,0 +1,109 @@
+
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1250">
+    <title>Takoj pripravljeno za uporabo</title>
+    <link rel="stylesheet" type="text/css" href="../actsetup/aregstyl.css">
+    <META HTTP-EQUIV="MSThemeCompatible" CONTENT="Yes">
+</head>
+
+<body style="background-Color: transparent; background-repeat: no-repeat;" topMargin=0 rightmargin=0 leftmargin=0 tabindex=-1
+      onload="window.parent.NoAnsw_LoadMe();">
+
+<table border=0 cellpadding=0 cellspacing=0 width="100%" height="100%">
+<tr>
+    <td ID=leftmargincell width=5% height=99%></td>
+    <td ID=maincell valign=top class="text-primary">
+
+    <span ID=Title_Text class="title" style="display:none;"><id id="na1">Telefonska številka ni odgovorila</id></span>
+
+    <br>
+    <p><span class="text-primary"><id id="na2">Morda gre za težavo s številko, ki ste jo klicali, ali pa morate spremeniti številko, ki jo kličete.</id></span>
+        <ul>
+        <li><span class="text-primary"><id id="na22">Če ne kličete od doma, morate za zunanjo linijo morda izbrati  določeno številko.</id></span></li><br>
+        <li><span class="text-primary"><id id="na21">Če kličete v drugo področno kodo, boste morda morali spremeniti telefonsko številko. </id></span></li><br><br>
+        </ul>
+
+        <table border=0 cellspacing=0 cellpadding=0>
+        <tr>
+            <td valign="top">
+            <span class="text-primary"><id id="na3">Telefonska številka, ki jo kličete, je </id></span>
+            </td>
+            <td valign="top">
+            <SPAN ID="spanDisplayNumber" class="text-primary" DIR="LTR"></SPAN>
+            </td>
+        </tr>
+        <tr>
+            <td style="padding-left: 1em;"><input ACCESSKEY="K" type="radio" id="DialRuleYes" name="DialRuleChoice" CHECKED TABINDEX=1 onclick="window.parent.SelectDialRule(); document.all.edtPhoneNumber.focus();">
+            <span id="spn_staticDialRuleYes" class="text-primary" onclick="document.all.DialRuleYes.click();"><u>K</u>liči natanko to številko: </span>
+              </td>
+            <td style="padding-left: 2em;">
+            <input DIR=LTR TABINDEX=2 class="dial-number-box" type="text" id="edtPhoneNumber" onfocus="this.select();" name="textfield" size="23" maxlength="25">
+            </td>
+        </tr>
+        <tr>
+            <td style="padding-left: 1em;"><input ACCESSKEY="N" type="radio" id="DialRuleNo" name="DialRuleChoice" TABINDEX=3 onclick="window.parent.SelectDialRule();">
+            <span id="spn_staticDialRuleNo" class="text-primary" onclick="document.all.DialRuleNo.click();">Kliči <u>n</u>adomestno številko s temi pravili: </span>
+               </td>
+            <td style="padding-left: 2em;">
+            <span id="spn_staticDialRuleNoa" class="text-secondary"><id id="Disable_call_waiting_text">Onemogoči č<u>a</u>kajoči klic </id></span><input DIR=LTR ACCESSKEY="a" class="dial-number-box" type="text" id="edtCallWaiting" onfocus="this.select();" name="textfield" size="7" maxlength="10" TABINDEX=4>
+            </td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td style="padding-left: 2em;">
+            <span id="spn_staticDialRuleNob" class="text-secondary"><id id="Set_Outside_line_text"><u>Z</u>unanja linija </id></span><input DIR=LTR ACCESSKEY="Z" class="dial-number-box" type="text" id="edtOutsideLine" onfocus="this.select();" name="textfield" size="4" maxlength="4" TABINDEX=5></td>
+            </td>
+        </tr>
+           <tr>
+            <td colspan=2>
+                <span style="padding-left: 1.8em;" id="spn_staticDialRuleNoc" class="text-primary"><id id="Set_Dial_Signal_text">Klicanje z uporabo:</id></span>
+                <span style="padding-left: 1em;"><input name="DialSignalChoice" type="radio" tabindex="6" id="DialTone" CHECKED><LABEL TABINDEX=-1 ACCESSKEY="T" id="spn_staticDialTone" for="DialTone" class="text-secondary"><id id="Set_Tone_text"><u>T</u>onsko</id></LABEL></span>
+                <span style="padding-left: 2em;"><input name="DialSignalChoice" type="radio" tabindex="7" id="DialPulse"><LABEL TABINDEX=-1 ACCESSKEY="P" id="spn_staticDialPulse" for="DialPulse" class="text-secondary"><id id="Set_Pulse_text"><u>P</u>ulzno</id></LABEL></span>
+            </td>
+           </tr>
+
+        </table>
+
+        <br>
+        <ul>
+        <li><span class="text-primary"><id id="na31">Če je številka prava, počakajte nekaj minut in kliknite <b>Kliči ponovno</b>. </id></span></li><br>
+        <li><span class="text-primary"><id id="na32">Če številka ni prava, spremenite eno od zgornjih nastavitev in kliknite <b>Kliči ponovno</b>. </id></span></li><br>
+        <li><span class="text-primary"><id id="na33">Če želite obnoviti izvirno telefonsko številko, ki ste jo klicali, kliknite <b>Obnovi</b>.</id></span></li>
+        </ul>
+        <p><span class="text-primary" id="RemindMeLaterText"><id id="na4">Če želite nadaljevati, ne da bi izvedli to opravilo, kliknite <b>Preskoči</b>.</id></span></p>
+        </span>
+    </p>
+    <DIV class="text-error" ID=error_mesg style="display:none; padding-top:20px"></div>
+    </span>
+
+    </td>
+
+    <td ID=rightmargincell width=7%>
+    </td>
+</tr>
+<tr>
+    <td colspan=3>
+    <br>
+    <table border=0 class="buttonpositionnew">
+    <tr>
+        <td width=99%>&nbsp;</td>
+        <td>
+        <BUTTON ID="btnTelephone" class="buttons" TABINDEX=8 ACCESSKEY="L" style="display:none;"><label for=btnTelephone><id id="LocalBtnTel_Text">Te<u>l</u>efon</id></label></BUTTON>
+        </td>
+        <td>
+        <BUTTON ID="btnRestore" class="buttons" TABINDEX=9 ACCESSKEY="b" onclick="window.parent.RestoreDialRule();"><label for=btnRestore><id id="LocalBtnRestore_Text">O<u>b</u>novi</id></label></BUTTON>
+        </td>
+        <td>
+        <BUTTON ID="btnSkip" class="buttons" TABINDEX=10 ACCESSKEY="r"><label for=btnSkip><id id="LocalBtnSkip_Text">P<u>r</u>reskoči</id></label></BUTTON>
+        </td>
+        <td>
+        <BUTTON ID="btnNext" class="buttons" TABINDEX=11 ACCESSKEY="P"><label for=btnNext><id id="LocalBtnNext_Text"><u>P</u>onovi klic</id></label></BUTTON>
+        </td>
+    </tr>
+    </table>
+    </td>
+</tr>
+</table>
+</body>
+</html>

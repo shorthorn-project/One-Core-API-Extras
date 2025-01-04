@@ -1,0 +1,110 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=big5">
+    <title>全新感受</title>
+    <link rel="stylesheet" type="text/css" href="../actsetup/aregstyl.css">
+    <META HTTP-EQUIV="MSThemeCompatible" CONTENT="Yes">
+</head>
+
+<body style="background-Color: transparent; background-repeat: no-repeat;" topmargin=0 leftmargin=0 TABINDEX=-1
+      onload="window.parent.Toobusy_LoadMe();">
+
+<table border=0 cellpadding=0 cellspacing=0 width="100%" height="100%">
+<tr>
+    <td ID=leftmargincell width=5% height=99%></td>
+    <td ID=maincell valign=top class="text-primary">
+
+    <span ID=Title_Text class="title" style="display:none;"><id id="tb1">電話忙碌或未接聽</id></span>
+    <br>
+    <p><span class="text-primary"><id id="tb2">目前撥接的電話忙線中，或可能需要修改目前的撥接號碼。</id></span>
+        <ul>
+        <li><span class="text-primary"><id id="tb22">如果您不是在家裏，您可能需要先撥某個號碼來撥接外線。</id></span></li><br>
+        <li><span class="text-primary"><id id="tb21">如果您不是在當地撥電話，您可能需要修改電話號碼。</id></span></li><br><br>
+        </ul>
+
+
+         <table border=0 cellspacing=0 cellpadding=0>
+           <tr>
+            <td valign="top">
+              <span class="text-primary"><id id="na3">先前撥接的電話號碼是</id></span>
+            </td>
+            <td valign="top">
+             <SPAN ID="spanDisplayNumber" class="text-primary" DIR="LTR"></SPAN>
+            </td>
+           </tr>
+           <tr>
+            <td style="padding-left: 1em;"><input type="radio" ACCESSKEY="D" id="DialRuleYes" name="DialRuleChoice" CHECKED TABINDEX=1 onclick="window.parent.SelectDialRule();">
+                <span id="spn_staticDialRuleYes" class="text-primary" onclick="document.all.DialRuleYes.click();">撥其他號碼(<u>D</u>)</span>
+            </td>
+            <td style="padding-left: 2em;">
+                &nbsp;
+            </td>
+           </tr>
+           <tr>
+            <td style="padding-left: 1em;"><input type="radio" ACCESSKEY="A" id="DialRuleNo" name="DialRuleChoice" TABINDEX=3 onclick="window.parent.SelectDialRule();">
+                <span id="spn_staticDialRuleNo" class="text-primary" onclick="document.all.DialRuleNo.click();">用這些規則來撥其他號碼(<U>A</U>): </span>
+            </td>
+            <td style="padding-left: 2em;">
+                <span id="spn_staticDialRuleNoa" class="text-secondary"><id id="Disable_call_waiting_text">停用電話插撥(<u>C</u>) </id></span><input DIR=LTR ACCESSKEY="C" class="dial-number-box" type="text" id="edtCallWaiting" onfocus="this.select();" name="textfield" size="7" maxlength="10" TABINDEX=4>
+            </td>
+           </tr>
+           <tr>
+            <td>&nbsp;</td>
+            <td style="padding-left: 2em;">
+                <span id="spn_staticDialRuleNob" class="text-secondary"><id id="Set_Outside_line_text">外線轉接(<u>O</u>) </id></span><input DIR=LTR ACCESSKEY="O" class="dial-number-box" type="text" id="edtOutsideLine" onfocus="this.select();" name="textfield" size="4" maxlength="4" TABINDEX=5></td>
+            </td>
+           </tr>
+           <tr>
+            <td colspan=2>
+                <span style="padding-left: 1.8em;" id="spn_staticDialRuleNoc" class="text-primary"><id id="Set_Dial_Signal_text">撥接方式:</id></span>
+                <span style="padding-left: 1em;"><input name="DialSignalChoice" type="radio" tabindex="6" id="DialTone" CHECKED><LABEL TABINDEX=-1 ACCESSKEY="T" id="spn_staticDialTone" for="DialTone" class="text-secondary"><id id="Set_Tone_text">按鍵式(<u>T</u>)</id></LABEL></span>
+                <span style="padding-left: 2em;"><input name="DialSignalChoice" type="radio" tabindex="7" id="DialPulse"><LABEL TABINDEX=-1 ACCESSKEY="P" id="spn_staticDialPulse" for="DialPulse" class="text-secondary"><id id="Set_Pulse_text">轉盤式(<u>P</u>)</id></LABEL></span>
+            </td>
+           </tr>
+         </table>
+         <br>
+
+         
+         <ul>
+         <li><span class="text-primary"><id id="tb31">如果先前的號碼正確，請等候數分鐘後再按 <b>[重撥]</b>。</id></span></li><br>
+         <li><span class="text-primary"><id id="tb32">如果這個號碼不正確，請修改上方設定後按 <b>[重撥]</b>。</id></span></li><br>
+         <li><span class="text-primary"><id id="tb33">要還原成原來的電話號碼，請按 <b>[還原]</b>。</id></span></li>
+         </ul>
+         <p><span class="text-primary" id="RemindMeLaterText"><id id="tb4">如果您要繼續但不想執行這個工作，請按 <b>[跳過]</b>。</id></span></p>
+       </span></p>
+    <DIV class="text-error" ID=error_mesg style="display:none; padding-top:20px"></div>
+    </span>
+    </td>
+
+    <td ID=rightmargincell width=7%>
+    </td>
+</tr>
+<tr>
+    <td colspan=3>
+    <br>
+    <table border=0 class="buttonpositionnew">
+    <tr>
+        <td width=99%>&nbsp;</td>
+        <td>
+        <BUTTON ID="btnTelephone" class="buttons" TABINDEX=8 ACCESSKEY="L" style="display:none;"><label for=btnTelephone><id id="LocalBtnTel_Text">電話(<u>L</u>)</id></label></BUTTON>
+        </td>
+        <td>
+        <BUTTON ID="btnRestore" class="buttons" TABINDEX=9 ACCESSKEY="E" onclick="window.parent.RestoreDialRule();"><label for=btnRestore><id id="LocalBtnRestore_Text">還原(<u>E</u>)</id></label></BUTTON>
+        </td>
+        <td>
+        <BUTTON ID="btnSkip" class="buttons" TABINDEX=10 ACCESSKEY="S"><label for=btnSkip><id id="LocalBtnSkip_Text">跳過(<U>S</U>)</id></label></BUTTON>
+        </td>
+        <td>
+        <BUTTON ID="btnNext" class="buttons" TABINDEX=11 ACCESSKEY="R"><label for=btnNext><id id="LocalBtnNext_Text">重撥(<u>R</u>)</id></label></BUTTON>
+        </td>
+    </tr>
+    </table>
+    </td>
+</tr>
+</table>
+
+
+    </body>
+</html>

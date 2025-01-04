@@ -1,0 +1,96 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=shift_jis">
+    <title>out of box experience</title>
+    <LINK REL="stylesheet" TYPE="text/css" HREF="oobestyl.css">
+
+</head>
+
+<body style="background-Color: transparent; background-repeat: no-repeat;" TABINDEX=-1
+      onload="window.parent.drdymig_LoadMe();window.parent.Agent_Activate('MigDial');"
+      onunload="maincell.style.visibility='hidden'; window.parent.ProcessQueuedEvents();window.parent.Agent_Deactivate();">
+
+
+    <table border=0 cellpadding=0 cellspacing=0 width=100% height=100%><tr>
+        <td ID=leftmargincell width=7%>
+        </td>
+
+        <td ID=maincell valign=middle class="text-primary">
+        <p><br>
+        <br>
+        <span class="title"><ID id="drdyref_1">インターネット サービス プロバイダに通話しています...</id></span> <br>
+        <br>
+        <span class="text-primary" ID="drdymig_2_spanID"><ID id="drdymig_2">ダイヤルして、コンピュータに既存のインターネット アカウントをセットアップします。&nbsp; <b>[次へ]</b> をクリックして、ダイヤルを開始してください。</id></span> <br>
+        <br><br><br></P>
+
+        <span id="drdyref_ctrl1" style="visibility:hidden">
+        <p><span class="text-primary" ID="drdymig_4_spanID"><ID id="drdymig_4"> 続けるには、以下の情報を入力して、<b>[次へ]</b> をクリックしてください。ダイヤルしないで先に進むには、<b>[省略]</b> をクリックしてください。
+        </id></span></p>
+        <p><span class="text-primary"><ID id="drdymig_8">現在お住まいの国/地域を選択してください。
+        下矢印をクリックするか、Alt + 方向キーを使って地域の一覧を表示してください。</id></span></p>
+        <p>
+        <select TABINDEX=1 id=selCountry onfocus="window.parent.OnFocus();" onclick="window.parent.OnClick();">
+            <script language="javascript">
+            document.write(window.parent.external.Tapi.get_AllCountryName);
+            </script>
+        </select>
+        </p>
+        <p><span class="text-primary"><ID id="drdymig_11">市外局番を入力してください。<id></span></p>
+        <p><input style="ime-mode:disabled" TABINDEX=2 id=edtAreaCode type="text" name="textfield" size="7" maxlength="7" onkeypress="window.parent.KeyPressIsNumeric();" onfocus="window.parent.OnFocus();"></p>
+
+        <span id="PulseToneDialing" style="visibility:hidden">
+        <LABEL TABINDEX=-1 ACCESSKEY="T" id=Tapi_TOUCHTONE for="radioTouchToneYes">トーン回線を使用していますか?(<U>T</U>)</label>
+        <input TABINDEX=3 type="radio" name=TouchTone checked id=radioTouchToneYes onfocus="window.parent.OnFocus();">
+        <LABEL TABINDEX=-1 id="Tapi_TOUCHTONE_YES" for="radioTouchToneYes">はい</LABEL>
+        <input TABINDEX=3 type="radio" name=TouchTone  id=radioTouchToneNo onfocus="window.parent.OnFocus();">
+        <LABEL TABINDEX=-1 id="Tapi_TOUCHTONE_NO" for="radioTouchToneNo">いいえ</LABEL>
+        </span>
+
+        <p>&nbsp;</p>
+        </span>
+        <!-- OUTSIDE LINE -->
+
+          <span id="spnOutsideLine" style="visibility:hidden">
+            <LABEL TABINDEX=-1 ACCESSKEY="O" id="drdyref_OUTSIDELINE1" for="radioOutSideLineYes">外線発信番号をダイヤルしますか?(<U>O</U>)</label>
+            <input TABINDEX=3 type="radio" checked name=OutsideLine
+          id=radioOutsideLineYes onclick="window.parent.drdyref_OutsideLineClicked();">
+            <LABEL TABINDEX=-1 id="drdyref_OUTSIDELINE_YES" for="radioOutsideLineYes">はい</LABEL>
+            <input TABINDEX=3 type="radio" name=OutsideLine id=radioOutsideLineNo onclick="window.parent.drdyref_OutsideLineClicked();">
+            <LABEL TABINDEX=-1 id="drdyref_OUTSIDELINE_NO" for="radioOutSideLineNo">いいえ</LABEL>
+          </span>
+        <br>
+        <SPAN TABINDEX=-1 id="spnOutsideLineNumber" style="visibility:hidden; position:relative;">			
+        <LABEL TABINDEX=-1 ACCESSKEY="W" ID="drdyref_OUTSIDELINE2" for=edtOutsideLineNumber>外線発信番号は何番ですか?(<U>W</U>)</LABEL>
+        <input TABINDEX=4 style="ime-mode:disabled;" type="text" id=edtOutsideLineNumber maxlength=10 size="4" onkeypress="window.parent.KeyPressIsNumeric();">
+        </SPAN>
+
+<br><br>
+</span>
+
+    <table border=0 class="newbuttonposition">
+    <tr>
+        <td width=10>&nbsp;&nbsp;</td>
+        <td><BUTTON ID="btnBack" class="newbuttonsBack" TABINDEX=4  ACCESSKEY="B" style="visibility:visible;"></BUTTON></td>
+        <td nowrap valign=middle class="text-primary"><span id="BackBtnLocalText" style="visibility:visible;"><label for=btnBack><id id="LocalBtnBack_Text">戻る(<U>B</U>)</id></label></span></td>
+
+        <td width=99%>&nbsp;</td>
+        <td nowrap valign=middle class="text-primary"><span id="SkipBtnLocalText" style="visibility:visible;"><label for=btnSkip><id id="LocalBtnSkip_Text">省略(<U>S</U>)</id></label></span></td>
+        <td><BUTTON ID="btnSkip" class="newbuttonsSkip" TABINDEX=5  ACCESSKEY="S" style="visibility:visible;"></BUTTON></td>
+
+        <td width=10>&nbsp;&nbsp;</td>
+        <td nowrap valign=middle class="text-primary"><span id="NextBtnLocalText" style="visibility:visible;"><label for=btnNext><id id="LocalBtnNext_Text">次へ(<U>N</U>)</id></label></span></td>
+        <td><BUTTON ID="btnNext" class="newbuttonsNext" TABINDEX=6  ACCESSKEY="N" style="visibility:visible;"></BUTTON></td>
+    </tr>
+    </table>
+
+    </td>
+</tr>
+</table>
+
+
+</body>
+</html>
+

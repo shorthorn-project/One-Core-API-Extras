@@ -1,0 +1,133 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+    <title>configuración rápida</title>
+    <LINK REL="stylesheet" TYPE="text/css" HREF="oobestyl.css">
+</head>
+
+<body style="background-Color: transparent; background-repeat: no-repeat;" TABINDEX=-1
+      onload="window.parent.drdyref_LoadMe();window.parent.Agent_Activate('RefDial');"
+      onunload="maincell.style.visibility='hidden'; window.parent.ProcessQueuedEvents(); window.parent.Agent_Deactivate();">
+
+<table border=0 cellpadding=0 cellspacing=0 width=100% height=100%>
+<tr>
+    <td ID=leftmargincell width=7%></td>
+    <td ID=maincell valign=middle class="text-primary">
+
+        <br><br>
+        <span class="title">
+        <table width="100%" height="40px">
+        <tr><td class="title" valign=top>
+            <ID id="drdyref_1">¿Desea ayuda para buscar un proveedor de servicios Internet?</id>
+        </td></tr>
+        </table>
+        </span>
+
+        <br><br>
+        <span class="text-primary" ID="drdyref_2_spanID">
+        <ID id="drdyref_2">Si necesita ayuda para encontrar información acerca de su proveedor de servicios Internet (ISP) y así poder copiar su cuenta de Internet en este equipo, Windows puede efectuar una llamada telefónica al Servicio de referencia de Microsoft para buscar su ISP.</id>
+        </span>
+        
+        <br><br>
+        <span class="text-primary" ID="drdyisp_4_spanID">
+        <ID id="drdyref_4">¿Necesita ayuda para configurar su cuenta de Internet?</id>
+        </span>
+        
+        <br>
+        <table border=0 cellpadding=0 cellpadding=0>
+        <tr>
+            <td valign=top width="5%">&nbsp;&nbsp;
+            <input TABINDEX=2 type="radio" name="ISPSetupMethodType" ID="radioYesISPAuto" onClick="window.parent.checkISPSetupType();" onfocus="window.parent.OnFocus();">
+            </td>
+            <td valign=top width="95%">
+                <LABEL TABINDEX=-1 ACCESSKEY="S" id=text_yesISPAuto for="radioYesISPAuto" class="text-primary">
+                <u>S</u>í, necesito ayuda para encontrar información acerca de mi cuenta
+                </LABEL>
+            </td>
+        </tr>
+        <tr>
+            <td valign=top width="5%">&nbsp;&nbsp;
+            <input TABINDEX=4 type="radio" name="ISPSetupMethodType" ID="radioNoISPAuto" onClick="window.parent.checkISPSetupType();" onfocus="window.parent.OnFocus();">
+            </td>
+            <td valign=top width="95%">
+                <LABEL TABINDEX=-1 ACCESSKEY="T" id=text_noISPAuto for="radioNoISPAuto" class="text-primary">
+                No, <u>t</u>engo a la mano mi nombre de usuario, mi contraseña, y el nombre y número de teléfono de mi proveedor de servicios Internet (ISP)
+                </LABEL>
+            </td>
+        </tr>
+        </table>
+
+        <span id="drdyref_ctrl1" style="visibility:hidden">
+            <span class="text-primary" ID="drdyref_4_spanID"><ID id="drdyref_5">Para continuar, proporcione la siguiente información y haga clic en <b>Siguiente</b>. Para continuar sin llamar por teléfono, haga clic en <b>Omitir</b>.</id>
+            <br><br>
+            </span>
+            <span class="text-primary"><ID id="drdyref_8">Seleccione el p<u>a</u>ís o región donde se encuentre ahora. Haga clic en la flecha abajo o presione las teclas ALT + FLECHA ABAJO para ver la lista de regiones.</id>
+            </span><br><br>
+            <select TABINDEX=2 id=selCountry ACCESSKEY="P" onfocus="window.parent.OnFocus();" onclick="window.parent.OnClick();">
+                <script language="javascript">
+                document.write(window.parent.external.Tapi.get_AllCountryName);
+                </script>
+            </select>
+
+            <!-- AREA CODE -->
+            <br><br>
+            <span class="text-primary"><ID id="drdyref_11">Escriba aquí el <u>c</u>ódigo telefónico de área (por ejemplo, 425 en 425-555-1212).<id>
+            </span>
+            <input style="ime-mode:disabled" ACCESSKEY="C" TABINDEX=3 id=edtAreaCode type="text" name="textfield" size="7" maxlength="7" onkeypress="window.parent.KeyPressIsNumeric();" onfocus="window.parent.OnFocus();">
+
+            <!-- PULSE/TONE DIALING -->
+            <br>
+            <span id="PulseToneDialing" style="visibility:hidden">
+                <LABEL TABINDEX=-1 ACCESSKEY="T" id=Tapi_TOUCHTONE for="radioTouchToneYes">¿Tiene servicio de marcado por <u>t</u>onos?</label>
+                <input TABINDEX=4 type="radio" name=TouchTone checked id=radioTouchToneYes onfocus="window.parent.OnFocus();">
+                <LABEL TABINDEX=-1 id="Tapi_TOUCHTONE_YES" for="radioTouchToneYes">Sí</LABEL>
+                <input TABINDEX=4 type="radio" name=TouchTone  id=radioTouchToneNo onfocus="window.parent.OnFocus();">
+                <LABEL TABINDEX=-1 id="Tapi_TOUCHTONE_NO" for="radioTouchToneNo">No</LABEL>
+            </span>
+        </span>
+
+        <!-- OUTSIDE LINE -->
+        <br>
+        <span id="spnOutsideLine" style="visibility:hidden">
+            <LABEL TABINDEX=-1 ACCESSKEY="E" id="drdyref_OUTSIDELINE1" for="radioOutSideLineYes">¿Marca un número para tener acceso a la línea <U>e</U>xterna?</label>
+            <input TABINDEX=4 type="radio" checked name=OutsideLine id=radioOutsideLineYes onclick="window.parent.drdyref_OutsideLineClicked();">
+            <LABEL TABINDEX=-1 id="drdyref_OUTSIDELINE_YES" for="radioOutsideLineYes">Sí</LABEL>
+            <input TABINDEX=4 type="radio" name=OutsideLine id=radioOutsideLineNo onclick="window.parent.drdyref_OutsideLineClicked();">
+            <LABEL TABINDEX=-1 id="drdyref_OUTSIDELINE_NO" for="radioOutSideLineNo">No</LABEL>
+        </span>
+        <br>
+        <SPAN TABINDEX=-1 id="spnOutsideLineNumber" style="visibility:hidden; position:relative;">                  
+            <LABEL TABINDEX=-1 ACCESSKEY="C" ID="drdyref_OUTSIDELINE2" for=edtOutsideLineNumber>¿<U>C</U>uál es ese número?</LABEL>
+            <input TABINDEX=5 style="ime-mode:disabled;" type="text" id=edtOutsideLineNumber maxlength=10 size="4" onkeypress="window.parent.KeyPressIsNumeric();">
+        </SPAN>
+
+        <br><br>
+        <span class="text-primary" ID="drdyisp_9_spanID">
+        <ID id="drdyref_9"></id>
+        </span>
+
+    <table border=0 class="newbuttonposition">
+    <tr>
+        <td width=10>&nbsp;&nbsp;</td>
+        <td><BUTTON ID="btnBack" class="newbuttonsBack" TABINDEX=6  ACCESSKEY="A" style="visibility:visible;"></BUTTON></td>
+        <td nowrap valign=middle class="text-primary"><span id="BackBtnLocalText" style="visibility:visible;"><label for=btnBack><id id="LocalBtnBack_Text"><u>A</u>trás</id></label></span></td>
+
+        <td width=99%>&nbsp;</td>
+        <td nowrap valign=middle class="text-primary"><span id="SkipBtnLocalText" style="visibility:visible;"><label for=btnSkip><id id="LocalBtnSkip_Text"><U>O</U>mitir</id></label></span></td>
+        <td><BUTTON ID="btnSkip" class="newbuttonsSkip" TABINDEX=7  ACCESSKEY="O" style="visibility:visible;"></BUTTON></td>
+
+        <td width=10>&nbsp;&nbsp;</td>
+        <td nowrap valign=middle class="text-primary"><span id="NextBtnLocalText" style="visibility:visible;"><label for=btnNext><id id="LocalBtnNext_Text">Siguie<u>n</u>te</id></label></span></td>
+        <td><BUTTON ID="btnNext" class="newbuttonsNext" TABINDEX=8  ACCESSKEY="N" style="visibility:visible;"></BUTTON></td>
+    </tr>
+    </table>
+
+    </td>
+</tr>
+</table>
+
+</body>
+</html>

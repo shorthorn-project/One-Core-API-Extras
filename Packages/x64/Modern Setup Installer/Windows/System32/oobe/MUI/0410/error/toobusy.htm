@@ -1,0 +1,138 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+    <title>Configurazione guidata</title>
+    <LINK REL="stylesheet" TYPE="text/css" HREF="../setup/oobestyl.css">
+</head>
+
+<body style="background-Color: transparent; background-repeat: no-repeat;" TABINDEX=-1
+      onload="window.parent.NewToobusy_LoadMe();window.parent.Agent_Activate('TooBusy');"
+      onunload="window.parent.Agent_Deactivate();">
+
+<table border=0 cellpadding=0 cellspacing=0 width=100% height=100%>
+<tr>
+    <td ID=leftmargincell width=7%></td>
+    <td ID=maincell valign=middle class="text-primary">
+
+    <br><br>
+    <span class="title"><id id="tb1">Il numero è occupato o non risponde</id></span><br>
+
+    <br>
+    <span class="text-primary" id="tbpar1"><id id="tb2">Impossibile connettersi a questo numero per attivare il computer.</id></span>
+    <SPAN ID="spanDisplayNumber" class="text-primary"></SPAN>
+
+    <br>
+    <span class="text-primary"><id id="tb3">Il telefono potrebbe essere occupato, o forse il numero non è esatto.</id></span>
+
+    <br><br>
+    <span class="text-primary"><id id="tb4">Se il numero è corretto, attendere qualche minuto e quindi fare clic su <B>Ricomponi</B>.</id></span>
+
+    <br><br>
+    <span class="text-primary"><id id="tb5">Se il numero non è esatto, immettere nuove impostazioni e fare clic su <B>Ricomponi</B>.</id></span>
+
+    <table>
+    <tr>
+        <td width=15>&nbsp;</td>
+
+        <td>
+        <INPUT tabindex="1" type="checkbox" ACCESSKEY="C" value="" id="cb_altnumber" onclick="window.parent.Check_cb_altnumber();">
+        </td>
+
+        <td>
+        <LABEL id="lbl_altnumber" for="cb_altnumber" class="text-primary">
+        <ID id="lbl_altnumber_text"><u>C</u>omponi questo numero alternativo:</ID>
+        </LABEL>&nbsp;&nbsp;
+        </td>
+
+        <td>
+        <INPUT type="text" value="" id="edt_altnumber" size=15 onFocus="if (!cb_altnumber.checked)this.blur();" style="ime-mode:disabled; background-Color:#dddddd" tabindex=-1>
+        </td>
+    </tr>
+    <tr>
+        <td width=15>&nbsp;</td>
+
+        <td>
+        <INPUT tabindex="2" type="checkbox" ACCESSKEY="E" value="" id="cb_outsideline" onclick="window.parent.Check_cb_outsideline();">
+        </td>
+
+        <td>
+        <LABEL id="lbl_outsideline" for="cb_outsideline" class="text-primary">
+        <ID id="lbl_outsideline_text">Includi questo numero per accedere alla linea <u>e</u>sterna:</ID>
+        </LABEL>&nbsp;&nbsp;
+        </td>
+
+        <td>
+        <INPUT type="text" value="" id="edt_outsideline" size=5 onFocus="if (!cb_outsideline.checked)this.blur();" style="ime-mode:disabled; background-Color:#dddddd" tabindex=-1>
+        </td>
+    </tr>
+    <tr>
+        <td width=15>&nbsp;</td>
+
+        <td>
+        <INPUT tabindex="3" type="checkbox" ACCESSKEY="A" value="" id="cb_callwaiting" onclick="window.parent.Check_cb_callwaiting();">
+        </td>
+
+        <td>
+        <LABEL id="lbl_callwaiting" for="cb_callwaiting" class="text-primary">
+        <ID id="lbl_callwaiting_text">Disattiva <u>a</u>vviso di chiamata:</ID>
+        </LABEL>&nbsp;&nbsp;
+        </td>
+
+        <td>
+        <INPUT type="text" value="" id="edt_callwaiting" size=5 onFocus="if (!cb_callwaiting.checked)this.blur();" style="ime-mode:disabled; background-Color:#dddddd" tabindex=-1>
+        </td>
+    </tr>
+    <tr>
+        <td width=15>&nbsp;</td>
+        
+        <td colspan=2>
+            <table width=100%>
+            <tr>
+                <td><LABEL id="lbl_dialsignal" for="cb_dialsignal" class="text-primary"><ID id="lbl_dialsignal_text">Composizione:</ID></LABEL></td>
+                <td><input name="DialSignalChoice" type="radio" tabindex="4" id="DialTone" CHECKED><LABEL TABINDEX=-1 ACCESSKEY="F" id="spn_staticDialTone" for="DialTone" class="text-primary"><id id="Set_Tone_text">A <u>f</u>frequenza</id></LABEL></td>
+                <td><input name="DialSignalChoice" type="radio" tabindex="5" id="DialPulse"><LABEL TABINDEX=-1 ACCESSKEY="P" id="spn_staticDialPulse" for="DialPulse" class="text-primary"><id id="Set_Pulse_text">A im<u>p</u>ulsi</id></LABEL></td>
+            </tr>
+            </table>
+        </td>
+        <td>&nbsp;</td>
+    </tr>
+
+    </table>
+
+    <br><br>
+    <span class="text-error" id="tberrspan1" style="visibility:hidden;"><id id="tberr1">* Immettere un numero alternativo.</id></span>
+    <br>
+    <span class="text-error" id="tberrspan2" style="visibility:hidden;"><id id="tberr2">* Immettere un numero per accedere a una linea esterna.</id></span>
+    <br>
+    <span class="text-error" id="tberrspan3" style="visibility:hidden;"><id id="tberr3">* Immettere un numero per disattivare l'avviso di chiamata.</id></span>
+
+
+    <br>
+    <span class="text-primary-btndesc" id="tbpar2"><id id="tb6">Per continuare senza attivare il computer, fare clic su <b>Ignora</b>.</id></span>
+
+    <br>
+    <table border=0 class="newbuttonposition">
+    <tr>
+        <td width=10>&nbsp;&nbsp;</td>
+        <td><BUTTON ID="btnPlaceholder" class="newbuttonsNext" TABINDEX=6 ACCESSKEY="S" style="visibility:hidden;" onclick="window.parent.RestoreDialRule();"></BUTTON></td>
+        <td nowrap valign=middle class="text-primary"><span id="BackBtnLocalText" style="visibility:hidden;"><label for=btnPlaceholder><id id="LocalBtnPlaceholder_Text">Ripri<u>s</u>tina</id></label></span></td>
+
+        <td width=99%>&nbsp;</td>
+        <td nowrap valign=middle class="text-primary"><span id="SkipBtnLocalText" style="visibility:visible;"><label for=btnSkip><id id="LocalBtnSkip_Text">Ig<u>n</u>ora</id></label></span></td>
+        <td><BUTTON ID="btnSkip" class="newbuttonsSkip" TABINDEX=7 ACCESSKEY="N" style="visibility:visible;"></BUTTON></td>
+
+        <td width=10>&nbsp;&nbsp;</td>
+        <td nowrap valign=middle class="text-primary"><span id="NextBtnLocalText" style="visibility:visible;"><label for=btnNext><id id="LocalBtnRedial_Text"><u>R</u>icomponi</id></label></span></td>
+        <td><BUTTON ID="btnNext" class="newbuttonsNext" TABINDEX=8 ACCESSKEY="R" style="visibility:visible;"></BUTTON></td>
+    </tr>
+    </table>
+
+    </td>
+</tr>
+</table>
+
+</body>
+</html>

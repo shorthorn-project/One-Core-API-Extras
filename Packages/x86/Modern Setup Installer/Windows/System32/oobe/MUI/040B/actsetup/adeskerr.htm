@@ -1,0 +1,254 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+    <title>out of box experience</title>
+    <LINK REL="stylesheet" TYPE="text/css" HREF="aregstyl.css" id=deskstyle1>
+    <LINK REL="stylesheet" TYPE="text/css" HREF="aregsty2.css" id=deskstyle2 disabled>
+    <META HTTP-EQUIV="MSThemeCompatible" CONTENT="Yes">
+</head>
+
+<body style="background-Color: transparent; background-repeat: no-repeat;" topMargin=0 rightmargin=0 leftmargin=0 tabindex=-1
+      onload="window.parent.act_desktop_error_LoadMe();" >
+
+<table valign=middle border=0 cellpadding=0 cellspacing=0 width="100%" height="100%">
+<tr>
+    <td ID=leftmargincell width=5% height=99%></td>
+    <td ID=maincell valign=top class="text-primary">
+
+    <span ID=Title_Text class="title" style="display:none;">
+        <ID id=acterror_s1>Aktivoi Windows</ID>
+    </span>
+
+    <br>
+    <!-- Prepare the different error scenes, all are hidden -->
+
+        <span ID=acterror_description_SUCCESS1 class="text-primary" style="display:none;">
+            <ID id="txtActivDeskSUCCESS1">Windows on aktivoitu ja rekisteröity.</ID>
+        </span>
+
+        <span ID=acterror_description_SUCCESS2 class="text-primary" style="display:none;">
+            <ID id="txtActivDeskSUCCESS2">Windows on aktivoitu.</ID>
+        </span>
+
+
+        <!-- Pre-expiration -->
+        <span ID=acterror_description1Pre class="text-primary" style="display:none;">
+            <ID id="txtActivDeskErr">Online-aktivointia ei voida suorittaa loppuun tällä hetkellä.</ID>
+            <br><br>
+            <id id="txtActivDeskerr0">Voit käyttää Windows XP:tä vielä <span id=NumberDaysLeft1 class="text-primary"></span>&nbsp;päivää ennen kuin aktivointi vaaditaan.</id>
+            <br><br>
+            <ID id="txtActivDeskErr1">Tänä aikana aktivoinnista muistutetaan aina muutaman päivän välein. Aktivointi suoritetaan ohjatulla toiminnolla, joka löytyy Käynnistä-valikosta.<br><br>Jos et määräaikaan mennessä ole saanut online-aktivointia tehtyä, voit aktivoida Windows XP:n puhelimitse.</ID>
+            <br><br>
+            <ID id="txtActivDeskErr2">Saat alueesi asiakaspalvelunumeron valitsemalla Puhelin-painikkeen.</ID>
+        </span>
+        <!-- Post-expiration -->
+        <span ID=acterror_description1Post class="text-primary" style="display:none;">
+            <ID id="txtActivDeskErrPost">Windowsin online-aktivointi ei onnistunut.</ID>
+            <br><br>
+            <id id="txtActivDeskerr0Post">Aktivointiin varattu aika on kulunut umpeen. Windows täytyy aktivoida nyt, jotta sitä voidaan käyttää.</id>
+            <br><br>
+            <ID id="txtActivDeskErr1Post">Voit aktivoida puhelimen välityksellä. Saat alueesi asiakaspalvelunumeron valitsemalla Puhelin-painikkeen.</ID>
+        </span>
+
+
+        <!-- Retail mode -->
+        <span ID=acterror_description2_RETAIL class="text-primary" style="display:none;">
+            <ID id="txtActivDeskErr3retail">Jos alla olevassa Product Key -tunnuksessa on kirjoitusvirhe, korjaa se ja valitse <B>Yritä uudelleen</B>.</ID>
+            <br><br>
+            <ID id="txtActivDeskErr4retail">25-merkkinen Product Key -tunnus löytyy Windows XP:n CD-kotelosta tämän näköisestä tarrasta:</ID>
+            <br><br>
+            <center><img src="../images/prodkey.gif"></center>
+        </span>
+        <!-- OEM mode -->
+        <span ID=acterror_description2_OEM class="text-primary" style="display:none;">
+            <ID id="txtActivDeskErr3OEM">Jos alla olevassa Product Key -tunnuksessa on kirjoitusvirhe, korjaa se ja valitse <B>Yritä uudelleen</B>.</ID>
+            <br><br>
+            <ID id="txtActivDeskErr4OEM">25-merkkinen Product Key -tunnus löytyy aitoustodistus-tarrasta (COA), joka on joko kiinnitetty tietokoneeseesi tai löytyy Windowsin ohjekirjoista. Sen pitäisi olla seuraavan esimerkin näköinen.</ID>
+            <br><br>
+            <center><img src="../images/oemcoa.jpg"></center>
+        </span>
+
+
+        <!-- Retail mode -->
+        <span ID=acterror_description3Retail class="text-primary" style="display:none;">
+            <ID id="txtActivDeskErr5a_retail">Tietojemme mukaan tällä Product Key -tunnuksella aktivoinnin yläraja on ylitetty. Anna uusi tunnus ja valitse <B>Yritä uudelleen</B>.</ID>
+            <ID id="txtActivDeskErr5b_retail">25-merkkinen Product Key -tunnus löytyy Windows XP:n CD-kotelosta tämän näköisestä tarrasta:</ID>
+            <br><br>
+            <center><img src="../images/prodkey.gif"></center>
+        </span>
+        <!-- OEM mode -->
+        <span ID=acterror_description3OEM class="text-primary" style="display:none;">
+            <ID id="txtActivDeskErr5a_OEM">Tietojemme mukaan tällä Product Key -tunnuksella aktivoinnin yläraja on ylitetty. Anna uusi tunnus ja valitse <B>Yritä uudelleen</B>.</ID>
+            <ID id="txtActivDeskErr5b_OEM">25-merkkinen Product Key -tunnus löytyy Certificate of Authenticity-tarrasta (aitoustodistus), joka on joko kiinnitetty tietokoneeseesi tai löytyy Windowsin ohjekirjoista. Sen pitäisi olla seuraavan esimerkin näköinen.</ID>
+            <br><br>
+            <center><img src="../images/oemcoa.jpg"></center>
+        </span>
+
+
+        <!-- Pre-expiration -->
+        <span ID=acterror_description4Pre class="text-primary" style="display:none;">
+            <ID id="txtActivDeskErr6">Online-aktivointia ei voida suorittaa loppuun tällä hetkellä.</ID>
+            <br><br>
+            <ID id="txtActivDeskErr7">Voit käyttää Windows XP:tä vielä <span id=NumberDaysLeft2 class="text-primary"></span>&nbsp;päivää ennen kuin aktivointi vaaditaan.</ID>
+            <br><br>
+            <id id="txtActivdeskErr71">Tänä aikana aktivoinnista muistutetaan aina muutaman päivän välein. Aktivointi suoritetaan ohjatulla toiminnolla, joka löytyy Käynnistä-valikosta.<br><br>Jos et määräaikaan mennessä ole saanut online-aktivointia tehtyä, voit aktivoida Windows XP:n puhelimitse.</id>
+            <br><br>
+            <id id="txtActivDeskErr72">Saat alueesi asiakaspalvelunumeron valitsemalla <b>Puhelin</b>-painikkeen.</id>
+        </span>
+        <!-- Post-expiration -->
+        <span ID=acterror_description4Post class="text-primary" style="display:none;">
+            <ID id="txtActivDeskErr7Post">Windowsin online-aktivointi ei onnistunut.</ID>
+            <br><br>
+            <id id="txtActivDeskerr71Post">Aktivointiin varattu aika on kulunut umpeen. Windows täytyy aktivoida nyt, jotta sitä voidaan käyttää.</id>
+            <br><br>
+            <ID id="txtActivDeskErr72Post">Voit aktivoida puhelimen välityksellä. Saat alueesi asiakaspalvelunumeron valitsemalla Puhelin-painikkeen.</ID>
+        </span>
+
+
+        <!-- Retail mode -->
+        <span ID=acterror_description5Retail class="text-primary" style="display:none;">
+            <ID id="txtActivDeskErr8a_retail">Tätä Product Key -tunnusta ei voitu vahvistaa. Aktivointia ei voida tehdä ennen kelvollisen tunnuksen määrittämistä.</ID>
+            <ID id="txtActivDeskErr8b_retail">Alla olevan esimerkin mukainen 25-merkkinen Product Key -tunnus löytyy Windows XP:n CD-kotelon takapuolella olevasta tarrasta. Kirjoita oikea Product Key -tunnus tähän ja valitse <B>Yritä uudelleen</B>.</ID>
+            <br><br>
+            <center><img src="../images/prodkey.gif"></center>
+        </span>
+        <!-- OEM mode -->
+        <span ID=acterror_description5OEM class="text-primary" style="display:none;">
+            <ID id="txtActivDeskErr8a_OEM">Tätä Product Key -tunnusta ei voitu vahvistaa. Aktivointia ei voida tehdä ennen kelvollisen tunnuksen määrittämistä.</ID>
+            <ID id="txtActivDeskErr8b_OEM">25-merkkinen Product Key -tunnus löytyy tietokoneeseen tai Windowsin opaskirjaan liitetyn Certificate of Authority -aitoustodistuksen alaosasta. Alla on esimerkki Product Key -tunnuksesta. Kirjoita oikea Product Key -tunnus tähän ja valitse <B>Yritä uudelleen</B>.</ID>
+            <br><br>
+            <center><img src="../images/oemcoa.jpg"></center>
+        </span>
+
+
+        <span ID=acterror_description6 class="text-primary" style="display:none;">
+            <ID id="txtActivDeskErr10">Nykyinen Windows-aktivointi on vioittunut tai se ei ole enää voimassa.</ID>
+            <br><br>
+            <ID id="txtActivDeskErr11">Voit käyttää Windowsia vielä <span id=NumberDaysLeft3 class="text-primary"></span>&nbsp;päivää ennen kuin aktivointi vaaditaan.</ID>
+            <br><br>
+            <id id="txtActivDeskErr111">Tänä aikana, aktivoinnista musituteen aina muutaman päivän välein. Jos et määräaikan mennessä ole saanut online-aktivointia tehtyä, voit aktivoida Windows XP:n puhelimitse.</id>
+            <br><br>
+            <id id="txtactivDeskErr112">Saat alueesi asiakaspalvelunumeron valitsemalla Puhelin-painikkeen.</id>
+        </span>
+
+
+        <span ID=acterror_description7 class="text-primary" style="display:none;">
+            <ID id="txtActivDeskErr12">Aktivointipalvelvelimeen ei saada yhteyttä. Tarkista verkon asetukset ja Internet-yhteyden toiminta. Yritä sen jälkeen uudelleen.</ID>
+        </span>
+
+
+        <!-- Retail mode -->
+        <span ID=acterror_description_dedicated_pid_RETAIL class="text-primary" style="display:none;">
+            <ID id="txtActivDeskErrDedicatedPid1">Jos Product Key -tunnusta pitää muuttaa, kirjoita se alla oleviin kenttiin ja valitse <B>Päivitä</B>. Jos tunnusta ei tarvitse muuttaa, palaa edelliselle aktivointisivulle valitsemalla <B>Puhelin</B>.</ID>
+            <br><br>
+            <ID id="txtActivDeskErrDedicatedPid2">25-merkkinen Product Key -tunnus löytyy Windows XP:n CD-kotelosta tämän näköisestä tarrasta:</ID>
+            <br><br>
+            <center><img src="../images/prodkey.gif"></center>
+        </span>
+        <!-- OEM mode -->
+        <span ID=acterror_description_dedicated_pid_OEM class="text-primary" style="display:none;">
+            <ID id="txtActivDeskErrDedicatedPid1x">Jos Product Key -tunnusta pitää muuttaa, kirjoita se alla oleviin kenttiin ja valitse <B>Päivitä</B>. Jos tunnusta ei tarvitse muuttaa, palaa edelliselle aktivointisivulle valitsemalla <B>Puhelin</B>.</ID>
+            <br><br>
+            <ID id="txtActivDeskErrDedicatedPid2x">25-merkkinen Product Key -tunnus löytyy aitoustodistus-tarrasta (COA), joka on joko kiinnitetty tietokoneeseesi tai löytyy Windowsin ohjekirjoista. Sen pitäisi olla seuraavan esimerkin näköinen.</ID>
+            <br><br>
+            <center><img src="../images/oemcoa.jpg"></center>
+        </span>
+
+
+        <!-- PID ENTRY -->
+        <span ID=acterror_pid_entry class="text-primary" style="display:none;">
+            <br>
+            <table ID=PidBox border=0 DIR=ltr style="font-family:Courier New; FONT-SIZE: 16pt;">
+            <tr>
+                <td nowrap width=10>&nbsp;</td>
+                <td nowrap class="text-primary" >
+                <span ID=acterror_description_verify_key class="text-primary"><ID id="txtverifykey">Varmista tunnus:</id></span>&nbsp;
+                </td>
+                <td>
+                <input style="ime-mode:disabled" id=pid1 type="text" size=6 maxlength=5 class=pid-box TABINDEX=1 name="edtProductKey"
+                onkeydown="window.parent.ProductIDKeyDown();" onpropertychange="window.parent.ProductIDPropertyChange();"
+                onkeypress="window.parent.ProductIDKeyPress();" onkeyup="window.parent.ProductIDKeyUp();" onfocus="window.parent.OnFocus();">
+                </td><td class="text-primary">-</td><td>
+                <input style="ime-mode:disabled" id=pid2 type="text" size=6 maxlength=5 class=pid-box TABINDEX=2 name="edtProductKey"
+                onkeydown="window.parent.ProductIDKeyDown();" onpropertychange="window.parent.ProductIDPropertyChange();"
+                onkeypress="window.parent.ProductIDKeyPress();" onkeyup="window.parent.ProductIDKeyUp();" onfocus="window.parent.OnFocus();">
+                </td><td class="text-primary">-</td><td>
+                <input style="ime-mode:disabled" id=pid3 type="text" size=6 maxlength=5 class=pid-box TABINDEX=3  name="edtProductKey"
+                onkeydown="window.parent.ProductIDKeyDown();" onpropertychange="window.parent.ProductIDPropertyChange();"
+                onkeypress="window.parent.ProductIDKeyPress();" onkeyup="window.parent.ProductIDKeyUp();" onfocus="window.parent.OnFocus();">
+                </td><td class="text-primary">-</td><td>
+                <input style="ime-mode:disabled" id=pid4 type="text" size=6 maxlength=5 class=pid-box TABINDEX=4  name="edtProductKey"
+                onkeydown="window.parent.ProductIDKeyDown();" onpropertychange="window.parent.ProductIDPropertyChange();"
+                onkeypress="window.parent.ProductIDKeyPress();" onkeyup="window.parent.ProductIDKeyUp();" onfocus="window.parent.OnFocus();">
+                </td><td class="text-primary">-</td><td>
+                <input style="ime-mode:disabled" id=pid5 type="text" size=6 maxlength=5 class=pid-box TABINDEX=5  name="edtProductKey"
+                onkeydown="window.parent.ProductIDKeyDown();" onpropertychange="window.parent.ProductIDPropertyChange();"
+                onkeypress="window.parent.ProductIDKeyPress();" onkeyup="window.parent.ProductIDKeyUp();" onfocus="window.parent.OnFocus();">
+                </td>
+            </tr>
+            </table>
+        </span>
+
+
+        <!-- AFTER PID ENTRY TEXT -->
+        <span ID=acterror_after_pid_entry_OEMText class="text-primary" style="display:none;">
+            <br>
+            <ID id="txtActivDeskErrOEMText">Ota yhteyttä tietokoneesi valmistajaan, mikäli et löydä aitoustodistusta.</ID><br>
+        </span>
+
+        <span ID=acterror_after_pid_entry_text1 class="text-primary" style="display:none;">
+            <br>
+            <ID id="txtActivDeskErr14">Mikäli kirjoitit tunnuksen oikein ja epäilet tätä ilmoitusta aiheettomaksi, ota yhteyttä tuotetukeen. Löydät alueesi tuotetuen puhelinnumeron valitsemalla <B>Puhelin</B>.</ID>
+        </span>
+
+
+        <span ID=acterror_after_pid_entry_text2 class="text-primary" style="display:none;">
+            <br>
+            <ID id="txtActivDeskErr15">Mikäli epäilet tätä ilmoitusta aiheettomaksi, ota yhteyttä tuotetukeen. Löydät alueesi tuotetuen puhelinnumeron valitsemalla <B>Puhelin</B>.</ID>
+        </span>
+
+        <span ID=acterror_after_pid_entry_text3 class="text-primary" style="display:none;">
+            <br>
+            <ID id="txtActivDeskErr16">Kukin Windows voidaan asentaa vain yhteen tietokoneeseen kerrallaan. Mikäli epäilet tätä ilmoitusta aiheettomaksi, saat yhteyden tuotetukeen valitsemalla <B>Puhelin</B>.</ID>
+        </span>
+
+        <span ID=acterror_after_pid_entry_text4 class="text-primary" style="display:none;">
+            <br>
+            <ID id="txtActivDeskErr17">Jos Product Key -tunnusta ei tarvita, valitse <B>Puhelin</B> palataksesi edelliselle aktivointisivulle.</ID>
+        </span>
+
+    <!-- End -->
+    </td>
+
+    <td ID=rightmargincell width=7%>
+    </td>
+</tr>
+<tr>
+    <td colspan=3>
+    <br>
+    <table border=0 class="buttonpositionnew">
+    <tr>
+        <td width=99%>
+            &nbsp;&nbsp;
+            <span ID=acterror_specific_error_code class="text-primary" style="display:none; z-index:10;">
+            </span>
+        </td>
+        <td>
+        <BUTTON ID="btnTelephone" class="buttons" TABINDEX=6 ACCESSKEY="P"><label for=btnTelephone><id id="LocalBtnTel_Text"><u>P</u>uhelin </id></label></BUTTON>
+        </td>
+        <td>
+        <BUTTON ID="btnQuit" class="buttons" TABINDEX=7 ACCESSKEY="M"><label for=btnQuit><id id="LocalBtnQuit_Text"><u>M</u>uistuta myöhemmin </id></label></BUTTON>
+        </td>
+        <td>
+        <BUTTON ID="btnNext" class="buttons" TABINDEX=8 ACCESSKEY="r"><label for=btnNext><id id="LocalBtnRetry_Text">Y<u>r</u>itä uudelleen </id></label></BUTTON>
+        </td>
+    </tr>
+    </table>
+    </td>
+</tr>
+</table>
+
+</body>
+</html>

@@ -1,0 +1,109 @@
+
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1250">
+    <title>Počáteční nastavení počítače</title>
+    <link rel="stylesheet" type="text/css" href="../actsetup/aregstyl.css">
+    <META HTTP-EQUIV="MSThemeCompatible" CONTENT="Yes">
+</head>
+
+<body style="background-Color: transparent; background-repeat: no-repeat;" topMargin=0 rightmargin=0 leftmargin=0 tabindex=-1
+      onload="window.parent.NoAnsw_LoadMe();">
+
+<table border=0 cellpadding=0 cellspacing=0 width="100%" height="100%">
+<tr>
+    <td ID=leftmargincell width=5% height=99%></td>
+    <td ID=maincell valign=top class="text-primary">
+
+    <span ID=Title_Text class="title" style="display:none;"><id id="na1">Hovor nebyl přijat.</id></span>
+
+    <br>
+    <p><span class="text-primary"><id id="na2">U vytáčeného čísla pravděpodobně došlo k potížím nebo je nutné číslo upravit.</id></span>
+        <ul>
+        <li><span class="text-primary"><id id="na22">Nejste-li doma, je možná nutné vytočením čísla přistoupit k vnější lince.</id></span></li><br>
+        <li><span class="text-primary"><id id="na21">Pokud voláte mimo svou oblast, bude pravděpodobně nutné telefonní číslo upravit. </id></span></li><br><br>
+        </ul>
+
+        <table border=0 cellspacing=0 cellpadding=0>
+        <tr>
+            <td valign="top">
+            <span class="text-primary"><id id="na3">Bylo vytočeno telefonní číslo:</id></span>
+            </td>
+            <td valign="top">
+            <SPAN ID="spanDisplayNumber" class="text-primary" DIR="LTR"></SPAN>
+            </td>
+        </tr>
+        <tr>
+            <td style="padding-left: 1em;"><input ACCESSKEY="V" type="radio" id="DialRuleYes" name="DialRuleChoice" CHECKED TABINDEX=1 onclick="window.parent.SelectDialRule(); document.all.edtPhoneNumber.focus();">
+            <span id="spn_staticDialRuleYes" class="text-primary" onclick="document.all.DialRuleYes.click();"><u>V</u>ytočit toto číslo: </span>
+</td>
+            <td style="padding-left: 2em;">
+            <input DIR=LTR TABINDEX=2 class="dial-number-box" type="text" id="edtPhoneNumber" onfocus="this.select();" name="textfield" size="23" maxlength="25">
+            </td>
+        </tr>
+        <tr>
+            <td style="padding-left: 1em;"><input ACCESSKEY="S" type="radio" id="DialRuleNo" name="DialRuleChoice" TABINDEX=3 onclick="window.parent.SelectDialRule();">
+            <span id="spn_staticDialRuleNo" class="text-primary" onclick="document.all.DialRuleNo.click();">Vytočit čí<u>s</u>lo podle těchto pravidel: </span>
+</td>
+            <td style="padding-left: 2em;">
+            <span id="spn_staticDialRuleNoa" class="text-secondary"><id id="Disable_call_waiting_text">Zakázat če<u>k</u>ání hovorů</id></span><input DIR=LTR ACCESSKEY="K" class="dial-number-box" type="text" id="edtCallWaiting" onfocus="this.select();" name="textfield" size="7" maxlength="10" TABINDEX=4>
+            </td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td style="padding-left: 2em;">
+            <span id="spn_staticDialRuleNob" class="text-secondary"><id id="Set_Outside_line_text">V<u>n</u>ější linka </id></span><input DIR=LTR ACCESSKEY="N" class="dial-number-box" type="text" id="edtOutsideLine" onfocus="this.select();" name="textfield" size="4" maxlength="4" TABINDEX=5></td>
+            </td>
+        </tr>
+           <tr>
+            <td colspan=2>
+                <span style="padding-left: 1.8em;" id="spn_staticDialRuleNoc" class="text-primary"><id id="Set_Dial_Signal_text">Při vytáčení použít:</id></span>
+                <span style="padding-left: 1em;"><input name="DialSignalChoice" type="radio" tabindex="6" id="DialTone" CHECKED><LABEL TABINDEX=-1 ACCESSKEY="T" id="spn_staticDialTone" for="DialTone" class="text-secondary"><id id="Set_Tone_text"><u>T</u>ónová</id></LABEL></span>
+                <span style="padding-left: 2em;"><input name="DialSignalChoice" type="radio" tabindex="7" id="DialPulse"><LABEL TABINDEX=-1 ACCESSKEY="L" id="spn_staticDialPulse" for="DialPulse" class="text-secondary"><id id="Set_Pulse_text">Pu<u>l</u>zní</id></LABEL></span>
+            </td>
+           </tr>
+
+        </table>
+
+        <br>
+        <ul>
+        <li><span class="text-primary"><id id="na31">Jestliže bylo číslo správné, počkejte několik minut a klepněte na tlačítko <b>Opakovat vytáčení</b>. </id></span></li><br>
+        <li><span class="text-primary"><id id="na32">Pokud číslo správné není, změňte předchozí nastavení a klepněte na tlačítko <b>Opakovat vytáčení</b>. </id></span></li><br>
+        <li><span class="text-primary"><id id="na33">Původní vytáčené číslo obnovíte klepnutím na tlačítko <b>Obnovit</b>.</id></span></li>
+        </ul>
+        <p><span class="text-primary" id="RemindMeLaterText"><id id="na4">Chcete-li pokračovat bez provedení této úlohy, klepněte na tlačítko <b>Přeskočit</b>.</id></span></p>
+        </span>
+    </p>
+    <DIV class="text-error" ID=error_mesg style="display:none; padding-top:20px"></div>
+    </span>
+
+    </td>
+
+    <td ID=rightmargincell width=7%>
+    </td>
+</tr>
+<tr>
+    <td colspan=3>
+    <br>
+    <table border=0 class="buttonpositionnew">
+    <tr>
+        <td width=99%>&nbsp;</td>
+        <td>
+        <BUTTON ID="btnTelephone" class="buttons" TABINDEX=8 ACCESSKEY="F" style="display:none;"><label for=btnTelephone><id id="LocalBtnTel_Text">Tele<u>f</u>on</id></label></BUTTON>
+        </td>
+        <td>
+        <BUTTON ID="btnRestore" class="buttons" TABINDEX=9 ACCESSKEY="B" onclick="window.parent.RestoreDialRule();"><label for=btnRestore><id id="LocalBtnRestore_Text">O<u>b</u>novit</id></label></BUTTON>
+        </td>
+        <td>
+        <BUTTON ID="btnSkip" class="buttons" TABINDEX=10 ACCESSKEY="P"><label for=btnSkip><id id="LocalBtnSkip_Text"><U>P</U>řeskočit</id></label></BUTTON>
+        </td>
+        <td>
+        <BUTTON ID="btnNext" class="buttons" TABINDEX=11 ACCESSKEY="O"><label for=btnNext><id id="LocalBtnNext_Text"><u>O</u>pakovat vytáčení</id></label></BUTTON>
+        </td>
+    </tr>
+    </table>
+    </td>
+</tr>
+</table>
+</body>
+</html>
