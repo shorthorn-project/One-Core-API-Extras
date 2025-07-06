@@ -1,0 +1,97 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+    <title>Configurazione guidata</title>
+    <LINK REL="stylesheet" TYPE="text/css" HREF="aregstyl.css" id=deskstyle1>
+    <LINK REL="stylesheet" TYPE="text/css" HREF="aregsty2.css" id=deskstyle2 disabled>
+    <META HTTP-EQUIV="MSThemeCompatible" CONTENT="Yes">
+</head>
+
+<body style="background-Color: transparent; background-repeat: no-repeat;" topMargin=0 rightmargin=0 leftmargin=0 tabindex=-1
+      onload="window.parent.ActLan_LoadMe();">
+
+<table border=0 cellpadding=0 cellspacing=0 width="100%" height="100%">
+<tr>
+    <td ID=leftmargincell width=5% height=99%></td>
+    <td ID=maincell valign=top class="text-primary">
+
+    <span ID=Title_Text class="title" style="display:none;">
+    <ID id=Activation_Title_Text1>Configurazione impostazioni di rete</ID>
+    </span>
+
+    <br>
+    <span id="actlan_spn01" class="text-primary">
+        <ID id=actcon_paragraph1>Se per la connessione a Internet è necessario configurare un server proxy, immettere le impostazioni di seguito. Contattare l'amministratore di rete qualora non si conoscano le impostazioni da utilizzare.</id>
+
+        <br><br>
+        <table class="text-primary">
+        <tr>
+            <td colspan="5"><ID id="actconn_set1"><b>Configurazione automatica</b></ID></td>
+        </tr>
+        <tr>
+            <td colspan="5"><ID id="actconn_desc1">La configurazione automatica potrebbe aver sovrascritto quella manuale. Qualora vengano immesse le impostazioni del proxy, deselezionare la casella di controllo etichettata "Rileva automaticamente impostazioni" per fare in modo che le modifiche siano applicate.</ID></td>
+        </tr>
+        <tr>
+            <td width="0"><input type="checkbox" name="cb_auto_detect" TABINDEX=1 ACCESSKEY="A"></td>
+            <td width="100%" colspan="4"><label id="lbl_auto_detect" for="cb_auto_detect"><u>R</u>ileva automaticamente le impostazioni</label></td>
+        </tr>
+        <tr>
+            <td colspan="5">&nbsp;</td>
+        </tr>
+        <tr>
+            <td colspan="5"><ID id="actconn_set2"><b>Server proxy</b></ID></td>
+        </tr>
+        <tr>
+            <td width="0"><input type="checkbox" name="cb_use_proxy" TABINDEX=2 ACCESSKEY="X" onClick="window.parent.ActLan_upClickHandler();"></td>
+            <td width="100%" colspan="4"><label id="lbl_use_proxy" for="cb_use_proxy">Utilizza un server pro<u>x</u>y</label></td>
+        </tr>
+        <tr>
+            <td width="0">&nbsp;</td>
+            <td width="0" id="lblProxyUrl" nowrap><label id="lbl_proxy_url" for="txt_proxy_url">Indi<u>r</u>izzo:</label></td>
+            <td width="40%"><input type="text" id="txt_proxy_url" size="25"  TABINDEX=3 ACCESSKEY="R" style="ime-mode:disabled; background-Color:'#dddddd'"></td>
+            <td width="0" id="lblProxyPort" nowrap><label id="lbl_proxy_port" for="txt_proxy_port">Por<u>t</u>a:</label></td>
+            <td width="60%"><input type="text" id="txt_proxy_port" size="6" TABINDEX=4 ACCESSKEY="T" style="ime-mode:disabled; background-Color:'#dddddd'"></td>
+        </tr>
+        </table>
+
+
+        <br><br>
+        <ID id=activation_paragraph2>Per continuare, fare clic su Avanti.</id>
+    </span>
+    </td>
+
+    <td ID=rightmargincell width=7%>
+    </td>
+</tr>
+<tr>
+    <td colspan=3>
+    <br>
+    <table border=0 class="buttonpositionnew">
+    <tr>
+        <td width="99%">&nbsp;</td>
+        <td>
+        <table border=0 width="100">
+        <tr>
+            <td>
+            <BUTTON ID="btnSkip" class="buttons" TABINDEX=5 ACCESSKEY="N"><label for=btnSkip><id id="LocalBtnSkip_Text">Ig<u>n</u>ora</id></label></BUTTON>
+            </td>
+            <td>
+            <BUTTON ID="btnBack" class="buttons" TABINDEX=6 ACCESSKEY="I"><label for=btnBack><id id="LocalBtnBack_Text"><u>I</u>ndietro</id></label></BUTTON>
+            </td>
+            <td>
+            <BUTTON ID="btnNext" class="buttons" TABINDEX=7 ACCESSKEY="A"><label for=btnNext><id id="LocalBtnNext_Text"><u>A</u>vanti</id></label></BUTTON>
+            </td>
+        </tr>
+        </table>
+        </td>
+    </tr>
+    </table>
+    </td>
+</tr>
+</table>
+
+</body>
+</html>
+

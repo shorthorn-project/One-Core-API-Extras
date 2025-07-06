@@ -25,7 +25,7 @@
     SERVICE_PACK_NUMBER     = 3
     HelpLink = "http://shorthornproject.com"
     URLInfoAbout = "http://shorthornproject.com"
-    OCADU_VERSION           = "4.0.0.rc3-hotfix"
+    OCADU_VERSION           = "4.0.0"
     SP_TITLE                = "One-Core-API Driver Update"
     UPDATE                    = "Update"
     HOTFIX                    = "Hotfix"
@@ -169,7 +169,7 @@
 [System32.files]
     
 [Drivers.CoreDriverFiles]
-    acpi.sys, drivers\xpsp3\xpspacpi.sys
+    acpi.sys, drivers\acpi.sys
     AmdPPM.sys, drivers\AmdPPM.sys
     disk.sys, drivers\disk.sys
     drmk.sys, drivers\drmk.sys
@@ -197,13 +197,16 @@
     wpprecor.sys, drivers\wpprecor.sys
 
 [CopyAlways.DriverCab.files]
-    acpi.sys, drivers\xpsp3\xpspacpi.sys
+    acpi.sys, drivers\acpi.sys
     AmdPPM.sys, drivers\AmdPPM.sys
     disk.sys, drivers\disk.sys
     drmk.sys, drivers\drmk.sys
     drmkaud.sys, drivers\drmkaud.sys
     hdaudbus.sys, drivers\hdaudbus.sys
     HdAudio.sys, drivers\HdAudio.sys
+    hdaprop.dll, System32\hdaprop.dll
+    hdashcut.exe, System32\hdashcut.exe
+    hdaudres.dll, System32\hdaudres.dll		
     ks.sys, drivers\ks.sys
     ksecd8.sys, drivers\ksecd8.sys
     msisadrv.sys, drivers\msisadrv.sys

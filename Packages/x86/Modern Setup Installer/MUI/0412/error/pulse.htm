@@ -1,0 +1,49 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=ks_c_5601-1987">
+    <title>OOBE</title>
+    <LINK REL="stylesheet" TYPE="text/css" HREF="../setup/oobestyl.css">
+</head>
+
+<body style="background-Color: transparent; background-repeat: no-repeat;" TABINDEX=-1
+      onload="window.parent.Pulse_LoadMe();window.parent.Agent_Activate('Pulse');"
+      onunload="window.parent.Agent_Deactivate();">
+
+<table border=0 cellpadding=0 cellspacing=0 width=100% height=100%><tr><td ID=leftmargincell width=7%></td>
+<td ID=maincell valign=top class="text-primary">
+<br><br>
+
+    <span class="title"><id id="pulse1">어떠한 전화 걸기 방식을 사용하십니까?</id></span><br><br>
+    <span class="text-primary"><id id="pulse2">어떤 전화 걸기 방식을 사용하는지 확인하지 못했습니다. 전화선에 사용하는 전화 걸기 방식(톤 또는 펄스)을 선택하십시오.</id></span><br><br>
+
+    <span class="text-primary"><input id=tone  type="radio" name="radiobutton" value="radiobutton" onclick="window.parent.OnClick();" TABINDEX=1 ACCESSKEY="T"><id id="pulse3">톤 방식(<u>T</u>)<id></span><br>
+    <span class="text-primary"><input id=pulse type="radio" name="radiobutton" value="radiobutton" onclick="window.parent.OnClick();" TABINDEX=1 ACCESSKEY="P"><id id="pulse4">펄스 방식(<u>P</u>)</id></span><br><br>
+    <span class="text-primary"><id id="pulse5">컴퓨터를 등록하지 않고 계속 진행하려면 <b>건너뛰기</b>를 클릭하십시오. </id></span>
+
+
+    <table border=0 class="newbuttonposition">
+    <tr>
+        <td width=10>&nbsp;&nbsp;</td>
+        <td><BUTTON ID="btnBack" class="newbuttonsBack" TABINDEX=-1 ACCESSKEY="B" style="visibility:hidden;"></BUTTON></td>
+        <td nowrap valign=middle class="text-primary"><span id="BackBtnLocalText" style="visibility:hidden;"><label for=btnBack><id id="LocalBtnBack_Text">뒤로(<u>B</u>)</id></label></span></td>
+
+        <td width=99%>&nbsp;</td>
+        <td nowrap valign=middle class="text-primary"><span id="SkipBtnLocalText" style="visibility:visible;"><label for=btnSkip><id id="LocalBtnSkip_Text">건너뛰기(<u>S</u>)</id></label></span></td>
+        <td><BUTTON ID="btnSkip" class="newbuttonsSkip" TABINDEX=2  ACCESSKEY="S" style="visibility:visible;"></BUTTON></td>
+
+        <td width=10>&nbsp;&nbsp;</td>
+        <td nowrap valign=middle class="text-primary"><span id="NextBtnLocalText" style="visibility:visible;"><label for=btnNext><id id="LocalBtnRedial_Text">다시 걸기(<u>R</u>)</id></label></span></td>
+        <td><BUTTON ID="btnNext" class="newbuttonsNext" TABINDEX=3  ACCESSKEY="R" style="visibility:visible;"></BUTTON></td>
+    </tr>
+    </table>
+
+    </td>
+</tr>
+</table>
+
+
+</body>
+</html>

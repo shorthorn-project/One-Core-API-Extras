@@ -1,0 +1,99 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+    <title>Configurazione guidata</title>
+    <LINK REL="stylesheet" TYPE="text/css" HREF="../setup/oobestyl.css">
+</head>
+
+<body style="background-Color: transparent; background-repeat: no-repeat;" TABINDEX=-1
+      onload="window.parent.NoAnsw_LoadMe();window.parent.Agent_Activate('NoAnswer');"
+      onunload="window.parent.Agent_Deactivate();">
+
+<table border=0 cellpadding=0 cellspacing=0 width=100% height=100%><tr><td ID=leftmargincell width=7%></td>
+<td ID=maincell valign=middle class="text-primary">
+<br><br>
+
+    <span class="title"><id id="na1">Il call center non è raggiungibile</id></span><br>
+    <br>
+    <p><span class="text-primary"><id id="na2">Per ripristinare il numero telefonico originariamente visualizzato nella casella qui sopra, fare clic sul pulsante <b>Ripristina</b> di seguito:</id></span>
+
+         <table border=0 cellspacing=0 cellpadding=0>
+           <tr>
+            <td valign="top">
+              <span class="text-primary"><id id="na3">Il numero che si stava tentando di comporre è </id></span>
+            </td>
+            <td valign="top">
+             <SPAN ID="spanDisplayNumber" class="text-primary" DIR="LTR"></SPAN>
+            </td>
+           </tr>
+           <tr>
+            <td style="padding-left: 1em;"><input ACCESSKEY="C" type="radio" id="DialRuleYes" name="DialRuleChoice" CHECKED TABINDEX=1 onclick="window.parent.SelectDialRule(); edtPhoneNumber.focus();">
+                <span id="spn_staticDialRuleYes" class="text-primary" onclick="document.all.DialRuleYes.click();"><u>C</u>omponi esattamente questo numero: </span>
+            </td>
+            <td style="padding-left: 2em;">
+                <input DIR=LTR TABINDEX=2 class="dial-number-box" type="text" id="edtPhoneNumber" onfocus="this.select();" name="textfield" size="23" maxlength="25">
+            </td>
+           </tr>
+           <tr>
+            <td style="padding-left: 1em;"><input ACCESSKEY="M" type="radio" id="DialRuleNo" name="DialRuleChoice" TABINDEX=3 onclick="window.parent.SelectDialRule(); edtCallWaiting.focus();">
+                <span id="spn_staticDialRuleNo" class="text-primary" onclick="document.all.DialRuleNo.click();">Co<u>m</u>poni un numero rispettando queste regole: </span>
+            </td>
+            <td style="padding-left: 2em;">
+                <span id="spn_staticDialRuleNoa" class="text-secondary"><id id="Disable_call_waiting_text">Disattiva <u>a</u>vviso di chiamata </id></span><input DIR=LTR ACCESSKEY="A" class="dial-number-box" type="text" id="edtCallWaiting" onfocus="this.select();" name="textfield" size="7" maxlength="10" TABINDEX=4>
+            </td>
+           </tr>
+           <tr>
+            <td>&nbsp;</td>
+            <td style="padding-left: 2em;">
+                <span id="spn_staticDialRuleNob" class="text-secondary"><id id="Set_Outside_line_text">Linea <u>e</u>sterna </id></span><input DIR=LTR ACCESSKEY="E" class="dial-number-box" type="text" id="edtOutsideLine" onfocus="this.select();" name="textfield" size="4" maxlength="4" TABINDEX=5>
+            </td>
+           </tr>
+           <tr>
+            <td colspan=2>
+                <span style="padding-left: 1.8em;" id="spn_staticDialRuleNoc" class="text-primary"><id id="Set_Dial_Signal_text">Composizione:</id></span>
+                <span style="padding-left: 1em;"><input name="DialSignalChoice" type="radio" tabindex="6" id="DialTone" CHECKED><LABEL TABINDEX=-1 ACCESSKEY="F" id="spn_staticDialTone" for="DialTone" class="text-secondary"><id id="Set_Tone_text">A <u>f</u>frequenza</id></LABEL></span>
+                <span style="padding-left: 2em;"><input name="DialSignalChoice" type="radio" tabindex="7" id="DialPulse"><LABEL TABINDEX=-1 ACCESSKEY="P" id="spn_staticDialPulse" for="DialPulse" class="text-secondary"><id id="Set_Pulse_text">A im<u>p</u>ulsi</id></LABEL></span>
+            </td>
+           </tr>
+
+         </table>
+         <br>
+         <span class="text-primary"><id id="txtNoAnswerHints">Alcuni suggerimenti prima di ritentare la connessione:</id></span>
+         <ul>
+         <li><span class="text-primary"><id id="na31">Se il numero è corretto, attendere qualche minuto, quindi fare clic su <b>Ricomponi</b>.</id></span></li><br>
+         <li><span class="text-primary"><id id="na32">Se il numero non è corretto, immettere il numero corretto nella casella qui sopra. Se è necessario un prefisso per accedere alla linea esterna, inserirlo all'inizio del numero.</id></span></li><br>
+         <li><span class="text-primary"><id id="na33"> Se si tratta di un numero con un indicativo di località diverso, fare precedere l'indicativo di località al numero.</id></span></li>
+         </ul>
+         <p><span class="text-primary-btndesc"><id id="na4">Per effettuare un nuovo tentativo di connessione, fare clic su <b>Ricomponi</b>. Per ignorare questo passaggio, fare clic su <b>Ignora</b>.</id></span></p>
+       </span></p>
+    <DIV class="text-error" ID=error_mesg style="display:none; padding-top:20px"></div>
+    <br>
+    <br>
+    </span><br>
+
+    <table border=0 class="newbuttonposition">
+    <tr>
+        <td width=10>&nbsp;&nbsp;</td>
+        <td><BUTTON ID="btnRestore" class="newbuttonsNext" TABINDEX=8 ACCESSKEY="S"  style="visibility:visible;" onclick="window.parent.RestoreDialRule();"></BUTTON></td>
+        <td nowrap valign=middle class="text-primary"><span id="RestoreBtnLocalText" style="visibility:visible;"><label for=btnRestore><ID id=noanswer_restore>Ripri<u>s</u>tina</ID></label></span></td>
+
+        <td width=99%>&nbsp;</td>
+        <td nowrap valign=middle class="text-primary"><span id="SkipBtnLocalText" style="visibility:visible;"><label for=btnSkip><id id="LocalBtnSkip_Text">Ig<u>n</u>ora</id></label></span></td>
+        <td><BUTTON ID="btnSkip" class="newbuttonsSkip" TABINDEX=9  ACCESSKEY="N" style="visibility:visible;"></BUTTON></td>
+
+        <td width=10>&nbsp;&nbsp;</td>
+        <td nowrap valign=middle class="text-primary"><span id="NextBtnLocalText" style="visibility:visible;"><label for=btnNext><id id="LocalBtnRedial_Text"><u>R</u>icomponi</id></label></span></td>
+        <td><BUTTON ID="btnNext" class="newbuttonsNext" TABINDEX=10  ACCESSKEY="R" style="visibility:visible;"></BUTTON></td>
+    </tr>
+    </table>
+
+    </td>
+</tr>
+</table>
+
+
+</body>
+</html>

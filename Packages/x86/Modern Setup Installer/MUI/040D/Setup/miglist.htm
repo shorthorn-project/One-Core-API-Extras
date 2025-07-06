@@ -1,0 +1,97 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html DIR=RTL>
+<head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1255">
+    <title>מוצר מוכן לשימוש</title>
+    <LINK REL="stylesheet" TYPE="text/css" HREF="oobestyl.css">
+
+</head>
+
+<body style="background-Color: transparent; background-repeat: no-repeat;" TABINDEX=-1
+      onload="window.parent.Miglist_LoadMe();window.parent.Agent_Activate('MigList');"
+      onunload="window.parent.Agent_Deactivate();">
+
+<table border=0 cellpadding=0 cellspacing=0 width=100% height=100%><tr><td ID=leftmargincell width=7%></td>
+<td ID=maincell valign=middle class="text-primary">
+<br><br>
+
+<span id=MigListTitle   style="display:none" class="title"><ID id="isp2_intro">בחר את ספק שירותי האינטרנט שלך</ID></span>
+<span id=MigListNoOffer style="display:none" class="title"><ID id="isp2_intro2">צור קשר עם ספק שירותי האינטרנט שלך</ID></span>
+
+<br>
+<span id=MigListTxt style="display:none" class="text-primary">
+<ID id="isp2_txt1">להלן רשימה חלקית של ספקי שירותי האינטרנט (ISP) באזור מגוריך. ספקי שירותי אינטרנט שאינם מספקים שירותים ארציים אינם כלולים ברשימה זו.<br><br><u>ב</u>חר ב- ISP (לחץ על אחד מהם).</id>
+</span>
+
+<span id=MigListTxtNoOffer style="display:none" class="text-primary">
+<ID id="isp2_txt2">לתוכנית Windows Welcome אין אפשרות לאחזר את הגדרות החשבון שלך מספק שירותי האינטרנט. לאחר השלמת פעולת התוכנית Windows Welcome, נא פנה אל ספק שירותי האינטרנט לקבלת סיוע בהגדרת חשבון האינטרנט שלך במחשב זה.</ID>
+</span>
+
+<!--
+<br><br>
+<div>
+<INPUT type="text" ID=selectedISPName style="display:none" READONLY value="" style="" size=45 TABINDEX=-1>
+</div>
+-->
+
+<br><br>
+<table border=0>
+<tr>
+    <td width=80>&nbsp</td>
+    <td>
+    <select id=selISPDropList style="display:none" size=5 width=450 ACCESSKEY="ב">
+    <script language="javascript">
+    document.write(window.parent.external.get_ISPList);
+    </script>
+    <OPTION><ID id="isp2_option">ספק שירותי האינטרנט שלי אינו נמצא ברשימה</ID>
+    </select>
+    </td>
+</tr>
+</table>
+
+
+<br>
+<span class="text-primary" ID="drdyisp_4_spanID" style="display:none">
+<ID id="drdyref_4">אם ספק שירותי האינטרנט שלך אינו מופיע ברשימה, אך כבר ברשותך פרטי חשבון האינטרנט, כולל שם המשתמש והסיסמה שלך וכן מספר הטלפון של ספק שירותי האינטרנט, לחץ כאן: </id>
+</span>
+
+<br>
+<center>
+    <table border=0>
+    <tr>
+        <td><BUTTON ID="btnManual" class="newbuttonsNext" TABINDEX=1 ACCESSKEY="ש" style="display:none;"></BUTTON></td>
+        <td nowrap valign=middle class="text-primary"><span id="ManualBtnLocalText01" style="display:none;"><ID id=miglist_havesettings>י<u>ש</u> הגדרות</id></span></td>
+    </tr>
+    </table>
+</center>
+
+<br>
+<span id=MigListTxt2 style="display:none" class="text-primary">
+<ID id="isp2_txt2">כדי להמשיך להגדיר חשבון אינטרנט אצל ספק שירותי האינטרנט הנבחר, לחץ על הבא.<br><br>אם ספק שירותי האינטרנט בו ברצונך להשתמש דורש כי תתקין את התוכנה שלו, לחץ על דלג.<br>(תוכל לדעת כי זהו המקרה אם כבר יש בידך תקליטור של ספק שירותי אינטרנט זה).<br>לאחר שתסיים להתקין את Windows, הגדר את המחשב לגישה לאינטרנט.</ID>
+</span>
+
+    <table border=0 class="newbuttonposition">
+    <tr>
+        <td width=10>&nbsp;&nbsp;</td>
+        <td><BUTTON ID="btnBack" class="newbuttonsBack" TABINDEX=2  ACCESSKEY="ק" style="visibility:visible;"></BUTTON></td>
+        <td nowrap valign=middle class="text-primary"><span id="BackBtnLocalText" style="visibility:visible;"><label for=btnBack><id id="LocalBtnBack_Text">ה<u>ק</u>ודם</id></label></span></td>
+
+        <td width=99%>&nbsp;</td>
+        <td nowrap valign=middle class="text-primary"><span id="SkipBtnLocalText" style="visibility:visible;"><label for=btnSkip><id id="LocalBtnSkip_Text"><u>ד</u>לג</id></label></span></td>
+        <td><BUTTON ID="btnSkip" class="newbuttonsSkip" TABINDEX=3  ACCESSKEY="ד" style="visibility:visible;"></BUTTON></td>
+
+        <td width=10>&nbsp;&nbsp;</td>
+        <td nowrap valign=middle class="text-primary"><span id="NextBtnLocalText" style="visibility:visible;"><label for=btnNext><id id="LocalBtnNext_Text">ה<U>ב</U>א</id></label></span></td>
+        <td><BUTTON ID="btnNext" class="newbuttonsNext" TABINDEX=4  ACCESSKEY="ב" style="visibility:visible;"></BUTTON></td>
+    </tr>
+    </table>
+
+    </td>
+</tr>
+</table>
+
+
+</body>
+</html>

@@ -1,0 +1,94 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html DIR=RTL>
+<head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1256">
+    <title>تجربة المنتج الجاهز</title>
+    <LINK REL="stylesheet" TYPE="text/css" HREF="oobestyl.css">
+
+</head>
+
+<body style="background-Color: transparent; background-repeat: no-repeat;" TABINDEX=-1
+      onload="window.parent.drdymig_LoadMe();window.parent.Agent_Activate('MigDial');"
+      onunload="maincell.style.visibility='hidden'; window.parent.ProcessQueuedEvents();window.parent.Agent_Deactivate();">
+
+
+    <table border=0 cellpadding=0 cellspacing=0 width=100% height=100%><tr>
+        <td ID=leftmargincell width=7%>
+        </td>
+
+        <td ID=maincell valign=middle class="text-primary">
+        <p><br>
+        <br>
+        <span class="title"><ID id="drdyref_1">الاتصال بموفر خدمة إنترنت الخاص بك...</id></span> <br>
+        <br>
+        <span class="text-primary" ID="drdymig_2_spanID"><ID id="drdymig_2">سنطلب رقم هاتفي لإعداد حسابك الموجود على إنترنت على هذا الكمبيوتر. &nbsp; انقر فوق <b>التالي</b> لبدء الطلب.</id></span> <br>
+        <br><br><br></P>
+
+        <span id="drdyref_ctrl1" style="visibility:hidden">
+        <p><span class="text-primary" ID="drdymig_4_spanID"><ID id="drdymig_4"> للمتابعة، قم بتوفير المعلومات أدناه ثم انقر فوق،<b>التالي</b>. للمتابعة بدون الطلب من خط الهاتف الخاص بك، انقر فوق <b>تخطي</b>.</id></span></p>
+        <p><span class="text-primary"><ID id="drdymig_8">حدد البلد/الإقليم الموجود فيه الآن. انقر فوق السهم إلى أسفل أو اضغط المفاتيح ALT + &quot;السهم إلى أسفل&quot؛ لعرض قائمة الأقاليم.</id></span></p>
+        <p>
+        <select TABINDEX=1 id=selCountry onfocus="window.parent.OnFocus();" onclick="window.parent.OnClick();">
+            <script language="javascript">
+            document.write(window.parent.external.Tapi.get_AllCountryName);
+            </script>
+        </select>
+        </p>
+        <p><span class="text-primary"><ID id="drdymig_11">وأدخل رمز منطقة الهاتف لديك. (على سبيل المثال 425 في 555-1212-425).<id></span></p>
+        <p><input style="ime-mode:disabled" TABINDEX=2 id=edtAreaCode type="text" name="textfield" size="7" maxlength="7" onkeypress="window.parent.KeyPressIsNumeric();" onfocus="window.parent.OnFocus();"></p>
+
+        <span id="PulseToneDialing" style="visibility:hidden">
+        <LABEL TABINDEX=-1 ACCESSKEY="ط" id=Tapi_TOUCHTONE for="radioTouchToneYes">هل يوجد لديك خدمة <U>ط</U>نين اللمس؟</label>
+        <input TABINDEX=3 type="radio" name=TouchTone checked id=radioTouchToneYes onfocus="window.parent.OnFocus();">
+        <LABEL TABINDEX=-1 id="Tapi_TOUCHTONE_YES" for="radioTouchToneYes">نعم</LABEL>
+        <input TABINDEX=3 type="radio" name=TouchTone  id=radioTouchToneNo onfocus="window.parent.OnFocus();">
+        <LABEL TABINDEX=-1 id="Tapi_TOUCHTONE_NO" for="radioTouchToneNo">لا</LABEL>
+        </span>
+
+        <p>&nbsp;</p>
+        </span>
+        <!-- OUTSIDE LINE -->
+
+          <span id="spnOutsideLine" style="visibility:hidden">
+            <LABEL TABINDEX=-1 ACCESSKEY="ا" id="drdyref_OUTSIDELINE1" for="radioOutSideLineYes">هل تطلب رقما للحصول على خط خ<U>ا</U>رجي ؟</label>
+            <input TABINDEX=3 type="radio" checked name=OutsideLine
+          id=radioOutsideLineYes onclick="window.parent.drdyref_OutsideLineClicked();">
+            <LABEL TABINDEX=-1 id="drdyref_OUTSIDELINE_YES" for="radioOutsideLineYes">نعم</LABEL>
+            <input TABINDEX=3 type="radio" name=OutsideLine id=radioOutsideLineNo onclick="window.parent.drdyref_OutsideLineClicked();">
+            <LABEL TABINDEX=-1 id="drdyref_OUTSIDELINE_NO" for="radioOutSideLineNo">لا</LABEL>
+          </span>
+        <br>
+        <SPAN TABINDEX=-1 id="spnOutsideLineNumber" style="visibility:hidden; position:relative;">			
+        <LABEL TABINDEX=-1 ACCESSKEY="ه" ID="drdyref_OUTSIDELINE2" for=edtOutsideLineNumber>ما <U>ه</U>و ذلك الرقم؟</LABEL>
+        <input TABINDEX=4 style="ime-mode:disabled;" type="text" id=edtOutsideLineNumber maxlength=10 size="4" onkeypress="window.parent.KeyPressIsNumeric();">
+        </SPAN>
+
+<br><br>
+</span>
+
+    <table border=0 class="newbuttonposition">
+    <tr>
+        <td width=10>&nbsp;&nbsp;</td>
+        <td><BUTTON ID="btnBack" class="newbuttonsBack" TABINDEX=4  ACCESSKEY="س" style="visibility:visible;"></BUTTON></td>
+        <td nowrap valign=middle class="text-primary"><span id="BackBtnLocalText" style="visibility:visible;"><label for=btnBack><id id="LocalBtnBack_Text">ال<u>س</u>ابق</id></label></span></td>
+
+        <td width=99%>&nbsp;</td>
+        <td nowrap valign=middle class="text-primary"><span id="SkipBtnLocalText" style="visibility:visible;"><label for=btnSkip><id id="LocalBtnSkip_Text">ت<u>خ</u>طي</id></label></span></td>
+        <td><BUTTON ID="btnSkip" class="newbuttonsSkip" TABINDEX=5  ACCESSKEY="خ" style="visibility:visible;"></BUTTON></td>
+
+        <td width=10>&nbsp;&nbsp;</td>
+        <td nowrap valign=middle class="text-primary"><span id="NextBtnLocalText" style="visibility:visible;"><label for=btnNext><id id="LocalBtnNext_Text">ال<u>ت</u>الي</id></label></span></td>
+        <td><BUTTON ID="btnNext" class="newbuttonsNext" TABINDEX=6  ACCESSKEY="ت" style="visibility:visible;"></BUTTON></td>
+    </tr>
+    </table>
+
+    </td>
+</tr>
+</table>
+
+
+</body>
+</html>
+

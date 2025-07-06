@@ -18,10 +18,10 @@ Signature="$Windows NT$"
 SP1RC1="update\update_srv2k3_SP1_RC1.inf"
 
 [SourceInfsBranches]
-WinXPSP3=update\update_winxp.inf
-Srv2k3SP2=update\update_srv2k3.inf
-LH=update\update_lh.inf
-LHRESET=update\update_lh_reset.inf
+WinXPSP3=update\update_nt5.inf
+Srv2k3SP2=update\update_nt5.inf
+LH=update\update_nt5.inf
+LHRESET=update\update_nt5.inf
 
 [SetupFiles.SP1RC1]
 "update\update_srv2k3_SP1_RC1.inf"

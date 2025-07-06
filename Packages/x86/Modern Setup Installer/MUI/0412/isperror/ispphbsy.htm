@@ -1,0 +1,103 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=ks_c_5601-1987">
+    <title>OOBE</title>
+    <LINK REL="stylesheet" TYPE="text/css" HREF="../setup/oobestyl.css">
+</head>
+
+<body style="background-Color: transparent; background-repeat: no-repeat;" TABINDEX=-1
+      bgcolor="#ffffff" onload="window.parent.Toobusy_LoadMe();window.parent.Agent_Activate('ISPPhBsy');"
+      onunload="window.parent.Agent_Deactivate();">
+
+<table border=0 cellpadding=0 cellspacing=0 width=100% height=100%><tr><td ID=leftmargincell width=7%></td>
+<td ID=maincell valign=middle class="text-primary">
+<br>
+
+    <span class="title"><id id="na1">연결하려는 전화 번호가 통화 중이거나 응답이 없습니다.</id></span><br>
+    <br>
+    <p><span class="text-primary"><id id="na2">연결한 번호가 통화 중일 수도 있습니다. 다른 전화 번호를 사용해 보십시오.</id></span>
+        <ul>
+        <li><span class="text-primary"><id id="na22">외부 회선 연결을 위한 번호를 사용해야 할 수도 있습니다.</id></span></li><br>
+        <li><span class="text-primary"><id id="na21">시외로 전화를 거는 경우에는 해당 지역에 따라 전화 번호를 변경해야 할 수도 있습니다.</id></span></li><br><br>
+        </ul>
+
+         <table border=0 cellspacing=0 cellpadding=0>
+           <tr>
+            <td valign="top">
+              <span class="text-primary"><id id="na3">연결할 전화 번호: </id></span>
+            </td>
+            <td valign="top">
+             <SPAN ID="spanDisplayNumber" class="text-primary" DIR="LTR"></SPAN>
+            </td>
+           </tr>
+           <tr>
+            <td style="padding-left: 1em;"><input ACCESSKEY="D" type="radio" id="DialRuleYes" name="DialRuleChoice" CHECKED TABINDEX=1 onclick="window.parent.SelectDialRule();">
+                <span id="spn_staticDialRuleYes" class="text-primary" onclick="document.all.DialRuleYes.click();">다른 번호로 전화 걸기(<u>D</u>)</span>
+            </td>
+            <td style="padding-left: 2em;">
+                &nbsp;
+            </td>
+           </tr>
+           <tr>
+            <td style="padding-left: 1em;"><input ACCESSKEY="A" type="radio" id="DialRuleNo" name="DialRuleChoice" TABINDEX=3 onclick="window.parent.SelectDialRule();">
+                <span id="spn_staticDialRuleNo" class="text-primary" onclick="document.all.DialRuleNo.click();">다음 규칙을 적용하여 다른 번호로 전화 걸기(<u>A</u>): </span>
+            </td>
+            <td style="padding-left: 2em;">
+                <span id="spn_staticDialRuleNoa" class="text-secondary"><id id="Disable_call_waiting_text">통화 중 대기 해제(<u>C</u>) </id></span><input ACCESSKEY="C" DIR=LTR class="dial-number-box" type="text" id="edtCallWaiting" onfocus="this.select();" name="textfield" size="7" maxlength="10" TABINDEX=4>
+            </td>
+           </tr>
+           <tr>
+            <td>&nbsp;</td>
+            <td style="padding-left: 2em;">
+                <span id="spn_staticDialRuleNob" class="text-secondary"><id id="Set_Outside_line_text">외부 회선(<u>O</u>)</id></span><input ACCESSKEY="O" DIR=LTR class="dial-number-box" type="text" id="edtOutsideLine" onfocus="this.select();" name="textfield" size="4" maxlength="4" TABINDEX=5></td>
+            </td>
+           </tr>
+           <tr>
+           <tr>
+            <td colspan=2>
+                <span style="padding-left: 1.8em;" id="spn_staticDialRuleNoc" class="text-primary"><id id="Set_Dial_Signal_text">다음으로 전화 걸기:</id></span>
+                <span style="padding-left: 1em;"><input name="DialSignalChoice" type="radio" tabindex="6" id="DialTone" CHECKED><LABEL TABINDEX=-1 ACCESSKEY="T" id="spn_staticDialTone" for="DialTone" class="text-secondary"><id id="Set_Tone_text">톤 방식(<u>T</u>)</id></LABEL></span>
+                <span style="padding-left: 2em;"><input name="DialSignalChoice" type="radio" tabindex="7" id="DialPulse"><LABEL TABINDEX=-1 ACCESSKEY="P" id="spn_staticDialPulse" for="DialPulse" class="text-secondary"><id id="Set_Pulse_text">펄스 방식(<u>P</u>)</id></LABEL></span>
+            </td>
+           </tr>
+         </table>
+         <br>
+
+         <ul>
+         <li><span class="text-primary"><id id="na31">이전 번호가 올바르면 잠시 기다렸다가 <b>다시 걸기</b>를 클릭하십시오. </id></span></li><br>
+         <li><span class="text-primary"><id id="na32">번호가 잘못되었으면 위의 설정을 수정하고 <b>다시 걸기</b>를 클릭하십시오. </id></span></li><br>
+         <li><span class="text-primary"><id id="na33">원래의 전화 번호를 다시 사용하려면 <b>복원</b>을 클릭하십시오.</id></span></li>
+         </ul>
+         <p><span class="text-primary-btndesc"><id id="na4">인터넷 서비스를 설정하지 않고 계속 진행하려면 <b>건너뛰기</b>를 클릭하십시오.</id></span></p>
+       </span></p>
+    <DIV class="text-error" ID=error_mesg style="display:none; padding-top:20px"></div>
+    <br>
+    <br>
+    </span><br>
+
+    <table border=0 class="newbuttonposition">
+    <tr>
+        <td width=10>&nbsp;&nbsp;</td>
+        <td><BUTTON ID="btnRestore" class="newbuttonsNext" TABINDEX=8  ACCESSKEY="E" style="visibility:visible;" onclick="window.parent.RestoreDialRule();"></BUTTON></td>
+        <td nowrap valign=middle class="text-primary"><span id="BackBtnLocalText" style="visibility:visible;"><label for=btnRestore><id id="LocalBtnRestore_Text">복원(<u>E</u>)</id></label></span></td>
+
+        <td width=99%>&nbsp;</td>
+        <td nowrap valign=middle class="text-primary"><span id="SkipBtnLocalText" style="visibility:visible;"><label for=btnSkip><id id="LocalBtnSkip_Text">건너뛰기(<u>S</u>)</id></label></span></td>
+        <td><BUTTON ID="btnSkip" class="newbuttonsSkip" TABINDEX=9  ACCESSKEY="S" style="visibility:visible;"></BUTTON></td>
+
+        <td width=10>&nbsp;&nbsp;</td>
+        <td nowrap valign=middle class="text-primary"><span id="NextBtnLocalText" style="visibility:visible;"><label for=btnNext><id id="LocalBtnRedial_Text">다시 걸기(<u>R</u>)</id></label></span></td>
+        <td><BUTTON ID="btnNext" class="newbuttonsNext" TABINDEX=10  ACCESSKEY="R" style="visibility:visible;"></BUTTON></td>
+    </tr>
+    </table>
+
+    </td>
+</tr>
+</table>
+
+
+</body>
+</html>

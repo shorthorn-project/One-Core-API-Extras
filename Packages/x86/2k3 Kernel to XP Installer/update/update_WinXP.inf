@@ -1,0 +1,193 @@
+[Version]
+    Signature                 = "$Windows NT$"
+    LanguageType              = %LangTypeValue%
+    NtBuildToUpdate           = 2600
+    NtMajorVersionToUpdate    = 5
+    NtMinorVersionToUpdate    = 1
+    MaxNtBuildToUpdate        = 2600
+    MaxNtMajorVersionToUpdate = 5
+    MaxNtMinorVersionToUpdate = 1
+    MinNtServicePackVersion   = 512
+    MaxNtServicePackVersion   = 768
+		
+[Configuration]
+    DeviceClassInfo=1
+    InstallationType        = Hotfix
+    InstallLogFileName      = %SP_SHORT_TITLE%.log
+    UnInstallLogFileName    = %SP_SHORT_TITLE%Uninst.log
+    UnInstallDirName        = $NtUninstall%SP_SHORT_TITLE%$
+    EventLogKeyName         = NtServicePack
+    EventLogDllName         = spmsg.dll
+	
+[Prerequisite]
+	;condition=SingleOp,LatestUpdateCheck1.Section
+	
+[LatestUpdateCheck1.Section]
+    ; EqualOp=CheckReg,HKLM,"SOFTWARE\Microsoft\Windows NT\CurrentVersion\HotFix\OCAB",Installed,0x10001,==,1
+    ; Display_String="%LatestBaseUpdateFail%"	
+	
+[Strings]
+    SERVICE_PACK_NUMBER       = 2
+    HelpLink                  = "http://shorthornproject.com"
+    URLInfoAbout              = "http://shorthornproject.com"
+    BASE_VERSION              = "4.0.0"    
+    UPDATE                    = "Update"
+    HOTFIX                    = "Hotfix"
+    SECURITY_UPDATE           = "Security Update"
+    LangTypeValue             = 0x0
+    ServicePackSourceFiles    = "One-Core-API Srv2k3 kernel into XP Source Files"
+    SP_SHORT_TITLE            = "OCASRV2XP"
+    SP_TITLE                  = "One-Core-API Srv2k3 kernel into XP"
+    PARENT_DISPLAY_NAME       = "One-Core-API"
+    LOC_UPDATE                = "Update"
+    LOC_CRITICALUPDATE        = "Critical Update"
+    LOC_HOTFIX                = "Hotfix"
+    LOC_SECURITY_UPDATE       = "Security Update"
+	LatestBaseUpdateFail      = "Please Install latest One-Core-API Base first!"
+
+[ProductInstall.DontDelayUntilReboot]
+    CopyFiles=Osldr.files
+    CopyFiles= System32.files		
+    ;CopyFiles=MustReplace.System32.files
+
+[ProductInstall.CopyFilesAlways]
+    CopyFiles=CopyAlways.DriverCab.files
+    CopyFiles=CopyAlways.Cache.files
+
+[ProductInstall.ProfessionalFiles]
+    AddReg=Product.Add.Reg.Professional
+
+[ProductInstall.UniprocessorFiles]
+    CopyFiles=Uniprocessor.Kernel.files
+
+[ProductInstall.MultiprocessorFiles]
+    CopyFiles=Multiprocessor.Kernel.files
+
+[ProductInstall.GlobalRegistryChanges.Install]
+    AddReg=Product.Add.Reg
+
+[ProductInstall.GlobalRegistryChanges.ReInstall]
+    AddReg=Product.Add.Reg
+
+[Save.Reg.For.Uninstall]
+    HKLM,"SYSTEM\CurrentControlSet\Control\RtlQueryRegistryConfig\TrustedTypesKeyList"
+    HKLM,"SOFTWARE\Microsoft\Windows\CurrentVersion\Setup", "LogLevel"
+    HKLM,SOFTWARE\Microsoft\Windows NT\CurrentVersion\Hotfix\%SP_SHORT_TITLE%
+    HKLM,"SOFTWARE\Microsoft\Updates\Windows Server 2003\SP%SERVICE_PACK_NUMBER%\%SP_SHORT_TITLE%"
+    HKLM,"SYSTEM\CurrentControlSet\Services\EventLog\System\Clussvc","EventMessageFile"
+
+[Product.Add.Reg]
+    HKLM,SOFTWARE\Microsoft\Windows NT\CurrentVersion\Hotfix\%SP_SHORT_TITLE%,"Installed",0x10001,1
+    HKLM,SOFTWARE\Microsoft\Windows NT\CurrentVersion\Hotfix\%SP_SHORT_TITLE%,"Backup Dir",0,""
+    HKLM,SOFTWARE\Microsoft\Windows NT\CurrentVersion\Hotfix\%SP_SHORT_TITLE%,"Installed By",0,""
+    HKLM,SOFTWARE\Microsoft\Windows NT\CurrentVersion\Hotfix\%SP_SHORT_TITLE%,"Installed On",0,""
+    HKLM,SOFTWARE\Microsoft\Windows NT\CurrentVersion\Hotfix\%SP_SHORT_TITLE%,"Service Pack",0x10001,%SERVICE_PACK_NUMBER%
+    HKLM,SOFTWARE\Microsoft\Windows NT\CurrentVersion\Hotfix\%SP_SHORT_TITLE%,"Valid",0x10001,1
+    HKLM,SOFTWARE\Microsoft\Windows NT\CurrentVersion\Hotfix\%SP_SHORT_TITLE%\File 1\,"Flags",0,""
+    HKLM,SOFTWARE\Microsoft\Windows NT\CurrentVersion\Hotfix\%SP_SHORT_TITLE%\File 1\,"New File",0,""
+    HKLM,SOFTWARE\Microsoft\Windows NT\CurrentVersion\Hotfix\%SP_SHORT_TITLE%\File 1\,"New Link Date",0,""
+    HKLM,SOFTWARE\Microsoft\Windows NT\CurrentVersion\Hotfix\%SP_SHORT_TITLE%\File 1\,"Old Link Date",0,""
+    HKLM,SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\%SP_SHORT_TITLE%,"ReleaseType",0,%SECURITY_UPDATE%
+    HKLM,SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\%SP_SHORT_TITLE%,"ParentKeyName",0,"OperatingSystem"
+
+[Del.Reg.Uninstall]
+
+[Product.Add.Reg.Professional]
+    HKLM,SOFTWARE\Microsoft\Windows NT\CurrentVersion\Hotfix\%SP_SHORT_TITLE%,"Comments",0,%SP_TITLE_XP%
+    HKLM,SOFTWARE\Microsoft\Windows NT\CurrentVersion\Hotfix\%SP_SHORT_TITLE%,"Fix Description",0,%SP_TITLE_XP%
+    HKLM,SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\%SP_SHORT_TITLE%,"RegistryLocation",0,"HKLM\SOFTWARE\Microsoft\Updates\Windows XP Version 2003\SP%SERVICE_PACK_NUMBER%\%SP_SHORT_TITLE%"
+    HKLM,SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\%SP_SHORT_TITLE%,"ParentDisplayName",0,"%PARENT_DISPLAY_NAME_XP%"
+    HKLM,SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\%SP_SHORT_TITLE%,"DisplayName",0,"%SP_TITLE_XP%"
+    HKLM,SOFTWARE\Microsoft\Updates\Windows XP Version 2003\SP%SERVICE_PACK_NUMBER%\%SP_SHORT_TITLE%,"Description",,%SP_TITLE_XP%
+
+[IE7.AdditionalSettings.Save.Reg.For.Uninstall]
+
+[SourceDisksFiles]
+    osfiles\XP\xpspntkrnlmp.exe=1
+    osfiles\XP\xpspntdll.dll=1
+    osfiles\XP\xpspntkrpamp.exe=1
+    osfiles\XP\xpspntoskrnl.exe=1
+    osfiles\XP\xpspntkrnlpa.exe=1
+	osfiles\XP\xpspwin32k.sys=1
+
+[DestinationDirs]
+	System32.files=11 
+	CopyAlways.System32.files=11  ; %windir%\system32 (don't delay until reboot)
+    MustReplace.System32.files=11   ; %windir%\system32 (don't delay until reboot)
+    CopyAlways.DriverCab.files=65623 ; Destination determined at runtime
+    Uniprocessor.Kernel.files=11    ; %windir%\system32 (don't delay until reboot)
+    Multiprocessor.Kernel.files=11  ; %windir%\system32 (don't delay until reboot)
+    CopyAlways.Cache.files=65619        ; %windir%\system32\DllCache (copy even if don't exist)
+	Drivers.CoreDriverFiles = 12 ; %windir%\system32\drivers
+	Osldr.files=54                  ; path to ntldr or osloader.exe (don't delay until reboot)
+	
+[Osldr.files]
+    ntldr, osfiles\XP\Loader\ntldr
+    ntdetect.com, osfiles\XP\Loader\ntdetect.com			
+
+[ProcessesToRun]
+    "updatehal.exe"
+	
+[ProductInstall.CopyFilesAlways]
+    CopyFiles  = Drivers.CoreDriverFiles
+
+[ProductInstall.ReplaceFilesIfExist]
+	CopyFiles = CoreDriverFiles	
+
+[System32.files]
+	apphelp.dll, osfiles\XP\xpspapphelp.dll
+	basesrv.dll, osfiles\XP\xpspbasesrv.dll
+	csrsrv.dll, osfiles\XP\xpspcsrsrv.dll
+    halaacpi.dll,osfiles\XP\xpsphalaacpi.dll    
+    halacpi.dll,osfiles\XP\xpsphalacpi.dll    
+    halapic.dll,osfiles\XP\xpsphalapic.dll    
+    halmacpi.dll,osfiles\XP\xpsphalmacpi.dll  
+    halmps.dll,osfiles\XP\xpsphalmps.dll   	
+    ntdll.dll,osfiles\XP\xpspntdll.dll
+	gdibase.dll, osfiles\XP\xpspgdibase.dll
+	kernel32.dll, osfiles\XP\xpspkernel32.dll
+	sorttbls.nls, osfiles\XP\xpspsorttbls.nls
+	userbase.dll, osfiles\XP\xpspuserbase.dll	
+	uxtheme.dll, osfiles\XP\xpspuxtheme.dll
+	updatehal.exe,osfiles\XP\updatehal.exe	
+	winsrv.dll, osfiles\XP\xpspwinsrv.dll
+	win32k.sys, osfiles\XP\xpspwin32k.sys
+	
+[Drivers.CoreDriverFiles]
+	mountmgr.sys, osfiles\XP\Drivers\mountmgr.sys	
+	videoprt.sys, osfiles\XP\Drivers\videoprt.sys	
+	watchdog.sys, osfiles\XP\Drivers\watchdog.sys
+
+[CopyAlways.DriverCab.files]
+    ntoskrnl.exe,osfiles\XP\xpspntoskrnl.exe
+    ntkrpamp.exe,osfiles\XP\xpspntkrpamp.exe
+    ntkrnlpa.exe,osfiles\XP\xpspntkrnlpa.exe
+    ntkrnlmp.exe,osfiles\XP\xpspntkrnlmp.exe
+	hal.dll,osfiles\XP\xpsphal.dll
+	halaacpi.dll,osfiles\XP\xpsphalaacpi.dll	
+	halacpi.dll,osfiles\XP\xpsphalacpi.dll	
+	halapic.dll,osfiles\XP\xpsphalapic.dll	
+	halmacpi.dll,osfiles\XP\xpsphalmacpi.dll	
+	halmps.dll,osfiles\XP\xpsphalmps.dll	
+
+[Uniprocessor.Kernel.files]
+    ntoskrnl.exe,osfiles\XP\xpspntoskrnl.exe
+    ntkrnlpa.exe,osfiles\XP\xpspntkrnlpa.exe
+	hal.dll,osfiles\XP\xpsphalaacpi.dll
+	
+[Multiprocessor.Kernel.files]
+    ntkrnlpa.exe,osfiles\XP\xpspntkrpamp.exe
+    ntoskrnl.exe,osfiles\XP\xpspntkrnlmp.exe
+	hal.dll,osfiles\XP\xpsphalmacpi.dll	
+
+[SourceDisksNames]
+    1=%ServicePackSourceFiles%
+
+[LinkItems.Create.Uninstall]
+
+[GlobalRegistryChanges.UnInstall]
+
+[Add.Reg.Uninstall]
+
+[PreRequisite.Uninstall]
+

@@ -1,0 +1,282 @@
+LICENCFELTÉTELEK MICROSOFT SZOFTVERHEZ
+
+MICROSOFT WINDOWS INSTALLER, VERSION 4.5
+
+A jelen dokumentumban foglalt 
+licencfeltételek kötelezõ megállapodást 
+tartalmaznak a Microsoft Corporation (vagy, 
+az Ön lakhelyétõl függõen egyik 
+társvállalata) és Ön között. Kérjük, 
+figyelmesen olvassa el ezen feltételeket. A 
+feltételek a fent megnevezett szoftverre 
+vonatkoznak - ideértve azt az adathordozót 
+(ha van ilyen), amelyen Ön a szoftvert 
+megkapta. A feltételek a szoftverhez tartozó 
+bármely Microsoft:
+
+ frissítésre,
+
+ bõvítésre,
+
+ Internet-alapú szolgáltatásra és
+
+ terméktámogatási szolgáltatásra
+
+is vonatkoznak, kivéve, ha ezen elemeket más 
+feltételek kísérik. Ilyen esetben az utóbbi a 
+feltételek érvényesek.
+
+A szoftver használatával Ön elfogadja a 
+jelen feltételeket. Amennyiben Ön nem fogadja 
+el a feltételeket, úgy ne használja a 
+szoftvert.
+
+Ha elfogadja a jelen licencfeltételeket, úgy 
+azok az alábbiakban ismertetett jogokat 
+biztosítják Önnek.
+
+1. TELEPÍTÉSI ÉS HASZNÁLATI JOGOK. Ön 
+telepítheti és használhatja a szoftver 
+tetszõleges számú példányát készülékein 
+érvényesen licencelt Microsoft Windows 
+szoftverrel.
+
+2. TOVÁBBI LICENCBEADÁSI FELTÉTELEK ÉS/VAGY 
+HASZNÁLATI JOGOK.
+
+a. Terjeszthetõ kód. A szoftver olyan kódot 
+tartalmaz, amely terjeszthetõ az Ön által 
+fejlesztett programokban, amennyiben betartja 
+az alábbi feltételeket.
+
+i. Használati és terjesztési jog. A kód és 
+az alább felsorolt szövegfájlok elnevezése 
+'Terjeszthetõ kód'.
+
+ A REDIST.TXT fájlban felsorolt fájlok. Ön 
+a REDIST.TXT fájlokban felsorolt kódot 
+tárgykód formájában másolhatja és 
+terjesztheti.
+
+ Harmadik fél általi terjesztés. Az Ön 
+engedélye alapján az Ön programjainak 
+terjesztõi az adott programok részeként 
+másolhatják és terjeszthetik a Terjeszthetõ 
+kódot.
+
+ii. A terjesztésre vonatkozó követelmények. 
+Bármilyen Ön által terjesztett Terjeszthetõ 
+kód esetében Önnek:
+
+ saját programjaiban a kódot jelentõs 
+elsõdleges funkcionalitással bõvíteni;
+
+ kötelezõvé tenni a terjesztõk és a külsõ 
+végfelhasználók számára egy olyan szerzõdés 
+elfogadását, amelynek feltételei legalább 
+olyan mértékben védik a Terjeszthetõ kódot, 
+mint ez a szerzõdés;
+
+ saját szerzõi jogi figyelmeztetését 
+megfelelõen szerepeltetni a programokban; 
+valamint
+
+ a Microsoftot kártalanítania, 
+mentesítenieés védenie kell minden olyan 
+követeléstõl (ideértve az ügyvédi 
+munkadíjakat is), amely az Ön programjainak 
+forgalmazásából vagy használatából ered.
+
+iii. A terjesztésre vonatkozó korlátozások. 
+Az Ön számára tilos:
+
+ a Terjeszthetõ kódban található bármilyen 
+szerzõi jogi figyelmeztetés, illetve 
+szabadalmi vagy védjegyre vonatkozó 
+megjegyzés módosítása; 
+
+ a Microsoft védjegyeinek a saját 
+programjai nevében, illetve olyan módon 
+történõ használata, ami azt sugallja, hogy a 
+programjai a Microsofttól származnak vagy 
+azokat a Microsoft jóváhagyólag minõsítette;
+
+ az Terjeszthetõ kód terjesztése a Windows 
+platformtól eltérõ platformon való 
+futtatáshoz;
+
+ a Terjeszthetõ kód felhasználása 
+rosszindulatú, megtévesztõ vagy törvénybe 
+ütközõ programokban; valamint
+
+ a Terjeszthetõ kód bármely része 
+forráskódjának módosítása vagy terjesztése 
+olyan módon, hogy annak bármely része Kivett 
+licenc hatálya alá kerüljön. A Kivett licenc 
+olyan licenc, amely a használat, módosítás 
+vagy terjesztés feltételeként megköveteli, 
+hogy:
+
+ a kód forráskód formájában kerüljön 
+átadásra vagy terjesztésre, vagy
+
+ mások módosíthassák azt.
+
+3. A licenc terjedelme. Ön csak a szoftver 
+licencét szerezte meg, a tulajdonjogát nem. A 
+jelen szerzõdés csupán meghatározott jogokat 
+biztosít Önnek a szoftver használatára. A 
+Microsoft minden egyéb jogot fenntart. 
+Feltéve, hogy az alkalmazandó jogszabályok 
+ezen korlátozások ellenében nem biztosítanak 
+Önnek több jogot, Ön a szoftvert csak a jelen 
+szerzõdésben kifejezetten engedélyezett módon 
+használhatja. Ennek során Önnek be kell 
+tartania a szoftver minden olyan technikai 
+korlátozását, amely annak csak meghatározott 
+módokon történõ használatát teszi lehetõvé. 
+Ön:
+
+ nem kerülheti meg a szoftver bármely 
+technikai korlátozását;
+
+ nem fordíthatja és nem fejtheti vissza a 
+szoftvert, továbbá nem elemezheti belsõ 
+felépítését, kivéve akkor és csak olyan 
+mértékben, ahogy az alkalmazandó jogszabályok 
+ezen korlátozás ellenében azt kifejezetten 
+megengedik;
+
+ nem készíthet több másolatot a szoftverrõl,
+mint amennyit a jelen szerzõdés meghatároz 
+vagy amennyit az alkalmazandó jogszabályok e 
+korlátozással ellentétben megengednek;
+
+ nem teheti közzé a szoftvert mások általi 
+másolás céljából;
+
+ a szoftvert nem adhatja kölcsön, bérbe 
+vagy lízingbe;
+
+ nem ruházhatja át a szoftvert vagy a jelen 
+szerzõdést harmadik félnek; vagy
+
+ kereskedelmi szoftverbefogadási (hosting) 
+szolgáltatást sem nyújthat vele.
+
+4. BIZTONSÁGI MÁSOLAT. A szoftverrõl 
+egyetlen másolat készíthetõ. Ezt Ön kizárólag 
+a szoftver újratelepítésére használhatja.
+
+5. DOKUMENTÁCIÓ. Saját, belsõ tájékoztatási 
+célra az Ön belsõ hálózatához érvényes 
+hozzáférési engedéllyel rendelkezõ bármely 
+személy lemásolhatja és használhatja a 
+dokumentációt.
+
+6. EXPORTKORLÁTOZÁSOK. A szoftver az 
+Amerikai Egyesült Államok 
+exportszabályozásának hatálya alá tartozik. 
+Önnek be kell tartania minden hazai és 
+nemzetközi törvényi elõírást és szabályozást, 
+amely a szoftverre vonatkozik. Ezek a 
+törvények magukban foglalják a 
+végfelhasználóra, illetve a rendeltetési 
+helyre, végfelhasználókra és 
+végfelhasználásra vonatkozó korlátozásokat is.
+További tájékoztatás a www.microsoft.
+com/exporting weboldalon olvasható.
+
+7. TERMÉKTÁMOGATÁSI SZOLGÁLTATÁSOK. Mivel ez 
+a szoftver 'adott állapotában' áll 
+rendelkezésre, lehet, hogy a nem nyújtunk 
+hozzá terméktámogatási szolgáltatást.
+
+8. A SZERZÕDÉS KIZÁRÓLAGOSSÁGA. A jelen 
+szerzõdés, valamint a használt bõvítések, 
+frissítések, Internet-alapú és 
+terméktámogatási szolgáltatások feltételei 
+alkotják a teljes megállapodást a szoftverre 
+és a terméktámogatási szolgáltatásokra 
+vonatkozóan.
+
+9. ALKALMAZANDÓ JOG.
+
+a. Az Amerikai Egyesült Államokban. Ha Ön a 
+szoftvert az Amerikai Egyesült Államokban 
+szerezte be, úgy a jelen szerzõdés 
+értelmezésére és az annak megsértésével 
+kapcsolatos igények tekintetében Washington 
+állam jogszabályai az irányadók, tekintet 
+nélkül a nemzetközi magánjog irányadó jogot 
+megállapító alapelveire. Minden egyéb igény 
+tekintetében az Ön lakhelye szerinti állam 
+törvényei az irányadók, beleértve az állami 
+fogyasztóvédelmi törvényekkel kapcsolatos 
+igényeket, a tisztességtelen versennyel 
+kapcsolatos törvényeket és a szerzõdésen 
+kívül okozott károk megtérítésének szabályait.
+
+
+b. Az Amerikai Egyesült Államokon kívül. Ha 
+Ön a szoftvert bármely más országban szerezte 
+be, úgy az adott ország törvényei az 
+irányadók.
+
+10. HATÁLYOS JOG. Ezen szerzõdés bizonyos 
+jogokat határoz meg. Elõfordulhat hogy az Ön 
+országának törvényei egyéb jogokat is 
+biztosíthatnak Önnek. Önt azon féllel szemben 
+is megillethetik bizonyos jogok, akitõl a 
+szoftvert beszerezte. A jelen szerzõdés nem 
+módosítja az Ön országa által Önnek 
+biztosított jogokat, amennyiben az országának 
+törvényei ezt nem teszik lehetõvé.
+
+11. GARANCIA KIZÁRÁSA. A licenc az 'adott 
+állapotú' szoftverhez biztosít Önnek jogokat. 
+Ön a szoftvert saját felelõsségére használja. 
+A Microsoft nem nyújt semmiféle kifejezett 
+garanciát, szavatosságot vagy feltételt. A 
+helyi törvények szerint Ön további fogyasztói 
+jogokkal is rendelkezhet, amelyeket ez a 
+szerzõdés nem módosíthat. A helyi 
+jogszabályok által megengedett legteljesebb 
+mértékben a Microsoft ezúton elzárkózik a 
+vélelmezett garanciavállalástól az 
+eladhatóságra, az adott célra való 
+alkalmazhatóságra és a jogbitorlás-
+mentességre vonatkozóan.
+
+12. JOGORVOSLATOK ÉS KÁROK KIZÁRÁSA ÉS 
+KORLÁTOZÁSA. A Microsofttól vagy 
+beszállítóitól csak közvetlen kár esetén, 5,
+00 USD erejéig kaphat kártérítést. Ön nem 
+kaphat kártérítést semmiféle egyéb kárért, 
+beleértve a következményi, üzleti haszon 
+elmaradásából eredõ, különleges, közvetett 
+vagy járulékos károkat.
+
+Ezen korlátozás vonatkozik:
+
+ bármely, a szoftverrel, szolgáltatással, 
+harmadik fél webhelyén található tartalommal 
+(beleértve a kódot is) vagy harmadik fél 
+programjával kapcsolatos ügyre;
+
+ szerzõdésszegéssel, a garanciális 
+kötelezettségek megsértésével, garanciával 
+vagy feltétellel, fokozott felelõsséggel, 
+hanyagsággal vagy más, szerzõdésen kívül 
+okozott kárral kapcsolatos igényre az 
+alkalmazandó jogszabályok által megengedett 
+legteljesebb mértékben.
+
+A korlátozás akkor is érvényes, ha a 
+Microsoft tudott vagy tudnia kellett volna az 
+ilyen károk bekövetkeztének lehetõségérõl. 
+Elõfordulhat, hogy a fenti korlátozás azért 
+nem vonatkozik Önre, mert országa nem teszi 
+lehetõvé a járulékos, következményi vagy 
+egyéb károkért való felelõsség kizárását, 
+illetve korlátozását.

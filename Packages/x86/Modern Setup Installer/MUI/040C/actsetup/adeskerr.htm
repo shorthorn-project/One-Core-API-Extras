@@ -1,0 +1,254 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+    <title>out of box experience</title>
+    <LINK REL="stylesheet" TYPE="text/css" HREF="aregstyl.css" id=deskstyle1>
+    <LINK REL="stylesheet" TYPE="text/css" HREF="aregsty2.css" id=deskstyle2 disabled>
+    <META HTTP-EQUIV="MSThemeCompatible" CONTENT="Yes">
+</head>
+
+<body style="background-Color: transparent; background-repeat: no-repeat;" topMargin=0 rightmargin=0 leftmargin=0 tabindex=-1
+      onload="window.parent.act_desktop_error_LoadMe();" >
+
+<table valign=middle border=0 cellpadding=0 cellspacing=0 width="100%" height="100%">
+<tr>
+    <td ID=leftmargincell width=5% height=99%></td>
+    <td ID=maincell valign=top class="text-primary">
+
+    <span ID=Title_Text class="title" style="display:none;">
+        <ID id=acterror_s1>Activation de Windows</ID>
+    </span>
+
+    <br>
+    <!-- Prepare the different error scenes, all are hidden -->
+
+        <span ID=acterror_description_SUCCESS1 class="text-primary" style="display:none;">
+            <ID id="txtActivDeskSUCCESS1">Votre copie de Windows a été activée et enregistrée.</ID>
+        </span>
+
+        <span ID=acterror_description_SUCCESS2 class="text-primary" style="display:none;">
+            <ID id="txtActivDeskSUCCESS2">Votre copie de Windows a été activée.</ID>
+        </span>
+
+
+        <!-- Pre-expiration -->
+        <span ID=acterror_description1Pre class="text-primary" style="display:none;">
+            <ID id="txtActivDeskErr">L'activation en ligne n'a pas pu être terminée à ce moment.</ID>
+            <br><br>
+            <id id="txtActivDeskerr0">Vous pouvez continuer à utiliser Windows pendant encore <span id=NumberDaysLeft1 class="text-primary"></span>&nbsp;jour(s) avant que l'activation soit nécessaire.</id>
+            <br><br>
+            <ID id="txtActivDeskErr1">Pendant cette période, nous vous rappellerons régulièrement d'activer en utilisant l'Assistant Activation de Windows. (Vous le trouverez dans le menu Démarrer).<br><br> À ce moment, si vous avez toujours des difficultés pour atteindre notre centre d'activation, vous pouvez l'activer par téléphone avec un représentant du service clientèle.</ID>
+            <br><br>
+            <ID id="txtActivDeskErr2">Pour obtenir un numéro de contact dans votre région, cliquez sur Téléphone.</ID>
+        </span>
+        <!-- Post-expiration -->
+        <span ID=acterror_description1Post class="text-primary" style="display:none;">
+            <ID id="txtActivDeskErrPost">Windows n'a pas pu s'activer en ligne.</ID>
+            <br><br>
+            <id id="txtActivDeskerr0Post">La période d'activation a expiré. Vous devez activer votre ordinateur maintenant afin de pouvoir continuer à utiliser Windows.</id>
+            <br><br>
+            <ID id="txtActivDeskErr1Post">Vous pouvez activer par téléphone avec un représentant du service clientèle. Cliquez sur Téléphone pour obtenir un numéro de contact dans votre région.</ID>
+        </span>
+
+
+        <!-- Retail mode -->
+        <span ID=acterror_description2_RETAIL class="text-primary" style="display:none;">
+            <ID id="txtActivDeskErr3retail">Si la clé de produit ci-dessous a été entré de manière incorrecte, corrigez-la et cliquez sur <B>Essayez à nouveau</B>.</ID>
+            <br><br>
+            <ID id="txtActivDeskErr4retail">La clé du produit de 25 caractères devrait se trouver au dos du CD Windows XP  sur un autocollant ressemblant à ceci :</ID>
+            <br><br>
+            <center><img src="../images/prodkey.gif"></center>
+        </span>
+        <!-- OEM mode -->
+        <span ID=acterror_description2_OEM class="text-primary" style="display:none;">
+            <ID id="txtActivDeskErr3OEM">Si la clé de produit ci-dessous a été entré de manière incorrecte, corrigez-la et cliquez sur <B>Essayez à nouveau</B>.</ID>
+            <br><br>
+            <ID id="txtActivDeskErr4OEM">La clé du produit de 25 caractères se trouve sur le certificat d'authenticité (COA) qui figure sur votre ordinateur ou avec la documentation Windows. Elle devrait ressembler à l'exemple ci-dessous.</ID>
+            <br><br>
+            <center><img src="../images/oemcoa.jpg"></center>
+        </span>
+
+
+        <!-- Retail mode -->
+        <span ID=acterror_description3Retail class="text-primary" style="display:none;">
+            <ID id="txtActivDeskErr5a_retail">Selon nos services, vous avez atteint le nombre d'activations de Windows permis par cette clé de produit. Entrez une autre clé de produit, puis cliquez sur <B>Recommencer</B>.</ID>
+            <ID id="txtActivDeskErr5b_retail">La clé du produit de 25 caractères devrait se trouver au dos du CD Windows XP  sur un autocollant ressemblant à ceci :</ID>
+            <br><br>
+            <center><img src="../images/prodkey.gif"></center>
+        </span>
+        <!-- OEM mode -->
+        <span ID=acterror_description3OEM class="text-primary" style="display:none;">
+            <ID id="txtActivDeskErr5a_OEM">Selon nos services, vous avez atteint le nombre d'activations de Windows permis par cette clé de produit. Entrez une autre clé de produit, puis cliquez sur <B>Recommencer</B>.</ID>
+            <ID id="txtActivDeskErr5b_OEM">La clé du produit de 25 caractères se trouve sur le certificat d'authenticité (COA) qui figure sur votre ordinateur ou avec la documentation Windows. Elle devrait ressembler à l'exemple ci-dessous.</ID>
+            <br><br>
+            <center><img src="../images/oemcoa.jpg"></center>
+        </span>
+
+
+        <!-- Pre-expiration -->
+        <span ID=acterror_description4Pre class="text-primary" style="display:none;">
+            <ID id="txtActivDeskErr6">L'activation en ligne n'a pas pu être terminée à ce moment.</ID>
+            <br><br>
+            <ID id="txtActivDeskErr7">Vous pouvez continuer à utiliser Windows pendant encore <span id=NumberDaysLeft2 class="text-primary"></span>&nbsp;jour(s) avant que l'activation soit nécessaire.</ID>
+            <br><br>
+            <id id="txtActivdeskErr71">Pendant cette période, nous vous rappellerons régulièrement d'activer en utilisant l'Assistant Activation de Windows. (Vous le trouverez sur le menu Démarrer).<br><br> À ce moment, si vous avez toujours des difficultés pour atteindre notre centre d'activation, vous pouvez l'activer par téléphone avec un représentant du service clientèle.</id>
+            <br><br>
+            <id id="txtActivDeskErr72">Pour obtenir un numéro de contact dans votre région, cliquez sur <b>Téléphone</b>.</id>
+        </span>
+        <!-- Post-expiration -->
+        <span ID=acterror_description4Post class="text-primary" style="display:none;">
+            <ID id="txtActivDeskErr7Post">Windows n'a pas pu s'activer en ligne.</ID>
+            <br><br>
+            <id id="txtActivDeskerr71Post">La période d'activation a expiré. Vous devez activer votre ordinateur maintenant afin de pouvoir continuer à utiliser Windows.</id>
+            <br><br>
+            <ID id="txtActivDeskErr72Post">Vous pouvez activer par téléphone avec un représentant du service clientèle. Cliquez sur Téléphone pour obtenir un numéro de contact dans votre région.</ID>
+        </span>
+
+
+        <!-- Retail mode -->
+        <span ID=acterror_description5Retail class="text-primary" style="display:none;">
+            <ID id="txtActivDeskErr8a_retail">Cette clé de produit n'est pas autorisée. L'activation ne peut pas se terminer tant qu'une clé valide n'est pas entrée.</ID>
+            <ID id="txtActivDeskErr8b_retail">La clé de produit de 25 chiffres devrait se trouver au dos de la pochette du CD de Windows XP sur un autocollant qui devrait ressembler à l'exemple suivant. Corrigez la clé de produit ci-dessous ou entrez une clé de produit valide, et cliquez sur <B>Recommencez</B>.</ID>
+            <br><br>
+            <center><img src="../images/prodkey.gif"></center>
+        </span>
+        <!-- OEM mode -->
+        <span ID=acterror_description5OEM class="text-primary" style="display:none;">
+            <ID id="txtActivDeskErr8a_OEM">Cette clé de produit n'est pas autorisée. L'activation ne peut pas se terminer tant qu'une clé valide n'est pas entrée.</ID>
+            <ID id="txtActivDeskErr8b_OEM">La clé du produit de 25 caractères se trouve sur le certificat d'authenticité (COA) qui figure sur votre ordinateur ou avec la documentation Windows. Elle devrait ressembler à l'exemple ci-dessous. Corrigez la clé de produit ci-dessous ou entrez une clé de produit valide, puis cliquez sur <B>Essayez à nouveau.</B>.</ID>
+            <br><br>
+            <center><img src="../images/oemcoa.jpg"></center>
+        </span>
+
+
+        <span ID=acterror_description6 class="text-primary" style="display:none;">
+            <ID id="txtActivDeskErr10">Votre activation existante de Windows est endommagée ou n'est plus valide.</ID>
+            <br><br>
+            <ID id="txtActivDeskErr11">Mais ne vous inquiétez pas, vous pouvez continuer à utiliser Windows pendant encore <span id=NumberDaysLeft3 class="text-primary"></span>&nbsp;jours avant que l'activation soit nécessaire.</ID>
+            <br><br>
+            <id id="txtActivDeskErr111">Pendant cette période, nous vous rappellerons régulièrement d'activer en utilisant l'Assistant Activation du produit. (Vous le trouverez sur le menu Démarrer). À ce moment, si vous avez toujours des difficultés pour atteindre notre centre d'activation, vous pouvez l'activer par téléphone.</id>
+            <br><br>
+            <id id="txtactivDeskErr112">Pour obtenir un numéro de contact dans votre région, cliquez sur Téléphone.</id>
+        </span>
+
+
+        <span ID=acterror_description7 class="text-primary" style="display:none;">
+            <ID id="txtActivDeskErr12">Impossible d'établir une connexion avec le serveur d'activation. Vérifiez vos paramètres réseau, confirmez que vous pouvez vous connecter à Internet, puis essayez à nouveau.</ID>
+        </span>
+
+
+        <!-- Retail mode -->
+        <span ID=acterror_description_dedicated_pid_RETAIL class="text-primary" style="display:none;">
+            <ID id="txtActivDeskErrDedicatedPid1">Si vous devez modifier votre clé de produit, entrez la dans les champs indiqués ci-dessous puis cliquez sur <B>Mise à jour</B>. Si ce n'est pas le cas, cliquez sur <B>Téléphone</B> pour revenir à la page d'activation précédente.</ID>
+            <br><br>
+            <ID id="txtActivDeskErrDedicatedPid2">La clé du produit de 25 caractères devrait se trouver au dos du CD Windows XP  sur un autocollant ressemblant à ceci :</ID>
+            <br><br>
+            <center><img src="../images/prodkey.gif"></center>
+        </span>
+        <!-- OEM mode -->
+        <span ID=acterror_description_dedicated_pid_OEM class="text-primary" style="display:none;">
+            <ID id="txtActivDeskErrDedicatedPid1x">Si vous devez modifier votre clé de produit, entrez la dans les champs indiqués ci-dessous puis cliquez sur <B>Mise à jour</B>. Si ce n'est pas le cas, cliquez sur <B>Téléphone</B> pour revenir à la page d'activation précédente.</ID>
+            <br><br>
+            <ID id="txtActivDeskErrDedicatedPid2x">La clé du produit de 25 caractères se trouve sur le certificat d'authenticité (COA) qui figure sur votre ordinateur ou avec la documentation Windows. Elle devrait ressembler à l'exemple ci-dessous.</ID>
+            <br><br>
+            <center><img src="../images/oemcoa.jpg"></center>
+        </span>
+
+
+        <!-- PID ENTRY -->
+        <span ID=acterror_pid_entry class="text-primary" style="display:none;">
+            <br>
+            <table ID=PidBox border=0 DIR=ltr style="font-family:Courier New; FONT-SIZE: 16pt;">
+            <tr>
+                <td nowrap width=10>&nbsp;</td>
+                <td nowrap class="text-primary" >
+                <span ID=acterror_description_verify_key class="text-primary"><ID id="txtverifykey">Vérifiez la clé :</id></span>&nbsp;
+                </td>
+                <td>
+                <input style="ime-mode:disabled" id=pid1 type="text" size=6 maxlength=5 class=pid-box TABINDEX=1 name="edtProductKey"
+                onkeydown="window.parent.ProductIDKeyDown();" onpropertychange="window.parent.ProductIDPropertyChange();"
+                onkeypress="window.parent.ProductIDKeyPress();" onkeyup="window.parent.ProductIDKeyUp();" onfocus="window.parent.OnFocus();">
+                </td><td class="text-primary">-</td><td>
+                <input style="ime-mode:disabled" id=pid2 type="text" size=6 maxlength=5 class=pid-box TABINDEX=2 name="edtProductKey"
+                onkeydown="window.parent.ProductIDKeyDown();" onpropertychange="window.parent.ProductIDPropertyChange();"
+                onkeypress="window.parent.ProductIDKeyPress();" onkeyup="window.parent.ProductIDKeyUp();" onfocus="window.parent.OnFocus();">
+                </td><td class="text-primary">-</td><td>
+                <input style="ime-mode:disabled" id=pid3 type="text" size=6 maxlength=5 class=pid-box TABINDEX=3  name="edtProductKey"
+                onkeydown="window.parent.ProductIDKeyDown();" onpropertychange="window.parent.ProductIDPropertyChange();"
+                onkeypress="window.parent.ProductIDKeyPress();" onkeyup="window.parent.ProductIDKeyUp();" onfocus="window.parent.OnFocus();">
+                </td><td class="text-primary">-</td><td>
+                <input style="ime-mode:disabled" id=pid4 type="text" size=6 maxlength=5 class=pid-box TABINDEX=4  name="edtProductKey"
+                onkeydown="window.parent.ProductIDKeyDown();" onpropertychange="window.parent.ProductIDPropertyChange();"
+                onkeypress="window.parent.ProductIDKeyPress();" onkeyup="window.parent.ProductIDKeyUp();" onfocus="window.parent.OnFocus();">
+                </td><td class="text-primary">-</td><td>
+                <input style="ime-mode:disabled" id=pid5 type="text" size=6 maxlength=5 class=pid-box TABINDEX=5  name="edtProductKey"
+                onkeydown="window.parent.ProductIDKeyDown();" onpropertychange="window.parent.ProductIDPropertyChange();"
+                onkeypress="window.parent.ProductIDKeyPress();" onkeyup="window.parent.ProductIDKeyUp();" onfocus="window.parent.OnFocus();">
+                </td>
+            </tr>
+            </table>
+        </span>
+
+
+        <!-- AFTER PID ENTRY TEXT -->
+        <span ID=acterror_after_pid_entry_OEMText class="text-primary" style="display:none;">
+            <br>
+            <ID id="txtActivDeskErrOEMText">Contactez le fabricant de votre ordinateur si vous ne pouvez pas trouver votre certificat d'authenticité.</ID><br>
+        </span>
+
+        <span ID=acterror_after_pid_entry_text1 class="text-primary" style="display:none;">
+            <br>
+            <ID id="txtActivDeskErr14">Si vous pensez avoir entré la clé de produit correcte et croyez avoir reçu ce message par erreur, contactez notre service clientèle. Pour obtenir un numéro de contact dans votre région, cliquez sur le bouton <B>Téléphone</B>.</ID>
+        </span>
+
+
+        <span ID=acterror_after_pid_entry_text2 class="text-primary" style="display:none;">
+            <br>
+            <ID id="txtActivDeskErr15">Si vous croyez que vous avez reçu ce message par erreur, contactez notre Service Clientèle. Pour obtenir un numéro de contact dans votre région, cliquez sur le bouton <B>Téléphone</B>.</ID>
+        </span>
+
+        <span ID=acterror_after_pid_entry_text3 class="text-primary" style="display:none;">
+            <br>
+            <ID id="txtActivDeskErr16">Un exemplaire de Windows ne peut être installé que sur un ordinateur à la fois. Si vous croyez que vous avez reçu ce message par erreur, contactez notre Service Clientèle en cliquant sur le bouton <B>Téléphone</B>.</ID>
+        </span>
+
+        <span ID=acterror_after_pid_entry_text4 class="text-primary" style="display:none;">
+            <br>
+            <ID id="txtActivDeskErr17">Si vous n'avez pas besoin d'entrer une clé de produit, cliquez sur le bouton <B>Téléphone</B> pour revenir à la page d'activation précédente.</ID>
+        </span>
+
+    <!-- End -->
+    </td>
+
+    <td ID=rightmargincell width=7%>
+    </td>
+</tr>
+<tr>
+    <td colspan=3>
+    <br>
+    <table border=0 class="buttonpositionnew">
+    <tr>
+        <td width=99%>
+            &nbsp;&nbsp;
+            <span ID=acterror_specific_error_code class="text-primary" style="display:none; z-index:10;">
+            </span>
+        </td>
+        <td>
+        <BUTTON ID="btnTelephone" class="buttons" TABINDEX=6 ACCESSKEY="T"><label for=btnTelephone><id id="LocalBtnTel_Text"><u>T</u>éléphone</id></label></BUTTON>
+        </td>
+        <td>
+        <BUTTON ID="btnQuit" class="buttons" TABINDEX=7 ACCESSKEY="M"><label for=btnQuit><id id="LocalBtnQuit_Text"><u>M</u>e le rappeler plus tard</id></label></BUTTON>
+        </td>
+        <td>
+        <BUTTON ID="btnNext" class="buttons" TABINDEX=8 ACCESSKEY="R"><label for=btnNext><id id="LocalBtnRetry_Text"><u>R</u>ecommencer</id></label></BUTTON>
+        </td>
+    </tr>
+    </table>
+    </td>
+</tr>
+</table>
+
+</body>
+</html>

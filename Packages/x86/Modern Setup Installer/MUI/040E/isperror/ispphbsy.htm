@@ -1,0 +1,103 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1250">
+    <title>kezdőélmény</title>
+    <LINK REL="stylesheet" TYPE="text/css" HREF="../setup/oobestyl.css">
+</head>
+
+<body style="background-Color: transparent; background-repeat: no-repeat;" TABINDEX=-1
+      bgcolor="#ffffff" onload="window.parent.Toobusy_LoadMe();window.parent.Agent_Activate('ISPPhBsy');"
+      onunload="window.parent.Agent_Deactivate();">
+
+<table border=0 cellpadding=0 cellspacing=0 width=100% height=100%><tr><td ID=leftmargincell width=7%></td>
+<td ID=maincell valign=middle class="text-primary">
+<br>
+
+    <span class="title"><id id="na1">A vonal foglalt vagy nem válaszol</id></span><br>
+    <br>
+    <p><span class="text-primary"><id id="na2">A tárcsázott telefonszám foglalt, vagy módosítást igényel.</id></span>
+        <ul>
+        <li><span class="text-primary"><id id="na22">Ha nem otthon tartózkodik, lehet, hogy a külső vonal eléréséhez a telefonszám előtt tárcsáznia kell egy számot.</id></span></li><br>
+        <li><span class="text-primary"><id id="na21">Ha a tárcsázott telefonszám saját körzetén kívül található, lehet, hogy módosítania kell a telefonszámot.</id></span></li><br><br>
+        </ul>
+
+         <table border=0 cellspacing=0 cellpadding=0>
+           <tr>
+            <td valign="top">
+              <span class="text-primary"><id id="na3">A hívott szám a következő volt: </id></span>
+            </td>
+            <td valign="top">
+             <SPAN ID="spanDisplayNumber" class="text-primary" DIR="LTR"></SPAN>
+            </td>
+           </tr>
+           <tr>
+            <td style="padding-left: 1em;"><input ACCESSKEY="M" type="radio" id="DialRuleYes" name="DialRuleChoice" CHECKED TABINDEX=1 onclick="window.parent.SelectDialRule();">
+                <span id="spn_staticDialRuleYes" class="text-primary" onclick="document.all.DialRuleYes.click();"><u>M</u>ásik szám tárcsázása</span>
+</td>
+            <td style="padding-left: 2em;">
+                &nbsp;
+            </td>
+           </tr>
+           <tr>
+            <td style="padding-left: 1em;"><input ACCESSKEY="t" type="radio" id="DialRuleNo" name="DialRuleChoice" TABINDEX=3 onclick="window.parent.SelectDialRule();">
+                <span id="spn_staticDialRuleNo" class="text-primary" onclick="document.all.DialRuleNo.click();">Másik szám <u>t</u>árcsázása a következő szabályok szerint: </span>
+</td>
+            <td style="padding-left: 2em;">
+                <span id="spn_staticDialRuleNoa" class="text-secondary"><id id="Disable_call_waiting_text">Hívás<u>v</u>árakoztatás letiltása </id></span><input ACCESSKEY="v" DIR=LTR class="dial-number-box" type="text" id="edtCallWaiting" onfocus="this.select();" name="textfield" size="7" maxlength="10" TABINDEX=4>
+            </td>
+           </tr>
+           <tr>
+            <td>&nbsp;</td>
+            <td style="padding-left: 2em;">
+                <span id="spn_staticDialRuleNob" class="text-secondary"><id id="Set_Outside_line_text">Kü<u>l</u>ső vonal </id></span><input ACCESSKEY="l" DIR=LTR class="dial-number-box" type="text" id="edtOutsideLine" onfocus="this.select();" name="textfield" size="4" maxlength="4" TABINDEX=5></td>
+            </td>
+           </tr>
+           <tr>
+           <tr>
+            <td colspan=2>
+                <span style="padding-left: 1.8em;" id="spn_staticDialRuleNoc" class="text-primary"><id id="Set_Dial_Signal_text">Hívás - </id></span>
+                <span style="padding-left: 1em;"><input name="DialSignalChoice" type="radio" tabindex="6" id="DialTone" CHECKED><LABEL TABINDEX=-1 ACCESSKEY="h" id="spn_staticDialTone" for="DialTone" class="text-secondary"><id id="Set_Tone_text"><u>H</u>angfrekvenciás</id></LABEL></span>
+                <span style="padding-left: 2em;"><input name="DialSignalChoice" type="radio" tabindex="7" id="DialPulse"><LABEL TABINDEX=-1 ACCESSKEY="p" id="spn_staticDialPulse" for="DialPulse" class="text-secondary"><id id="Set_Pulse_text">Im<u>p</u>ulzusos</id></LABEL></span>
+            </td>
+           </tr>
+         </table>
+         <br>
+
+         <ul>
+         <li><span class="text-primary"><id id="na31">Ha az előző szám helyes, pár perc elteltével kattintson az <b>Újratárcsázás</b> gombra.</id></span></li><br>
+         <li><span class="text-primary"><id id="na32">Ha a szám téves, módosítsa a fenti beállításokat, majd kattintson az <b>Újratárcsázás</b> gombra.</id></span></li><br>
+         <li><span class="text-primary"><id id="na33">Az eredetileg tárcsázott telefonszám visszaállításához kattintson a <b>Visszaállítás</b> gombra.</id></span></li>
+         </ul>
+         <p><span class="text-primary-btndesc"><id id="na4">Ha internetkapcsolat beállítása nélkül kívánja folytatni, kattintson a <b>Kihagyás</b> gombra.</id></span></p>
+       </span></p>
+    <DIV class="text-error" ID=error_mesg style="display:none; padding-top:20px"></div>
+    <br>
+    <br>
+    </span><br>
+
+    <table border=0 class="newbuttonposition">
+    <tr>
+        <td width=10>&nbsp;&nbsp;</td>
+        <td><BUTTON ID="btnRestore" class="newbuttonsNext" TABINDEX=8  ACCESSKEY="i" style="visibility:visible;" onclick="window.parent.RestoreDialRule();"></BUTTON></td>
+        <td nowrap valign=middle class="text-primary"><span id="BackBtnLocalText" style="visibility:visible;"><label for=btnRestore><id id="LocalBtnRestore_Text">V<u>i</u>sszaállítás</id></label></span></td>
+
+        <td width=99%>&nbsp;</td>
+        <td nowrap valign=middle class="text-primary"><span id="SkipBtnLocalText" style="visibility:visible;"><label for=btnSkip><id id="LocalBtnSkip_Text"><u>K</u>ihagyás</id></label></span></td>
+        <td><BUTTON ID="btnSkip" class="newbuttonsSkip" TABINDEX=9  ACCESSKEY="K" style="visibility:visible;"></BUTTON></td>
+
+        <td width=10>&nbsp;&nbsp;</td>
+        <td nowrap valign=middle class="text-primary"><span id="NextBtnLocalText" style="visibility:visible;"><label for=btnNext><id id="LocalBtnRedial_Text">Új<u>r</u>atárcsázás</id></label></span></td>
+        <td><BUTTON ID="btnNext" class="newbuttonsNext" TABINDEX=10  ACCESSKEY="r" style="visibility:visible;"></BUTTON></td>
+    </tr>
+    </table>
+
+    </td>
+</tr>
+</table>
+
+
+</body>
+</html>

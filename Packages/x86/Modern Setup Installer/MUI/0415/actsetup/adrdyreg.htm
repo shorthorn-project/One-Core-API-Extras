@@ -1,0 +1,102 @@
+
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1250">
+<title>out of box experience</title>
+    <LINK REL="stylesheet" TYPE="text/css" HREF="aregstyl.css" id=deskstyle1>
+    <LINK REL="stylesheet" TYPE="text/css" HREF="aregsty2.css" id=deskstyle2 disabled>
+    <META HTTP-EQUIV="MSThemeCompatible" CONTENT="Yes">
+</head>
+
+<body style="background-Color: transparent; background-repeat: no-repeat;"  topmargin=0 leftmargin=0 TABINDEX=-1
+      onload="window.parent.RegDialRdy_LoadMe();">
+
+<table border=0 cellpadding=0 cellspacing=0 width="100%" height="100%">
+<tr>
+
+    <td ID=leftmargincell width=5% height=99%></td>
+    <td ID=maincell valign=top class="text-primary">
+
+
+    <span ID=Title_Text class="title" style="display:none;"><ID id="drdyoem_1">Przygotowywanie do aktywacji w trybie online</ID></span>
+
+    <br>
+    <span id=RegDialReadyIntro class="text-primary">
+        <ID id="drdyoem_2a">System Windows wybierze teraz numer telefonu aktywacji systemu Windows w firmie Microsoft.</id>
+    </span>
+
+    <br><br>
+    <span id="DialRdy_ctrl1" style="visibility:hidden;">
+
+        
+        <span class="text-primary"><ID id="drdyoem_4">Aby kontynuować, uzupełnij poniższe informacje i kliknij przycisk <b>Dalej</b>. Aby kontynuować bez korzystania z linii telefonicznej, kliknij przycisk <b>Pzypomnij mi później</b>.</id></span>
+        <br><br>        
+        <span class="text-primary"><ID id="drdyoem_8">Wybierz <u>k</u>raj/region, w którym znajdujesz się obecnie. Kliknij strzałkę w dół lub naciśnij klawisze Alt + &quot;strzałka w dół&quot;, aby wyświetlić listę regionów.</id></span>
+        <br><br>
+        <select id=selCountry TABINDEX=1 ACCESSKEY="K">
+            <script language="javascript">
+            document.write(window.parent.external.Tapi.get_AllCountryName);
+            </script>
+        </select>
+        
+
+        <br><br>
+        <span class="text-primary"><ID id="drdyoem_11">Wprowadź swój <u>n</u>umer kierunkowy. (np. 22 w numerze 0-22 659 09 88).<id></span>
+        <input style="ime-mode:disabled" id=edtAreaCode ACCESSKEY="N" TABINDEX=2 type="text" name="textfield" size="7" maxlength="7" onkeypress="window.parent.KeyPressIsNumeric();">
+        
+        <br>
+        <span id="PulseToneDialing" style="visibility:hidden">
+        <LABEL TABINDEX=-1 ACCESSKEY="U" id=Tapi_TOUCHTONE for="radioTouchToneYes">Czy masz <U>u</U>sługę tonowego wybierania numerów?</label>
+        <input TABINDEX=3 type="radio" name=TouchTone checked id=radioTouchToneYes>
+        <LABEL TABINDEX=-1 id="Tapi_TOUCHTONE_YES" for="radioTouchToneYes">Tak</LABEL>
+        <input TABINDEX=4 type="radio" name=TouchTone  id=radioTouchToneNo>
+        <LABEL TABINDEX=-1 id="Tapi_TOUCHTONE_NO" for="radioTouchToneNo">Nie</LABEL>
+        </span>
+
+    </span>
+
+
+    <!-- OUTSIDE LINE -->
+    <br>
+    <span id="spnOutsideLine" style="visibility:hidden;">
+        <LABEL TABINDEX=-1 ACCESSKEY="Z" id="drdyref_OUTSIDELINE1" for="radioOutSideLineYes">Czy wybierasz numer, aby uzyskać dostęp do linii <U>z</U>ewnętrznej?</label>
+        <input TABINDEX=5 type="radio" checked name=OutsideLine id=radioOutsideLineYes>
+        <LABEL TABINDEX=-1 id="drdyref_OUTSIDELINE_YES" for="radioOutsideLineYes">Tak</LABEL>
+        <input TABINDEX=6 type="radio" name=OutsideLine id=radioOutsideLineNo>
+        <LABEL TABINDEX=-1 id="drdyref_OUTSIDELINE_NO" for="radioOutSideLineNo">Nie</LABEL>
+    </span>
+    <br>
+    <SPAN TABINDEX=-1 id="spnOutsideLineNumber" style="visibility:hidden; position:relative;">                  
+        <LABEL TABINDEX=-1 ACCESSKEY="C" ID="drdyref_OUTSIDELINE2" for=edtOutsideLineNumber><U>C</U>o to za numer?</LABEL>
+        <input TABINDEX=7 style="ime-mode:disabled;" type="text" id=edtOutsideLineNumber maxlength=10 size="4" onkeypress="window.parent.KeyPressIsNumeric();">
+    </SPAN>
+
+    </td>
+
+    <td ID=rightmargincell width=7%>
+    </td>
+</tr>
+<tr>
+    <td colspan=3>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="text-primary"><ID id="drdyoem_2b">Aby rozpocząć wybieranie numeru, kliknij przycisk <b>Dalej</b>.</id></span>
+    <br>
+    <table border=0 class="buttonpositionnew">
+    <tr>
+        <td width=99%>&nbsp;</td>
+        <td>
+        <BUTTON ID="btnBack" class="buttons" TABINDEX=8 ACCESSKEY="W"><label for=btnBack><id id="LocalBtnBack_Text"><u>W</u>stecz</id></label></BUTTON>
+        </td>
+        <td>
+        <BUTTON ID="btnSkip" class="buttons" TABINDEX=9 ACCESSKEY="P"><label for=btnSkip><id id="LocalBtnSkip_Text"><u>P</u>omiń</id></label></BUTTON>
+        </td>
+        <td>
+        <BUTTON ID="btnNext" class="buttons" TABINDEX=10 ACCESSKEY="D"><label for=btnNext><id id="LocalBtnNext_Text"><u>D</u>alej</id></label></BUTTON>
+        </td>
+    </tr>
+    </table>
+    </td>
+</tr>
+</table>
+
+</body>
+</html>

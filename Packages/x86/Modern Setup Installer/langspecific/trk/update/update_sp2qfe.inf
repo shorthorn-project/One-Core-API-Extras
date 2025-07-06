@@ -1,0 +1,855 @@
+[Version]
+    Signature                 = "$Windows NT$"
+    LanguageType              = %LangTypeValue%
+    NtBuildToUpdate           = 3790
+    NtMajorVersionToUpdate    = 5
+    NtMinorVersionToUpdate    = 2
+    MaxNtBuildToUpdate        = 3790
+    MaxNtMajorVersionToUpdate = 5
+    MaxNtMinorVersionToUpdate = 2
+    MinNtServicePackVersion   = 256
+    MaxNtServicePackVersion   = 512
+    ThisServicePackVersion    = 256
+    CatalogFile               = %SP_SHORT_TITLE%.cat
+
+[Register.Include]
+    RegCondition=MSI.Reg.Install.Condition
+
+[ProductCatalogsToInstall]
+    %SP_SHORT_TITLE%.cat, update\%SP_SHORT_TITLE%.cat
+
+[ProductInstall.DontDelayUntilReboot]
+    CopyFiles=MustReplace.System32.files
+
+[ProductInstall.CopyFilesAlways]
+    CopyFiles=CopyAlways.Mui.0404.Files
+    CopyFiles=CopyAlways.Mui.0804.Files
+    CopyFiles=CopyAlways.Mui.042a.Files
+    CopyFiles=CopyAlways.Mui.0422.Files
+    CopyFiles=CopyAlways.Mui.041f.Files
+    CopyFiles=CopyAlways.Mui.041e.Files
+    CopyFiles=CopyAlways.Mui.041d.Files
+    CopyFiles=CopyAlways.Mui.081a.Files
+    CopyFiles=CopyAlways.Mui.0424.Files
+    CopyFiles=CopyAlways.Mui.041b.Files
+    CopyFiles=CopyAlways.Mui.0419.Files
+    CopyFiles=CopyAlways.Mui.0418.Files
+    CopyFiles=CopyAlways.Mui.0816.Files
+    CopyFiles=CopyAlways.Mui.0416.Files
+    CopyFiles=CopyAlways.Mui.0415.Files
+    CopyFiles=CopyAlways.Mui.0413.Files
+    CopyFiles=CopyAlways.Mui.0414.Files
+    CopyFiles=CopyAlways.Mui.0426.Files
+    CopyFiles=CopyAlways.Mui.0427.Files
+    CopyFiles=CopyAlways.Mui.0412.Files
+    CopyFiles=CopyAlways.Mui.0411.Files
+    CopyFiles=CopyAlways.Mui.0410.Files
+    CopyFiles=CopyAlways.Mui.040e.Files
+    CopyFiles=CopyAlways.Mui.041a.Files
+    CopyFiles=CopyAlways.Mui.040d.Files
+    CopyFiles=CopyAlways.Mui.040c.Files
+    CopyFiles=CopyAlways.Mui.040b.Files
+    CopyFiles=CopyAlways.Mui.042d.Files
+    CopyFiles=CopyAlways.Mui.0425.Files
+    CopyFiles=CopyAlways.Mui.0c0a.Files
+    CopyFiles=CopyAlways.Mui.0409.Files
+    CopyFiles=CopyAlways.Mui.0408.Files
+    CopyFiles=CopyAlways.Mui.0407.Files
+    CopyFiles=CopyAlways.Mui.0406.Files
+    CopyFiles=CopyAlways.Mui.0405.Files
+    CopyFiles=CopyAlways.Mui.0403.Files
+    CopyFiles=CopyAlways.Mui.0402.Files
+    CopyFiles=CopyAlways.Mui.0401.Files
+    CopyFiles=CopyAlways.Cache.files
+
+[ProductInstall.DataCenterFiles]
+    AddReg=Product.Add.Reg.DataCenter
+
+[ProductInstall.BladeFiles]
+    AddReg=Product.Add.Reg.Blade
+
+[ProductInstall.BusinessFiles]
+    AddReg=Product.Add.Reg.Business
+
+[ProductInstall.AdvancedFiles]
+    AddReg=Product.Add.Reg.Advanced
+
+[ProductInstall.ServerFiles]
+    AddReg=Product.Add.Reg.Server
+
+[ProductInstall.ProfessionalFiles]
+    AddReg=Product.Add.Reg.Professional
+
+[ProductInstall.GlobalRegistryChanges.Install]
+    AddReg=Product.Add.Reg
+
+[ProductInstall.GlobalRegistryChanges.ReInstall]
+    AddReg=Product.Add.Reg
+
+[ServicesToStopAndStart]
+    msiserver
+
+[ProductInstall.GlobalRegistryChanges.Append.IA]
+    AddReg=Product.Append.Reg.IA
+
+[Product.Append.Reg.IA]
+    HKLM,"SYSTEM\CurrentControlSet\Services\EventLog\System\Clussvc","EventMessageFile",0x00020008,";%systemroot%\system32\ws03res.dll;%systemroot%\system32\w03a2409.dll"
+
+[ProductInstall.GlobalRegistryChanges.Append.ID]
+    AddReg=Product.Append.Reg.ID
+
+[Product.Append.Reg.ID]
+    HKLM,"SYSTEM\CurrentControlSet\Services\EventLog\System\Clussvc","EventMessageFile",0x00020008,";%systemroot%\system32\ws03res.dll;%systemroot%\system32\w03a2409.dll"
+
+[Save.Reg.For.Uninstall]
+    HKLM,SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\%BETA1_RELEASE_NAME%
+    HKLM,SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\%BETA2_RELEASE_NAME%
+    HKLM,SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\%RC1_RELEASE_NAME%
+    HKLM,SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\%RC2_RELEASE_NAME%
+    HKLM,SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\%MSI30RTM_NAME%
+    HKLM,SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\%MSI30a_NAME%
+    HKLM,SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\%MSI30v2RTM_Name%
+    HKLM,SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\%MSI31_Beta%
+    HKLM,SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\%MSI31_RC1%
+    HKLM,SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\%MSI31RTM%
+    HKLM,SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\%MSI31RTMv2%
+    HKLM,SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\%MSI45_Beta%
+    HKCR,CLSID\{000C101C-0000-0000-C000-000000000046}
+    HKCR,CLSID\{000C101C-0000-0000-C000-000000000046}\ProgId
+    HKCR,IMsiServer
+    HKCR,IMsiServer\CLSID
+    HKLM,"Software\Microsoft\Windows\CurrentVersion\Installer","InstallerLocation"
+    HKCR,APPID\{000C101C-0000-0000-C000-000000000046}
+    HKLM,System\CurrentControlSet\Services\EventLog\Application\MsiInstaller
+    HKCR,CLSID\{000C103E-0000-0000-C000-000000000046}
+    HKCR,CLSID\{000C103E-0000-0000-C000-000000000046}\InProcServer32
+    HKCR,Interface\{000C1025-0000-0000-C000-000000000046}
+    HKCR,Interface\{000C1025-0000-0000-C000-000000000046}\NumMethods
+    HKCR,Interface\{000C1025-0000-0000-C000-000000000046}\ProxyStubClsid32
+    HKCR,Interface\{000C101D-0000-0000-C000-000000000046}
+    HKCR,Interface\{000C101D-0000-0000-C000-000000000046}\NumMethods
+    HKCR,Interface\{000C101D-0000-0000-C000-000000000046}\ProxyStubClsid32
+    HKCR,Interface\{000C1033-0000-0000-C000-000000000046}
+    HKCR,Interface\{000C1033-0000-0000-C000-000000000046}\NumMethods
+    HKCR,Interface\{000C1033-0000-0000-C000-000000000046}\ProxyStubClsid32
+    HKCR,Interface\{000C101C-0000-0000-C000-000000000046}
+    HKCR,Interface\{000C101C-0000-0000-C000-000000000046}\NumMethods
+    HKCR,Interface\{000C101C-0000-0000-C000-000000000046}\ProxyStubClsid32
+    HKCR,CLSID\{000C1090-0000-0000-C000-000000000046}
+    HKCR,CLSID\{000C1090-0000-0000-C000-000000000046}\InprocHandler32
+    HKCR,CLSID\{000C1090-0000-0000-C000-000000000046}\InprocServer32
+    HKCR,CLSID\{000C1090-0000-0000-C000-000000000046}\ProgId
+    HKCR,CLSID\{000C1090-0000-0000-C000-000000000046}\TypeLib
+    HKCR,CLSID\{000C1090-0000-0000-C000-000000000046}\Version
+    HKCR,WindowsInstaller.Installer
+    HKCR,WindowsInstaller.Installer\CLSID
+    HKCR,CLSID\{000C1094-0000-0000-C000-000000000046}
+    HKCR,CLSID\{000C1094-0000-0000-C000-000000000046}\InprocServer32
+    HKCR,WindowsInstaller.Message
+    HKCR,WindowsInstaller.Message\CLSID
+    HKCR,CLSID\{000C101D-0000-0000-C000-000000000046}
+    HKCR,CLSID\{000C101D-0000-0000-C000-000000000046}\DllVersion
+    HKCR,CLSID\{000C101D-0000-0000-C000-000000000046}\ProgId
+    HKCR,TypeLib\{000C1092-0000-0000-C000-000000000046}\1.0
+    HKCR,TypeLib\{000C1092-0000-0000-C000-000000000046}\1.0\409\win32
+    HKCR,TypeLib\{000C1092-0000-0000-C000-000000000046}\1.0\409\FLAGS
+    HKCR,TypeLib\{000C1092-0000-0000-C000-000000000046}\1.0\409\HELPDIR
+    HKCR,Interface\{000C1090-0000-0000-C000-000000000046}
+    HKCR,Interface\{000C1090-0000-0000-C000-000000000046}\ProxyStubClsid
+    HKCR,Interface\{000C1090-0000-0000-C000-000000000046}\ProxyStubClsid32
+    HKCR,Interface\{000C1090-0000-0000-C000-000000000046}\TypeLib
+    HKCR,Interface\{000C1093-0000-0000-C000-000000000046}
+    HKCR,Interface\{000C1093-0000-0000-C000-000000000046}\ProxyStubClsid
+    HKCR,Interface\{000C1093-0000-0000-C000-000000000046}\ProxyStubClsid32
+    HKCR,Interface\{000C1093-0000-0000-C000-000000000046}\TypeLib
+    HKCR,Interface\{000C1095-0000-0000-C000-000000000046}
+    HKCR,Interface\{000C1095-0000-0000-C000-000000000046}\ProxyStubClsid
+    HKCR,Interface\{000C1095-0000-0000-C000-000000000046}\ProxyStubClsid32
+    HKCR,Interface\{000C1095-0000-0000-C000-000000000046}\TypeLib
+    HKCR,Interface\{000C1096-0000-0000-C000-000000000046}
+    HKCR,Interface\{000C1096-0000-0000-C000-000000000046}\ProxyStubClsid
+    HKCR,Interface\{000C1096-0000-0000-C000-000000000046}\ProxyStubClsid32
+    HKCR,Interface\{000C1096-0000-0000-C000-000000000046}\TypeLib
+    HKCR,Interface\{000C109A-0000-0000-C000-000000000046}
+    HKCR,Interface\{000C109A-0000-0000-C000-000000000046}\ProxyStubClsid
+    HKCR,Interface\{000C109A-0000-0000-C000-000000000046}\ProxyStubClsid32
+    HKCR,Interface\{000C109A-0000-0000-C000-000000000046}\TypeLib
+    HKCR,Interface\{000C109B-0000-0000-C000-000000000046}
+    HKCR,Interface\{000C109B-0000-0000-C000-000000000046}\ProxyStubClsid
+    HKCR,Interface\{000C109B-0000-0000-C000-000000000046}\ProxyStubClsid32
+    HKCR,Interface\{000C109B-0000-0000-C000-000000000046}\TypeLib
+    HKCR,Interface\{000C109C-0000-0000-C000-000000000046}
+    HKCR,Interface\{000C109C-0000-0000-C000-000000000046}\ProxyStubClsid
+    HKCR,Interface\{000C109C-0000-0000-C000-000000000046}\ProxyStubClsid32
+    HKCR,Interface\{000C109C-0000-0000-C000-000000000046}\TypeLib
+    HKCR,Interface\{000C109D-0000-0000-C000-000000000046}
+    HKCR,Interface\{000C109D-0000-0000-C000-000000000046}\ProxyStubClsid
+    HKCR,Interface\{000C109D-0000-0000-C000-000000000046}\ProxyStubClsid32
+    HKCR,Interface\{000C109D-0000-0000-C000-000000000046}\TypeLib
+    HKCR,Interface\{000C109E-0000-0000-C000-000000000046}
+    HKCR,Interface\{000C109E-0000-0000-C000-000000000046}\ProxyStubClsid
+    HKCR,Interface\{000C109E-0000-0000-C000-000000000046}\ProxyStubClsid32
+    HKCR,Interface\{000C109E-0000-0000-C000-000000000046}\TypeLib
+    HKCR,Interface\{000C109F-0000-0000-C000-000000000046}
+    HKCR,Interface\{000C109F-0000-0000-C000-000000000046}\ProxyStubClsid
+    HKCR,Interface\{000C109F-0000-0000-C000-000000000046}\ProxyStubClsid32
+    HKCR,Interface\{000C109F-0000-0000-C000-000000000046}\TypeLib
+    HKCR,Interface\{000C10A0-0000-0000-C000-000000000046}
+    HKCR,Interface\{000C10A0-0000-0000-C000-000000000046}\ProxyStubClsid
+    HKCR,Interface\{000C10A0-0000-0000-C000-000000000046}\ProxyStubClsid32
+    HKCR,Interface\{000C10A0-0000-0000-C000-000000000046}\TypeLib
+    HKCR,Interface\{000C10A1-0000-0000-C000-000000000046}
+    HKCR,Interface\{000C10A1-0000-0000-C000-000000000046}\ProxyStubClsid
+    HKCR,Interface\{000C10A1-0000-0000-C000-000000000046}\ProxyStubClsid32
+    HKCR,Interface\{000C10A1-0000-0000-C000-000000000046}\TypeLib
+    HKLM,SYSTEM\CurrentControlSet\Services\MSIServer
+    HKLM,SYSTEM\CurrentControlSet\Services\MsiServer\Security
+    HKCR,.msi
+    HKCR,Msi.Package
+    HKCR,Msi.Package\DefaultIcon
+    HKCR,Msi.Package\shell
+    HKCR,Msi.Package\shell\Open
+    HKCR,Msi.Package\shell\Open\command
+    HKCR,Msi.Package\shell\Repair
+    HKCR,Msi.Package\shell\Repair\command
+    HKCR,Msi.Package\shell\Uninstall
+    HKCR,Msi.Package\shell\Uninstall\command
+    HKCR,.msp
+    HKCR,Msi.Patch
+    HKCR,Msi.Patch\DefaultIcon
+    HKCR,Msi.Patch\shell
+    HKCR,Msi.Patch\shell\Open
+    HKCR,Msi.Patch\shell\Open\command
+    HKLM,"SOFTWARE\Microsoft\Windows\CurrentVersion\Setup", "LogLevel"
+    HKLM,SOFTWARE\Microsoft\Windows NT\CurrentVersion\Hotfix\%SP_SHORT_TITLE%
+    HKLM,"SOFTWARE\Microsoft\Updates\Windows Server 2003\SP%SERVICE_PACK_NUMBER%\%SP_SHORT_TITLE%"
+    HKLM,"SYSTEM\CurrentControlSet\Services\EventLog\System\Clussvc","EventMessageFile"
+
+[Product.Add.Reg]
+    HKLM,SOFTWARE\Microsoft\Windows NT\CurrentVersion\Hotfix\%SP_SHORT_TITLE%,"Installed",0x10001,1
+    HKLM,SOFTWARE\Microsoft\Windows NT\CurrentVersion\Hotfix\%SP_SHORT_TITLE%,"Backup Dir",0,""
+    HKLM,SOFTWARE\Microsoft\Windows NT\CurrentVersion\Hotfix\%SP_SHORT_TITLE%,"Installed By",0,""
+    HKLM,SOFTWARE\Microsoft\Windows NT\CurrentVersion\Hotfix\%SP_SHORT_TITLE%,"Installed On",0,""
+    HKLM,SOFTWARE\Microsoft\Windows NT\CurrentVersion\Hotfix\%SP_SHORT_TITLE%,"Service Pack",0x10001,%SERVICE_PACK_NUMBER%
+    HKLM,SOFTWARE\Microsoft\Windows NT\CurrentVersion\Hotfix\%SP_SHORT_TITLE%,"Valid",0x10001,1
+    HKLM,SOFTWARE\Microsoft\Windows NT\CurrentVersion\Hotfix\%SP_SHORT_TITLE%\File 1\,"Flags",0,""
+    HKLM,SOFTWARE\Microsoft\Windows NT\CurrentVersion\Hotfix\%SP_SHORT_TITLE%\File 1\,"New File",0,""
+    HKLM,SOFTWARE\Microsoft\Windows NT\CurrentVersion\Hotfix\%SP_SHORT_TITLE%\File 1\,"New Link Date",0,""
+    HKLM,SOFTWARE\Microsoft\Windows NT\CurrentVersion\Hotfix\%SP_SHORT_TITLE%\File 1\,"Old Link Date",0,""
+    HKLM,SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\%SP_SHORT_TITLE%,"ReleaseType",0,%HOTFIX%
+    HKLM,SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\%SP_SHORT_TITLE%,"ParentKeyName",0,"OperatingSystem"
+
+[Del.Reg.Uninstall]
+
+[Product.Add.Reg.Business]
+    HKLM,SOFTWARE\Microsoft\Windows NT\CurrentVersion\Hotfix\%SP_SHORT_TITLE%,"Comments",0,%SP_TITLE_WS03%
+    HKLM,SOFTWARE\Microsoft\Windows NT\CurrentVersion\Hotfix\%SP_SHORT_TITLE%,"Fix Description",0,%SP_TITLE_WS03%
+    HKLM,SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\%SP_SHORT_TITLE%,"RegistryLocation",0,"HKLM\SOFTWARE\Microsoft\Updates\Windows Server 2003\SP%SERVICE_PACK_NUMBER%\%SP_SHORT_TITLE%"
+    HKLM,SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\%SP_SHORT_TITLE%,"ParentDisplayName",0,"%PARENT_DISPLAY_NAME%"
+    HKLM,SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\%SP_SHORT_TITLE%,"DisplayName",0,"%SP_TITLE_WS03%"
+    HKLM,SOFTWARE\Microsoft\Updates\Windows Server 2003\SP%SERVICE_PACK_NUMBER%\%SP_SHORT_TITLE%,"Description",,%SP_TITLE_WS03%
+
+[Product.Add.Reg.Advanced]
+    HKLM,SOFTWARE\Microsoft\Windows NT\CurrentVersion\Hotfix\%SP_SHORT_TITLE%,"Comments",0,%SP_TITLE_WS03%
+    HKLM,SOFTWARE\Microsoft\Windows NT\CurrentVersion\Hotfix\%SP_SHORT_TITLE%,"Fix Description",0,%SP_TITLE_WS03%
+    HKLM,SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\%SP_SHORT_TITLE%,"RegistryLocation",0,"HKLM\SOFTWARE\Microsoft\Updates\Windows Server 2003\SP%SERVICE_PACK_NUMBER%\%SP_SHORT_TITLE%"
+    HKLM,SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\%SP_SHORT_TITLE%,"ParentDisplayName",0,"%PARENT_DISPLAY_NAME%"
+    HKLM,SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\%SP_SHORT_TITLE%,"DisplayName",0,"%SP_TITLE_WS03%"
+    HKLM,SOFTWARE\Microsoft\Updates\Windows Server 2003\SP%SERVICE_PACK_NUMBER%\%SP_SHORT_TITLE%,"Description",,%SP_TITLE_WS03%
+
+[Product.Add.Reg.Server]
+    HKLM,SOFTWARE\Microsoft\Windows NT\CurrentVersion\Hotfix\%SP_SHORT_TITLE%,"Comments",0,%SP_TITLE_WS03%
+    HKLM,SOFTWARE\Microsoft\Windows NT\CurrentVersion\Hotfix\%SP_SHORT_TITLE%,"Fix Description",0,%SP_TITLE_WS03%
+    HKLM,SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\%SP_SHORT_TITLE%,"RegistryLocation",0,"HKLM\SOFTWARE\Microsoft\Updates\Windows Server 2003\SP%SERVICE_PACK_NUMBER%\%SP_SHORT_TITLE%"
+    HKLM,SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\%SP_SHORT_TITLE%,"ParentDisplayName",0,"%PARENT_DISPLAY_NAME%"
+    HKLM,SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\%SP_SHORT_TITLE%,"DisplayName",0,"%SP_TITLE_WS03%"
+    HKLM,SOFTWARE\Microsoft\Updates\Windows Server 2003\SP%SERVICE_PACK_NUMBER%\%SP_SHORT_TITLE%,"Description",,%SP_TITLE_WS03%
+
+[Product.Add.Reg.DataCenter]
+    HKLM,SOFTWARE\Microsoft\Windows NT\CurrentVersion\Hotfix\%SP_SHORT_TITLE%,"Comments",0,%SP_TITLE_WS03%
+    HKLM,SOFTWARE\Microsoft\Windows NT\CurrentVersion\Hotfix\%SP_SHORT_TITLE%,"Fix Description",0,%SP_TITLE_WS03%
+    HKLM,SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\%SP_SHORT_TITLE%,"RegistryLocation",0,"HKLM\SOFTWARE\Microsoft\Updates\Windows Server 2003\SP%SERVICE_PACK_NUMBER%\%SP_SHORT_TITLE%"
+    HKLM,SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\%SP_SHORT_TITLE%,"ParentDisplayName",0,"%PARENT_DISPLAY_NAME%"
+    HKLM,SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\%SP_SHORT_TITLE%,"DisplayName",0,"%SP_TITLE_WS03%"
+    HKLM,SOFTWARE\Microsoft\Updates\Windows Server 2003\SP%SERVICE_PACK_NUMBER%\%SP_SHORT_TITLE%,"Description",,%SP_TITLE_WS03%
+
+[Product.Add.Reg.Blade]
+    HKLM,SOFTWARE\Microsoft\Windows NT\CurrentVersion\Hotfix\%SP_SHORT_TITLE%,"Comments",0,%SP_TITLE_WS03%
+    HKLM,SOFTWARE\Microsoft\Windows NT\CurrentVersion\Hotfix\%SP_SHORT_TITLE%,"Fix Description",0,%SP_TITLE_WS03%
+    HKLM,SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\%SP_SHORT_TITLE%,"RegistryLocation",0,"HKLM\SOFTWARE\Microsoft\Updates\Windows Server 2003\SP%SERVICE_PACK_NUMBER%\%SP_SHORT_TITLE%"
+    HKLM,SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\%SP_SHORT_TITLE%,"ParentDisplayName",0,"%PARENT_DISPLAY_NAME%"
+    HKLM,SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\%SP_SHORT_TITLE%,"DisplayName",0,"%SP_TITLE_WS03%"
+    HKLM,SOFTWARE\Microsoft\Updates\Windows Server 2003\SP%SERVICE_PACK_NUMBER%\%SP_SHORT_TITLE%,"Description",,%SP_TITLE_WS03%
+
+[Product.Add.Reg.Professional]
+    HKLM,SOFTWARE\Microsoft\Windows NT\CurrentVersion\Hotfix\%SP_SHORT_TITLE%,"Comments",0,%SP_TITLE_XP%
+    HKLM,SOFTWARE\Microsoft\Windows NT\CurrentVersion\Hotfix\%SP_SHORT_TITLE%,"Fix Description",0,%SP_TITLE_XP%
+    HKLM,SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\%SP_SHORT_TITLE%,"RegistryLocation",0,"HKLM\SOFTWARE\Microsoft\Updates\Windows XP Version 2003\SP%SERVICE_PACK_NUMBER%\%SP_SHORT_TITLE%"
+    HKLM,SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\%SP_SHORT_TITLE%,"ParentDisplayName",0,"%PARENT_DISPLAY_NAME_XP%"
+    HKLM,SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\%SP_SHORT_TITLE%,"DisplayName",0,"%SP_TITLE_XP%"
+    HKLM,SOFTWARE\Microsoft\Updates\Windows XP Version 2003\SP%SERVICE_PACK_NUMBER%\%SP_SHORT_TITLE%,"Description",,%SP_TITLE_XP%
+
+[IE7.AdditionalSettings.Save.Reg.For.Uninstall]
+
+[MSI.AddReg]
+    HKLM,SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\%BETA1_RELEASE_NAME%,SystemComponent,0x00010001,1
+    HKLM,SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\%BETA2_RELEASE_NAME%,SystemComponent,0x00010001,1
+    HKLM,SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\%RC1_RELEASE_NAME%,SystemComponent,0x00010001,1
+    HKLM,SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\%RC2_RELEASE_NAME%,SystemComponent,0x00010001,1
+    HKLM,SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\%MSI30RTM_NAME%,SystemComponent,0x00010001,1
+    HKLM,SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\%MSI30a_NAME%,SystemComponent,0x00010001,1
+    HKLM,SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\%MSI30v2RTM_Name%,SystemComponent,0x00010001,1
+    HKLM,SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\%MSI31_Beta%,SystemComponent,0x00010001,1
+    HKLM,SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\%MSI31_RC1%,SystemComponent,0x00010001,1
+    HKLM,SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\%MSI31RTM%,SystemComponent,0x00010001,1
+    HKLM,SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\%MSI31RTMv2%,SystemComponent,0x00010001,1
+    HKLM,SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\%MSI45_Beta%,SystemComponent,0x00010001,1
+    HKCR,"CLSID\{000C101C-0000-0000-C000-000000000046}",,0x00000000,"Msi install server"
+    HKCR,"CLSID\{000C101C-0000-0000-C000-000000000046}\ProgId",,0x00000000,"IMsiServer"
+    HKCR,"CLSID\{000C101C-0000-0000-C000-000000000046}","AppId",0x00000000,"{000C101C-0000-0000-C000-000000000046}"
+    HKCR,"IMsiServer",,0x00000000,"Msi install server"
+    HKCR,"IMsiServer\CLSID",,0x00000000,"{000C101C-0000-0000-C000-000000000046}"
+    HKLM,"Software\Microsoft\Windows\CurrentVersion\Installer","InstallerLocation",0x00000000,"%10%\system32\"
+    HKCR,"APPID\{000C101C-0000-0000-C000-000000000046}","ServiceParameters",0x00000000,""
+    HKCR,"APPID\{000C101C-0000-0000-C000-000000000046}","LocalService",0x00000000,"MSIServer"
+    HKLM,"System\CurrentControlSet\Services\EventLog\Application\MsiInstaller","EventMessageFile",0x00000000,"%11%\msi.dll"
+    HKLM,"System\CurrentControlSet\Services\EventLog\Application\MsiInstaller","TypesSupported",0x00010001,0x7
+    HKCR,"CLSID\{000C103E-0000-0000-C000-000000000046}",,0x000000000,"PSFactoryBuffer"
+    HKCR,"CLSID\{000C103E-0000-0000-C000-000000000046}\InProcServer32",,0x00000000,"%11%\msi.dll"
+    HKCR,"CLSID\{000C103E-0000-0000-C000-000000000046}\InProcServer32","ThreadingModel",0x00000000,"Both"
+    HKCR,"Interface\{000C1025-0000-0000-C000-000000000046}",,0x0000000,"IMsiCustomAction"
+    HKCR,"Interface\{000C1025-0000-0000-C000-000000000046}\NumMethods",,0x0000000,"38"
+    HKCR,"Interface\{000C1025-0000-0000-C000-000000000046}\ProxyStubClsid32",,0x0000000,"{000C103E-0000-0000-C000-000000000046}"
+    HKCR,"Interface\{000C101D-0000-0000-C000-000000000046}",,0x00000000,"IMsiMessage"
+    HKCR,"Interface\{000C101D-0000-0000-C000-000000000046}\NumMethods",,0x00000000,"5"
+    HKCR,"Interface\{000C101D-0000-0000-C000-000000000046}\ProxyStubClsid32",,0x00000000,"{000C103E-0000-0000-C000-000000000046}"
+    HKCR,"Interface\{000C1033-0000-0000-C000-000000000046}",,0x00000000,"IMsiRemoteAPI"
+    HKCR,"Interface\{000C1033-0000-0000-C000-000000000046}\NumMethods",,0x00000000,"58"
+    HKCR,"Interface\{000C1033-0000-0000-C000-000000000046}\ProxyStubClsid32",,0x00000000,"{000C103E-0000-0000-C000-000000000046}"
+    HKCR,"Interface\{000C101C-0000-0000-C000-000000000046}",,0x00000000,"IMsiServer"
+    HKCR,"Interface\{000C101C-0000-0000-C000-000000000046}\NumMethods",,0x00000000,"24"
+    HKCR,"Interface\{000C101C-0000-0000-C000-000000000046}\ProxyStubClsid32",,0x00000000,"{000C103E-0000-0000-C000-000000000046}"
+    HKCR,"CLSID\{000C1090-0000-0000-C000-000000000046}",,0x00000000,"Microsoft Windows Installer"
+    HKCR,"CLSID\{000C1090-0000-0000-C000-000000000046}\InprocHandler32",,0x00000000,"ole32.dll"
+    HKCR,"CLSID\{000C1090-0000-0000-C000-000000000046}\InprocServer32",,0x00000000,"%11%\msi.dll"
+    HKCR,"CLSID\{000C1090-0000-0000-C000-000000000046}\InprocServer32","ThreadingModel",0x00000000,"Apartment"
+    HKCR,"CLSID\{000C1090-0000-0000-C000-000000000046}\ProgId",,0x00000000,"WindowsInstaller.Installer"
+    HKCR,"CLSID\{000C1090-0000-0000-C000-000000000046}\TypeLib",,0x00000000,"{000C1092-0000-0000-C000-000000000046}"
+    HKCR,"CLSID\{000C1090-0000-0000-C000-000000000046}\Version",,0x00000000,"1.0"
+    HKCR,"WindowsInstaller.Installer",,0x00000000,"Microsoft Windows Installer"
+    HKCR,"WindowsInstaller.Installer\CLSID",,0x00000000,"{000C1090-0000-0000-C000-000000000046}"
+    HKCR,"CLSID\{000C1094-0000-0000-C000-000000000046}",,0x00000000,""
+    HKCR,"CLSID\{000C1094-0000-0000-C000-000000000046}\InprocServer32",,0x00000000,"%11%\msi.dll"
+    HKCR,"CLSID\{000C1094-0000-0000-C000-000000000046}\InprocServer32","ThreadingModel",0x00000000,"Apartment"
+    HKCR,"WindowsInstaller.Message",,0x00000000,"Microsoft Windows Installer Message RPC"
+    HKCR,"WindowsInstaller.Message\CLSID",,0x00000000,"{000C101D-0000-0000-C000-000000000046}"
+    HKCR,"CLSID\{000C101D-0000-0000-C000-000000000046}",,0x00000000,"Microsoft Windows Installer Message RPC"
+    HKCR,"CLSID\{000C101D-0000-0000-C000-000000000046}\DllVersion",,0x00000000,"4.5.6001"
+    HKCR,"CLSID\{000C101D-0000-0000-C000-000000000046}\ProgId",,0x00000000,"WindowsInstaller.Message"
+    HKCR,"TypeLib\{000C1092-0000-0000-C000-000000000046}\1.0",,0x00000000,"Microsoft Windows Installer Object Library"
+    HKCR,"TypeLib\{000C1092-0000-0000-C000-000000000046}\1.0\409\win32",,0x00000000,"%11%\msi.dll"
+    HKCR,"TypeLib\{000C1092-0000-0000-C000-000000000046}\1.0\FLAGS",,0x00000000,"0"
+    HKCR,"TypeLib\{000C1092-0000-0000-C000-000000000046}\1.0\HELPDIR",,0x00000000,"%10%\system32"
+    HKCR,"Interface\{000C1090-0000-0000-C000-000000000046}",,0x00000000,"Installer"
+    HKCR,"Interface\{000C1090-0000-0000-C000-000000000046}\ProxyStubClsid",,0x00000000,"{00020420-0000-0000-C000-000000000046}"
+    HKCR,"Interface\{000C1090-0000-0000-C000-000000000046}\ProxyStubClsid32",,0x00000000,"{00020420-0000-0000-C000-000000000046}"
+    HKCR,"Interface\{000C1090-0000-0000-C000-000000000046}\TypeLib",,0x00000000,"{000C1092-0000-0000-C000-000000000046}"
+    HKCR,"Interface\{000C1090-0000-0000-C000-000000000046}\TypeLib","Version",0x00000000,"1.0"
+    HKCR,"Interface\{000C1093-0000-0000-C000-000000000046}",,0x00000000,"Record"
+    HKCR,"Interface\{000C1093-0000-0000-C000-000000000046}\ProxyStubClsid",,0x00000000,"{00020420-0000-0000-C000-000000000046}"
+    HKCR,"Interface\{000C1093-0000-0000-C000-000000000046}\ProxyStubClsid32",,0x00000000,"{00020420-0000-0000-C000-000000000046}"
+    HKCR,"Interface\{000C1093-0000-0000-C000-000000000046}\TypeLib",,0x00000000,"{000C1092-0000-0000-C000-000000000046}"
+    HKCR,"Interface\{000C1093-0000-0000-C000-000000000046}\TypeLib","Version",0x00000000,"1.0"
+    HKCR,"Interface\{000C1095-0000-0000-C000-000000000046}",,0x00000000,"StringList"
+    HKCR,"Interface\{000C1095-0000-0000-C000-000000000046}\ProxyStubClsid",,0x00000000,"{00020420-0000-0000-C000-000000000046}"
+    HKCR,"Interface\{000C1095-0000-0000-C000-000000000046}\ProxyStubClsid32",,0x00000000,"{00020420-0000-0000-C000-000000000046}"
+    HKCR,"Interface\{000C1095-0000-0000-C000-000000000046}\TypeLib",,0x00000000,"{000C1092-0000-0000-C000-000000000046}"
+    HKCR,"Interface\{000C1095-0000-0000-C000-000000000046}\TypeLib","Version",0x00000000,"1.0"
+    HKCR,"Interface\{000C1096-0000-0000-C000-000000000046}",,0x00000000,"RecordList"
+    HKCR,"Interface\{000C1096-0000-0000-C000-000000000046}\ProxyStubClsid",,0x00000000,"{00020420-0000-0000-C000-000000000046}"
+    HKCR,"Interface\{000C1096-0000-0000-C000-000000000046}\ProxyStubClsid32",,0x00000000,"{00020420-0000-0000-C000-000000000046}"
+    HKCR,"Interface\{000C1096-0000-0000-C000-000000000046}\TypeLib",,0x00000000,"{000C1092-0000-0000-C000-000000000046}"
+    HKCR,"Interface\{000C1096-0000-0000-C000-000000000046}\TypeLib","Version",0x00000000,"1.0"
+    HKCR,"Interface\{000C109A-0000-0000-C000-000000000046}",,0x00000000,"UIPreview"
+    HKCR,"Interface\{000C109A-0000-0000-C000-000000000046}\ProxyStubClsid",,0x00000000,"{00020420-0000-0000-C000-000000000046}"
+    HKCR,"Interface\{000C109A-0000-0000-C000-000000000046}\ProxyStubClsid32",,0x00000000,"{00020420-0000-0000-C000-000000000046}"
+    HKCR,"Interface\{000C109A-0000-0000-C000-000000000046}\TypeLib",,0x00000000,"{000C1092-0000-0000-C000-000000000046}"
+    HKCR,"Interface\{000C109A-0000-0000-C000-000000000046}\TypeLib","Version",0x00000000,"1.0"
+    HKCR,"Interface\{000C109B-0000-0000-C000-000000000046}",,0x00000000,"SummaryInfo"
+    HKCR,"Interface\{000C109B-0000-0000-C000-000000000046}\ProxyStubClsid",,0x00000000,"{00020420-0000-0000-C000-000000000046}"
+    HKCR,"Interface\{000C109B-0000-0000-C000-000000000046}\ProxyStubClsid32",,0x00000000,"{00020420-0000-0000-C000-000000000046}"
+    HKCR,"Interface\{000C109B-0000-0000-C000-000000000046}\TypeLib",,0x00000000,"{000C1092-0000-0000-C000-000000000046}"
+    HKCR,"Interface\{000C109B-0000-0000-C000-000000000046}\TypeLib","Version",0x00000000,"1.0"
+    HKCR,"Interface\{000C109C-0000-0000-C000-000000000046}",,0x00000000,"View"
+    HKCR,"Interface\{000C109C-0000-0000-C000-000000000046}\ProxyStubClsid",,0x00000000,"{00020420-0000-0000-C000-000000000046}"
+    HKCR,"Interface\{000C109C-0000-0000-C000-000000000046}\ProxyStubClsid32",,0x00000000,"{00020420-0000-0000-C000-000000000046}"
+    HKCR,"Interface\{000C109C-0000-0000-C000-000000000046}\TypeLib",,0x00000000,"{000C1092-0000-0000-C000-000000000046}"
+    HKCR,"Interface\{000C109C-0000-0000-C000-000000000046}\TypeLib","Version",0x00000000,"1.0"
+    HKCR,"Interface\{000C109D-0000-0000-C000-000000000046}",,0x00000000,"Database"
+    HKCR,"Interface\{000C109D-0000-0000-C000-000000000046}\ProxyStubClsid",,0x00000000,"{00020420-0000-0000-C000-000000000046}"
+    HKCR,"Interface\{000C109D-0000-0000-C000-000000000046}\ProxyStubClsid32",,0x00000000,"{00020420-0000-0000-C000-000000000046}"
+    HKCR,"Interface\{000C109D-0000-0000-C000-000000000046}\TypeLib",,0x00000000,"{000C1092-0000-0000-C000-000000000046}"
+    HKCR,"Interface\{000C109D-0000-0000-C000-000000000046}\TypeLib","Version",0x00000000,"1.0"
+    HKCR,"Interface\{000C109E-0000-0000-C000-000000000046}",,0x00000000,"Session"
+    HKCR,"Interface\{000C109E-0000-0000-C000-000000000046}\ProxyStubClsid",,0x00000000,"{00020420-0000-0000-C000-000000000046}"
+    HKCR,"Interface\{000C109E-0000-0000-C000-000000000046}\ProxyStubClsid32",,0x00000000,"{00020420-0000-0000-C000-000000000046}"
+    HKCR,"Interface\{000C109E-0000-0000-C000-000000000046}\TypeLib",,0x00000000,"{000C1092-0000-0000-C000-000000000046}"
+    HKCR,"Interface\{000C109E-0000-0000-C000-000000000046}\TypeLib","Version",0x00000000,"1.0"
+    HKCR,"Interface\{000C109F-0000-0000-C000-000000000046}",,0x00000000,"FeatureInfo"
+    HKCR,"Interface\{000C109F-0000-0000-C000-000000000046}\ProxyStubClsid",,0x00000000,"{00020420-0000-0000-C000-000000000046}"
+    HKCR,"Interface\{000C109F-0000-0000-C000-000000000046}\ProxyStubClsid32",,0x00000000,"{00020420-0000-0000-C000-000000000046}"
+    HKCR,"Interface\{000C109F-0000-0000-C000-000000000046}\TypeLib",,0x00000000,"{000C1092-0000-0000-C000-000000000046}"
+    HKCR,"Interface\{000C109F-0000-0000-C000-000000000046}\TypeLib","Version",0x00000000,"1.0"
+    HKCR,"Interface\{000C10A0-0000-0000-C000-000000000046}",,0x00000000,"Product"
+    HKCR,"Interface\{000C10A0-0000-0000-C000-000000000046}\ProxyStubClsid",,0x00000000,"{00020420-0000-0000-C000-000000000046}"
+    HKCR,"Interface\{000C10A0-0000-0000-C000-000000000046}\ProxyStubClsid32",,0x00000000,"{00020420-0000-0000-C000-000000000046}"
+    HKCR,"Interface\{000C10A0-0000-0000-C000-000000000046}\TypeLib",,0x00000000,"{000C1092-0000-0000-C000-000000000046}"
+    HKCR,"Interface\{000C10A0-0000-0000-C000-000000000046}\TypeLib","Version",0x00000000,"1.0"
+    HKCR,"Interface\{000C10A1-0000-0000-C000-000000000046}",,0x00000000,"Patch"
+    HKCR,"Interface\{000C10A1-0000-0000-C000-000000000046}\ProxyStubClsid",,0x00000000,"{00020420-0000-0000-C000-000000000046}"
+    HKCR,"Interface\{000C10A1-0000-0000-C000-000000000046}\ProxyStubClsid32",,0x00000000,"{00020420-0000-0000-C000-000000000046}"
+    HKCR,"Interface\{000C10A1-0000-0000-C000-000000000046}\TypeLib",,0x00000000,"{000C1092-0000-0000-C000-000000000046}"
+    HKCR,"Interface\{000C10A1-0000-0000-C000-000000000046}\TypeLib","Version",0x00000000,"1.0"
+    HKLM,"SYSTEM\CurrentControlSet\Services\MSIServer","Type",0x00010001,0x20
+    HKLM,"SYSTEM\CurrentControlSet\Services\MSIServer","Start",0x00010001,0x3
+    HKLM,"SYSTEM\CurrentControlSet\Services\MSIServer","ErrorControl",0x00010001,0x1
+    HKLM,"SYSTEM\CurrentControlSet\Services\MSIServer","ImagePath",0x00020000,"%11%\msiexec.exe /V"
+    HKLM,"SYSTEM\CurrentControlSet\Services\MSIServer","DependOnService",0x00010000,"RpcSs"
+    HKLM,"SYSTEM\CurrentControlSet\Services\MSIServer","DependOnGroup",0x00010000,""
+    HKLM,"SYSTEM\CurrentControlSet\Services\MSIServer","ObjectName",0x00000000,"LocalSystem"
+    HKCR,".msi",,0x00000000,"Msi.Package"
+    HKCR,"Msi.Package",,0x00000000,"Windows Installer Package"
+    HKCR,"Msi.Package\DefaultIcon",,0x00000000,"%11%\msiexec.exe,0"
+    HKCR,"Msi.Package","EditFlags",0x00000001,00,00,10,00
+    HKCR,"Msi.Package","FriendlyTypeName",0x00020000,"@%SystemRoot%\System32\msi.dll,-34"
+    HKCR,"Msi.Package\shell",,0x00000000,"Open,Repair,Uninstall"
+    HKCR,"Msi.Package\shell\Open",,0x00000000,"&Install"
+    HKCR,"Msi.Package\shell\Open","MUIVerb",0x00020000,"@%SystemRoot%\System32\msi.dll,-36"
+    HKCR,"Msi.Package\shell\Open\command",,0x00020000,"""%SystemRoot%\System32\msiexec.exe"" /i ""%1"" %*"
+    HKCR,"Msi.Package\shell\Repair",,0x00000000,"Re&pair"
+    HKCR,"Msi.Package\shell\Repair","MUIVerb",0x00020000,"@%SystemRoot%\System32\msi.dll,-37"
+    HKCR,"Msi.Package\shell\Repair\command",,0x00020000,"""%SystemRoot%\System32\msiexec.exe"" /f ""%1"" %*"
+    HKCR,"Msi.Package\shell\Uninstall",,0x00000000,"&Uninstall"
+    HKCR,"Msi.Package\shell\Uninstall","MUIVerb",0x00020000,"@%SystemRoot%\System32\msi.dll,-38"
+    HKCR,"Msi.Package\shell\Uninstall\command",,0x00020000,"""%SystemRoot%\System32\msiexec.exe"" /x ""%1"" %*"
+    HKCR,".msp",,0x00000000,"Msi.Patch"
+    HKCR,"Msi.Patch",,0x00000000,"Windows Installer Patch"
+    HKCR,"Msi.Patch\DefaultIcon",,0x00000000,"%11%\msiexec.exe,0"
+    HKCR,"Msi.Patch\shell",,0x00000000,"Open"
+    HKCR,"Msi.Patch","EditFlags",0x00000001,00,00,10,00
+    HKCR,"Msi.Patch","FriendlyTypeName",0x00020000,"@%SystemRoot%\System32\msi.dll,-35"
+    HKCR,"Msi.Patch\shell\Open",,0x00000000,"&Apply Patch"
+    HKCR,"Msi.Patch\shell\Open","MUIVerb",0x00020000,"@%SystemRoot%\System32\msi.dll,-39"
+    HKCR,"Msi.Patch\shell\Open\command",,0x00020000,"""%SystemRoot%\System32\msiexec.exe"" /p ""%1"" %*"
+
+[SourceDisksFiles]
+    SP2QFE\msimsg.dll.da-dk.mui=1
+    SP2QFE\msimsg.dll.de-de.mui=1
+    SP2QFE\msimsg.dll.ca-es.mui=1
+    SP2QFE\msisip.dll=1
+    SP2QFE\msimsg.dll.he-il.mui=1
+    SP2QFE\msimsg.dll.fr-fr.mui=1
+    SP2QFE\msimsg.dll.sv-se.mui=1
+    SP2QFE\msimsg.dll.hu-hu.mui=1
+    SP2QFE\msimsg.dll.sr-latn-cs.mui=1
+    SP2QFE\msimsg.dll.sl-si.mui=1
+    SP2QFE\msimsg.dll.sk-sk.mui=1
+    SP2QFE\msimsg.dll.pl-pl.mui=1
+    SP2QFE\msimsg.dll.fi-fi.mui=1
+    SP2QFE\msimsg.dll.ro-ro.mui=1
+    SP2QFE\msimsg.dll.lv-lv.mui=1
+    SP2QFE\msimsg.dll.th-th.mui=1
+    SP2QFE\msimsg.dll.zh-tw.mui=1
+    SP2QFE\msimsg.dll.tr-tr.mui=1
+    SP2QFE\msimsg.dll.pt-br.mui=1
+    SP2QFE\msihnd.dll=1
+    SP2QFE\msimsg.dll.ko-kr.mui=1
+    SP2QFE\msimsg.dll.vi-vn.mui=1
+    SP2QFE\msimsg.dll.en-us.mui=1
+    SP2QFE\msimsg.dll.ru-ru.mui=1
+    SP2QFE\msimsg.dll.es-es.mui=1
+    SP2QFE\msimsg.dll.zh-cn.mui=1
+    SP2QFE\msimsg.dll.hr-hr.mui=1
+    SP2QFE\msimsg.dll.et-ee.mui=1
+    SP2QFE\msimsg.dll=1
+    SP2QFE\msimsg.dll.cs-cz.mui=1
+    SP2QFE\msimsg.dll.it-it.mui=1
+    SP2QFE\msimsg.dll.nb-no.mui=1
+    SP2QFE\msimsg.dll.ja-jp.mui=1
+    SP2QFE\msimsg.dll.nl-nl.mui=1
+    SP2QFE\msimsg.dll.ar-sa.mui=1
+    SP2QFE\msimsg.dll.el-gr.mui=1
+    SP2QFE\msi.dll=1
+    SP2QFE\msimsg.dll.eu-es.mui=1
+    SP2QFE\msiexec.exe=1
+    SP2QFE\msimsg.dll.pt-pt.mui=1
+    SP2QFE\msimsg.dll.uk-ua.mui=1
+    SP2QFE\msimsg.dll.bg-bg.mui=1
+    SP2QFE\msimsg.dll.lt-lt.mui=1
+
+[DestinationDirs]
+    MustReplace.System32.files=11   ; %windir%\system32 (don't delay until reboot)
+    CopyAlways.Cache.files=65619        ; %windir%\system32\DllCache (copy even if don't exist)
+    CopyAlways.Mui.0401.Files=11,"mui\0401"
+    CopyAlways.Mui.0402.Files=11,"mui\0402"
+    CopyAlways.Mui.0403.Files=11,"mui\0403"
+    CopyAlways.Mui.0405.Files=11,"mui\0405"
+    CopyAlways.Mui.0406.Files=11,"mui\0406"
+    CopyAlways.Mui.0407.Files=11,"mui\0407"
+    CopyAlways.Mui.0408.Files=11,"mui\0408"
+    CopyAlways.Mui.0409.Files=11,"mui\0409"
+    CopyAlways.Mui.0c0a.Files=11,"mui\0c0a"
+    CopyAlways.Mui.0425.Files=11,"mui\0425"
+    CopyAlways.Mui.042d.Files=11,"mui\042d"
+    CopyAlways.Mui.040b.Files=11,"mui\040b"
+    CopyAlways.Mui.040c.Files=11,"mui\040c"
+    CopyAlways.Mui.040d.Files=11,"mui\040d"
+    CopyAlways.Mui.041a.Files=11,"mui\041a"
+    CopyAlways.Mui.040e.Files=11,"mui\040e"
+    CopyAlways.Mui.0410.Files=11,"mui\0410"
+    CopyAlways.Mui.0411.Files=11,"mui\0411"
+    CopyAlways.Mui.0412.Files=11,"mui\0412"
+    CopyAlways.Mui.0427.Files=11,"mui\0427"
+    CopyAlways.Mui.0426.Files=11,"mui\0426"
+    CopyAlways.Mui.0414.Files=11,"mui\0414"
+    CopyAlways.Mui.0413.Files=11,"mui\0413"
+    CopyAlways.Mui.0415.Files=11,"mui\0415"
+    CopyAlways.Mui.0416.Files=11,"mui\0416"
+    CopyAlways.Mui.0816.Files=11,"mui\0816"
+    CopyAlways.Mui.0418.Files=11,"mui\0418"
+    CopyAlways.Mui.0419.Files=11,"mui\0419"
+    CopyAlways.Mui.041b.Files=11,"mui\041b"
+    CopyAlways.Mui.0424.Files=11,"mui\0424"
+    CopyAlways.Mui.081a.Files=11,"mui\081a"
+    CopyAlways.Mui.041d.Files=11,"mui\041d"
+    CopyAlways.Mui.041e.Files=11,"mui\041e"
+    CopyAlways.Mui.041f.Files=11,"mui\041f"
+    CopyAlways.Mui.0422.Files=11,"mui\0422"
+    CopyAlways.Mui.042a.Files=11,"mui\042a"
+    CopyAlways.Mui.0804.Files=11,"mui\0804"
+    CopyAlways.Mui.0404.Files=11,"mui\0404"
+
+[MustReplace.System32.files]
+    msisip.dll,SP2QFE\msisip.dll,,8
+    msimsg.dll,SP2QFE\msimsg.dll,,8
+    msihnd.dll,SP2QFE\msihnd.dll,,8
+    msiexec.exe,SP2QFE\msiexec.exe,,8
+    msi.dll,SP2QFE\msi.dll,,8
+
+[CopyAlways.Cache.files]
+    msisip.dll,SP2QFE\msisip.dll
+    msimsg.dll,SP2QFE\msimsg.dll
+    msihnd.dll,SP2QFE\msihnd.dll
+    msiexec.exe,SP2QFE\msiexec.exe
+    msi.dll,SP2QFE\msi.dll
+
+[ArchiveCatalogFilesOnly]
+    %SP_SHORT_TITLE%.cat
+
+[SourceDisksNames]
+    1=%ServicePackSourceFiles%
+
+[Strings]
+    BETA1_RELEASE_NAME="MSI30-Beta1"
+    BETA2_RELEASE_NAME="MSI30-Beta2"
+    RC1_RELEASE_NAME="MSI30-RC1"
+    RC2_RELEASE_NAME="MSI30-RC2"
+    MSI30RTM_NAME="KB884016"
+    MSI30v2RTM_Name=MSI30-KB884016
+    MSI30a_NAME="MSI30a-KB884016"
+    MSI31_Beta="MSI31-Beta"
+    MSI31_RC1="MSI31-RC1"
+    MSI31RTM="KB893803"
+    MSI31RTMv2="KB893803v2"
+    MSI45_Beta="KB935695_Beta"
+    CMAKRegkey=SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\Cmak.exe
+    ProxyRegKey=SYSTEM\CurrentControlSet\Services\WSPSrv\Parameters
+    IeRegKey=Software\Microsoft\Windows\CurrentVersion\App Paths\iexplore.exe
+    HyperRegKey=SOFTWARE\Microsoft\Windows\CurrentVersion\App Paths\hypertrm.exe
+    EudcRegKey=Software\Microsoft\Windows\CurrentVersion\App Paths\eudcedit.exe
+    AdmtRegKey=SOFTWARE\Microsoft\ADMT
+    TsclientRegKey=SOFTWARE\Classes\conman.exe\DefaultIcon
+    PATH_ZONES="Software\Microsoft\Windows\CurrentVersion\Internet Settings\Zones"
+    UDDIRegKey=Software\Microsoft\UDDI
+    HELPLINK = http://support.microsoft.com/?kbid=942288
+    URLInfoAbout = "http://support.microsoft.com"
+    SERVICE_PACK_NUMBER     = 3
+    BUILDTIMESTAMP = 4
+    EXPIRETIMESTAMP = 20080720.202221
+    UPDATE                = "Update"
+    HOTFIX                = "Hotfix"
+    SECURITY_UPDATE       = "Security Update"
+    PACKAGE_ARCHITECTURE = x86
+    LangTypeValue           = 0x1F
+    WSEDIR                  = "1055"
+    TSCLIENTDIR             = "Terminal Hizmetleri Ýstemcisi"
+    PORTUGAL                = "Portekiz"
+    FALKLANDS               = "Falkland Adalarý"
+    LCID                    = "041F"
+    W32ID                   = "001f"
+    ACCESSDIR               = "accessories"
+    ACCESSDIRNAME           = "accessories" ;; accessories folder name is different from the display name in case of PLK, FIN and ELL
+    ServicePackSourceFiles  = "Windows Server 2003 Düzeltme Kaynak Dosyalarý"
+    SP_SHORT_TITLE          = "KB942288-v4"
+    SP_TITLE                = "Windows Server 2003 (KB942288-v4) için Düzeltme"
+    SP_TITLE_XP             = "Windows XP için Düzeltme (KB942288-v4)"
+    SP_TITLE_WS03           = "Windows Server 2003 (KB942288-v4) için Düzeltme"
+    LOC_UPDATE="Güncelleþtirme"
+    LOC_CRITICALUPDATE="Önemli Güncelleþtirme"
+    LOC_HOTFIX="Düzeltme"
+    LOC_SECURITY_UPDATE="Güvenlik Güncelleþtirmesi"
+    PARENT_DISPLAY_NAME     ="Windows Server 2003 - Yazýlým Güncelleþtirmeleri"
+    PARENT_DISPLAY_NAME_XP  ="Windows XP - Yazýlým Güncelleþtirmeleri"
+    WUCUN_TS_JOBFILE        = "windows önemli yükseltme bildirim iþi.job"
+    BITS_DISPLAY_NAME       = "Arka Plan Akýllý Aktarým Hizmeti"
+    BITS_DESCRIPTION        = \
+"Boþtaki að bant geniþliðini kullanarak dosyalarý arka planda aktarýr. Hizmet durdurulursa, Windows Update ve MSN Explorer gibi özellikler program ve diðer bilgileri kendiliðinden indiremez. Bu hizmet devredýþý býrakýlýrsa, açýkça baðýmlý olan hizmetlerin, BITS devredýþý býrakýldýðýnda IE yoluyla dosya aktarmak için sorunsuz bir düzeneði yoksa, dosya aktaramayabilir."
+    BITS_CLASS_NAME         = "Arka Plan Akýllý Aktarým Denetim Sýnýfý 1.0"
+    BITS_CLASS_1_5_NAME     = "Arka Plan Akýllý Aktarým Denetim Sýnýfý 1.5"
+    BITS_CLASS_2_0_NAME     = "Arka Plan Akýllý Aktarým Denetim Sýnýfý 2.0"
+    BITS_CLASS_2_5_NAME     = "Arka Plan Akýllý Aktarým Denetim Sýnýfý 2.5"
+    LEGACY_BITS_CLASS_NAME  = "Eski Arka Plan Akýllý Aktarým Denetim Sýnýfý"
+    AU_DESCRIPTION          = "Windows güncelleþtirmelerinin indirilip yüklenmesini saðlar. Bu hizmet devre dýþýysa, bu bilgisayar Otomatik Güncelleþtirmeler özelliðini veya Windows Update Web sitesini kullanamaz."
+    AU_DISPLAY_NAME         = "Otomatik Güncelleþtirme"
+    MSI_DISPLAY_NAME        = "Windows Installer"
+    MSI_DESCRIPTION         = "Windows Installer (*.msi) paketi olarak saðlanan uygulamalarý ekler, deðiþtirir ve kaldýrýr. Bu hizmet devre dýþý býrakýlýrsa, kendisine baðýmlý hizmetlerin hiçbiri baþlayamaz."
+    CancelEventType         = "Ýptal Raporu"
+    MainCancelIntroString   = "Ýsteði raporladýðýnýz için teþekkür ederiz. ""Raporu Gönder"" düðmesini týklattýðýnýzda, yüklemenizin neden baþarýsýz olduðunu gösteren veriler Microsoft'a gönderilecektir"
+    MainCancelDetailsLink   = "Yükleyici raporunun içindekilere bakýn."
+    MainCancelReportBtn     = "Raporu &Gönder"
+    DetailsCancelHeader     = "Rapor Bilgisi"
+    DetailsCancelBody       = \
+"Bu raporu bize göndermeniz, kullanýcý deneyimlerini geliþtirmemize yardýmcý olur. Baþarýsýz yüklemelere neden olan durumlarý anlamak üzere, toplanan verileri istatistiksel olarak iþleyeceðiz. Bu bilgiler, güncelleþtirmeler uygulayarak baþarýsýz yüklemelerin sayýsýný azaltmamýza yardýmcý olur."
+    MsSHARED = "Microsoft Shared"
+    OLEDB = "Ole DB"
+    ADO = "ado"
+    MSADC = "msadc"
+    DAO = "DAO"
+    MSSOAPBIN = "MSSoap\Binaries"
+    MSSOAPBINRES = "MSSoap\Binaries\Resources\1055"
+    SHAREDACCESS_SERVICE_NAME = "Windows Güvenlik Duvarý/Internet Baðlantý Paylaþýmý (ICS)"
+    SHAREDACCESS_SERVICE_DESCRIPTION = "Ev veya küçük iþyeri aðlarý için að adresi çevirme, adresleme, ad çözme ve/veya yetkisiz giriþ engelleme hizmetleri saðlar."
+    Svc-Ip6Fw-DispName          = "IPv6 Windows Güvenlik Duvarý Sürücüsü"
+    Svc-Ip6Fw-Description       = "Ev veya küçük ofis aðlarý için yetkisiz giriþ engelleme hizmeti saðlar."
+    WEBOC_SCRIPT="Internet Explorer Webbrowser denetiminin komut dosyasý kullanýmýna izin ver"
+    InvalidIEVersion="Yüklediðiniz Internet Explorer sürümü, yüklemeye çalýþtýðýnýz güncelleþtirme ile eþleþmiyor."
+    TSC_PACKAGE_EXPIRED="Uzak Masaüstü Baðlantýsý'nýn yayýn öncesi sürümünün kullaným süresi sona ermiþtir. Uzak Masaüstü Baðlantýsý'nýn tam sürümünü karþýdan yüklemek için Windows Update sitesine gidin veya sistem yöneticinize baþvurun."
+    Caucasus_Display="(GMT+04:00) Erivan"
+    Azerbaijan_Std="Azerbaycan Standart Saati"
+    Azerbaijan_Dlt="Azerbaycan Yaz Saati"
+    Azerbaijan_Display="(GMT+04:00) Bakü"
+    SA_Pacific_Display="(GMT-05:00) Bogota, Lima, Quito, Rio Branco"
+    GTB_Display="(GMT+02:00) Atina, Bükreþ, Ýstanbul"
+    E_Europe_Display="(GMT+02:00) Minsk"
+    Middle_East_Std="Ortadoðu Standart Saati"
+    Middle_East_Dlt="Ortadoðu Yaz Saati"
+    Middle_East_Display="(GMT+02:00) Beyrut"
+    Jordan_Std="Ürdün Standart Saati"
+    Jordan_Dlt="Ürdün Yaz Saati"
+    Jordan_Display="(GMT+02:00) Amman"
+    Pacific_Display="(GMT-08:00) Pasifik Saati (ABD ve Kanada)"
+    Central_M_Std="Merkezi Standart Saat (Meksika)"
+    Central_M_Dlt="Merkezi Yaz Saati (Meksika)"
+    Central_M_Display="(GMT-06:00) Guadalajara, Mexico City, Monterrey - Yeni"
+    Mexico_Old_Display="(GMT-06:00) Guadalajara, Mexico City, Monterrey - Eski"
+    Mountain_M_Std="Sýradaðlar Stan. Saati (Meksika)"
+    Mountain_M_Dlt="Sýradaðlar Yaz Saati (Meksika)"
+    Mountain_M_Display="(GMT-07:00) Chihuahua, La Paz, Mazatlan - Yeni"
+    Mexico_2_Old_Display="(GMT-07:00) Chihuahua, La Paz, Mazatlan - Eski"
+    Pacific_M_Std="Pasifik Standart Saati (Meksika)"
+    Pacific_M_Dlt="Pasifik Yaz Saati (Meksika)"
+    Pacific_M_Display="(GMT-08:00) Tijuana, Baja California"
+    Namibia_Std="Namibia Standart Saati"
+    Namibia_Dlt="Namibia Yaz Saati"
+    Namibia_Display="(GMT+02:00) Windhoek"
+    Myanmar_Display="(GMT+06:30) Yangon (Rangoon)"
+    Georgian_Std="Gürcistan Standart Saati"
+    Georgian_Dlt="Gürcistan Yaz Saati"
+    Georgian_Display="(GMT+03:00) Tiflis"
+    Greenwich_Display="(GMT) Casablanca, Monrovia, Reykjavik"
+    Central_Brazilian_Std="Orta Brezilya Standart Saati"
+    Central_Brazilian_Dlt="Orta Brezilya Yaz Saati"
+    Central_Brazilian_Display="(GMT-04:00) Manaus"
+    Montevideo_Std="Montevideo Standart Saati"
+    Montevideo_Dlt="Montevideo Yaz Saati"
+    Montevideo_Display="(GMT-03:00) Montevideo"
+    Caucasus_Common_Display="(GMT+04:00) Caucasus Standart Saati"
+    Armenian_Std="Ermenistan Standart Saati"
+    Armenian_Dlt="Ermenistan Yaz Saati"
+    Venezuela_Std="Venezuela Standart Saati"
+    Venezuela_Dlt="Venezuela Yaz Saati"
+    Venezuela_Display="(GMT-04:30) Karakas"
+    SA_Western_Display="(GMT-04:00) La Paz"
+    SA_Eastern_Display="(GMT-03:00) Georgetown"
+    Argentina_Std="Arjantin Standart Saati"
+    Argentina_Dlt="Arjantin Yaz Saati"
+    Argentina_Display="(GMT-03:00) Buenos Aires"
+    PowerShell_CurrentlyInstalled=\
+"Cannot install this version of the product. You must first remove any earlier versions of Windows PowerShell(TM) 1.0 before you can install this version.  Please click OK to close the Setup Wizard. Next open the Add/Remove Programs Control Panel, uninstall any versions of the Windows PowerShell(TM) 1.0, and run the Windows PowerShell(TM) 1.0 setup again."
+    PowerShell_CLR_NOT_INSTALLED=\
+"Cannot install/uninstall Windows PowerShell(TM) 1.0 because it requires an updated version of the .NET Framework 2.0. Please install .NET Framework 2.0 RTM from http://go.microsoft.com/fwlink/?linkid=57014&lcid=0x409 and rerun Windows PowerShell(TM) 1.0 Setup"
+    PowerShell_SCFN="Lucida Console"
+    PowerShell_SCFS="12"
+    PowerShell_SCDir="Windows PowerShell 1.0"
+    PowerShell_SCName="Windows PowerShell"
+    PowerShell_ShortCutRelNote="Release Notes"
+    PowerShell_ShortCutGettingStarted="Getting Started"
+    PowerShell_ShortCutUserGuide="User Guide"
+    PowerShell_ShortCutQRef="Quick Reference"
+    PowerShell_Comments="Windows PowerShell(TM) 1.0"
+    PowerShell_Culture=en
+    PowerShell_InstallLangPackId=1033
+    PowerShell_ReleaseNotesDir=
+    WSMAN_ServiceDisplay="Windows Uzaktan Yönetim (WS-Management)"
+    WSMANOOB_WSMAN_ServiceDescription="Yerel ve uzak makinelerden yönetim bilgilerine eriþime izin verir."
+    WEC_ServiceDisplay="Windows Olay Toplayýcýsý"
+    WSMANOOB_WEC_ServiceDescription="Yerel ve uzak makinelerden yazýlým ve donaným olaylarýný toplar."
+    ADAMSP1NotInstalled=\
+"Active Directory Application Mode Service Pack 1 yüklü olmadýðýndan kur devam edemiyor. Ayrýntýlar için bkz: KB929226. (KB 929226 ile ilgili daha fazla bilgiyi http://support.microsoft.com/?kbid=929226 adresinde bulabilirsiniz)"
+    ADFSNotInstalled="Active Directory Federasyon Hizmetleri yüklü olmadýðýndan kur devam edemiyor. Ayrýntýlar için bkz: KB935449. (KB 935449 ile ilgili daha fazla bilgiyi http://support.microsoft.com/?kbid=935449 adresinde bulabilirsiniz)"
+
+[LinkItems.Create.Uninstall]
+
+[GlobalRegistryChanges.UnInstall]
+
+[Add.Reg.Uninstall]
+
+[Configuration]
+    noPNPfiles=1
+    InstallationType        = Hotfix
+    InstallLogFileName      = %SP_SHORT_TITLE%.log
+    UnInstallLogFileName    = %SP_SHORT_TITLE%Uninst.log
+    UnInstallDirName        = $NtUninstall%SP_SHORT_TITLE%$
+    EventLogKeyName         = NtServicePack
+    EventLogDllName         = spmsg.dll
+
+[PreRequisite.Uninstall]
+
+[MSI.Reg.Install]
+    AddReg=MSI.AddReg
+
+[UninstallSections]
+    ServicesToStopAndStart, ServicesToStopAndStart.Uninstall
+
+[MSI.Reg.Install.Condition]
+    InstallFromSection=MSI.Reg.Install
+    Operation=CheckInstall, msi.dll, sp2qfe\msi.dll
+    TargetFromSection = System32.files
+
+[ServicesToStopAndStart.Uninstall]
+    msiserver
+
+[CopyAlways.Mui.0401.Files]
+    msimsg.dll.mui,SP2QFE\msimsg.dll.ar-sa.mui
+
+[CopyAlways.Mui.0402.Files]
+    msimsg.dll.mui,SP2QFE\msimsg.dll.bg-bg.mui
+
+[CopyAlways.Mui.0403.Files]
+    msimsg.dll.mui,SP2QFE\msimsg.dll.ca-es.mui
+
+[CopyAlways.Mui.0405.Files]
+    msimsg.dll.mui,SP2QFE\msimsg.dll.cs-cz.mui
+
+[CopyAlways.Mui.0406.Files]
+    msimsg.dll.mui,SP2QFE\msimsg.dll.da-dk.mui
+
+[CopyAlways.Mui.0407.Files]
+    msimsg.dll.mui,SP2QFE\msimsg.dll.de-de.mui
+
+[CopyAlways.Mui.0408.Files]
+    msimsg.dll.mui,SP2QFE\msimsg.dll.el-gr.mui
+
+[CopyAlways.Mui.0409.Files]
+    msimsg.dll.mui,SP2QFE\msimsg.dll.en-us.mui
+
+[CopyAlways.Mui.0c0a.Files]
+    msimsg.dll.mui,SP2QFE\msimsg.dll.es-es.mui
+
+[CopyAlways.Mui.0425.Files]
+    msimsg.dll.mui,SP2QFE\msimsg.dll.et-ee.mui
+
+[CopyAlways.Mui.042d.Files]
+    msimsg.dll.mui,SP2QFE\msimsg.dll.eu-es.mui
+
+[CopyAlways.Mui.040b.Files]
+    msimsg.dll.mui,SP2QFE\msimsg.dll.fi-fi.mui
+
+[CopyAlways.Mui.040c.Files]
+    msimsg.dll.mui,SP2QFE\msimsg.dll.fr-fr.mui
+
+[CopyAlways.Mui.040d.Files]
+    msimsg.dll.mui,SP2QFE\msimsg.dll.he-il.mui
+
+[CopyAlways.Mui.041a.Files]
+    msimsg.dll.mui,SP2QFE\msimsg.dll.hr-hr.mui
+
+[CopyAlways.Mui.040e.Files]
+    msimsg.dll.mui,SP2QFE\msimsg.dll.hu-hu.mui
+
+[CopyAlways.Mui.0410.Files]
+    msimsg.dll.mui,SP2QFE\msimsg.dll.it-it.mui
+
+[CopyAlways.Mui.0411.Files]
+    msimsg.dll.mui,SP2QFE\msimsg.dll.ja-jp.mui
+
+[CopyAlways.Mui.0412.Files]
+    msimsg.dll.mui,SP2QFE\msimsg.dll.ko-kr.mui
+
+[CopyAlways.Mui.0427.Files]
+    msimsg.dll.mui,SP2QFE\msimsg.dll.lt-lt.mui
+
+[CopyAlways.Mui.0426.Files]
+    msimsg.dll.mui,SP2QFE\msimsg.dll.lv-lv.mui
+
+[CopyAlways.Mui.0414.Files]
+    msimsg.dll.mui,SP2QFE\msimsg.dll.nb-no.mui
+
+[CopyAlways.Mui.0413.Files]
+    msimsg.dll.mui,SP2QFE\msimsg.dll.nl-nl.mui
+
+[CopyAlways.Mui.0415.Files]
+    msimsg.dll.mui,SP2QFE\msimsg.dll.pl-pl.mui
+
+[CopyAlways.Mui.0416.Files]
+    msimsg.dll.mui,SP2QFE\msimsg.dll.pt-br.mui
+
+[CopyAlways.Mui.0816.Files]
+    msimsg.dll.mui,SP2QFE\msimsg.dll.pt-pt.mui
+
+[CopyAlways.Mui.0418.Files]
+    msimsg.dll.mui,SP2QFE\msimsg.dll.ro-ro.mui
+
+[CopyAlways.Mui.0419.Files]
+    msimsg.dll.mui,SP2QFE\msimsg.dll.ru-ru.mui
+
+[CopyAlways.Mui.041b.Files]
+    msimsg.dll.mui,SP2QFE\msimsg.dll.sk-sk.mui
+
+[CopyAlways.Mui.0424.Files]
+    msimsg.dll.mui,SP2QFE\msimsg.dll.sl-si.mui
+
+[CopyAlways.Mui.081a.Files]
+    msimsg.dll.mui,SP2QFE\msimsg.dll.sr-latn-cs.mui
+
+[CopyAlways.Mui.041d.Files]
+    msimsg.dll.mui,SP2QFE\msimsg.dll.sv-se.mui
+
+[CopyAlways.Mui.041e.Files]
+    msimsg.dll.mui,SP2QFE\msimsg.dll.th-th.mui
+
+[CopyAlways.Mui.041f.Files]
+    msimsg.dll.mui,SP2QFE\msimsg.dll.tr-tr.mui
+
+[CopyAlways.Mui.0422.Files]
+    msimsg.dll.mui,SP2QFE\msimsg.dll.uk-ua.mui
+
+[CopyAlways.Mui.042a.Files]
+    msimsg.dll.mui,SP2QFE\msimsg.dll.vi-vn.mui
+
+[CopyAlways.Mui.0804.Files]
+    msimsg.dll.mui,SP2QFE\msimsg.dll.zh-cn.mui
+
+[CopyAlways.Mui.0404.Files]
+    msimsg.dll.mui,SP2QFE\msimsg.dll.zh-tw.mui
+

@@ -1,0 +1,118 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+    <title>out of box experience</title>
+    <LINK REL="stylesheet" TYPE="text/css" HREF="aregstyl.css" id=deskstyle1>
+    <LINK REL="stylesheet" TYPE="text/css" HREF="aregsty2.css" id=deskstyle2 disabled>
+    <META HTTP-EQUIV="MSThemeCompatible" CONTENT="Yes">
+</head>
+
+<body style="background-Color: transparent; background-repeat: no-repeat;" topMargin=0 rightmargin=0 leftmargin=0 tabindex=-1
+      onload="window.parent.Activation_LoadMe();">
+
+<table border=0 cellpadding=0 cellspacing=0 width="100%" height="100%">
+<tr>
+    <td ID=leftmargincell width=5% height=99%></td>
+    <td ID=maincell valign=top class="text-primary">
+
+    <!-- Title is "display:none" by design, GetPageTitle() in actshell.htm extracts this title -->
+    <span ID=Title_Text class="title" style="display:none;">
+    <ID id=Activation_Title_Text1>Activation de Windows</ID>
+    </span>
+
+    <br>
+    <div>
+    <span id="act_spn01" class="text-primary">
+
+
+        <span id="act_par01_HaveDays" style="display:none;"><ID id=activation_paragraph1a>Pour participer à la lutte contre le piratage logiciel, activez Windows maintenant. L'activation via Internet est simple et rapide. Si vous ne disposez pas d'une connexion Internet, un numéro de téléphone vous sera indiqué dans les écrans suivants.</id></span>
+        <span id="act_par01_ZeroDays" style="display:none;"><ID id=activation_paragraph1b>Cette copie de Windows doit être activée auprès de Microsoft avant de pouvoir continuer à l'utiliser. L'activation via Internet est simple et rapide.</id></span>
+
+        <br><br>
+        <ID id=activation_paragraph3><B>L'activation est confidentielle et ne requiert aucune information personnelle.</B></id>
+
+        <br><br>
+        <ID id=activation_paragraph5>Voulez-vous activer Windows maintenant ?</id>
+
+        <!-- WPA radio buttons -->
+        <br><br>
+        <SPAN TABINDEX=-1>
+            <table cellspacing=0 cellpadding=0>
+            <tr>
+                <td>&nbsp;&nbsp;
+                <input TABINDEX=1 ACCESSKEY="O" type="radio" ID="rb_act_1" value="" name="activate_check" onClick="window.parent.WPA_ActivationRadioClicked(); window.parent.OnClick();" onfocus="window.parent.OnFocus();">
+                </td>
+                <td>
+                <LABEL id="rb_txt1" for="rb_act_1">
+                <span id="act_spn1" class="text-primary"><ID id=activation_choice1><u>O</u>ui, je veux activer Windows via Internet, maintenant.</id></span>
+                </LABEL>
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;&nbsp;
+                <input TABINDEX=2 ACCESSKEY="T" type="radio" ID="rb_act_2" value="" name="activate_check" onClick="window.parent.WPA_ActivationRadioClicked(); window.parent.OnClick();" onfocus="window.parent.OnFocus();">
+                </td>
+                <td>
+                <LABEL id="rb_txt2" for="rb_act_2">
+                <span id="act_spn2" class="text-primary"><ID id=activation_choice2>Oui, je veux <u>t</u>éléphoner au Centre d'activation de Microsoft pour activer Windows</id></span>
+                </LABEL>
+                </td>
+            </tr>
+            <tr>
+                <td>&nbsp;&nbsp;
+                <input TABINDEX=3 ACCESSKEY="N" type="radio" ID="rb_act_3" value="" name="activate_check" onClick="window.parent.WPA_ActivationRadioClicked(); window.parent.OnClick();" onfocus="window.parent.OnFocus();">
+                </td>
+                <td>
+                <LABEL id="rb_txt3" for="rb_act_3">
+                <span id="act_spn3" class="text-primary"><ID id=activation_choice3><u>N</u>on, rappelez-moi régulièrement d'activer Windows</id></span>
+                </LABEL>
+                </td>
+            </tr>
+            </table>
+        </SPAN>
+        
+        <br>       
+        <span id="act_par02_HaveDays" style="display:none;">
+            <ID id=activation_paragraph4>Si vous n'activez pas Windows maintenant, vous pourrez continuer à l'utiliser, mais vous recevrez régulièrement un message de rappel. <br>Après&nbsp;<span id=NumberDaysLeft1 class="text-primary" ></span>&nbsp;jours, l'activation sera obligatoire pour que vous puissiez continuer à utiliser Windows.</id>
+        </span>
+
+        <br><br>
+        <ID id=activation_paragraph6>Microsoft s'engage à respecter la confidentialité de vos données personnelles. Pour obtenir plus d'informations, &nbsp;</id><a TABINDEX=3 id=ahref1 href="javascript:window.parent.navigatetoActPolicy();"><ID id=activation_paragraph_readprivacy><u>lisez la déclaration de confidentialité relative à l'activation de produit Microsoft</u></ID></a>
+        <br><br>
+        <ID id=activation_paragraph7>Cliquez sur Suivant pour continuer.</id>
+    </span>
+
+    </td>
+
+    <td ID=rightmargincell width=7%>
+    </td>
+</tr>
+<tr>
+    <td colspan=3>
+    <br>
+    <table border=0 class="buttonpositionnew">
+    <tr>
+        <td width="99%">&nbsp;</td>
+        <td>
+        <table border=0 width="100">
+        <tr>
+            <td>
+            <BUTTON ID="btnPlaceholder" class="buttons" TABINDEX=6 ACCESSKEY="t" style="visibility:hidden;"><label for=btnPlaceholder><id id="LocalPlaceholder_Text">PlaceHolder</id></label></BUTTON>
+            </td>
+            <td>
+            <BUTTON ID="btnNext" class="buttons" TABINDEX=6 ACCESSKEY="S"><label for=btnNext><id id="LocalBtnNext_Text"><u>S</u>uivant</id></label></BUTTON>
+            </td>
+        </tr>
+        </table>
+        </td>
+    </tr>
+    </table>
+    </td>
+</tr>
+</table>
+
+</body>
+</html>
+

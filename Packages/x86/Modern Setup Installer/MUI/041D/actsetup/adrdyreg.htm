@@ -1,0 +1,102 @@
+
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<title>out of box experience</title>
+    <LINK REL="stylesheet" TYPE="text/css" HREF="aregstyl.css" id=deskstyle1>
+    <LINK REL="stylesheet" TYPE="text/css" HREF="aregsty2.css" id=deskstyle2 disabled>
+    <META HTTP-EQUIV="MSThemeCompatible" CONTENT="Yes">
+</head>
+
+<body style="background-Color: transparent; background-repeat: no-repeat;"  topmargin=0 leftmargin=0 TABINDEX=-1
+      onload="window.parent.RegDialRdy_LoadMe();">
+
+<table border=0 cellpadding=0 cellspacing=0 width="100%" height="100%">
+<tr>
+
+    <td ID=leftmargincell width=5% height=99%></td>
+    <td ID=maincell valign=top class="text-primary">
+
+
+    <span ID=Title_Text class="title" style="display:none;"><ID id="drdyoem_1">Onlineaktivering förbereds</ID></span>
+
+    <br>
+    <span id=RegDialReadyIntro class="text-primary">
+        <ID id="drdyoem_2a">En uppringning kommer nu att göras för att aktivera Windows hos Microsoft.</id>
+    </span>
+
+    <br><br>
+    <span id="DialRdy_ctrl1" style="visibility:hidden;">
+
+        
+        <span class="text-primary"><ID id="drdyoem_4">Om du vill fortsätta anger du informationen nedan och klickar på <b>Nästa</b>. Om du vill fortsätta utan att ringa kan du klicka på <b>Påminn mig senare</b>.</id></span>
+        <br><br>        
+        <span class="text-primary"><ID id="drdyoem_8">Välj det <U>l</U>and som du befinner dig i. Klicka på nedåtpilen pilen eller tryck på ALT + NEDPIL om du vill visa listan över regioner.</id></span>
+        <br><br>
+        <select id=selCountry TABINDEX=1 ACCESSKEY="L">
+            <script language="javascript">
+            document.write(window.parent.external.Tapi.get_AllCountryName);
+            </script>
+        </select>
+        
+
+        <br><br>
+        <span class="text-primary"><ID id="drdyoem_11">Skriv in ditt <u>r</u>iktnummer.<id></span>
+        <input style="ime-mode:disabled" id=edtAreaCode ACCESSKEY="R" TABINDEX=2 type="text" name="textfield" size="7" maxlength="7" onkeypress="window.parent.KeyPressIsNumeric();">
+        
+        <br>
+        <span id="PulseToneDialing" style="visibility:hidden">
+        <LABEL TABINDEX=-1 ACCESSKEY="T" id=Tapi_TOUCHTONE for="radioTouchToneYes">Har du tillgång till <U>t</U>onval?</label>
+        <input TABINDEX=3 type="radio" name=TouchTone checked id=radioTouchToneYes>
+        <LABEL TABINDEX=-1 id="Tapi_TOUCHTONE_YES" for="radioTouchToneYes">Ja</LABEL>
+        <input TABINDEX=4 type="radio" name=TouchTone  id=radioTouchToneNo>
+        <LABEL TABINDEX=-1 id="Tapi_TOUCHTONE_NO" for="radioTouchToneNo">Nej</LABEL>
+        </span>
+
+    </span>
+
+
+    <!-- OUTSIDE LINE -->
+    <br>
+    <span id="spnOutsideLine" style="visibility:hidden;">
+        <LABEL TABINDEX=-1 ACCESSKEY="M" id="drdyref_OUTSIDELINE1" for="radioOutSideLineYes"><U>M</U>åste du slå ett nummer för att nå extern linje?</label>
+        <input TABINDEX=5 type="radio" checked name=OutsideLine id=radioOutsideLineYes>
+        <LABEL TABINDEX=-1 id="drdyref_OUTSIDELINE_YES" for="radioOutsideLineYes">Ja</LABEL>
+        <input TABINDEX=6 type="radio" name=OutsideLine id=radioOutsideLineNo>
+        <LABEL TABINDEX=-1 id="drdyref_OUTSIDELINE_NO" for="radioOutSideLineNo">Nej</LABEL>
+    </span>
+    <br>
+    <SPAN TABINDEX=-1 id="spnOutsideLineNumber" style="visibility:hidden; position:relative;">                  
+        <LABEL TABINDEX=-1 ACCESSKEY="V" ID="drdyref_OUTSIDELINE2" for=edtOutsideLineNumber><U>V</U>ilket nummer?</LABEL>
+        <input TABINDEX=7 style="ime-mode:disabled;" type="text" id=edtOutsideLineNumber maxlength=10 size="4" onkeypress="window.parent.KeyPressIsNumeric();">
+    </SPAN>
+
+    </td>
+
+    <td ID=rightmargincell width=7%>
+    </td>
+</tr>
+<tr>
+    <td colspan=3>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="text-primary"><ID id="drdyoem_2b">Klicka på <b>Nästa</b> om du vill börja ringa upp.</id></span>
+    <br>
+    <table border=0 class="buttonpositionnew">
+    <tr>
+        <td width=99%>&nbsp;</td>
+        <td>
+        <BUTTON ID="btnBack" class="buttons" TABINDEX=8 ACCESSKEY="F"><label for=btnBack><id id="LocalBtnBack_Text"><u>F</u>öregående</id></label></BUTTON>
+        </td>
+        <td>
+        <BUTTON ID="btnSkip" class="buttons" TABINDEX=9 ACCESSKEY="H"><label for=btnSkip><id id="LocalBtnSkip_Text"><u>H</u>oppa över</id></label></BUTTON>
+        </td>
+        <td>
+        <BUTTON ID="btnNext" class="buttons" TABINDEX=10 ACCESSKEY="N"><label for=btnNext><id id="LocalBtnNext_Text"><u>N</u>ästa</id></label></BUTTON>
+        </td>
+    </tr>
+    </table>
+    </td>
+</tr>
+</table>
+
+</body>
+</html>

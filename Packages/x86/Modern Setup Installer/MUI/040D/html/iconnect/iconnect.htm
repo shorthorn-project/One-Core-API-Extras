@@ -1,0 +1,287 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML DIR=RTL>
+<HEAD>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1255">
+  <TITLE>מוצר מוכן לשימוש</TITLE>
+
+  <!-- LINK TO EXTERNAL STYLE SHEET: DO NOT MODIFY -->
+  <LINK REL="stylesheet" TYPE="text/css" HREF="../../setup/oobestyl.css">
+  <SCRIPT>
+  function ScreenResolutionInit() {
+     
+     
+     if(window.parent.g_bInHighScreenRes) {
+       spanScreenResolution.style.visibility='hidden';
+     }
+  }
+  </SCRIPT>
+</HEAD>
+
+
+<BODY style="background-Color: transparent; background-repeat: no-repeat;" TABINDEX=-1
+      ONLOAD="window.parent.iconnectFirstPage_LoadMe(); ScreenResolutionInit(); window.parent.Agent_Activate('ICONNECT');"
+      ONUNLOAD="window.parent.Agent_Deactivate();">
+
+<TABLE ALIGN=center BORDER=0 CELLPADDING=0 CELLSPACING=0 WIDTH="100%" HEIGHT="100%">
+<TR> 
+    <TD ID=leftmargincell WIDTH=7%>
+    <!-- This cell is empty by design -->
+    </TD>
+    <TD ID=maincell CLASS="text-primary">
+    <BR><BR>
+
+    <SPAN CLASS="title">
+        <ID ID=iconnect_TitleText>הגדר את חשבון האינטרנט שלך</ID>
+    </SPAN>
+    <BR><BR>
+
+    <DIV CLASS="text-primary">
+        <ID ID=iconnect_Text1>יהיה עליך להשיג את הפרטים הבאים מספק שירותי האינטרנט שלך (ISP) כדי למלא דף זה.</ID>
+        <br><br>
+
+        <form name=enableform>
+        
+        <!--  New Table 1  -->
+        
+        <table border="0" cellpadding="0" cellspacing="3">
+        
+            <tr>
+            
+                <td>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <span id="iconnect_spn_username" class="text-primary">
+                        <ID ID=iconnect_Text2><u>ש</u>ם המשתמש שלך:</ID>
+                    </span>
+                </td>
+                
+                <td width="140">
+                    <span class="text-primary">
+                        <input ACCESSKEY="ש" type="text" value="" name="iconnect_user" id="txtAccessKey_U" style="width:130px;">
+                    </span>
+                </td>
+                
+                <td>
+                    <span class="text-primary"><i><ID ID=iconnect_Text3>(לדוגמה: johndoe)</ID></i></span>
+                </td>
+                
+            </tr>
+        
+            <tr>
+            
+                <td>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <span id="iconnect_spn_password" class="text-primary">
+                        <ID ID=iconnect_Text4>ה<u>ס</u>יסמה שלך:</ID>
+                    </span>
+                </td>
+                
+                <td width="140">
+                    <span class="text-primary">
+                        <input ACCESSKEY="ס" type="password" value="" name="iconnect_pass" onFocus="this.select();" id="txtAccessKey_W" style="width:130px;">
+                    </span>
+                </td>
+                
+                <td>
+                    <span class="text-primary"><i><ID ID=iconnect_Text5>(לדוגמה: 123xyz)</ID></i></span>
+                </td>
+                
+            </tr>
+        
+            <tr>
+            
+                <td>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <span id="iconnect_spn_phoneno" class="text-primary">
+                    <ID ID=iconnect_Text6>מספר הט<u>ל</u>פון של ספק שירותי האינטרנט שלך:</ID>
+                    </span>
+                    &nbsp;&nbsp;
+                </td>
+                
+                <td width="140">
+                    <input ACCESSKEY="E" type="text" value="" name="iconnect_ispareacode" size="3" id="txtAccessKey_E" style="ime-mode:disabled"><input ACCESSKEY="ל" type="text" value="" name="iconnect_ispphone" size="11" id="txtAccessKey_P" style="ime-mode:disabled">
+                </td>
+                
+                <td>
+                    <span class="text-primary"><i><ID ID=iconnect_Text7>(לדוגמה: &lrm;800 | 555-1234)</ID></i></span>
+                </td>
+                
+            </tr>
+            
+        </table>
+                
+        <!--  End New Table 1  -->
+    
+        <br><br>
+            <ID ID=SecondTextDescription>אם המידע הבא סופק לך, נא הזן אותו להלן. <b>מידע זה אופציונלי, כך שאם אינו בידך, פשוט התעלם מסעיף זה.</b></ID>
+        <br>
+    
+        <!--  New Table 2  -->
+        
+        <table border="0" cellpadding="0" cellspacing="3">
+            
+            <tr>
+            
+                <td rowspan="2" valign="top">
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <input ACCESSKEY="כ" type="checkbox" value="" name="iconnect_obtainip" onClick="window.parent.checkme2();" checked id="txtAccessKey_I">
+                </td>
+                
+                <td>
+                    <br>
+                    <span class="text-primary"><ID ID=iconnect_Text8>קבל <u>כ</u>תובת IP באופן אוטומטי (DHCP):</ID></span>
+                </td>
+                
+                <td colspan="2" nowrap>
+                    <br>
+                    &nbsp;
+                    <span id="iconnect_spn_obtainIP_tx1" style="display:none;" class="text-error-small">
+                        <ID ID=iconnect_Text9>&nbsp;* נא הזן כתובת IP חוקית</ID>
+                    </span>
+                </td>
+                
+            </tr>
+            
+            <tr>
+                
+                <td nowrap>
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <span id="iconnect_spn_staticIP" class="text-primary">
+                        <ID ID=iconnect_Text10>כתובת Internet Protocol &rlm;(IP) ס<u>ט</u>טית:</ID>
+                    </span>
+                </td>
+                
+                <td>
+                    <br>
+                    <input ACCESSKEY="ט" type="text" value="" name="iconnect_staticip" size=13 onFocus="if (enableform.iconnect_obtainip.checked)this.blur();else this.select();" style="ime-mode:disabled; background-Color:'#dddddd'" id="txtAccessKey_C">
+                </td>
+                
+                <td nowrap>
+                    <br>
+                    &nbsp;
+                    <span id="iconnect_spn_staticIP_exp" style="display:none;" class="text-error-small">
+                        <ID ID=iconnect_Text11>טווח: &lrm;1-223.0-255.0-255.0-255</ID>
+                    </span>
+                </td>
+                
+            </tr>
+            
+            <tr>
+            
+                <td rowspan="3" valign="top">
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <input ACCESSKEY="א" type="checkbox" value="" name="iconnect_obtaindns" onClick="window.parent.checkme3();" checked id="txtAccessKey_D">
+                </td>
+                
+                <td>
+                    <br>
+                    <span class="text-primary"><ID ID=iconnect_Text12>קבל DNS ב<u>א</u>ופן אוטומטי (DHCP):</ID></span>
+                </td>
+                
+                <td colspan="2" nowrap>
+                    <br>
+                    &nbsp;
+                    <span id="iconnect_spn_obtainDNS_tx1" style="display:none;" class="text-error-small">
+                        <ID ID=iconnect_Text13>&nbsp;* נא הזן כתובת DNS חוקית</ID>
+                    </span>                    
+                </td>
+                
+            </tr>
+            
+            <tr>
+                
+                <td>
+                    <br>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <span id="iconnect_spn_prefrDNS" class="text-primary">
+                        <ID ID=iconnect_Text14>Domain Name Server &rlm;(DNS) <u>מ</u>ועדף:</ID>
+                    </span>
+                    &nbsp;&nbsp;
+                </td>
+                
+                <td>
+                    <br>
+                    <input ACCESSKEY="מ" type="text" value="" name="iconnect_prefdns" size=13 onFocus="if (enableform.iconnect_obtaindns.checked)this.blur();else this.select();" style="ime-mode:disabled; background-Color:'#dddddd'" id="txtAccessKey_R">
+                </td>
+                
+                <td nowrap>
+                    <br>
+                    &nbsp;
+                    <span id="iconnect_spn_prefrdns_exp" style="display:none;" class="text-error-small">
+                        <ID ID=iconnect_Text15>טווח: &lrm;1-223.0-255.0-255.0-255</ID>
+                    </span>
+                </td>
+                
+            </tr>
+            
+            <tr>
+                
+                <td>
+                    &nbsp;&nbsp;&nbsp;&nbsp;
+                    <span id="iconnect_spn_alterDNS" class="text-primary">
+                        <ID ID=iconnect_Text16>Domain Name Server &rlm;(DNS) <u>ח</u>לופי:</ID>
+                    </span>
+                </td>
+                
+                <td>
+                    <input ACCESSKEY="ח" type="text" value="" name="iconnect_altdns" size=13 onFocus="if (enableform.iconnect_obtaindns.checked)this.blur();" style="ime-mode:disabled; background-Color:'#dddddd'" id="txtAccessKey_A">
+                </td>
+                
+                <td nowrap>
+                    &nbsp;
+                    <span id="iconnect_spn_alterdns_exp">
+                        <ID ID=iconnect_Text17>(אופציונלי)</ID>
+                    </span>
+                </td>
+                
+            </tr>
+        
+        </table>
+            
+        <!--  End New Table 2  -->
+    
+    </form>
+    </DIV>
+    
+
+    <SPAN ID=spanScreenResolution>
+    <BR><BR>
+    </SPAN>
+
+    <DIV CLASS="text-primary">
+        <ID ID=iconnect_Text2>
+        <!-- TODO: Modify explanatory text or remove if not required -->
+        </ID>
+    </DIV>
+
+    <script>
+        document.write(window.parent.g_ClickNextStr);
+    </script>
+
+    <!-- NAVIGATION BUTTONS -->
+    <table border=0 class="newbuttonposition">
+    <tr>
+        <td width=10>&nbsp;&nbsp;</td>
+        <td><BUTTON ID="btnBack" class="newbuttonsBack" TABINDEX=4  ACCESSKEY="ק" style="visibility:visible;"></BUTTON></td>
+        <td nowrap valign=middle class="text-primary"><span id="BackBtnLocalText" style="visibility:visible;"><label for=btnBack><id id="LocalBtnBack_Text">ה<u>ק</u>ודם</id></label></span></td>
+
+        <td width=99%>&nbsp;</td>
+        <td nowrap valign=middle class="text-primary"><span id="SkipBtnLocalText" style="visibility:visible;"><label for=btnSkip><id id="LocalBtnSkip_Text"><u>ד</u>לג</id></label></span></td>
+        <td><BUTTON ID="btnSkip" class="newbuttonsSkip" TABINDEX=5  ACCESSKEY="ד" style="visibility:visible;"></BUTTON></td>
+
+        <td width=10>&nbsp;&nbsp;</td>
+        <td nowrap valign=middle class="text-primary"><span id="NextBtnLocalText" style="visibility:visible;"><label for=btnNext><id id="LocalBtnNext_Text">ה<U>ב</U>א</id></label></span></td>
+        <td><BUTTON ID="btnNext" class="newbuttonsNext" TABINDEX=6  ACCESSKEY="ב" style="visibility:visible;"></BUTTON></td>
+    </tr>
+    </table>
+
+    </TD>
+</TR>
+</TABLE>
+
+</BODY>
+</HTML>
+

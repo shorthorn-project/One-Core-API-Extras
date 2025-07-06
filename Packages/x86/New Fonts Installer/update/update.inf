@@ -22,15 +22,15 @@
     AppFileinUseDetect        = 3
 	
 [Strings]
-	D3DR_VERSION            = "1.0.0"
+	D3DR_VERSION            = "4.0.0"
 	SP_TITLE                = "One-Core-API New Fonts"
 	LANGTYPEVALUE           = 0x0
 	SP_SHORT_TITLE          = "OCANF"
-	SERVICE_PACK_NUMBER     = 3
-	SERVICEPACKSOURCEFILES  = "One-Core-API New Fonts"
-	Msft                    = "Microsoft"
-	ARP_Link                = "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\"
-	PARENT_DISPLAY_NAME     = "One-Core-API"
+    SERVICE_PACK_NUMBER     = 3
+    SERVICEPACKSOURCEFILES  = "One-Core-API New Fonts"
+    Msft                    = "Microsoft"
+    ARP_Link                = "HKEY_LOCAL_MACHINE\SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\"
+    PARENT_DISPLAY_NAME     = "One-Core-API"
 	
 [Product.Add.Reg]
 	HKLM,"SOFTWARE\Microsoft\Windows NT\CurrentVersion\Hotfix\%SP_SHORT_TITLE%","Installed",0x10001,1

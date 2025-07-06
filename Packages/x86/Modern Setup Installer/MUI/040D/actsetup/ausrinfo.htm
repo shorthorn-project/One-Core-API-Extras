@@ -1,0 +1,164 @@
+
+<html DIR=RTL>
+<head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1255">
+<title>מוצר מוכן לשימוש</title>
+    <LINK REL="stylesheet" TYPE="text/css" HREF="aregstyl.css" id=deskstyle1>
+    <LINK REL="stylesheet" TYPE="text/css" HREF="aregsty2.css" id=deskstyle2 disabled>
+    <META HTTP-EQUIV="MSThemeCompatible" CONTENT="Yes">
+</head>
+
+
+<body style="background-Color: transparent; background-repeat: no-repeat;" topmargin=0 leftmargin=0 TABINDEX=-1
+      onload="window.parent.Reg3_LoadMe();" onunload="selCountry.style.visibility='hidden';">
+
+<table ID=MainPageCell border=0 cellpadding=0 cellspacing=0 width="100%" height="100%">
+<tr>
+    <td ID=leftmargincell width=5% height=99%></td>
+    <td ID=maincell valign=top class="text-primary">
+
+    <span ID=Title_Text class="title" style="display:none;">
+    <ID id=t34>אוסף נתוני רישום</ID>
+
+    </span>
+
+    <br>
+    <table border=0>
+    <tr>
+        <td width=95>&nbsp;</td>
+        <td class="Text-small"><ID id=ausrinfo_tabkey>כדי לעבור לתיבת הטקסט הבאה, הקש על מקש TAB.</ID></td>
+    </tr>
+    </table>
+    <table ID=FieldTable border=0>
+    <tr>
+      <td id=LabelColumn><LABEL class="text-primary" for=UserFirstName ACCESSKEY="ש" ID=LabelFirstName>*<u>ש</u>ם פרטי:</LABEL></td>
+      <td colspan=3><input name="firstname" size="30" maxlength="75" class="editbox-text-primary"
+            id=UserFirstName onfocus="window.parent.OnFocus();"></td>
+    </tr>
+    <tr ID=LastNameRow>
+      <td><LABEL class="text-primary" for=UserLastName ACCESSKEY="מ" ID=LabelLastName>*שם <u>מ</u>שפחה:</LABEL></td>
+      <td><input name="lastname" size="30" maxlength="75" class="editbox-text-primary"
+           id=UserLastName onfocus="window.parent.OnFocus();"
+           ></td>
+    </tr>
+    <tr>
+      <td><LABEL class="text-primary" for=UserAddress ACCESSKEY="כ" ID=LabelAddress>*<u>כ</u>תובת:</LABEL></td>
+      <td><input name="Address" size="30" maxlength="120" class="editbox-text-primary"
+           id=UserAddress onfocus="window.parent.OnFocus();"
+           ></td>
+    </tr>
+    <tr>
+      <td>&nbsp;</td>
+      <td><input name="Address2" size="30" maxlength="120" class="editbox-text-primary"
+           id=UserAddress2 onfocus="window.parent.OnFocus();"
+           ></td>
+    </tr>
+    <tr>
+      <td><LABEL class="text-primary" for=UserCity ACCESSKEY="ע" ID=LabelCity>*<u>ע</u>יר:</LABEL></td>
+      <td><input name="City" size="30" maxlength="50" class="editbox-text-primary"
+           id=UserCity onfocus="window.parent.OnFocus();"></td>
+    </tr>
+    <tr>
+      <td><!-- LABEL "for" attrib set dynamically-->
+          <SPAN ID=LabelLeft>
+            <LABEL ID=StateLabel class="text-primary" ACCESSKEY="א">*<u>א</u>זור:</LABEL>
+          </span>
+      </td>
+      <td>
+       <SPAN ID=MenuLeft>
+        <span ID=StateContainer name="StateSelect">
+        <!-- only 1 of the following three will be displayed at once -->
+        <input name="State" style="display:none" size="17" maxlength="50" class="editbox-text-primary"
+           id=UserStateTextBox onfocus="window.parent.OnFocus();">
+
+            <!-- WW is placeholder for bug workaround, will be deleted onload -->
+            <select id=selUSState size=1 class="editbox-text-primary" onfocus="window.parent.OnFocus();" onclick="window.parent.OnSelectClick();" onchange="window.parent.Reg3UserStateChanged();">
+             <OPTION VALUE="0">WW
+            </select>
+
+            <select style="display:none" class="editbox-text-primary" id=selCAProvince size=1 onfocus="window.parent.OnFocus();" onclick="window.parent.OnSelectClick();" onchange="window.parent.Reg3UserStateChanged();">  </select>
+            </span>
+            </span>
+            &nbsp;
+
+       <SPAN ID=LabelRight>
+       <LABEL class="text-primary" for=UserZipCode ACCESSKEY="י"  ID=LabelZIP>מ<u>י</u>קוד:</LABEL>
+       </span>
+       <SPAN ID=MenuRight>
+
+       <input style="ime-mode:disabled" name="Zipcode" size="10" maxlength="15" class="editbox-text-primary"
+           id=UserZipCode onfocus="window.parent.OnFocus();">
+       </span>
+        </td>
+    </tr>
+    <tr>
+        <td>
+        <LABEL class="text-primary" for=selCountry ACCESSKEY="נ" ID=LabelCountry>*מדי<u>נ</u>ה:</LABEL>
+        </td>
+        <td>
+        <select id=selCountry size=1 class="editbox-text-primary" onfocus="window.parent.OnFocus();" onclick="window.parent.OnSelectClick();" onchange="window.parent.Reg3UserCountryChanged();">
+        <script language="javascript">  document.write(window.parent.external.Tapi.get_AllCountryName); </script>
+        </select>
+        </td>
+    </tr>
+    <tr ID=FE_ZIPRow style="display:none">  <!-- filled in FarEast cases -->
+        <td ID=FE_ZIPLabel></td><td ID=FE_ZIPInput></td>
+    </tr>
+    <tr>
+      <td id=LabelColumn><LABEL class="text-primary" for=UserEmailAddress ACCESSKEY="ר" ID=LabelEmail>כתובת דוא<u>ר</u> אלקטרוני:</LABEL></td>
+      <td><input style="ime-mode:disabled" name="Email" size="30" maxlength="75" class="editbox-text-primary" id=UserEmailAddress onfocus="window.parent.OnFocus();">
+      </td>
+    </tr>
+    </table>
+
+    <SPAN ID="RegChkBxMSGrp">
+    <table border=0 cellspacing=0 cellpadding=0 class="text-primary"  style="width:100%;">
+    <tr class="font9pt">
+        <td>
+            <input ACCESSKEY="ל" type="checkbox" id="sharems" name="sharems" class="text-primary" value="share ms" onfocus="window.parent.OnFocus();">
+            <LABEL id="cb_txt1" for="sharems" class="text-primary">ש<u>ל</u>חו אלי הצעות מ- Microsoft</LABEL>&nbsp;
+        </td>
+    </tr>
+        <tr class="font9pt">
+        <td>
+            <input ACCESSKEY="ש" type="checkbox" id="sharemsPartners" name="sharemsPartners" class="text-primary" value="share msPartners" onfocus="window.parent.OnFocus();">
+            <LABEL id="cb_txt2" for="sharemsPartners" class="text-primary"><u>ש</u>לחו אלי הצעות ומבצעים של שותפי Microsoft</LABEL>&nbsp;
+        </td>
+    </tr>
+    </table>
+    </span>
+
+    <br>
+    <!-- error messages (replaced by agent?) -->
+    <DIV class="text-error" ID=error_mesg style="display:none; padding-top:20px">
+    </div>
+
+    <!-- legal message for France, Belgium, or other localization -->
+    <DIV class="text-primary" ID=cnil_mesg style="display:none; padding-top:20px">
+    </DIV>
+
+    <td ID=rightmargincell width=7%>
+    </td>
+</tr>
+<tr>
+    <td colspan=3>
+    <br>
+    <table border=0 class="buttonpositionnew">
+    <tr>
+        <td width=99%>&nbsp;</td>
+        <td>
+        <BUTTON ID="btnSkip" class="buttons" TABINDEX=4 ACCESSKEY="ד"><label for=btnSkip><id id="LocalBtnSkip_Text"><u>ד</u>לג</id></label></BUTTON>
+        </td>
+        <td>
+        <BUTTON ID="btnBack" class="buttons" TABINDEX=5 ACCESSKEY="ק"><label for=btnBack><id id="LocalBtnBack_Text">ה<u>ק</u>ודם</id></label></BUTTON>
+        </td>
+        <td>
+        <BUTTON ID="btnNext" class="buttons" TABINDEX=6 ACCESSKEY="ב"><label for=btnNext><id id="LocalBtnNext_Text">ה<u>ב</u>א</id></label></BUTTON>
+        </td>
+    </tr>
+    </table>
+    </td>
+</tr>
+</table>
+
+</html>

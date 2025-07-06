@@ -1,0 +1,109 @@
+
+<html DIR=RTL>
+<head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1255">
+    <title>מוצר מוכן לשימוש</title>
+    <link rel="stylesheet" type="text/css" href="../actsetup/aregstyl.css">
+    <META HTTP-EQUIV="MSThemeCompatible" CONTENT="Yes">
+</head>
+
+<body style="background-Color: transparent; background-repeat: no-repeat;" topMargin=0 rightmargin=0 leftmargin=0 tabindex=-1
+      onload="window.parent.NoAnsw_LoadMe();">
+
+<table border=0 cellpadding=0 cellspacing=0 width="100%" height="100%">
+<tr>
+    <td ID=leftmargincell width=5% height=99%></td>
+    <td ID=maincell valign=top class="text-primary">
+
+    <span ID=Title_Text class="title" style="display:none;"><id id="na1">אין מענה במספר הטלפון</id></span>
+
+    <br>
+    <p><span class="text-primary"><id id="na2">ייתכן שקיימת בעיה במספר שחייגת, או שעליך לשנות את המספר המחויג.</id></span>
+        <ul>
+        <li><span class="text-primary"><id id="na22">אם אינך נמצא בבית, ייתכן שעליך לחייג מספר כדי לקבל גישה לקו חוץ.</id></span></li><br>
+        <li><span class="text-primary"><id id="na21">אם אתה מחייג מחוץ לאזור החיוג המקומי שלך, ייתכן שיהיה עליך לשנות את מספר הטלפון. </id></span></li><br><br>
+        </ul>
+
+        <table border=0 cellspacing=0 cellpadding=0>
+        <tr>
+            <td valign="top">
+            <span class="text-primary"><id id="na3">מספר הטלפון שחויג הוא </id></span>
+            </td>
+            <td valign="top">
+            <SPAN ID="spanDisplayNumber" class="text-primary" DIR="LTR"></SPAN>
+            </td>
+        </tr>
+        <tr>
+            <td style="padding-left: 1em;"><input ACCESSKEY="ח" type="radio" id="DialRuleYes" name="DialRuleChoice" CHECKED TABINDEX=1 onclick="window.parent.SelectDialRule(); document.all.edtPhoneNumber.focus();">
+            <span id="spn_staticDialRuleYes" class="text-primary" onclick="document.all.DialRuleYes.click();"><u>ח</u>ייג מספר זה בדיוק: </span>
+            </td>
+            <td style="padding-left: 2em;">
+            <input DIR=LTR TABINDEX=2 class="dial-number-box" type="text" id="edtPhoneNumber" onfocus="this.select();" name="textfield" size="20" maxlength="25">
+            </td>
+        </tr>
+        <tr>
+            <td style="padding-left: 1em;"><input ACCESSKEY="מ" type="radio" id="DialRuleNo" name="DialRuleChoice" TABINDEX=3 onclick="window.parent.SelectDialRule();">
+            <span id="spn_staticDialRuleNo" class="text-primary" onclick="document.all.DialRuleNo.click();">חייג <u>מ</u>ספר בהתאם לכללים הבאים: </span>
+            </td>
+            <td style="padding-left: 2em;">
+            <span id="spn_staticDialRuleNoa" class="text-secondary"><id id="Disable_call_waiting_text">בטל <u>ש</u>יחה ממתינה </id></span><input DIR=LTR ACCESSKEY="ש" class="dial-number-box" type="text" id="edtCallWaiting" onfocus="this.select();" name="textfield" size="7" maxlength="10" TABINDEX=4>
+            </td>
+        </tr>
+        <tr>
+            <td>&nbsp;</td>
+            <td style="padding-left: 2em;">
+            <span id="spn_staticDialRuleNob" class="text-secondary"><id id="Set_Outside_line_text"><u>ק</u>ו חוץ </id></span><input DIR=LTR ACCESSKEY="ק" class="dial-number-box" type="text" id="edtOutsideLine" onfocus="this.select();" name="textfield" size="4" maxlength="4" TABINDEX=5></td>
+            </td>
+        </tr>
+           <tr>
+            <td colspan=2>
+                <span style="padding-left: 1.8em;" id="spn_staticDialRuleNoc" class="text-primary"><id id="Set_Dial_Signal_text">חייג באמצאות:</id></span>
+                <span style="padding-left: 1em;"><input name="DialSignalChoice" type="radio" tabindex="6" id="DialTone" CHECKED><LABEL TABINDEX=-1 ACCESSKEY="צ" id="spn_staticDialTone" for="DialTone" class="text-secondary"><id id="Set_Tone_text"><u>צ</u>לילים</id></LABEL></span>
+                <span style="padding-left: 2em;"><input name="DialSignalChoice" type="radio" tabindex="7" id="DialPulse"><LABEL TABINDEX=-1 ACCESSKEY="מ" id="spn_staticDialPulse" for="DialPulse" class="text-secondary"><id id="Set_Pulse_text"><u>מ</u>תקפים</id></LABEL></span>
+            </td>
+           </tr>
+
+        </table>
+
+        <br>
+        <ul>
+        <li><span class="text-primary"><id id="na31">אם המספר הקודם נכון, המתן מספר דקות ולאחר מכן לחץ על <b>חיוג חוזר</b>. </id></span></li><br>
+        <li><span class="text-primary"><id id="na32">אם המספר שגוי, שנה אחת מההגדרות לעיל ולחץ על <b>חיוג חוזר</b>. </id></span></li><br>
+        <li><span class="text-primary"><id id="na33">כדי לשחזר את מספר הטלפון המקורי שחויג, לחץ על <b>שחזר</b>.</id></span></li>
+        </ul>
+        <p><span class="text-primary" id="RemindMeLaterText"><id id="na4">כדי להמשיך מבלי לבצע משימה זו, לחץ על <b>דלג</b>.</id></span></p>
+        </span>
+    </p>
+    <DIV class="text-error" ID=error_mesg style="display:none; padding-top:20px"></div>
+    </span>
+
+    </td>
+
+    <td ID=rightmargincell width=7%>
+    </td>
+</tr>
+<tr>
+    <td colspan=3>
+    <br>
+    <table border=0 class="buttonpositionnew">
+    <tr>
+        <td width=99%>&nbsp;</td>
+        <td>
+        <BUTTON ID="btnTelephone" class="buttons" TABINDEX=8 ACCESSKEY="ט" style="display:none;"><label for=btnTelephone><id id="LocalBtnTel_Text"><u>ט</u>לפון</id></label></BUTTON>
+        </td>
+        <td>
+        <BUTTON ID="btnRestore" class="buttons" TABINDEX=9 ACCESSKEY="ח" onclick="window.parent.RestoreDialRule();"><label for=btnRestore><id id="LocalBtnRestore_Text">ש<u>ח</u>זר</id></label></BUTTON>
+        </td>
+        <td>
+        <BUTTON ID="btnSkip" class="buttons" TABINDEX=10 ACCESSKEY="ד"><label for=btnSkip><id id="LocalBtnSkip_Text"><u>ד</u>לג</id></label></BUTTON>
+        </td>
+        <td>
+        <BUTTON ID="btnNext" class="buttons" TABINDEX=11 ACCESSKEY="ח"><label for=btnNext><id id="LocalBtnNext_Text"><u>ח</u>יוג חוזר</id></label></BUTTON>
+        </td>
+    </tr>
+    </table>
+    </td>
+</tr>
+</table>
+</body>
+</html>

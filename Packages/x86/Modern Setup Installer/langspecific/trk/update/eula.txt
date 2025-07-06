@@ -1,0 +1,255 @@
+MICROSOFT YAZILIMI LÝSANS KOÞULLARI
+
+MICROSOFT WINDOWS INSTALLER, VERSION 4.5
+
+Bu lisans koþullarý, Microsoft Corporation 
+kuruluþu (veya yaþadýðýnýz göre bir baðlý 
+þirketi) ile sizin aranýzda yapýlan 
+sözleþmeyi oluþturur. Lütfen bunlarý okuyunuz.
+Bu koþullar, hem yukarýda adý verilen 
+yazýlýmý için hem de eðer yazýlým bir ortam 
+üzerinde alýnmýþsa söz konusu ortam için 
+geçerlidir. Bu koþullar, yazýlýma yönelik her 
+türlü Microsoft
+
+· güncelleþtirmeleri,
+
+· ekleri,
+
+· Internet tabanlý hizmetleri ve
+
+· destek hizmetleri
+
+için (bu öðelere baþka koþullar eþlik 
+etmediði sürece) geçerlidir. Baþka koþullarýn 
+eþlik etmesi halinde ilgili koþullar geçerli 
+olacaktýr.
+
+Yazýlýmý kullanmanýz bu koþullarý kabul 
+ettiðiniz anlamýna gelir. Bu koþullarý kabul 
+etmiyorsanýz, yazýlýmý kullanmayýn.
+
+Bu lisans koþullarýna uymanýz koþuluyla 
+aþaðýdaki haklara sahip olursunuz:
+
+1. YÜKLEME VE KULLANIM HAKLARI. Siz 
+yazýlýmýn herhangi bir sayýda kopyasýný 
+geçerli lisansý olan Microsoft Windows 
+kopyalarýnýn kullanýldýðýaygýtlarýnýzda 
+yükleyip kullanabilirsiniz.
+
+2. EK LÝSANS GEREKLERÝ VE/VEYA KULLANIM 
+HAKLARI.
+
+a. Daðýtýlabilir Kod. Yazýlým, aþaðýdaki 
+koþullara uyduðunuz durumda geliþtirdiðiniz 
+programlarda daðýtýmýný yapabileceðiniz kod 
+içerir.
+
+i. Kullaným ve Daðýtým Hakký. Aþaðýda 
+listesi verilen kod ve metin dosyalarý 
+"Daðýtýlabilir Kod"dur.
+
+· REDIST.TXT Dosyalarý. REDIST.TXT 
+dosyalarýnda listesi verilen kodun nesne kodu 
+biçimini kopyalayabilir ve daðýtabilirsiniz.
+
+· Üçüncü Taraf Daðýtým. Programlarýnýzýn 
+daðýtýmcýlarýnýn, söz konusu programlarýn bir 
+parçasý olarak Daðýtýlabilir Kodu 
+kopyalamalarýna ve daðýtmalarýna izin 
+verebilirsiniz.
+
+ii. Daðýtým Gerekleri. Daðýttýðýnýz herhangi 
+bir Daðýtýlabilir Kod için:
+
+· Ona programlarýnýzda önemli yeni iþlevler 
+eklemiþ olmanýz,
+
+· daðýtýmcýlarýn ve dýþarýdan son 
+kullanýcýlarýn kodlarý en azýndan bu sözleþme 
+kadar koruyan koþullarý kabul etmelerini 
+zorunlu tutmanýz,
+
+· programlarýnýzda geçerli telif hakký 
+bildirimini görüntülemeniz ve
+
+· programlarýnýzýn daðýtýmý veya 
+kullanýmýyla ilgili olarak ortaya çýkan, 
+avukatlýk masraflarý dahil her türlü hak 
+talebi karþýsýnda Microsoft'u ibra edip masun 
+tutmanýz gerekir.
+
+iii. Daðýtým Sýnýrlamalarý. Þunlarý 
+yapamazsýnýz:
+
+· Daðýtýlabilir Koddaki telif hakký, ticari 
+marka veya patent uyarýsýný deðiþtirmek;
+
+· Microsoft'un ticari markalarýný 
+programlarýnýzýn adlarýnda kullanmak veya 
+Microsoft kaynaklý olduðunu veya Microsoft 
+tarafýndan desteklendiðini düþündürecek 
+þekilde kullanmak;
+
+· Daðýtýlabilir Kod daðýtýmýný Windows 
+dýþýndaki bir platformda çalýþtýrmak üzere 
+yapmak;
+
+· Daðýtýlabilir Kodu zararlý, aldatýcý ve 
+yasadýþý programlarda kullanmak veya
+
+· herhangi bir bölümü bir Kapsam Dýþý 
+Lisansa konu olacak þekilde Daðýtýlabilir 
+Kodun kaynak kodunu deðiþtirmek veya daðýtmak.
+Kapsam Dýþý Lisans kullaným, deðiþiklik veya 
+daðýtým koþulu olarak,
+
+· kodun kaynak kodu biçiminde açýklanmasý 
+veya daðýtýlmasýný veya
+
+· baþkalarýnýn bunu deðiþtirme hakkýna sahip 
+olmasýný gerektirir.
+
+3. Lisans Kapsamý. Yazýlýmýn satýþý 
+yapýlmamakta, lisansý verilmektedir. Bu 
+sözleþme yalnýzca yazýlýmý kullanýmýnýzla 
+ilgili bazý haklar vermektedir. Microsoft 
+diðer haklarýn tümünü saklý tutar. Bu 
+sýnýrlamalara raðmen ilgili yasalar ilave 
+haklar saðlamýyorsa yazýlýmý yalnýzca bu 
+sözleþmede açýkça izin verildiði þekilde 
+kullanabilirsiniz. Bunu yaparken, yazýlýmda 
+size yazýlýmý yalnýzca belirli þekillerde 
+kullanma izni veren her türlü teknik 
+sýnýrlamaya uymanýz gerekir. Aþaðýdakileri 
+yapamazsýnýz:
+
+· yazýlýmýn teknik sýnýrlamalarýný aþacak 
+çözümler üretmek,
+
+· bu sýnýrlamaya raðmen ilgili yasa 
+hükümlerince açýkça izin verilen durumlar 
+dýþýnda, yazýlým üzerinde ters mühendislik 
+iþlemi yapmak, yazýlýmý kaynak koda 
+dönüþtürmek ve derlemesini açmak,
+
+· yazýlýmýn bu sözleþmede belirtilenden veya 
+ilgili yasalarýn bu sözleþmede öngörülenden 
+fazla kopyaya emredici hükümle izin vermesi 
+halinde yasalarla izin verilenden fazla 
+kopyasýný oluþturmak,
+
+· yazýlýmý baþkalarýnýn kopyalamasý için 
+yayýmlamak,
+
+· yazýlýmý kiralamak, finansal kiralamayla 
+satmak, ödünç vermek,
+
+· yazýlýmý veya bu sözleþmeyi herhangi bir 
+üçüncü tarafa devretmek, veya
+
+· yazýlýmý ticari yazýlým ana makine 
+hizmetleri için kullanmak.
+
+4. YEDEK KOPYA. Yazýlýmýn tek bir yedek 
+kopyasýný oluþturabilirsiniz. Bunu yalnýzca 
+yazýlýmý yeniden yüklemek için 
+kullanabilirsiniz.
+
+5. BELGELER. Bilgisayarýnýza veya iç aðýnýza 
+geçerli eriþimi olan herhangi bir kiþi, 
+belgeleri kuruluþunuz içinde yararlanmak 
+amacýyla kopyalayabilir ve kullanabilir.
+
+6. ÝHRACAT SINIRLAMALARI. Yazýlým, ABD 
+ihracat yasalarýna ve düzenlemelerine tabidir.
+Yazýlým konusunda geçerli olan tüm yurtiçi ve 
+uluslararasý ihracat yasalarýna ve 
+düzenlemelerine uygun þekilde davranmanýz 
+gerekir. Bu yasalar, ürünün gönderileceði 
+yeri, son kullanýcýlar ve son kullanýma 
+iliþkin sýnýrlamalarý içerir. Daha fazla 
+bilgi için bkz: www.microsoft.com/exporting 
+<http://www.microsoft.com/exporting>.
+
+7. DESTEK HÝZMETLERÝ. Bu yazýlým "olduðu 
+gibi" saðlandýðýndan, yazýlým için destek 
+hizmeti veremeyebiliriz.
+
+8. SÖZLEÞMENÝN TAMAMI. Bu sözleþme eklerin, 
+güncelleþtirmelerin, Internet tabanlý 
+hizmetlerin ve kullandýðýnýz destek 
+hizmetlerinin koþullarý, yazýlým ve destek 
+hizmetlerine yönelik sözleþmenin tamamýný 
+oluþturur.
+
+9. UYGULANACAK HUKUK.
+
+a. ABD. Yazýlýmý ABD'de aldýysanýz, bu 
+sözleþmenin yorumlanmasý ve ihlali iddialarý, 
+milletlerarasý baðlama kurallarý hesaba 
+katýlmadan, Washington eyaleti kanunlarýna 
+tabi olacaktýr. Tüketici koruma kanunlarý, 
+haksýz rekabet ve haksýz fiil kapsamýndakiler 
+de dahil diðer tüm talepler bakýmýndan 
+yaþadýðýnýz eyaletin kanunlarý geçerli 
+olacaktýr.
+
+b. ABD dýþýnda. Bu yazýlýmý baþka bir ülkede 
+satýn aldýysanýz, o ülkenin yasalarý geçerli 
+olacaktýr.
+
+10. YASAL ETKÝSÝ. Bu sözleþmede belirli 
+yasal haklar tanýmlanmýþtýr. Yaþadýðýnýz 
+ülkenin kanunlarýna göre baþka haklara sahip 
+olabilirsiniz. Ayrýca, yazýlýmý aldýðýnýz 
+tarafla ilgili baþka haklara da sahip 
+olabilirsiniz. Bu sözleþme, ülkenizin 
+yasalarýnýn izin vermediði durumlarda, 
+ülkenizin yasalarý uyarýnca sahip olduðunuz 
+haklarý deðiþtirmez.
+
+11. GAranti reddi beyaný. Yazýlýmýn lisansý 
+'olduðu gibi' verilmektedir. Yazýlýmýn 
+kullanýmýna iliþkin riskler tarafýnýzdan 
+üstlenilir. Microsoft tarafýndan hiçbir açýk 
+garanti verilmemekte veya koþul 
+sunulmamaktadýr. Yerel yasalara göre ek 
+tüketici haklarýna sahip olabilirsiniz ve bu 
+sözleþme bunlar üzerinde etkili deðildir. 
+Microsoft, bölgenizdeki yasalar çerçevesinde 
+izin verilen ölçüde, satýlabilirlik, belirli 
+bir amaca uygunluk ve ihlal bulunmamasý ile 
+ilgili zýmni garantileri kapsam dýþýnda 
+býrakýr.
+
+12. tELAFÝLERÝN VE ZARARLARIN SINIRLANMASI 
+VE HARÝÇ TUTULMASI. Microsoft veya 
+tedarikçileri yalnýzca 5,00 ABD dolarýna 
+kadar doðrudan zararlarý karþýlamaktadýr. 
+Neticede oluþan, kar kaybý, özel, dolaylý 
+veya arýzi zararlar dahil diðer zararlarý 
+talep edemezsiniz.
+
+Bu sýnýrlama aþaðýdaki haller için 
+geçerlidir:
+
+· Üçüncü þahýslarýn Internet sitelerindeki 
+yazýlým, hizmetler, (kod dahil) içerik veya 
+üçüncü þahýslarýn programlarý ile ilgili 
+konular ve
+
+· ilgili yasalar çerçevesinde izin verilen 
+azami ölçüde sözleþmenin ihlalinden, bir 
+garantinin, taahhüdün veya koþulun ihlalinden,
+kusursuz sorumluluktan, ihmal veya diðer 
+haksýz fiillerden kaynaklanan talepler.
+
+Bu sýnýrlama, Microsoft'un zararýn oluþma 
+olasýlýðýný bilmesi veya bilmesinin gerekmesi 
+halinde de geçerlidir. Yukarýdaki sýnýrlama 
+veya hariç tutma, ülkeniz arýzi, neticede 
+oluþan veya diðer zararlarýn sýnýrlanmasýna 
+veya hariç tutulmasýna izin vermediði 
+takdirde sizin için geçerli olmayabilir.

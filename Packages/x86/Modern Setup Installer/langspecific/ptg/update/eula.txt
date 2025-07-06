@@ -1,0 +1,257 @@
+TERMOS DE LICENÇA DO SOFTWARE DA MICROSOFT
+
+MICROSOFT WINDOWS INSTALLER, VERSION 4.5
+
+Estes termos de licença constituem um 
+contrato entre a Microsoft Corporation (ou 
+depende do país de residência do Adquirente, 
+uma das suas afiliadas) e o Adquirente. O 
+Adquirente deverá ler os presentes termos. Os 
+presentes termos da licença aplicam-se ao 
+software de designado supra, incluindo o 
+suporte (media) em que o Adquirente o recebeu,
+se existir. Os termos também se aplicam a
+
+· actualizações, 
+
+· suplementos,
+
+· serviços baseados na Internet e
+
+· suporte técnico
+
+para este software da Microsoft, salvo se 
+estes artigos forem acompanhados por outros 
+termos. Se estes artigos forem acompanhados 
+por outros termos, aplicam-se esses termos.
+
+Ao utilizar o software, o Adquirente aceita 
+estes termos. Caso não aceite os termos, o 
+Adquirente não deverá utilizar o software.
+
+Se o Adquirente cumprir com os presentes 
+termos da licença, terá os direitos descritos 
+infra.
+
+1. DIREITOS DE INSTALAÇÃO E UTILIZAÇÃO. O 
+Adquirente poderá: instalar e utilizar 
+qualquer número de cópias do software nos 
+dispositivos que executem cópias licenciadas 
+validamente de Microsoft Windows.
+
+2. REQUISITOS ADICIONAIS DE LICENCIAMENTO 
+E/OU DIREITOS DE UTILIZAÇÃO.
+
+a. Código Distribuível. O software contém 
+código que o Adquirente poderá distribuir em 
+programas desenvolvidos por si, desde que 
+observe os termos abaixo.
+
+i. Direito de Utilização e Distribuição. O 
+código e os ficheiros de texto listados 
+abaixo são 'Código Distribuível'.
+
+· Ficheiros REDIST.TXT. É permitido copiar e 
+distribuir o formato de código de objecto do 
+código listado nos ficheiros REDIST.TXT.
+
+· Distribuição por Terceiros. É possível 
+permitir aos distribuidores dos programas do 
+Adquirente que copiem e distribuam o Código 
+Distribuível como fazendo parte desses 
+programas.
+
+ii. Requisitos de Distribuição. Para 
+qualquer Código Distribuível que o Adquirente 
+distribua, terá de
+
+· adicionar uma funcionalidade principal 
+significativa aos seus programas;
+
+· requerer que os distribuidores e 
+utilizadores finais externos concordem com os 
+termos que o protegem, pelo menos, conforme 
+previsto pelo presente contrato;
+
+· apresentar o aviso relativo a direitos de 
+autor válido nos seus programas e
+
+· indemnizar, defender, proteger a Microsoft 
+de quaisquer queixas ou processos, incluindo 
+os honorários dos advogados, relacionados com 
+a distribuição ou utilização dos seus 
+programas.
+
+iii. Restrições à Distribuição. O Adquirente 
+não poderá
+
+· alterar quaisquer avisos relativos a 
+direitos de autor, marcas comerciais ou 
+patentes que apareçam no Código Distribuível; 
+
+
+· utilizar marcas comerciais da Microsoft 
+nos respectivos nomes de programas ou de uma 
+forma que sugira que os programas são 
+provenientes ou aprovados pela Microsoft; 
+
+· distribuir Código Distribuível para ser 
+executado numa plataforma diferente da 
+plataforma Windows;
+
+· incluir Código Distribuível em programas 
+maliciosos, enganadores ou ilegais ou
+
+· modificar ou distribuir o código fonte de 
+qualquer Código Distribuível de modo a que 
+qualquer parte fique sujeita a uma Licença 
+Excluída. Uma Licença Excluída é uma licença 
+que requer, como condição de utilização, 
+modificação ou distribuição, que
+
+· o código seja revelado ou distribuído no 
+formato de código fonte ou
+
+· terceiros tenham o direito de o modificar.
+
+3. ÂMBITO DA LICENÇA. O software é 
+licenciado e não vendido. Este contrato 
+concede apenas alguns direitos de utilização 
+do software. A Microsoft reserva-se todos os 
+direitos. Salvo se a lei em vigor conceder ao 
+Adquirente mais direitos, apesar desta 
+limitação, o Adquirente pode utilizar o 
+software apenas como permitido expressamente 
+neste contrato. Ao fazê-lo, o Adquirente 
+deverá cumprir quaisquer limitações técnicas 
+no software que apenas lhe permitem utilizá-
+lo de certas formas. O Adquirente não poderá
+
+· solucionar as limitações técnicas no 
+software;
+
+· efectuar engenharia inversa, descompilação 
+ou desmontagem (desassemblagem) do software, 
+excepto e apenas na medida em que a lei em 
+vigor o permitir expressamente, não obstante 
+esta limitação;
+
+· efectuar mais cópias do software do que as 
+especificadas neste contrato ou permitidas 
+pela lei em vigor, não obstante esta 
+limitação;
+
+· publicar o software para que outros o 
+copiem;
+
+· proceder ao aluguer, locação financeira 
+(leasing) ou empréstimo do software;
+
+· transferir o software ou o presente 
+contrato a terceiros; ou
+
+· utilizar o software para serviços de 
+alojamento de software comercial.
+
+4. CÓPIA DE SEGURANÇA. O Adquirente pode 
+efectuar uma cópia de segurança do software. 
+Só deve ser utilizada para reinstalar o 
+software.
+
+5. DOCUMENTAÇÃO. Qualquer pessoa que tenha 
+acesso válido ao computador ou à rede interna 
+do Adquirente poderá copiar e utilizar a 
+documentação para fins internos e de 
+referência.
+
+6. RESTRIÇÕES À EXPORTAÇÃO. O software está 
+sujeito às leis e regulamentos de exportação 
+dos E.U.A. O Adquirente deverá cumprir todas 
+as leis e regulamentos de exportação 
+internacional que se aplicam ao software. 
+Estas leis incluem restrições a destinos, 
+utilizadores finais e utilização final. Para 
+mais informações, o Adquirente deverá 
+consultar www.microsoft.com/exporting.
+
+7. SUPORTE TÉCNICO. Porque o software é 
+fornecido "tal como está", a Microsoft não 
+fornece suporte técnico.
+
+8. CONTRATO INTEGRAL. O presente contrato e 
+os termos para os suplementos, actualizações, 
+serviços baseados na Internet e suporte 
+técnico que o Adquirente utilize, constituem 
+o contrato integral para o software e suporte 
+técnico.
+
+9. LEI APLICÁVEL.
+
+a. Estados Unidos. Se o Adquirente adquiriu 
+o software nos Estados Unidos, as leis do 
+estado de Washington regulam a interpretação 
+deste contrato e aplicam-se às acções por 
+violações do mesmo, independentemente dos 
+conflitos de princípios de leis. As leis que 
+vigoram no estado em que vive o Adquirente 
+regulam todas as outras acções, incluindo as 
+acções ao abrigo da legislação de protecção 
+do consumidor do estado, legislação de 
+concorrência desleal e acto ilícito.
+
+b. Fora dos Estados Unidos. Se o Adquirente 
+adquiriu o software noutro país, aplica-se a 
+legislação desse país.
+
+10. EFEITO LEGAL. O presente contrato 
+descreve determinados direitos legais. O 
+Adquirente poderá ter outros direitos ao 
+abrigo do seu país. Também poderá ter 
+direitos em relação a quem adquiriu o 
+software. O presente contrato não altera os 
+direitos do Adquirente ao abrigo das leis do 
+país do Adquirente se as leis do país não o 
+permitirem.
+
+11. EXCLUSÃO DE GARANTIAS. O software está 
+licenciado 'tal como está.' O adquirente é 
+responsável pela sua utilização. A Microsoft 
+não concede outras garantias ou condições 
+expressas. O Adquirente poderá ter direitos 
+de consumidor adicionais ao abrigo das leis 
+locais, que não podem ser alteradas por este 
+contrato. Até à extensão máxima permitida 
+pela lei aplicável, excluímos as garantias 
+implícitas de comercialização, adequação a um 
+fim específico e não violação de direitos de 
+autor.
+
+12. LIMITAÇÃO E EXCLUSÃO DE DANOS. O 
+Adquirente pode recuperar da Microsoft e 
+respectivos fornecedores apenas os danos 
+directos até ao montante de US$5.00. O 
+Adquirente não poderá recuperar quaisquer 
+outros danos, incluindo prejuízos 
+consequentes, lucros perdidos, prejuízos 
+extraordinários, indirectos ou incidentais.
+
+Esta limitação aplica-se a
+
+· qualquer assunto relacionado com o 
+software, serviços, conteúdo (incluindo 
+código) em sites da Internet de terceiros ou 
+programas de terceiros e 
+
+· queixas por violação do contrato, violação 
+da garantia ou condição, responsabilidade 
+objectiva, negligência ou acto ilícito até à 
+extensão permitida pela lei aplicável.
+
+Aplica-se também se a Microsoft tinha ou 
+devesse ter conhecimento sobre a 
+possibilidade de ocorrência dos prejuízos. A 
+limitação ou exclusão supra poderá também não 
+aplicar-se ao Adquirente porque o país em que 
+reside pode não permitir a exclusão ou 
+limitação de prejuízos, incidentais, 
+consequentes ou outros.

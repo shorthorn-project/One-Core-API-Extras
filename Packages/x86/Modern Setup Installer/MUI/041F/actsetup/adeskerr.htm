@@ -1,0 +1,254 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1254">
+    <title>out of box experience</title>
+    <LINK REL="stylesheet" TYPE="text/css" HREF="aregstyl.css" id=deskstyle1>
+    <LINK REL="stylesheet" TYPE="text/css" HREF="aregsty2.css" id=deskstyle2 disabled>
+    <META HTTP-EQUIV="MSThemeCompatible" CONTENT="Yes">
+</head>
+
+<body style="background-Color: transparent; background-repeat: no-repeat;" topMargin=0 rightmargin=0 leftmargin=0 tabindex=-1
+      onload="window.parent.act_desktop_error_LoadMe();" >
+
+<table valign=middle border=0 cellpadding=0 cellspacing=0 width="100%" height="100%">
+<tr>
+    <td ID=leftmargincell width=5% height=99%></td>
+    <td ID=maincell valign=top class="text-primary">
+
+    <span ID=Title_Text class="title" style="display:none;">
+        <ID id=acterror_s1>Windows Etkinleştir</ID>
+    </span>
+
+    <br>
+    <!-- Prepare the different error scenes, all are hidden -->
+
+        <span ID=acterror_description_SUCCESS1 class="text-primary" style="display:none;">
+            <ID id="txtActivDeskSUCCESS1">Windows kopyanızı başarıyla etkinleştirdiniz ve kaydettiniz.</ID>
+        </span>
+
+        <span ID=acterror_description_SUCCESS2 class="text-primary" style="display:none;">
+            <ID id="txtActivDeskSUCCESS2">Windows kopyanızı başarıyla etkinleştirdiniz.</ID>
+        </span>
+
+
+        <!-- Pre-expiration -->
+        <span ID=acterror_description1Pre class="text-primary" style="display:none;">
+            <ID id="txtActivDeskErr">Bu defa çevirimiçi etkinleştirme tamamlanamadı.</ID>
+            <br><br>
+            <id id="txtActivDeskerr0">Windows XP'yi <span id=NumberDaysLeft1 class="text-primary"></span>&nbsp;gün kullandıktan sonra etkinleştirmeniz gerekir.</id>
+            <br><br>
+            <ID id="txtActivDeskErr1">Bu süre boyunca, eşit aralıklarla Windows Etkinleştirme Sihirbazı kullanarak etkinleştirmeniz hatırlatılacak. (Başlat menüsünde görebilirsiniz.)<br><br>Etkinleştirme merkezine bağlantı sorunlarınız devam ederse, telefonla müşteri hizmetleri temsilcisi yardımıyla etkinleştirme yapabilirsiniz.</ID>
+            <br><br>
+            <ID id="txtActivDeskErr2">Bölgenizdeki bağlantı numarası için Telefon'u tıklatın.</ID>
+        </span>
+        <!-- Post-expiration -->
+        <span ID=acterror_description1Post class="text-primary" style="display:none;">
+            <ID id="txtActivDeskErrPost">Windows çevriçi olarak etkinleştirilemedi.</ID>
+            <br><br>
+            <id id="txtActivDeskerr0Post">Etkinleştirme süreniz sona erdi. Windows'u kullanmaya devam etmek için bilgisayarınızı şimdi etkinleştirmelisiniz.</id>
+            <br><br>
+            <ID id="txtActivDeskErr1Post">Telefonda müşteri hizmetleri temsilcisi ile etkinleştirebilirsiniz. Bölgenizdeki bağlantı numarası için Telefon'u tıklatın.</ID>
+        </span>
+
+
+        <!-- Retail mode -->
+        <span ID=acterror_description2_RETAIL class="text-primary" style="display:none;">
+            <ID id="txtActivDeskErr3retail">Aşağıdaki ürün anahtarı yanlış girildiyse, düzeltip <B>Yeniden Dene</B>'yi tıklatın.</ID>
+            <br><br>
+            <ID id="txtActivDeskErr4retail">25 karakterli ürün anahtarı Windows XP CD kabının arkasında yapışık olarak örnekte olduğu gibi görünüyor olmalıdır:</ID>
+            <br><br>
+            <center><img src="../images/prodkey.gif"></center>
+        </span>
+        <!-- OEM mode -->
+        <span ID=acterror_description2_OEM class="text-primary" style="display:none;">
+            <ID id="txtActivDeskErr3OEM">Aşağıdaki ürün anahtarı yanlış girildiyse, düzeltip <B>Yeniden Dene</B>'yi tıklatın.</ID>
+            <br><br>
+            <ID id="txtActivDeskErr4OEM">25 karakterli ürün anahtarı bilgisayarınıza yapıştırılmış Özgünlük Belgenizde veya Windows belgelerinde bulunabilir. Aşağıdaki örneğe benzer görünüyor olmalıdır.</ID>
+            <br><br>
+            <center><img src="../images/oemcoa.jpg"></center>
+        </span>
+
+
+        <!-- Retail mode -->
+        <span ID=acterror_description3Retail class="text-primary" style="display:none;">
+            <ID id="txtActivDeskErr5a_retail">Kayıtlarımıza göre, bu ürün anahtarıyla Windows'u etkinleştirme sayınız aşılmış. Başka bir ürün anahtarı girip <B>Yeniden Dene</B>'yi tıklatın.</ID>
+            <ID id="txtActivDeskErr5b_retail">25 karakterli ürün anahtarı Windows XP CD kabının arkasında yapışık olarak örnekte olduğu gibi görünüyor olmalıdır:</ID>
+            <br><br>
+            <center><img src="../images/prodkey.gif"></center>
+        </span>
+        <!-- OEM mode -->
+        <span ID=acterror_description3OEM class="text-primary" style="display:none;">
+            <ID id="txtActivDeskErr5a_OEM">Kayıtlarımıza göre, bu ürün anahtarıyla Windows'u etkinleştirme sayınız aşılmış. Başka bir ürün anahtarı girip <B>Yeniden Dene</B>'yi tıklatın.</ID>
+            <ID id="txtActivDeskErr5b_OEM">25 karakterli ürün anahtarı bilgisayarınıza yapıştırılmış Özgünlük Belgenizde veya Windows belgelerinde bulunabilir. Aşağıdaki örneğe benzer görünüyor olmalıdır.</ID>
+            <br><br>
+            <center><img src="../images/oemcoa.jpg"></center>
+        </span>
+
+
+        <!-- Pre-expiration -->
+        <span ID=acterror_description4Pre class="text-primary" style="display:none;">
+            <ID id="txtActivDeskErr6">Bu defa çevirimiçi etkinleştirme tamamlanamadı.</ID>
+            <br><br>
+            <ID id="txtActivDeskErr7">Windows XP'yi <span id=NumberDaysLeft2 class="text-primary"></span>&nbsp;gün kullandıktan sonra etkinleştirmeniz gerekir.</ID>
+            <br><br>
+            <id id="txtActivdeskErr71">Bu süre boyunca, eşit aralıklarla Windows Etkinleştirme Sihirbazı kullanarak etkinleştirmeniz hatırlatılacak. (Başlat menüsünde görebilirsiniz.)<br><br>Etkinleştirme merkezine bağlantı sorunlarınız devam ederse, telefonla müşteri hizmetleri temsilcisi yardımıyla etkinleştirme yapabilirsiniz.</id>
+            <br><br>
+            <id id="txtActivDeskErr72">Bölgenizdeki bir başvuru numarası için <b>Telefon</b> seçeneğini tıklatın.</id>
+        </span>
+        <!-- Post-expiration -->
+        <span ID=acterror_description4Post class="text-primary" style="display:none;">
+            <ID id="txtActivDeskErr7Post">Windows çevriçi olarak etkinleştirilemedi.</ID>
+            <br><br>
+            <id id="txtActivDeskerr71Post">Etkinleştirme süreniz sona erdi. Windows'u kullanmaya devam etmek için bilgisayarınızı şimdi etkinleştirmelisiniz.</id>
+            <br><br>
+            <ID id="txtActivDeskErr72Post">Telefonda müşteri hizmetleri temsilcisi ile etkinleştirebilirsiniz. Bölgenizdeki bağlantı numarası için Telefon'u tıklatın.</ID>
+        </span>
+
+
+        <!-- Retail mode -->
+        <span ID=acterror_description5Retail class="text-primary" style="display:none;">
+            <ID id="txtActivDeskErr8a_retail">Bu ürün anahtarı yetkilendirilmemiş. Etkinleştirme geçerli bir ürün anahtarı girilene kadar tamamlanamaz.</ID>
+            <ID id="txtActivDeskErr8b_retail">25 basamaklı ürün anahtarı, Windows XP CD kabının arkasında bulunan aşağıdaki örnektekine benzer bir etiket üzerinde bulunmalıdır. Lütfen aşağıdaki ürün anahtarını düzeltin ya da geçerli bir ürün anahtarı yazın ve ardından <B>Yeniden Dene</B>'yi tıklatın.</ID>
+            <br><br>
+            <center><img src="../images/prodkey.gif"></center>
+        </span>
+        <!-- OEM mode -->
+        <span ID=acterror_description5OEM class="text-primary" style="display:none;">
+            <ID id="txtActivDeskErr8a_OEM">Bu ürün anahtarı yetkilendirilmemiş. Etkinleştirme geçerli bir ürün anahtarı girilene kadar tamamlanamaz.</ID>
+            <ID id="txtActivDeskErr8b_OEM">25 basamaklı ürün anahtarı bilgisayarınıza veya Windows belgelerinize iliştirilen Orijinallik Sertifikası (COA) etiketi üzerinde bulunabilir. Aşağıdaki örnekte gösterilene benzer olması gerekir. Lütfen aşağıdaki ürün anahtarını düzeltin ya da geçerli bir ürün anahtarı yazın ve ardından <B>Yeniden Dene</B>'yi tıklatın.</ID>
+            <br><br>
+            <center><img src="../images/oemcoa.jpg"></center>
+        </span>
+
+
+        <span ID=acterror_description6 class="text-primary" style="display:none;">
+            <ID id="txtActivDeskErr10">Varolan Windows etkinleştirme işleminiz hatalı veya artık geçerli değil.</ID>
+            <br><br>
+            <ID id="txtActivDeskErr11">Ancak endişelenmeyin, Windows'u <span id=NumberDaysLeft3 class="text-primary"></span>&nbsp;gün kullandıktan sonra etkinleştirmeniz gerekir.</ID>
+            <br><br>
+            <id id="txtActivDeskErr111">Bu süre boyunca, birkaç günde bir Ürün Etkinleştirme Sihirbazı ile etkinleştirmenizi hatırlatacağız (Başlat menüsünde görebilirsiniz.). O zaman da etkinleştirme merkezimize ulaşmada sorununuz olursa, telefonla etkinleştirebilirsiniz.</id>
+            <br><br>
+            <id id="txtactivDeskErr112">Bölgenizdeki bağlantı numarası için Telefon'u tıklatın.</id>
+        </span>
+
+
+        <span ID=acterror_description7 class="text-primary" style="display:none;">
+            <ID id="txtActivDeskErr12">Etkinleştirme sunucusu ile bağlantı kurulamadı.  Lütfen ağ ayarlarınızı denetleyin ve Internet'e bağlanabildiğinizi onaylayın, ardından yeniden deneyin.</ID>
+        </span>
+
+
+        <!-- Retail mode -->
+        <span ID=acterror_description_dedicated_pid_RETAIL class="text-primary" style="display:none;">
+            <ID id="txtActivDeskErrDedicatedPid1">Ürün anahtarını değiştirmeniz gerekirse, aşağıdaki alana girin ve <B>Güncelle</B>'yi tıklatın. Gerekmezse, önceki etkinleştirme penceresine dönmek için <B>Telefon</B>'u tıklatın.</ID>
+            <br><br>
+            <ID id="txtActivDeskErrDedicatedPid2">25 karakterli ürün anahtarı Windows XP CD kabının arkasında yapışık olarak örnekte olduğu gibi görünüyor olmalıdır:</ID>
+            <br><br>
+            <center><img src="../images/prodkey.gif"></center>
+        </span>
+        <!-- OEM mode -->
+        <span ID=acterror_description_dedicated_pid_OEM class="text-primary" style="display:none;">
+            <ID id="txtActivDeskErrDedicatedPid1x">Ürün anahtarını değiştirmeniz gerekirse, aşağıdaki alana girin ve <B>Güncelle</B>'yi tıklatın. Gerekmezse, önceki etkinleştirme penceresine dönmek için <B>Telefon</B>'u tıklatın.</ID>
+            <br><br>
+            <ID id="txtActivDeskErrDedicatedPid2x">25 karakterli ürün anahtarı bilgisayarınıza yapıştırılmış Özgünlük Belgenizde veya Windows belgelerinde bulunabilir. Aşağıdaki örneğe benzer görünüyor olmalıdır.</ID>
+            <br><br>
+            <center><img src="../images/oemcoa.jpg"></center>
+        </span>
+
+
+        <!-- PID ENTRY -->
+        <span ID=acterror_pid_entry class="text-primary" style="display:none;">
+            <br>
+            <table ID=PidBox border=0 DIR=ltr style="font-family:Courier New; FONT-SIZE: 16pt;">
+            <tr>
+                <td nowrap width=10>&nbsp;</td>
+                <td nowrap class="text-primary" >
+                <span ID=acterror_description_verify_key class="text-primary"><ID id="txtverifykey">Anahtarı doğrulayın:</id></span>&nbsp;
+                </td>
+                <td>
+                <input style="ime-mode:disabled" id=pid1 type="text" size=6 maxlength=5 class=pid-box TABINDEX=1 name="edtProductKey"
+                onkeydown="window.parent.ProductIDKeyDown();" onpropertychange="window.parent.ProductIDPropertyChange();"
+                onkeypress="window.parent.ProductIDKeyPress();" onkeyup="window.parent.ProductIDKeyUp();" onfocus="window.parent.OnFocus();">
+                </td><td class="text-primary">-</td><td>
+                <input style="ime-mode:disabled" id=pid2 type="text" size=6 maxlength=5 class=pid-box TABINDEX=2 name="edtProductKey"
+                onkeydown="window.parent.ProductIDKeyDown();" onpropertychange="window.parent.ProductIDPropertyChange();"
+                onkeypress="window.parent.ProductIDKeyPress();" onkeyup="window.parent.ProductIDKeyUp();" onfocus="window.parent.OnFocus();">
+                </td><td class="text-primary">-</td><td>
+                <input style="ime-mode:disabled" id=pid3 type="text" size=6 maxlength=5 class=pid-box TABINDEX=3  name="edtProductKey"
+                onkeydown="window.parent.ProductIDKeyDown();" onpropertychange="window.parent.ProductIDPropertyChange();"
+                onkeypress="window.parent.ProductIDKeyPress();" onkeyup="window.parent.ProductIDKeyUp();" onfocus="window.parent.OnFocus();">
+                </td><td class="text-primary">-</td><td>
+                <input style="ime-mode:disabled" id=pid4 type="text" size=6 maxlength=5 class=pid-box TABINDEX=4  name="edtProductKey"
+                onkeydown="window.parent.ProductIDKeyDown();" onpropertychange="window.parent.ProductIDPropertyChange();"
+                onkeypress="window.parent.ProductIDKeyPress();" onkeyup="window.parent.ProductIDKeyUp();" onfocus="window.parent.OnFocus();">
+                </td><td class="text-primary">-</td><td>
+                <input style="ime-mode:disabled" id=pid5 type="text" size=6 maxlength=5 class=pid-box TABINDEX=5  name="edtProductKey"
+                onkeydown="window.parent.ProductIDKeyDown();" onpropertychange="window.parent.ProductIDPropertyChange();"
+                onkeypress="window.parent.ProductIDKeyPress();" onkeyup="window.parent.ProductIDKeyUp();" onfocus="window.parent.OnFocus();">
+                </td>
+            </tr>
+            </table>
+        </span>
+
+
+        <!-- AFTER PID ENTRY TEXT -->
+        <span ID=acterror_after_pid_entry_OEMText class="text-primary" style="display:none;">
+            <br>
+            <ID id="txtActivDeskErrOEMText">COA etiketinizi bulamıyorsanız, lütfen bilgisayar üreticinize başvurun.</ID><br>
+        </span>
+
+        <span ID=acterror_after_pid_entry_text1 class="text-primary" style="display:none;">
+            <br>
+            <ID id="txtActivDeskErr14">Doğru ürün anahtarınızı yazdığınızdan ve bu iletiyi almamanız gerektiğinden eminseniz, lütfen bir müşteri hizmeti temsilcisine başvurun. Bölgenizdeki bir başvuru numarası için <B>Telefon</B> seçeneğini tıklatın.</ID>
+        </span>
+
+
+        <span ID=acterror_after_pid_entry_text2 class="text-primary" style="display:none;">
+            <br>
+            <ID id="txtActivDeskErr15">Bu iletiyi yanlışlıkla aldığınıza inanıyorsanız, <B>Telefon</B> düğmesini tıklatarak bir Müşteri Hizmetleri Temsilcisiyle temasa geçin.</ID>
+        </span>
+
+        <span ID=acterror_after_pid_entry_text3 class="text-primary" style="display:none;">
+            <br>
+            <ID id="txtActivDeskErr16">Windows'un her kopyası aynı anda sadece bir tek bilgisayara yüklenebilir. Bu iletiyi yanlışlıkla aldığınıza inanıyorsanız, <B>Telefon</B> düğmesini tıklatarak bir Müşteri Hizmetleri Temsilcisiyle temasa geçin.</ID>
+        </span>
+
+        <span ID=acterror_after_pid_entry_text4 class="text-primary" style="display:none;">
+            <br>
+            <ID id="txtActivDeskErr17">Ürün anahtarını girmek istemiyorsanız, önceki etkinleştirme sayfasına dönmek için <B>telefon</B> seçeneğini tıklatın.</ID>
+        </span>
+
+    <!-- End -->
+    </td>
+
+    <td ID=rightmargincell width=7%>
+    </td>
+</tr>
+<tr>
+    <td colspan=3>
+    <br>
+    <table border=0 class="buttonpositionnew">
+    <tr>
+        <td width=99%>
+            &nbsp;&nbsp;
+            <span ID=acterror_specific_error_code class="text-primary" style="display:none; z-index:10;">
+            </span>
+        </td>
+        <td>
+        <BUTTON ID="btnTelephone" class="buttons" TABINDEX=6 ACCESSKEY="T"><label for=btnTelephone><id id="LocalBtnTel_Text"><u>T</u>elefon</id></label></BUTTON>
+        </td>
+        <td>
+        <BUTTON ID="btnQuit" class="buttons" TABINDEX=7 ACCESSKEY="S"><label for=btnQuit><id id="LocalBtnQuit_Text"><u>S</u>onra Anımsat</id></label></BUTTON>
+        </td>
+        <td>
+        <BUTTON ID="btnNext" class="buttons" TABINDEX=8 ACCESSKEY="E"><label for=btnNext><id id="LocalBtnRetry_Text">Y<u>e</u>niden Dene</id></label></BUTTON>
+        </td>
+    </tr>
+    </table>
+    </td>
+</tr>
+</table>
+
+</body>
+</html>

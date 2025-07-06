@@ -1,0 +1,288 @@
+POSTANOWIENIA LICENCYJNE DOTYCZ¥CE 
+OPROGRAMOWANIA MICROSOFT 
+
+MICROSOFT WINDOWS INSTALLER, VERSION 4.5
+
+Niniejsze postanowienia licencyjne stanowi¹ 
+umowê miêdzy Microsoft Corporation (albo z 
+jednym z podmiotów stowarzyszonych Microsoft 
+w³aœciwym ze wzglêdu na Pañstwa miejsce 
+zamieszkania lub siedzibê) a Pañstwem. 
+Prosimy przeczytaæ poni¿sze postanowienia. 
+Odnosz¹ siê one do okreœlonego powy¿ej 
+oprogramowania, jak równie¿ noœników, na 
+których zosta³o ono Pañstwu dostarczone, 
+jeœli takie noœniki istniej¹. Niniejsze 
+postanowienia licencyjne dotycz¹ tak¿e 
+dostarczanych przez Microsoft:
+
+ aktualizacji,
+
+ uzupe³nieñ,
+
+ us³ug internetowych oraz
+
+ pomocy technicznej
+
+dla niniejszego oprogramowania, o ile tym 
+elementom nie towarzysz¹ inne postanowienia. 
+W takim przypadku obowi¹zuj¹ te inne 
+postanowienia.
+
+Przez u¿ycie oprogramowania akceptuj¹ 
+Pañstwo niniejsze postanowienia. Jeœli nie 
+akceptuj¹ Pañstwo niniejszych postanowieñ, 
+nie mog¹ Pañstwo u¿ywaæ oprogramowania.
+
+Jeœli zgadzaj¹ siê Pañstwo z niniejszymi 
+postanowieniami licencyjnymi, maj¹ Pañstwo 
+nastêpuj¹ce prawa.
+
+1. PRAWA DO INSTALACJI I U¯YWANIA. Mog¹ 
+Pañstwo zainstalowaæ i u¿ywaæ dowolnej liczby 
+kopii oprogramowania na swoich urz¹dzeniach 
+na swoich urz¹dzeniach z dzia³aj¹cymi 
+prawid³owo licencjonowanymi kopiami Microsoft 
+Windows.
+
+2. DODATKOWE WYMAGANIA LICENCYJNE I/LUB 
+PRAWA DO U¯YWANIA.
+
+a. Kod Dystrybucyjny. Oprogramowanie zawiera 
+kod, który mog¹ Pañstwo rozpowszechniaæ w 
+stworzonych przez siebie programach, jeœli 
+bêd¹ Pañstwo przestrzegaæ poni¿szych 
+postanowieñ.
+
+i. Prawa do u¿ywania i rozpowszechniania. 
+Kod i pliki tekstowe wymienione poni¿ej s¹ 
+'Kodem Dystrybucyjnym'.
+
+ Pliki REDIST.TXT. Mog¹ Pañstwo kopiowaæ i 
+rozpowszechniaæ w postaci kodu wynikowego kod 
+wymieniony w plikach REDIST.TXT.
+
+ Rozpowszechnianie przez osoby trzecie. 
+Mog¹ Pañstwo zezwoliæ dystrybutorom swoich 
+programów na kopiowanie i rozpowszechnianie 
+Kodu Dystrybucyjnego jako czêœci tych 
+programów.
+
+ii. Warunki rozpowszechniania. Z ka¿dym 
+rozpowszechnianym przez siebie Kodem 
+Dystrybucyjnym musz¹ Pañstwo:
+
+ dodawaæ do niego znacz¹ce i podstawowe 
+funkcje w swoich programach;
+
+ wymagaæ od dystrybutorów i zewnêtrznych 
+u¿ytkowników koñcowych akceptacji postanowieñ 
+chroni¹cych oprogramowanie co najmniej tak 
+samo, jak niniejsza umowa licencyjna;
+
+ wyœwietlaæ w swoich programach poprawne 
+informacje o prawach autorskich oraz
+
+ w najszerszym zakresie dopuszczalnym przez 
+prawo w³aœciwe, zwolniæ Microsoft od 
+wszelkiej odpowiedzialnoœci, broniæ jej i 
+naprawiæ wszelkie szkody, ³¹cznie z kosztami 
+obs³ugi prawnej poniesionej przez Microsoft w 
+zwi¹zku z jakimikolwiek roszczeniami 
+dotycz¹cymi rozpowszechniania lub u¿ywania 
+Pañstwa programów.
+
+iii. Ograniczenia rozpowszechniania. Nie 
+mog¹ Pañstwo:
+
+ zmieniaæ w Kodzie Dystrybucyjnym 
+jakichkolwiek informacji o prawach autorskich,
+znakach towarowych lub patentach;
+
+ u¿ywaæ znaków towarowych Microsoft w 
+nazwach swoich programów lub w sposób 
+sugeruj¹cy, ¿e Pañstwa programy pochodz¹ od 
+Microsoft lub s¹ popierane przez Microsoft;
+
+ rozpowszechniaæ Kodu Dystrybucyjnego 
+przeznaczonego do uruchamiania go na 
+platformie innej ni¿ platforma Windows;
+
+ umieszczaæ Kodu Dystrybucyjnego w 
+oprogramowaniu szkodliwym, oszukañczym lub 
+niezgodnym z prawem albo
+
+ modyfikowaæ ani rozpowszechniaæ kodu 
+Ÿród³owego jakiegokolwiek Kodu 
+Dystrybucyjnego w taki sposób, ¿e jakakolwiek 
+jego czêœæ bêdzie podlegaæ Licencji 
+Wy³¹czaj¹cej. Licencja Wy³¹czaj¹ca jest 
+licencj¹ wymagaj¹c¹, jako warunek u¿ywania, 
+modyfikowania lub rozpowszechniania, aby:
+
+ kod by³ jawny lub rozpowszechniany w 
+postaci kodu Ÿród³owego albo
+
+ inne osoby mia³y prawo do jego 
+modyfikowania.
+
+3. Zakres licencji. Oprogramowanie jest 
+licencjonowane, a nie sprzedawane. Niniejsza 
+umowa daje Pañstwu tylko niektóre prawa do 
+u¿ywania oprogramowania. Microsoft zastrzega 
+sobie wszystkie inne prawa. Poza sytuacj¹, w 
+której pomimo niniejszego ograniczenia prawo 
+w³aœciwe daje Pañstwu wiêcej praw, mog¹ 
+Pañstwo u¿ywaæ oprogramowania tylko w sposób 
+wyraŸnie dozwolony w niniejszej umowie. W 
+takiej sytuacji musz¹ Pañstwo wtedy 
+przestrzegaæ wszystkich ograniczeñ 
+technicznych w oprogramowaniu, które 
+zezwalaj¹ Pañstwu na u¿ywanie go tylko 
+pewnymi sposobami. Nie mog¹ Pañstwo:
+
+ obchodziæ ograniczeñ technicznych w 
+oprogramowaniu;
+
+ odtwarzaæ, dekompilowaæ ani dezasemblowaæ 
+oprogramowania, z wyj¹tkiem sytuacji, gdy 
+niezale¿nie od niniejszego ograniczenia 
+dzia³ania takie s¹ wyraŸnie dozwolone przez 
+prawo w³aœciwe i tylko w zakresie takiego 
+zezwolenia;
+
+ sporz¹dzaæ wiêcej kopii oprogramowania ni¿ 
+jest to okreœlone w niniejszej umowie lub 
+dozwolone przez prawo w³aœciwe, pomimo 
+niniejszego ograniczenia;
+
+ udostêpniaæ oprogramowania innym osobom do 
+kopiowania;
+
+ wynajmowaæ, wydzier¿awiaæ ani wypo¿yczaæ 
+oprogramowania;
+
+ przekazywaæ oprogramowania ani niniejszej 
+umowy osobom trzecim albo
+
+ u¿ywaæ oprogramowania do œwiadczenia us³ug 
+hostingowych dla celów komercyjnych.
+
+4. KOPIA ZAPASOWA. Mog¹ Pañstwo sporz¹dziæ 
+jedn¹ kopiê zapasow¹ oprogramowania. Mog¹ jej 
+Pañstwo u¿ywaæ tylko do ponownego 
+zainstalowania oprogramowania.
+
+5. DOKUMENTACJA. Ka¿da osoba, która jest 
+upowa¿niona do uzyskiwania dostêpu do Pañstwa 
+komputera lub jego sieci wewnêtrznej, mo¿e 
+kopiowaæ i korzystaæ z dokumentacji jako 
+materia³ów referencyjnych na Pañstwa 
+wewnêtrzny u¿ytek.
+
+6. OGRANICZENIA EKSPORTOWE. Oprogramowanie 
+podlega amerykañskim przepisom eksportowym. 
+Musz¹ Pañstwo przestrzegaæ wszystkich 
+krajowych i miêdzynarodowych przepisów 
+eksportowych maj¹cych zastosowanie do 
+oprogramowania. Przepisy te zawieraj¹ 
+ograniczenia dotycz¹ce kraju przeznaczenia, 
+u¿ytkowników i u¿ywania oprogramowania. 
+Wiêcej informacji mo¿na znaleŸæ pod adresem 
+www.microsoft.com/exporting.
+
+7. POMOC TECHNICZNA. Oprogramowanie jest 
+dostarczane w stanie takim, w jakim siê 
+znajduje. W zwi¹zku z tym nie oferujemy 
+¿adnych us³ug pomocy technicznej dotycz¹cych 
+tego oprogramowania.
+
+8. JEDNA UMOWA. Niniejsza umowa (³¹cznie z 
+zamieszczon¹ poni¿ej gwarancj¹) wraz ze 
+wszystkimi postanowieniami dotycz¹cymi 
+uzupe³nieñ, aktualizacji, us³ug internetowych 
+i us³ug pomocy technicznej stanowi ca³oœæ 
+umowy dotycz¹cej oprogramowania i pomocy 
+technicznej.
+
+9. PRAWO W£AŒCIWE.
+
+a. Stany Zjednoczone. Jeœli nabyli Pañstwo 
+oprogramowanie w Stanach Zjednoczonych, 
+interpretacja niniejszej umowy podlega prawu 
+stanu Waszyngton, które to prawo ma 
+zastosowanie do roszczeñ z tytu³u naruszenia 
+umowy, bez wzglêdu na konflikty przepisów 
+kolizyjnych. Wszystkie inne roszczenia, 
+³¹cznie z roszczeniami wnoszonymi na 
+podstawie w³aœciwych dla Pañstwa ustaw z 
+danego stanu o ochronie konsumenta, ustaw o 
+zwalczaniu nieuczciwej konkurencji i czynach 
+niedozwolonych, podlegaj¹ prawu miejscowemu, 
+w³aœciwemu ze wzglêdu na stan Pañstwa 
+zamieszkania lub siedziby.
+
+b. Poza Stanami Zjednoczonymi. Jeœli nabyli 
+Pañstwo oprogramowanie w dowolnym innym kraju,
+prawem w³aœciwym jest prawo miejscowe.
+
+10. SKUTKI PRAWNE. W niniejszej umowie 
+opisane s¹ niektóre uprawnienia. Mog¹ Pañstwo 
+mieæ tak¿e inne prawa ustawowe z mocy prawa 
+swojego kraju. Mog¹ Pañstwo mieæ tak¿e prawa 
+wzglêdem strony, od której nabyli Pañstwo 
+oprogramowanie. Niniejsza umowa nie zmienia 
+Pañstwa ustawowych praw obowi¹zuj¹cych z mocy 
+prawa Pañstwa kraju, jeœli prawo to na takie 
+zmiany nie zezwala.
+
+11. wy³¹czenie odpowiedzialnoœci z tytu³u 
+rêkojmi. Oprogramowanie jest licencjonowane 
+'jak jest'. Ponosz¹ Pañstwo ryzyko zwi¹zane z 
+jego u¿ywaniem. Nie udzielamy ¿adnej wyraŸnej 
+rêkojmi, gwarancji ani nie podajemy warunków. 
+Mog¹ Pañstwo mieæ dodatkowe prawa 
+konsumenckie z mocy swojego prawa miejscowego,
+których niniejsza umowa nie mo¿e zmieniæ. W 
+zakresie dozwolonym przez pañstwa prawo 
+miejscowe, Microsoft wy³¹cza domyœln¹ 
+gwarancjê z tytu³u wartoœci handlowej, 
+przydatnoœci do okreœlonego celu i 
+nienaruszalnoœci praw osób trzecich.
+
+12. brak odpowiedzialnoœci za szkody. W 
+najszerszym zakresie dozwolonym przez prawo 
+w³aœciwe odpowiedzialnoœæ Microsoft i 
+podmiotów stowarzyszonych Microsoft lub ich 
+dostawców za jakiekolwiek szkody bêdzie 
+ograniczona do wysokoœci 5,00 USD. W 
+najszerszym zakresie dozwolonym przez prawo 
+w³aœciwe, Microsoft, ¿aden z podmiotów 
+stowarzyszonych Microsoft lub ich dostawcy 
+nie bêd¹ ponosili wzglêdem pañstwa 
+odpowiedzialnoœci za jakiekolwiek inne szkody 
+w tym w szczególnoœci za utracone korzyœci, 
+szkody specjalne, poœrednie i przypadkowe.
+
+W szczególnoœci ograniczenie to ma 
+zastosowanie do
+
+ ka¿dej sprawy zwi¹zanej z oprogramowaniem, 
+us³ugami, zawartoœci¹ (³¹cznie z kodem) 
+witryn internetowych osób trzecich lub 
+programami osób trzecich oraz
+
+ roszczeñ wnoszonych w oparciu o naruszenie 
+umowy, niedotrzymanie rêkojmi, gwarancji lub 
+oœwiadczeñ i zapewnieñ, odpowiedzialnoœæ na 
+zasadzie ryzyka , niedbalstwo lub pope³nienie 
+innego czynu niedozwolonego, w zakresie 
+dozwolonym przez prawo w³aœciwe. 
+
+Stosuje siê nawet wtedy, gdy Microsoft 
+wiedzia³a lub powinna wiedzieæ o mo¿liwoœci 
+powstania takich szkód. Powy¿sze ograniczenia 
+i wy³¹czenia mog¹ nie dotyczyæ Pañstwa, 
+poniewa¿ jego kraj mo¿e nie zezwalaæ na 
+wy³¹czenie lub ograniczenie odpowiedzialnoœci 
+za szkody przypadkowe, wtórne i inne.

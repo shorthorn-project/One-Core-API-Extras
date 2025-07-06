@@ -1,0 +1,277 @@
+TÉRMINOS DE LICENCIA DEL SOFTWARE DE 
+MICROSOFT
+
+MICROSOFT WINDOWS INSTALLER, VERSION 4.5
+
+Los presentes términos de licencia son un 
+contrato entre Microsoft Corporation (o, en 
+función del país en que usted resida, una de 
+las sociedades de su grupo) y usted. Sírvase 
+leerlos detenidamente. Son de aplicación al 
+software arriba mencionado, el cual incluye 
+los soportes en los que lo haya recibido, en 
+su caso. Estos términos de licencia también 
+serán de aplicación a los siguientes 
+elementos de Microsoft:
+
+· actualizaciones,
+
+· suplementos,
+
+· servicios basados en Internet, y
+
+· servicios de soporte técnico
+
+correspondientes a este software, a menos 
+que existan otros términos aplicables a 
+dichos elementos. En tal caso, se aplicarán 
+dichos otros términos.
+
+Al hacer uso del software, usted estará 
+aceptando estos términos. Si usted no los 
+acepta, no use el software.
+
+Si usted cumple los presentes términos de 
+esta licencia, dispondrá de los siguientes 
+derechos.
+
+1. Derechos de instalación y uso. Además, 
+usted podrá instalar y utilizar cualquier 
+número de copias del software en sus 
+dispositivos ejecutar copias con licencia 
+válida de Microsoft Windows.
+
+2. Requisitos de licencia y/o derechos de 
+uso adicionales.
+
+a. Código Distribuible. El software puede 
+incluir código que usted está autorizado a 
+distribuir en programas que desarrolle, 
+siempre y cuando cumpla con los términos que 
+se especifican a continuación.
+
+i. Derecho de utilización y distribución. El 
+código y los archivos de texto enumerados a 
+continuación son 'Código Distribuible'.
+
+· Archivos REDIST.TXT. Usted podrá copiar y 
+distribuir el código objeto del código 
+especificado en los archivos REDIST.TXT.
+
+· Distribución por terceros. Usted podrá 
+permitir a los distribuidores de programas de 
+usted copiar y distribuir el Código 
+Distribuible como parte de dichos programas.
+
+ii. Requisitos de distribución. Respecto de 
+cualquier Código Distribuible, usted deberá:
+
+· añadir al mismo una funcionalidad 
+principal significativa en programas de 
+usted;
+
+· exigir a los distribuidores y usuarios 
+finales externos que acepten proteger el 
+Código Distribuible como mínimo tanto como lo 
+especifica el presente contrato;
+
+· mostrar un aviso válido de los derechos de 
+propiedad intelectual de usted sobre los 
+programas, así como
+
+· indemnizar, proteger y defender a 
+Microsoft frente a toda reclamación, 
+incluidos los honorarios de abogados, 
+relacionados con el uso o la distribución de 
+los programas de usted.
+
+iii. Restricciones de distribución. Usted no 
+podrá:
+
+· modificar cualquier aviso de los derechos 
+de propiedad intelectual e industrial 
+incluido en el Código Distribuible;
+
+· utilizar las marcas de Microsoft en los 
+nombres de los programas de usted o sugerir 
+de alguna manera que los programas de usted 
+proceden de Microsoft o están respaldados por 
+Microsoft;
+
+· distribuir Código Distribuible para 
+ejecutarlo en una plataforma distinta de 
+Windows;
+
+· incluir Código Distribuible en programas 
+maliciosos, engañosos o ilegales; o
+
+· modificar o distribuir el código fuente de 
+cualquier Código Distribuible de un modo tal 
+que alguna parte del mismo pase a estar 
+sujeta a una Licencia Excluida. Una Licencia 
+Excluida es una licencia que requiere, como 
+condición de uso, modificación o distribución,
+que:
+
+· el código sea divulgado o distribuido en 
+forma de código fuente, o que
+
+· otros tengan derecho a modificarlo.
+
+3. Alcance de la licencia. El software se 
+cede bajo licencia y no es objeto de venta. 
+El presente contrato sólo le otorga algunos 
+derechos de uso del software. Microsoft se 
+reserva todos los demás derechos. A menos que 
+la legislación aplicable le otorgue más 
+derechos a pesar de esta limitación, usted 
+sólo podrá utilizar el software tal como lo 
+autoriza expresamente el presente contrato. 
+Al hacerlo, deberá ajustarse a las 
+limitaciones técnicas del software que sólo 
+permiten utilizarlo de determinadas formas. 
+Usted no podrá:
+
+· eludir las limitaciones técnicas del 
+software;
+
+· utilizar técnicas de ingeniería inversa, 
+descompilar o desensamblar el software, 
+excepto y únicamente en la medida en que ello 
+esté expresamente permitido por la ley a 
+pesar de la presente limitación;
+
+· hacer más copias del software de las que 
+especifica este contrato o permite la 
+legislación vigente a pesar de esta 
+limitación;
+
+· hacer público el software para que otros 
+lo copien;
+
+· alquilar, arrendar o ceder el software;
+
+· transferir este software ni este contrato 
+a terceros; o
+
+· utilizar el software para prestar 
+servicios de alojamiento de software 
+comercial.
+
+4. COPIA DE SEGURIDAD. Usted puede realizar 
+una única copia de seguridad del software. 
+Usted sólo podrá utilizarla para volver a 
+instalar el software.
+
+5. DOCUMENTACIÓN. Toda persona que tenga 
+acceso válido a su ordenador o a la red 
+interna puede copiar y utilizar la 
+documentación a efectos de consulta internos.
+
+6. RESTRICCIONES EN MATERIA DE EXPORTACIÓN. 
+El software está sujeto a las leyes y 
+disposiciones en materia de exportación de 
+los Estados Unidos de América. Usted debe 
+cumplir todas las leyes y disposiciones en 
+materia de exportación internacionales y 
+nacionales que sean de aplicación al software.
+Estas leyes incluyen restricciones de los 
+destinos, usuarios finales y uso final. Para 
+obtener información adicional, visite www.
+microsoft.com/exporting <http://www.microsoft.
+com/exporting>.
+
+7. SERVICIOS DE SOPORTE TÉCNICO. Debido a 
+que este software se presenta 'tal cual,' no 
+podemos proporcionar servicios de soporte 
+técnico para éste.
+
+8. CONTRATO COMPLETO. Este contrato y los 
+términos aplicables a suplementos, 
+actualizaciones, servicios basados en 
+Internet y servicios de soporte técnico que 
+usted utilice, constituyen el contrato 
+completo en relación con el software y los 
+servicios de soporte técnico.
+
+9. LEGISLACIÓN APLICABLE.
+
+a. Estados Unidos de América. Si usted 
+adquirió el software en los Estados Unidos de 
+América, la interpretación del presente 
+contrato se regirá por la legislación del 
+Estado de Washington, que será de aplicación 
+a las reclamaciones por incumplimiento del 
+mismo, independientemente de sus normas de 
+conflicto de leyes. Para todas las demás 
+reclamaciones, será de aplicación la 
+legislación de su Estado de residencia, 
+incluyendo las reclamaciones en virtud de las 
+leyes estatales en materia de protección al 
+consumidor, competencia desleal y 
+responsabilidad extracontractual.
+
+b. Fuera de los Estados Unidos de América. 
+Si usted adquirió el software en otro país, 
+será de aplicación la legislación de dicho 
+país.
+
+10. EFECTOS LEGALES. El presente contrato 
+describe determinados derechos legales. Es 
+posible que usted disponga de otros derechos 
+en virtud de la legislación de su Estado o 
+país. Asimismo, usted puede disponer de 
+derechos frente al revendedor del software. 
+Este contrato no modifica los derechos de los 
+que usted dispone en virtud de la legislación 
+de su Estado o país si dicha legislación no 
+permite tal cosa.
+
+11. Renuncia de garantía. El software se 
+cede bajo licencia 'tal cual'. Usted acepta 
+el riesgo de utilizarlo. Microsoft no otorga 
+ninguna garantía ni condición explícitas. Es 
+posible que la legislación local le otorgue 
+derechos de consumidor adicionales que el 
+presente contrato no pueda modificar. En la 
+medida en que así lo permita la legislación 
+local, Microsoft excluye las garantías 
+implícitas de comerciabilidad, idoneidad para 
+un fin particular y ausencia de infracción.
+
+12. LIMITACIÓN Y EXCLUSIÓN DE LA 
+RESPONSABILIDAD. Usted podrá obtener de 
+Microsoft y sus proveedores únicamente la 
+indemnización de los daños directos que usted 
+sufra efectivamente hasta la cantidad de 5 
+dólares estadounidenses. Usted no podrá 
+obtener indemnización alguna por daños de 
+otra índole, incluidos los daños 
+consecuenciales, especiales, indirectos o 
+incidentales, así como tampoco por lucro 
+cesante.
+
+Esta limitación se aplica a
+
+· cualquier cuestión relacionada con el 
+software, servicios, contenidos (incluido el 
+código) que se hallen en sitios de Internet 
+de terceros, o programas de terceros, así 
+como a
+
+· reclamaciones por incumplimiento de 
+contrato, incumplimiento de garantía o 
+condición, responsabilidad estricta, 
+negligencia u otra responsabilidad 
+extracontractual hasta el límite permitido 
+por la legislación vigente.
+
+También se aplica incluso si Microsoft 
+conocía o debería haber conocido la 
+posibilidad de que se produjesen dichos daños.
+También pueden producirse situaciones en las 
+que no pueda aplicarse a su caso la 
+limitación o exclusión precedente porque su 
+Estado o país no admite la exclusión o 
+limitación de daños consecuentes, 
+incidentales o de otra índole.

@@ -1,0 +1,102 @@
+
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1250">
+<title>kezdőélmény</title>
+    <LINK REL="stylesheet" TYPE="text/css" HREF="aregstyl.css" id=deskstyle1>
+    <LINK REL="stylesheet" TYPE="text/css" HREF="aregsty2.css" id=deskstyle2 disabled>
+    <META HTTP-EQUIV="MSThemeCompatible" CONTENT="Yes">
+</head>
+
+<body style="background-Color: transparent; background-repeat: no-repeat;"  topmargin=0 leftmargin=0 TABINDEX=-1
+      onload="window.parent.RegDialRdy_LoadMe();">
+
+<table border=0 cellpadding=0 cellspacing=0 width="100%" height="100%">
+<tr>
+
+    <td ID=leftmargincell width=5% height=99%></td>
+    <td ID=maincell valign=top class="text-primary">
+
+
+    <span ID=Title_Text class="title" style="display:none;"><ID id="drdyoem_1">Felkészülés az internetes aktiválásra</ID></span>
+
+    <br>
+    <span id=RegDialReadyIntro class="text-primary">
+        <ID id="drdyoem_2a">A Windows most felhív egy telefonszámot, hogy aktiválja a Windowst a Microsoftnál.</id>
+    </span>
+
+    <br><br>
+    <span id="DialRdy_ctrl1" style="visibility:hidden;">
+
+        
+        <span class="text-primary"><ID id="drdyoem_4">A folytatáshoz adja meg a szükséges információkat, majd kattintson a <b>Tovább</b> gombra. Ha tárcsázás nélkül kívánja folytatni, kattintson az <b>Emlékeztessen később</b> gombra.</id></span>
+        <br><br>        
+        <span class="text-primary"><ID id="drdyoem_8">Válassza ki a megfelelő <U>o</U>rszágot vagy területet. A területek listájának megjelenítéséhez kattintson a lefelé mutató nyílra vagy nyomja meg az ALT + &quot;LE&quot; billentyűkombinációt.</id></span>
+        <br><br>
+        <select id=selCountry TABINDEX=1 ACCESSKEY="C">
+            <script language="javascript">
+            document.write(window.parent.external.Tapi.get_AllCountryName);
+            </script>
+        </select>
+        
+
+        <br><br>
+        <span class="text-primary"><ID id="drdyoem_11">Adja meg a <u>k</u>örzetszámot (a 88 555-121 szám esetén például 88).<id></span>
+        <input style="ime-mode:disabled" id=edtAreaCode ACCESSKEY="k" TABINDEX=2 type="text" name="textfield" size="7" maxlength="7" onkeypress="window.parent.KeyPressIsNumeric();">
+        
+        <br>
+        <span id="PulseToneDialing" style="visibility:hidden">
+        <LABEL TABINDEX=-1 ACCESSKEY="h" id=Tapi_TOUCHTONE for="radioTouchToneYes">Lehet Önnél <U>h</U>angfrekvenciás tárcsázást használni?</label>
+        <input TABINDEX=3 type="radio" name=TouchTone checked id=radioTouchToneYes>
+        <LABEL TABINDEX=-1 id="Tapi_TOUCHTONE_YES" for="radioTouchToneYes">Igen</LABEL>
+        <input TABINDEX=4 type="radio" name=TouchTone  id=radioTouchToneNo>
+        <LABEL TABINDEX=-1 id="Tapi_TOUCHTONE_NO" for="radioTouchToneNo">Nem</LABEL>
+        </span>
+
+    </span>
+
+
+    <!-- OUTSIDE LINE -->
+    <br>
+    <span id="spnOutsideLine" style="visibility:hidden;">
+        <LABEL TABINDEX=-1 ACCESSKEY="v" id="drdyref_OUTSIDELINE1" for="radioOutSideLineYes">Külső <U>v</U>onal eléréséhez kell számot tárcsáznia?</label>
+        <input TABINDEX=5 type="radio" checked name=OutsideLine id=radioOutsideLineYes>
+        <LABEL TABINDEX=-1 id="drdyref_OUTSIDELINE_YES" for="radioOutsideLineYes">Igen</LABEL>
+        <input TABINDEX=6 type="radio" name=OutsideLine id=radioOutsideLineNo>
+        <LABEL TABINDEX=-1 id="drdyref_OUTSIDELINE_NO" for="radioOutSideLineNo">Nem</LABEL>
+    </span>
+    <br>
+    <SPAN TABINDEX=-1 id="spnOutsideLineNumber" style="visibility:hidden; position:relative;">                  
+        <LABEL TABINDEX=-1 ACCESSKEY="s" ID="drdyref_OUTSIDELINE2" for=edtOutsideLineNumber>Mi ez a <U>s</U>zám?</LABEL>
+        <input TABINDEX=7 style="ime-mode:disabled;" type="text" id=edtOutsideLineNumber maxlength=10 size="4" onkeypress="window.parent.KeyPressIsNumeric();">
+    </SPAN>
+
+    </td>
+
+    <td ID=rightmargincell width=7%>
+    </td>
+</tr>
+<tr>
+    <td colspan=3>
+    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<span class="text-primary"><ID id="drdyoem_2b">A tárcsázás megkezdéséhez kattintson a <b>Tovább</b> gombra.</id></span>
+    <br>
+    <table border=0 class="buttonpositionnew">
+    <tr>
+        <td width=99%>&nbsp;</td>
+        <td>
+        <BUTTON ID="btnBack" class="buttons" TABINDEX=8 ACCESSKEY="V"><label for=btnBack><id id="LocalBtnBack_Text"><u>V</u>issza</id></label></BUTTON>
+        </td>
+        <td>
+        <BUTTON ID="btnSkip" class="buttons" TABINDEX=9 ACCESSKEY="K"><label for=btnSkip><id id="LocalBtnSkip_Text"><u>K</u>ihagyás</id></label></BUTTON>
+        </td>
+        <td>
+        <BUTTON ID="btnNext" class="buttons" TABINDEX=10 ACCESSKEY="T"><label for=btnNext><id id="LocalBtnNext_Text"><u>T</u>ovább</id></label></BUTTON>
+        </td>
+    </tr>
+    </table>
+    </td>
+</tr>
+</table>
+
+</body>
+</html>

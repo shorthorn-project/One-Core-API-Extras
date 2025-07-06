@@ -25,11 +25,11 @@
     SERVICE_PACK_NUMBER     = 3
     HelpLink = "http://shorthornproject.com"
     URLInfoAbout = "http://shorthornproject.com"
-    OCADU_VERSION           = "4.0.0.rc3-hotfix"
+    OCADU_VERSION           = "4.0.0"
     SP_TITLE                = "One-Core-API Driver Update"
-    UPDATE                    = "Update"
-    HOTFIX                    = "Hotfix"
-    SECURITY_UPDATE           = "Security Update"    
+    UPDATE                  = "Update"
+    HOTFIX                  = "Hotfix"
+    SECURITY_UPDATE         = "Security Update"    
     LANGTYPEVALUE           = 0x0
     SP_SHORT_TITLE          = "OCADU"
     ;COMMENT                 = "One-Core-API Driver Update [See Q100000 for more information]"

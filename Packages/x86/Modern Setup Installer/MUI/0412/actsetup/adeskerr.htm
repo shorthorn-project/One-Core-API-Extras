@@ -1,0 +1,254 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=ks_c_5601-1987">
+    <title>OOBE</title>
+    <LINK REL="stylesheet" TYPE="text/css" HREF="aregstyl.css" id=deskstyle1>
+    <LINK REL="stylesheet" TYPE="text/css" HREF="aregsty2.css" id=deskstyle2 disabled>
+    <META HTTP-EQUIV="MSThemeCompatible" CONTENT="Yes">
+</head>
+
+<body style="background-Color: transparent; background-repeat: no-repeat;" topMargin=0 rightmargin=0 leftmargin=0 tabindex=-1
+      onload="window.parent.act_desktop_error_LoadMe();" >
+
+<table valign=middle border=0 cellpadding=0 cellspacing=0 width="100%" height="100%">
+<tr>
+    <td ID=leftmargincell width=5% height=99%></td>
+    <td ID=maincell valign=top class="text-primary">
+
+    <span ID=Title_Text class="title" style="display:none;">
+        <ID id=acterror_s1>Windows 정품 인증</ID>
+    </span>
+
+    <br>
+    <!-- Prepare the different error scenes, all are hidden -->
+
+        <span ID=acterror_description_SUCCESS1 class="text-primary" style="display:none;">
+            <ID id="txtActivDeskSUCCESS1">Windows 정품 인증 및 등록을 마쳤습니다.</ID>
+        </span>
+
+        <span ID=acterror_description_SUCCESS2 class="text-primary" style="display:none;">
+            <ID id="txtActivDeskSUCCESS2">Windows 정품 인증을 마쳤습니다.</ID>
+        </span>
+
+
+        <!-- Pre-expiration -->
+        <span ID=acterror_description1Pre class="text-primary" style="display:none;">
+            <ID id="txtActivDeskErr">온라인 정품 인증을 현재 완료할 수 없습니다.</ID>
+            <br><br>
+            <id id="txtActivDeskerr0">정품 인증을 받기 전까지 <span id=NumberDaysLeft1 class="text-primary"></span>일&nbsp;동안 Windows XP를 사용할 수 있습니다.</id>
+            <br><br>
+            <ID id="txtActivDeskErr1">이 기간 동안, Windows 정품 인증 마법사를 사용하여 정품 인증을 받도록 정기적으로 알려드립니다. 정품 인증 마법사는 [시작] 메뉴에 있습니다.<br><br>계속 정품 인증 센터에 연결할 수 없으면 고객 서비스 담당자에게 문의하여 전화로 정품 인증을 받을 수도 있습니다.</ID>
+            <br><br>
+            <ID id="txtActivDeskErr2">귀하의 지역에 있는 연락처를 보려면 [전화로 문의]를 클릭하십시오.</ID>
+        </span>
+        <!-- Post-expiration -->
+        <span ID=acterror_description1Post class="text-primary" style="display:none;">
+            <ID id="txtActivDeskErrPost">온라인으로 Windows 정품 인증을 받지 못했습니다.</ID>
+            <br><br>
+            <id id="txtActivDeskerr0Post">정품 인증 기간이 만료되었습니다. Windows를 계속 사용하려면 지금 정품 인증을 받아야 합니다.</id>
+            <br><br>
+            <ID id="txtActivDeskErr1Post">고객 서비스 담당자에게 문의하여 전화로 정품 인증을 받을 수 있습니다. 귀하의 지역에 있는 연락처를 보려면 [전화로 문의]를 클릭하십시오.</ID>
+        </span>
+
+
+        <!-- Retail mode -->
+        <span ID=acterror_description2_RETAIL class="text-primary" style="display:none;">
+            <ID id="txtActivDeskErr3retail">아래에 제품 키를 잘못 입력했으면 올바른 키를 입력하고 <B>다시 시도</B>를 클릭하십시오.</ID>
+            <br><br>
+            <ID id="txtActivDeskErr4retail">25자리의 제품 키는 Windows XP CD 케이스 뒤에 붙어 있는 스티커에 있으며, 다음과 유사합니다.</ID>
+            <br><br>
+            <center><img src="../images/prodkey.gif"></center>
+        </span>
+        <!-- OEM mode -->
+        <span ID=acterror_description2_OEM class="text-primary" style="display:none;">
+            <ID id="txtActivDeskErr3OEM">아래에 제품 키를 잘못 입력했으면 올바른 키를 입력하고 <B>다시 시도</B>를 클릭하십시오.</ID>
+            <br><br>
+            <ID id="txtActivDeskErr4OEM">25자리의 제품 키는 컴퓨터나 Windows 설명서에 있는 정품 인증서(COA) 레이블에 있습니다. 이 제품 키는 다음과 유사합니다.</ID>
+            <br><br>
+            <center><img src="../images/oemcoa.jpg"></center>
+        </span>
+
+
+        <!-- Retail mode -->
+        <span ID=acterror_description3Retail class="text-primary" style="display:none;">
+            <ID id="txtActivDeskErr5a_retail">이 제품 키를 사용하여 Windows의 정품 인증을 받을 수 있는 횟수를 초과하였습니다. 다른 Windows 제품 키를 입력하고 [<B>다시 시도</B>]를 클릭하십시오.</ID>
+            <ID id="txtActivDeskErr5b_retail">25자리의 제품 키는 Windows XP CD 케이스 뒤에 붙어 있는 스티커에 있으며, 다음과 유사합니다.</ID>
+            <br><br>
+            <center><img src="../images/prodkey.gif"></center>
+        </span>
+        <!-- OEM mode -->
+        <span ID=acterror_description3OEM class="text-primary" style="display:none;">
+            <ID id="txtActivDeskErr5a_OEM">이 제품 키는 다른 컴퓨터의 Windows 정품 인증에 이미 사용되었습니다. 다른 Windows 제품 키를 입력하고 <B>다시 시도</B>를 클릭하십시오.</ID>
+            <ID id="txtActivDeskErr5b_OEM">25자리의 제품 키는 컴퓨터나 Windows 설명서에 있는 정품 인증서(COA) 레이블에 있습니다. 이 제품 키는 다음과 유사합니다.</ID>
+            <br><br>
+            <center><img src="../images/oemcoa.jpg"></center>
+        </span>
+
+
+        <!-- Pre-expiration -->
+        <span ID=acterror_description4Pre class="text-primary" style="display:none;">
+            <ID id="txtActivDeskErr6">온라인 정품 인증을 현재 완료할 수 없습니다.</ID>
+            <br><br>
+            <ID id="txtActivDeskErr7">정품 인증을 받기 전까지 <span id=NumberDaysLeft2 class="text-primary"></span>일 동안 Windows XP를 사용할 수 있습니다.</ID>
+            <br><br>
+            <id id="txtActivdeskErr71">이 기간 동안, Windows 정품 인증 마법사를 사용하여 정품 인증을 받도록 정기적으로 알려드립니다. 정품 인증 마법사는 [시작] 메뉴에 있습니다.<br><br>계속 정품 인증 센터에 연결할 수 없으면 고객 서비스 담당자에게 문의하여 전화로 정품 인증을 받을 수도 있습니다.</id>
+            <br><br>
+            <id id="txtActivDeskErr72">귀하의 지역에 있는 연락처를 보려면 <b>전화로 문의</b>를 클릭하십시오.</id>
+        </span>
+        <!-- Post-expiration -->
+        <span ID=acterror_description4Post class="text-primary" style="display:none;">
+            <ID id="txtActivDeskErr7Post">온라인으로 Windows 정품 인증을 받지 못했습니다.</ID>
+            <br><br>
+            <id id="txtActivDeskerr71Post">정품 인증 기간이 만료되었습니다. Windows를 계속 사용하려면 지금 정품 인증을 받아야 합니다.</id>
+            <br><br>
+            <ID id="txtActivDeskErr72Post">고객 서비스 담당자에게 문의하여 전화로 정품 인증을 받을 수 있습니다. 귀하의 지역에 있는 연락처를 보려면 [전화로 문의]를 클릭하십시오.</ID>
+        </span>
+
+
+        <!-- Retail mode -->
+        <span ID=acterror_description5Retail class="text-primary" style="display:none;">
+            <ID id="txtActivDeskErr8a_retail">올바른 제품 키가 아닙니다. 올바른 제품 키를 입력해야 정품 인증을 완료할 수 있습니다.</ID>
+            <ID id="txtActivDeskErr8b_retail">25자리의 제품 키는 Windows XP CD 케이스 뒤에 있는 스티커에 있으며 다음과 유사합니다. 아래에 올바른 제품 키를 입력한 후 <B>다시 시도</B>를 클릭하십시오.</ID>
+            <br><br>
+            <center><img src="../images/prodkey.gif"></center>
+        </span>
+        <!-- OEM mode -->
+        <span ID=acterror_description5OEM class="text-primary" style="display:none;">
+            <ID id="txtActivDeskErr8a_OEM">올바른 제품 키가 아닙니다. 올바른 제품 키를 입력해야 정품 인증을 완료할 수 있습니다.</ID>
+            <ID id="txtActivDeskErr8b_OEM">25자리의 제품 키는 컴퓨터 또는 Windows 설명서에 붙어 있는 정품 인증서(COA) 레이블에 있으며, 다음과 유사합니다. 아래에 올바른 제품 키를 입력하고 <B>다시 시도</B>를 클릭하십시오.</ID>
+            <br><br>
+            <center><img src="../images/oemcoa.jpg"></center>
+        </span>
+
+
+        <span ID=acterror_description6 class="text-primary" style="display:none;">
+            <ID id="txtActivDeskErr10">기존의 Windows 정품 인증이 손상되었거나 더 이상 유효하지 않습니다.</ID>
+            <br><br>
+            <ID id="txtActivDeskErr11">정품 인증을 받기 전까지 <span id=NumberDaysLeft3 class="text-primary"></span>일 동안 Windows를 사용할 수 있습니다.</ID>
+            <br><br>
+            <id id="txtActivDeskErr111">이 기간 동안, 정품 인증 마법사를 사용하여 며칠 간격으로 정품 인증을 알려드립니다. 정품 인증 마법사는 [시작] 메뉴에 있습니다. 알림이 표시되었을 때에도 정품 인증 센터에 연결할 수 없으면, 전화로 정품 인증을 받을 수도 있습니다.</id>
+            <br><br>
+            <id id="txtactivDeskErr112">귀하의 지역에 있는 연락처를 보려면 [전화로 문의]를 클릭하십시오.</id>
+        </span>
+
+
+        <span ID=acterror_description7 class="text-primary" style="display:none;">
+            <ID id="txtActivDeskErr12">정품 인증 서버에 연결할 수 없습니다. 네트워크 설정 및 인터넷에 연결할 수 있는지 여부를 확인하고 다시 시도해 보십시오.</ID>
+        </span>
+
+
+        <!-- Retail mode -->
+        <span ID=acterror_description_dedicated_pid_RETAIL class="text-primary" style="display:none;">
+            <ID id="txtActivDeskErrDedicatedPid1">제품 키를 변경해야 하는 경우에는 다음 입력란에 제품 키를 입력하고 <B>업데이트</B>를 클릭하십시오. 아니면 <B>전화로 문의</B>를 클릭하여 이전 정품 인증 페이지로 돌아가십시오.</ID>
+            <br><br>
+            <ID id="txtActivDeskErrDedicatedPid2">25자리의 제품 키는 Windows XP CD 케이스 뒤에 붙어 있는 스티커에 있으며, 다음과 유사합니다.</ID>
+            <br><br>
+            <center><img src="../images/prodkey.gif"></center>
+        </span>
+        <!-- OEM mode -->
+        <span ID=acterror_description_dedicated_pid_OEM class="text-primary" style="display:none;">
+            <ID id="txtActivDeskErrDedicatedPid1x">제품 키를 변경해야 하는 경우에는 다음 입력란에 제품 키를 입력하고 <B>업데이트</B>를 클릭하십시오. 아니면 <B>전화로 문의</B>를 클릭하여 이전 정품 인증 페이지로 돌아가십시오.</ID>
+            <br><br>
+            <ID id="txtActivDeskErrDedicatedPid2x">25자리의 제품 키는 컴퓨터나 Windows 설명서에 있는 정품 인증서(COA) 레이블에 있습니다. 이 제품 키는 다음과 유사합니다.</ID>
+            <br><br>
+            <center><img src="../images/oemcoa.jpg"></center>
+        </span>
+
+
+        <!-- PID ENTRY -->
+        <span ID=acterror_pid_entry class="text-primary" style="display:none;">
+            <br>
+            <table ID=PidBox border=0 DIR=ltr style="font-family:Courier New; FONT-SIZE: 12PT;">
+            <tr>
+                <td nowrap width=10>&nbsp;</td>
+                <td nowrap class="text-primary" >
+                <span ID=acterror_description_verify_key class="text-primary"><ID id="txtverifykey">키 확인:</id></span>&nbsp;
+                </td>
+                <td>
+                <input style="ime-mode:disabled" id=pid1 type="text" size=6 maxlength=5 class=pid-box TABINDEX=1 name="edtProductKey"
+                onkeydown="window.parent.ProductIDKeyDown();" onpropertychange="window.parent.ProductIDPropertyChange();"
+                onkeypress="window.parent.ProductIDKeyPress();" onkeyup="window.parent.ProductIDKeyUp();" onfocus="window.parent.OnFocus();">
+                </td><td class="text-primary">-</td><td>
+                <input style="ime-mode:disabled" id=pid2 type="text" size=6 maxlength=5 class=pid-box TABINDEX=2 name="edtProductKey"
+                onkeydown="window.parent.ProductIDKeyDown();" onpropertychange="window.parent.ProductIDPropertyChange();"
+                onkeypress="window.parent.ProductIDKeyPress();" onkeyup="window.parent.ProductIDKeyUp();" onfocus="window.parent.OnFocus();">
+                </td><td class="text-primary">-</td><td>
+                <input style="ime-mode:disabled" id=pid3 type="text" size=6 maxlength=5 class=pid-box TABINDEX=3  name="edtProductKey"
+                onkeydown="window.parent.ProductIDKeyDown();" onpropertychange="window.parent.ProductIDPropertyChange();"
+                onkeypress="window.parent.ProductIDKeyPress();" onkeyup="window.parent.ProductIDKeyUp();" onfocus="window.parent.OnFocus();">
+                </td><td class="text-primary">-</td><td>
+                <input style="ime-mode:disabled" id=pid4 type="text" size=6 maxlength=5 class=pid-box TABINDEX=4  name="edtProductKey"
+                onkeydown="window.parent.ProductIDKeyDown();" onpropertychange="window.parent.ProductIDPropertyChange();"
+                onkeypress="window.parent.ProductIDKeyPress();" onkeyup="window.parent.ProductIDKeyUp();" onfocus="window.parent.OnFocus();">
+                </td><td class="text-primary">-</td><td>
+                <input style="ime-mode:disabled" id=pid5 type="text" size=6 maxlength=5 class=pid-box TABINDEX=5  name="edtProductKey"
+                onkeydown="window.parent.ProductIDKeyDown();" onpropertychange="window.parent.ProductIDPropertyChange();"
+                onkeypress="window.parent.ProductIDKeyPress();" onkeyup="window.parent.ProductIDKeyUp();" onfocus="window.parent.OnFocus();">
+                </td>
+            </tr>
+            </table>
+        </span>
+
+
+        <!-- AFTER PID ENTRY TEXT -->
+        <span ID=acterror_after_pid_entry_OEMText class="text-primary" style="display:none;">
+            <br>
+            <ID id="txtActivDeskErrOEMText">정품 인증서(COA) 레이블을 찾을 수 없으면 컴퓨터 제조업체에 문의하십시오.</ID><br>
+        </span>
+
+        <span ID=acterror_after_pid_entry_text1 class="text-primary" style="display:none;">
+            <br>
+            <ID id="txtActivDeskErr14">올바른 제품 키를 입력했고 이 메시지가 오류로 인해 표시되었다고 생각되면, <B>전화로 문의</B>단추를 클릭하여 고객 서비스 담당자에게 문의하십시오.</ID>
+        </span>
+
+
+        <span ID=acterror_after_pid_entry_text2 class="text-primary" style="display:none;">
+            <br>
+            <ID id="txtActivDeskErr15">이 메시지가 오류로 인해 표시되었다고 생각되면, <B>전화로 문의</B>단추를 클릭하여 고객 서비스 담당자에게 문의하십시오.</ID>
+        </span>
+
+        <span ID=acterror_after_pid_entry_text3 class="text-primary" style="display:none;">
+            <br>
+            <ID id="txtActivDeskErr16">Windows는 한 번에 한 대의 컴퓨터에만 설치할 수 있습니다. 이 메시지가 오류로 인해 표시되었다고 생각되면, <B>전화로 문의</B> 단추를 클릭하여 고객 서비스 담당자에게 문의하십시오.</ID>
+        </span>
+
+        <span ID=acterror_after_pid_entry_text4 class="text-primary" style="display:none;">
+            <br>
+            <ID id="txtActivDeskErr17">제품 키를 입력할 필요가 없는 경우, <B>전화로 문의</B> 단추를 클릭하여 이전 정품 인증 페이지로 돌아가십시오.</ID>
+        </span>
+
+    <!-- End -->
+    </td>
+
+    <td ID=rightmargincell width=7%>
+    </td>
+</tr>
+<tr>
+    <td colspan=3>
+    <br>
+    <table border=0 class="buttonpositionnew">
+    <tr>
+        <td width=99%>
+            &nbsp;&nbsp;
+            <span ID=acterror_specific_error_code class="text-primary" style="display:none; z-index:10;">
+            </span>
+        </td>
+        <td>
+        <BUTTON ID="btnTelephone" class="buttons" TABINDEX=6 ACCESSKEY="T"><label for=btnTelephone><id id="LocalBtnTel_Text">전화로 문의(<u>T</u>)</id></label></BUTTON>
+        </td>
+        <td>
+        <BUTTON ID="btnQuit" class="buttons" TABINDEX=7 ACCESSKEY="R"><label for=btnQuit><id id="LocalBtnQuit_Text">나중에 알림(<u>R</u>)</id></label></BUTTON>
+        </td>
+        <td>
+        <BUTTON ID="btnNext" class="buttons" TABINDEX=8 ACCESSKEY="E"><label for=btnNext><id id="LocalBtnRetry_Text">다시 시도(<u>E</u>) </id></label></BUTTON>
+        </td>
+    </tr>
+    </table>
+    </td>
+</tr>
+</table>
+
+</body>
+</html>

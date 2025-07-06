@@ -1,0 +1,254 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=shift_jis">
+    <title>out of box experience</title>
+    <LINK REL="stylesheet" TYPE="text/css" HREF="aregstyl.css" id=deskstyle1>
+    <LINK REL="stylesheet" TYPE="text/css" HREF="aregsty2.css" id=deskstyle2 disabled>
+    <META HTTP-EQUIV="MSThemeCompatible" CONTENT="Yes">
+</head>
+
+<body style="background-Color: transparent; background-repeat: no-repeat;" topMargin=0 rightmargin=0 leftmargin=0 tabindex=-1
+      onload="window.parent.act_desktop_error_LoadMe();" >
+
+<table valign=middle border=0 cellpadding=0 cellspacing=0 width="100%" height="100%">
+<tr>
+    <td ID=leftmargincell width=5% height=99%></td>
+    <td ID=maincell valign=top class="text-primary">
+
+    <span ID=Title_Text class="title" style="display:none;">
+        <ID id=acterror_s1>Windows のライセンス認証の手続きを行う</ID>
+    </span>
+
+    <br>
+    <!-- Prepare the different error scenes, all are hidden -->
+
+        <span ID=acterror_description_SUCCESS1 class="text-primary" style="display:none;">
+            <ID id="txtActivDeskSUCCESS1">これで Windows のライセンス認証の手続きとユーザー登録が完了しました。</ID>
+        </span>
+
+        <span ID=acterror_description_SUCCESS2 class="text-primary" style="display:none;">
+            <ID id="txtActivDeskSUCCESS2">これで Windows のライセンス認証の手続きが完了しました。</ID>
+        </span>
+
+
+        <!-- Pre-expiration -->
+        <span ID=acterror_description1Pre class="text-primary" style="display:none;">
+            <ID id="txtActivDeskErr">今回はオンラインでのライセンス認証の手続きは完了できません。</ID>
+            <br><br>
+            <id id="txtActivDeskerr0">Windows XP を<span id=NumberDaysLeft1 class="text-primary"></span>&nbsp;日間使い続けることができますが、その間にライセンス認証の手続きを行う必要があります。</id>
+            <br><br>
+            <ID id="txtActivDeskErr1">この期間に、[スタート] メニューにあるライセンス認証ウィザードを使って Windows のライセンス認証の手続きを行うことを促すメッセージが定期的に表示されます。<br><br>ライセンス認証がオンラインで行えない場合は、ライセンス認証専用窓口にお電話いただき、ライセンス認証の手続きを行ってください。</ID>
+            <br><br>
+            <ID id="txtActivDeskErr2">お住まいの地域の連絡番号を知るには [電話] をクリックしてください。</ID>
+        </span>
+        <!-- Post-expiration -->
+        <span ID=acterror_description1Post class="text-primary" style="display:none;">
+            <ID id="txtActivDeskErrPost">オンラインでライセンス認証の手続きを行うことができませんでした。</ID>
+            <br><br>
+            <id id="txtActivDeskerr0Post">ライセンス認証の有効期限が切れました。Windows を引き続き使うには、ライセンス認証の手続きを今すぐ行ってください。</id>
+            <br><br>
+            <ID id="txtActivDeskErr1Post">ライセンス認証専用窓口にお電話いただき、ライセンス認証の手続きを行うことができます。お住まいの地域の連絡先番号については、[電話] をクリックしてください。</ID>
+        </span>
+
+
+        <!-- Retail mode -->
+        <span ID=acterror_description2_RETAIL class="text-primary" style="display:none;">
+            <ID id="txtActivDeskErr3retail">プロダクト キーを間違って入力した場合は、正しいキーを下に入力して <B>[再試行]</B> をクリックしてください。</ID>
+            <br><br>
+            <ID id="txtActivDeskErr4retail">25 桁のプロダクト キーは、Windows XP CD ケースの裏に貼ってあるこのようなステッカーに記載されています:</ID>
+            <br><br>
+            <center><img src="../images/prodkey.gif"></center>
+        </span>
+        <!-- OEM mode -->
+        <span ID=acterror_description2_OEM class="text-primary" style="display:none;">
+            <ID id="txtActivDeskErr3OEM">プロダクト キーを間違って入力した場合は、正しいキーを下に入力して <B>[再試行]</B> をクリックしてください。</ID>
+            <br><br>
+            <ID id="txtActivDeskErr4OEM">25 桁のプロダクト キーは、コンピュータに添付してあるか、新しいコンピュータに付属している Windows のドキュメントと一緒にある Certificate of Authenticity (COA) ラベルにあります。COA ラベルを見つけられなかった場合は使用しているコンピュータの製造元に問い合わせてください。</ID>
+            <br><br>
+            <center><img src="../images/oemcoa.jpg"></center>
+        </span>
+
+
+        <!-- Retail mode -->
+        <span ID=acterror_description3Retail class="text-primary" style="display:none;">
+            <ID id="txtActivDeskErr5a_retail">記録では、このプロダクト キーで Windows のライセンス認証の手続きを行うことができる回数を超えました。別のプロダクト キーを入力して <B>[再試行]</B> をクリックしてください。</ID>
+            <ID id="txtActivDeskErr5b_retail">25 桁のプロダクト キーは、Windows XP CD ケースの裏に貼ってあるこのようなステッカーに記載されています:</ID>
+            <br><br>
+            <center><img src="../images/prodkey.gif"></center>
+        </span>
+        <!-- OEM mode -->
+        <span ID=acterror_description3OEM class="text-primary" style="display:none;">
+            <ID id="txtActivDeskErr5a_OEM">記録では、このプロダクト キーで Windows のライセンス認証の手続きを行うことができる回数を超えました。別のプロダクト キーを入力して <B>[再試行]</B> をクリックしてください。</ID>
+            <ID id="txtActivDeskErr5b_OEM">25 桁のプロダクト キーは、コンピュータに添付してあるか、新しいコンピュータに付属している Windows のドキュメントと一緒にある Certificate of Authenticity (COA) ラベルにあります。COA ラベルを見つけられなかった場合は使用しているコンピュータの製造元に問い合わせてください。</ID>
+            <br><br>
+            <center><img src="../images/oemcoa.jpg"></center>
+        </span>
+
+
+        <!-- Pre-expiration -->
+        <span ID=acterror_description4Pre class="text-primary" style="display:none;">
+            <ID id="txtActivDeskErr6">今回はオンラインでのライセンス認証の手続きは完了できません。</ID>
+            <br><br>
+            <ID id="txtActivDeskErr7">Windows XP を <span id=NumberDaysLeft2 class="text-primary"></span>&nbsp;日間使い続けることができますが、その間にライセンス認証の手続きを行う必要があります。</ID>
+            <br><br>
+            <id id="txtActivdeskErr71">この期間に、[スタート] メニューにあるライセンス認証ウィザードを使って Windows のライセンス認証の手続きを行うことを促すメッセージが定期的に表示されます。<br><br>ライセンス認証がオンラインで行えない場合は、ライセンス認証専用窓口にお電話いただき、ライセンス認証の手続きを行ってください。</id>
+            <br><br>
+            <id id="txtActivDeskErr72">お住まいの地域の連絡番号を知るには <B>[電話]</B> をクリックしてください。</id>
+        </span>
+        <!-- Post-expiration -->
+        <span ID=acterror_description4Post class="text-primary" style="display:none;">
+            <ID id="txtActivDeskErr7Post">オンラインでライセンス認証の手続きを行うことができませんでした。</ID>
+            <br><br>
+            <id id="txtActivDeskerr71Post">ライセンス認証の有効期限が切れました。Windows を引き続き使うには、ライセンス認証の手続きを今すぐ行ってください。</id>
+            <br><br>
+            <ID id="txtActivDeskErr72Post">ライセンス認証専用窓口にお電話いただき、ライセンス認証の手続きを行うことができます。お住まいの地域の連絡先番号については、[電話] をクリックしてください。</ID>
+        </span>
+
+
+        <!-- Retail mode -->
+        <span ID=acterror_description5Retail class="text-primary" style="display:none;">
+            <ID id="txtActivDeskErr8a_retail">このプロダクト キーは承認されていません。有効なプロダクト キーが入力されるまでライセンス認証の手続きは完了しません。</ID>
+            <ID id="txtActivDeskErr8b_retail">25 桁のプロダクト キーは、Windows XP CD ケースの裏に貼ってある下の例のようなステッカーに記載されています。下のプロダクト キーを正しくするか、有効なプロダクト キーを入力してから、<B>[再試行]</B> をクリックしてください。</ID>
+            <br><br>
+            <center><img src="../images/prodkey.gif"></center>
+        </span>
+        <!-- OEM mode -->
+        <span ID=acterror_description5OEM class="text-primary" style="display:none;">
+            <ID id="txtActivDeskErr8a_OEM">このプロダクト キーは承認されていません。有効なプロダクト キーが入力されるまでライセンス認証の手続きは完了しません。</ID>
+            <ID id="txtActivDeskErr8b_OEM">25 桁のプロダクト キーは、コンピュータに添付してあるか、新しいコンピュータに付属している Windows のドキュメントと一緒にある Certificate of Authenticity (COA) ラベルにあります。下のプロダクト キーを正しくするか、有効なプロダクト キーを入力してから、<B>[再試行]</B> をクリックしてください。</ID>
+            <br><br>
+            <center><img src="../images/oemcoa.jpg"></center>
+        </span>
+
+
+        <span ID=acterror_description6 class="text-primary" style="display:none;">
+            <ID id="txtActivDeskErr10">既存の Windows のライセンス認証は壊れているか、または有効ではありません。</ID>
+            <br><br>
+            <ID id="txtActivDeskErr11">Windows を <span id=NumberDaysLeft3 class="text-primary"></span>&nbsp;日間使い続けることができますが、その間にライセンス認証の手続きを行う必要があります。</ID>
+            <br><br>
+            <id id="txtActivDeskErr111">この期間に、ライセンス認証ウィザードを使ってライセンス認証の手続きを行うことを促す確認メッセージが数日ごとに表示されます。ライセンス認証ウィザードは [スタート] メニューにあります。このときに、ライセンス認証がオンラインで行えない場合は、ライセンス認証専用窓口にお電話いただきライセンス認証の手続きを行ってください。</id>
+            <br><br>
+            <id id="txtactivDeskErr112">お住まいの地域の連絡番号を知るには [電話] をクリックしてください。</id>
+        </span>
+
+
+        <span ID=acterror_description7 class="text-primary" style="display:none;">
+            <ID id="txtActivDeskErr12">ライセンス認証サーバーと接続できません。ネットワークの設定を確認して、インターネットに接続できることを確認してから、もう一度行ってください。</ID>
+        </span>
+
+
+        <!-- Retail mode -->
+        <span ID=acterror_description_dedicated_pid_RETAIL class="text-primary" style="display:none;">
+            <ID id="txtActivDeskErrDedicatedPid1">プロダクト キーを変更する必要がある場合は、下の欄にプロダクト キーを入力して <B>[更新]</B> をクリックしてください。必要がない場合は、<B>[電話]</B> をクリックして前のライセンス認証ページに戻ってください。</ID>
+            <br><br>
+            <ID id="txtActivDeskErrDedicatedPid2">25 桁のプロダクト キーは、Windows XP CD ケースの裏に貼ってあるこのようなステッカーに記載されています:</ID>
+            <br><br>
+            <center><img src="../images/prodkey.gif"></center>
+        </span>
+        <!-- OEM mode -->
+        <span ID=acterror_description_dedicated_pid_OEM class="text-primary" style="display:none;">
+            <ID id="txtActivDeskErrDedicatedPid1x">プロダクト キーを変更する必要がある場合は、下の欄にプロダクト キーを入力して <B>[更新]</B> をクリックしてください。必要がない場合は、<B>[電話]</B> をクリックして前のライセンス認証ページに戻ってください。</ID>
+            <br><br>
+            <ID id="txtActivDeskErrDedicatedPid2x">25 桁のプロダクト キーは、コンピュータに添付してあるか、新しいコンピュータに付属している Windows のドキュメントと一緒にある Certificate of Authenticity (COA) ラベルにあります。COA ラベルを見つけられなかった場合は使用しているコンピュータの製造元に問い合わせてください。</ID>
+            <br><br>
+            <center><img src="../images/oemcoa.jpg"></center>
+        </span>
+
+
+        <!-- PID ENTRY -->
+        <span ID=acterror_pid_entry class="text-primary" style="display:none;">
+            <br>
+            <table ID=PidBox border=0 DIR=ltr style="font-family:Courier New; FONT-SIZE: 12pt;">
+            <tr>
+                <td nowrap width=10>&nbsp;</td>
+                <td nowrap class="text-primary" >
+                <span ID=acterror_description_verify_key class="text-primary"><ID id="txtverifykey">キーを確認してください:</id></span>&nbsp;
+                </td>
+                <td>
+                <input style="ime-mode:disabled" id=pid1 type="text" size=6 maxlength=5 class=pid-box TABINDEX=1 name="edtProductKey"
+                onkeydown="window.parent.ProductIDKeyDown();" onpropertychange="window.parent.ProductIDPropertyChange();"
+                onkeypress="window.parent.ProductIDKeyPress();" onkeyup="window.parent.ProductIDKeyUp();" onfocus="window.parent.OnFocus();">
+                </td><td class="text-primary">-</td><td>
+                <input style="ime-mode:disabled" id=pid2 type="text" size=6 maxlength=5 class=pid-box TABINDEX=2 name="edtProductKey"
+                onkeydown="window.parent.ProductIDKeyDown();" onpropertychange="window.parent.ProductIDPropertyChange();"
+                onkeypress="window.parent.ProductIDKeyPress();" onkeyup="window.parent.ProductIDKeyUp();" onfocus="window.parent.OnFocus();">
+                </td><td class="text-primary">-</td><td>
+                <input style="ime-mode:disabled" id=pid3 type="text" size=6 maxlength=5 class=pid-box TABINDEX=3  name="edtProductKey"
+                onkeydown="window.parent.ProductIDKeyDown();" onpropertychange="window.parent.ProductIDPropertyChange();"
+                onkeypress="window.parent.ProductIDKeyPress();" onkeyup="window.parent.ProductIDKeyUp();" onfocus="window.parent.OnFocus();">
+                </td><td class="text-primary">-</td><td>
+                <input style="ime-mode:disabled" id=pid4 type="text" size=6 maxlength=5 class=pid-box TABINDEX=4  name="edtProductKey"
+                onkeydown="window.parent.ProductIDKeyDown();" onpropertychange="window.parent.ProductIDPropertyChange();"
+                onkeypress="window.parent.ProductIDKeyPress();" onkeyup="window.parent.ProductIDKeyUp();" onfocus="window.parent.OnFocus();">
+                </td><td class="text-primary">-</td><td>
+                <input style="ime-mode:disabled" id=pid5 type="text" size=6 maxlength=5 class=pid-box TABINDEX=5  name="edtProductKey"
+                onkeydown="window.parent.ProductIDKeyDown();" onpropertychange="window.parent.ProductIDPropertyChange();"
+                onkeypress="window.parent.ProductIDKeyPress();" onkeyup="window.parent.ProductIDKeyUp();" onfocus="window.parent.OnFocus();">
+                </td>
+            </tr>
+            </table>
+        </span>
+
+
+        <!-- AFTER PID ENTRY TEXT -->
+        <span ID=acterror_after_pid_entry_OEMText class="text-primary" style="display:none;">
+            <br>
+            <ID id="txtActivDeskErrOEMText">COA ラベルが見つからない場合はコンピュータの製造元に連絡してください。</ID><br>
+        </span>
+
+        <span ID=acterror_after_pid_entry_text1 class="text-primary" style="display:none;">
+            <br>
+            <ID id="txtActivDeskErr14">正しいプロダクト キーを入力しているのでこのメッセージを受け取るはずはないと思う場合は、ライセンス認証専用窓口にお電話ください。お住まいの地域の連絡番号を知るには <B>[電話]</B> をクリックしてください。</ID>
+        </span>
+
+
+        <span ID=acterror_after_pid_entry_text2 class="text-primary" style="display:none;">
+            <br>
+            <ID id="txtActivDeskErr15">間違った操作をしていないのにこのメッセージが表示されていると思われる場合は、ライセンス認証専用窓口にお電話ください。お住まいの地域の連絡番号を知るには <B>[電話]</B> をクリックしてください。</ID>
+        </span>
+
+        <span ID=acterror_after_pid_entry_text3 class="text-primary" style="display:none;">
+            <br>
+            <ID id="txtActivDeskErr16">Windows は一度に 1 台のコンピュータにのみインストールできます。間違った操作をしていないのにこのメッセージが表示されていると思われる場合は、<B>[電話]</B> をクリックしてライセンス認証専用窓口にお電話ください。</ID>
+        </span>
+
+        <span ID=acterror_after_pid_entry_text4 class="text-primary" style="display:none;">
+            <br>
+            <ID id="txtActivDeskErr17">プロダクト キーを入力する必要がない場合は <B>[電話]</B> をクリックして、前のライセンス認証ページに戻ってください。</ID>
+        </span>
+
+    <!-- End -->
+    </td>
+
+    <td ID=rightmargincell width=7%>
+    </td>
+</tr>
+<tr>
+    <td colspan=3>
+    <br>
+    <table border=0 class="buttonpositionnew">
+    <tr>
+        <td width=99%>
+            &nbsp;&nbsp;
+            <span ID=acterror_specific_error_code class="text-primary" style="display:none; z-index:10;">
+            </span>
+        </td>
+        <td>
+        <BUTTON ID="btnTelephone" class="buttons" TABINDEX=6 ACCESSKEY="T"><label for=btnTelephone><id id="LocalBtnTel_Text">電話(<u>T</u>)</id></label></BUTTON>
+        </td>
+        <td>
+        <BUTTON ID="btnQuit" class="buttons" TABINDEX=7 ACCESSKEY="R"><label for=btnQuit><id id="LocalBtnQuit_Text">後で通知する(<u>R</u>)</id></label></BUTTON>
+        </td>
+        <td>
+        <BUTTON ID="btnNext" class="buttons" TABINDEX=8 ACCESSKEY="E"><label for=btnNext><id id="LocalBtnRetry_Text">再試行(<u>E</u>)</id></label></BUTTON>
+        </td>
+    </tr>
+    </table>
+    </td>
+</tr>
+</table>
+
+</body>
+</html>

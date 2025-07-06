@@ -1,0 +1,247 @@
+LICENÈNÍ PODMÍNKY PRO SOFTWARE SPOLEÈNOSTI 
+MICROSOFT
+
+MICROSOFT WINDOWS INSTALLER, VERSION 4.5
+
+Tyto licenèní podmínky pøedstavují smlouvu 
+mezi spoleèností Microsoft Corporation (nebo 
+nìkterou z jejích afilací, v závislosti na 
+tom, kde bydlíte) a vámi. Pøeètìte si je, 
+prosím. Vztahují se na software uvedený výše, 
+který zahrnuje média, na nichž jste jej 
+získali (pokud existují). Tyto podmínky se 
+rovnìž vztahují na:
+
+ aktualizace,
+
+ dodatky,
+
+ internetové služby a 
+
+ služby odborné pomoci
+
+spoleènosti Microsoft pro tento software, 
+pokud s tìmito položkami nejsou dodávány jiné 
+podmínky. Pokud ano, budou platit tyto jiné 
+podmínky.
+
+Použitím softwaru pøijímáte tyto podmínky. 
+Pokud je nepøijímáte, software nepoužívejte.
+
+Dodržíte-li tyto licenèní podmínky, máte 
+následující práva.
+
+1. PRÁVA K UŽÍVÁNÍ A INSTALACI. Mùžete 
+instalovat a užívat libovolný poèet kopií 
+softwaru na vašich zaøízeních se spuštìnými 
+platnými kopiemi Microsoft Windows.
+
+2. DALŠÍ LICENÈNÍ POŽADAVKY A/NEBO UŽÍVACÍ 
+PRÁVA.
+
+a. Opìtovnì šiøitelný kód. Software obsahuje 
+kód, který máte povoleno distribuovat v 
+programech, které vyvinete, pokud splníte 
+následující podmínky.
+
+i. Právo k užívání a distribuci. Kód a 
+textové soubory uvedené níže pøedstavují ' 
+Opìtovnì šiøitelný kód'.
+
+ Soubory REDIST.TXT. Smíte kopírovat a 
+distribuovat kód uvedený v souborech REDIST.
+TXT v podobì zdrojového kódu.
+
+ Distribuce pomocí tøetích stran. Smíte 
+povolit distributorùm svých programù 
+kopírování a distribuci Opìtovnì šiøitelného 
+kódu jako souèást tìchto programù.
+
+ii. Požadavky distribuce. Chcete-li 
+distribuovat libovolný Opìtovnì šiøitelný kód,
+musíte provést tyto kroky:
+
+ doplnit jej v rámci svých programù o 
+významné primární funkce,
+
+ zavázat distributory a koncové uživatele 
+podmínkami, které jej budou chránit nejménì 
+tak jako tato smlouva,
+
+ zobrazovat ve svých programech platnou 
+doložku o autorských právech a
+
+ odškodnit, chránit a bránit spoleènost 
+Microsoft pøed jakýmikoli nároky vèetnì 
+poplatkù za právní zastoupení, souvisejícími 
+s užíváním nebo distribucí vašich programù.
+
+iii. Omezení distribuce. Nesmíte:
+
+ mìnit žádné autorské doložky ani doložky 
+týkající se ochranných známek nebo patentù, 
+které jsou uvedeny v Opìtovnì šiøitelném 
+kódu;
+
+ používat ochranné známky spoleènosti 
+Microsoft v názvech svých programù nebo 
+zpùsobem, který by naznaèoval, že vaše 
+programy pocházejí od spoleènosti Microsoft 
+nebo že je spoleènost Microsoft schválila; 
+
+ distribuovat Opìtovnì šiøitelný kód za 
+úèelem provozování na platformì jiné než 
+Windows;
+
+ zahrnout Opìtovnì šiøitelný kód do 
+škodlivých, podvodných èi nezákonných 
+programù nebo
+
+ upravovat ani distribuovat zdrojový kód 
+libovolného Opìtovnì šiøitelného kódu tak, 
+aby se jeho libovolná èást stala pøedmìtem 
+Vylouèené licence. Vylouèená licence je 
+licence, jež jako podmínku užívání, zmìny 
+nebo distribuce vyžaduje, aby
+
+ kód byl zveøejnìn nebo distribuován ve 
+formì zdrojového kódu nebo
+
+ ostatní uživatelé mìli právo jej zmìnit.
+
+3. Rozsah licence. Software se neprodává, 
+pouze se udìluje licence k jeho užívání. Tato 
+smlouva vám poskytuje pouze urèitá práva k 
+užívání softwaru. Všechna ostatní práva si 
+vyhrazuje spoleènost Microsoft. Pokud vám 
+rozhodné právo bez ohledu na tato omezení 
+neposkytuje více práv, smíte software užívat 
+pouze v souladu s podmínkami této smlouvy. 
+Souèasnì musíte dodržovat veškerá technická 
+omezení v softwaru, která umožòují jeho 
+užívání pouze urèitými zpùsoby. Nesmíte
+
+ pøekraèovat žádná technická omezení 
+softwaru,
+
+ provádìt zpìtnou analýzu, dekompilaci nebo 
+pøevod ze strojového kódu softwaru, s 
+výjimkou a v rozsahu takových aktivit, které 
+jsou výslovnì povoleny rozhodným právem bez 
+ohledu na toto omezení,
+
+ vytváøet více kopií softwaru než je urèeno 
+v této smlouvì nebo povoleno rozhodným právem 
+bez ohledu na toto omezení,
+
+ zveøejnit software, aby jej ostatní mohli 
+kopírovat,
+
+ pronajímat, pùjèovat nebo poskytovat 
+software na leasing,
+
+ pøevést software nebo tuto smlouvu na 
+tøetí stranu, nebo
+
+ užívat software pro komerèní hostitelské 
+služby.
+
+4. ZÁLOŽNÍ KOPIE. Smíte zhotovit jednu 
+záložní kopii softwaru. Smíte ji použít pouze 
+k pøeinstalování softwaru.
+
+5. DOKUMENTACE. Každá osoba, která má platný 
+pøístup k vašemu poèítaèi nebo k interní síti,
+smí kopírovat a používat dokumentaci pouze 
+pro vaše interní referenèní úèely.
+
+6. VÝVOZNÍ OMEZENÍ. Software podléhá 
+naøízením a zákonùm o vývozu platným ve 
+Spojených státech amerických. Musíte 
+dodržovat všechny pøíslušné místní i 
+mezinárodní naøízení a zákony o vývozu 
+vztahující se na software. Mezi tyto zákony 
+patøí omezení míst urèení, koncových 
+uživatelù a koncového užívání. Další 
+informace naleznete na adrese www.microsoft.
+com/exporting.
+
+7. SLUŽBY ODBORNÉ POMOCI. Vzhledem k tomu, 
+že tento software je poskytován 'tak, jak 
+stojí a leží', nemusíme poskytovat žádné 
+související služby odborné pomoci.
+
+8. ÚPLNÁ DOHODA. Tato smlouva a podmínky pro 
+doplòky, aktualizace, internetové služby a 
+služby odborné pomoci, které užíváte, tvoøí 
+úplnou dohodu ohlednì softwaru a služeb 
+odborné pomoci.
+
+9. ROZHODNÉ PRÁVO.
+
+a. Spojené státy americké. Pokud jste tento 
+software získali ve Spojených státech 
+amerických, øídí se výklad této smlouvy 
+zákony státu Washington a tyto zákony se 
+vztahují na nároky spojené s jejím porušením, 
+bez ohledu na kolizní ustanovení práva. 
+Zákony státu, v nìmž žijete, se øídí všechny 
+ostatní nároky, vèetnì nárokù spojených s 
+místními zákony na ochranu spotøebitele, se 
+zákony proti nekalé soutìži a s 
+obèanskoprávními delikty.
+
+b. Mimo území Spojených státù amerických. 
+Pokud jste software získali na území jakékoli 
+jiné zemì, bude se tato smlouva øídit zákony 
+této zemì.
+
+10. PRÁVNÍ ÚÈINKY. Tato smlouva popisuje 
+urèitá zákonná práva. Zákony vaší zemì vám 
+mohou poskytovat i další práva. Mùžete mít 
+rovnìž další práva ve vztahu ke stranì, od 
+níž jste software získali. Tato smlouva 
+nemìní vaše práva v rámci právního øádu vaší 
+zemì, pokud právní øád vaší zemì nepovoluje 
+jejich zmìnu.
+
+11. zøeknutí se záruk. Software je 
+licencován 'tak, jak stojí a leží'. Veškerá 
+rizika spojená s jeho užíváním nesete vy. 
+Spoleènost Microsoft neposkytuje žádné 
+výslovné záruky, garance ani podmínky. V 
+rámci vašich místních zákonù mùžete mít další 
+práva spotøebitele, která tato smlouva nemùže 
+zmìnit. V rozsahu povoleném vašimi místními 
+zákony spoleènost Microsoft vyluèuje 
+pøedpokládané záruky prodejnosti, vhodnosti 
+pro urèitý úèel a neporušení smlouvy.
+
+12. OMEZENÍ A VYLOUÈENÍ PROSTØEDKÙ NÁPRAVY A 
+NÁHRADY ŠKODY. Od spoleènosti Microsoft a 
+jejích dodavatelù mùžete získat pouze náhradu 
+za pøímé škody až do výše 5 USD. Nezískáte 
+náhradu za žádné jiné škody, vèetnì 
+následných škod, ušlého zisku a zvláštních, 
+nepøímých nebo náhodných škod.
+
+Toto omezení se vztahuje
+
+ na všechny záležitosti související se 
+softwarem, službami, obsahem na internetových 
+stránkách tøetích stran (vèetnì kódu) nebo 
+programy tøetích stran a
+
+ na nároky za porušení smlouvy, porušení 
+záruky, garance nebo podmínky, objektivní 
+odpovìdnost, nedbalost nebo jiné 
+obèanskoprávní delikty v rozsahu povoleném 
+rozhodným právem.
+
+Vztahuje se rovnìž na situace, kdy 
+spoleènost Microsoft vìdìla nebo mohla vìdìt 
+o možnosti vzniku tìchto škod. Výše uvedené 
+omezení nebo vylouèení se na vás nemusí 
+rovnìž vztahovat v pøípadì, že vaše zemì 
+neumožòuje vylouèení nebo omezení náhodných, 
+následných nebo jiných škod.

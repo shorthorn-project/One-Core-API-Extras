@@ -1,0 +1,251 @@
+LICENSVILLKOR FÖR PROGRAMVARA FRÅN MICROSOFT
+
+MICROSOFT WINDOWS INSTALLER, VERSION 4.5
+
+Dessa licensvillkor utgör ett avtal mellan 
+Microsoft Corporation (eller beroende på var 
+du bor, ett av dess koncernbolag) och dig. 
+Läs dem noga. De gäller för ovanstående 
+programvara och omfattar alla eventuella 
+media som programvaran levereras på. 
+Villkoren gäller även följande produkter och 
+tjänster från Microsoft:
+
+· uppdateringar
+
+· tillägg
+
+· Internetbaserade tjänster
+
+· supporttjänster
+
+avseende denna programvara om inga andra 
+villkor medföljer dessa produkter eller 
+tjänster. I sådant fall gäller de medföljande 
+villkoren.
+
+Genom att använda programvaran accepterar du 
+villkoren i licensavtalet. Om du inte 
+accepterar villkoren har du inte rätt att 
+använda programvaran.
+
+Om du uppfyller licensvillkoren har du 
+följande rättigheter.
+
+1. INSTALLATIONS- OCH ANVÄNDNINGSRÄTTIGHETER.
+Du får installera och använda obegränsat 
+antal exemplar av programvaran på dina 
+enheter som kör behörigt licensierade 
+exemplar av Microsoft Windows.
+
+2. YTTERLIGARE LICENSKRAV OCH/ELLER 
+ANVÄNDNINGSRÄTTIGHETER.
+
+a. Distribuerbar kod. Programvaran 
+innehåller kod som du får distribuera i 
+programvara som du utvecklar om du uppfyller 
+villkoren nedan.
+
+i. Rättigheter att använda och distribuera. 
+Koden och textfilerna i listan nedan utgör 
+'Distribuerbar kod'.
+
+· REDIST.TXT-filer. Du får kopiera och 
+distribuera objektkod som återfinns i REDIST.
+TXT-filer.
+
+· Distribution av tredje part. Du får 
+tilllåta distributörer av din programvara att 
+kopiera och distribuera den Distribuerbara 
+koden som en del av programvaran.
+
+ii. Distributionskrav. För all Distribuerbar 
+kod som du distribuerar måste du
+
+· lägga till betydande primära funktioner 
+till den i dina program
+
+· kräva att distributörer och externa 
+slutanvändare accepterar villkor som ger 
+minst samma skydd som detta avtal
+
+· visa ditt giltiga upphovsrättsliga 
+meddelande i dina program
+
+· gottgöra, försvara och hålla Microsoft 
+skadeslöst från alla anspråk, inklusive 
+advokatarvoden, som har att göra med 
+distributionen eller användningen av dina 
+program.
+
+iii. Distributionsbegränsningar. Du har inte 
+rätt att
+
+· ändra några upphovsrätts-, varumärkes- 
+eller patentmeddelanden i den Distribuerbara 
+koden
+
+· använda Microsofts varumärken i dina 
+programnamn eller på ett sätt som antyder att 
+din programvara kommer från, eller har 
+godkänts av Microsoft
+
+· distribuera Distribuerbar kod för att 
+köras i en annan miljö än Microsoft Windows;
+
+· inkludera Distribuerbar kod i skadliga, 
+bedrägliga och olagliga program
+
+· ändra eller distribuera källkoden för den 
+Distribuerbara koden på ett sätt som kan 
+medföra att den regleras av villkoren i en 
+Undantagslicens. En Undantagslicens är en 
+licens där det som ett villkor för användning,
+ändring eller distribution krävs att
+
+· koden visas eller distribueras i form av 
+källkod
+
+· andra har rätt att ändra den.
+
+3. Licensens omfattning. Programvaran säljs 
+inte, den licensieras. Detta avtal ger dig 
+endast vissa rättigheter att använda 
+programvaran. Microsoft förbehåller sig alla 
+övriga rättigheter. Om inte tvingande lag 
+trots denna begränsning beviljar dig 
+ytterligare rättigheter får du endast använda 
+programvaran på det sätt som uttryckligen 
+anges i detta avtal. Du måste då följa alla 
+tekniska begränsningarna i programvaran som 
+endast tillåter att du använder den på ett 
+visst sätt. Du har inte rätt att
+
+· kringgå någon av programvarans tekniska 
+begränsningar,
+
+· utföra reverse engineering på, dekompilera 
+eller ta isär koden för programvaran, förutom 
+och endast i den utsträckning detta, trots 
+denna begränsning, är uttryckligen tillåtet 
+enligt tillämplig lag,
+
+· framställa fler kopior av programvaran än 
+vad som specifikt anges i detta avtal eller 
+som trots denna begränsning tillåts enligt 
+tillämplig lag,
+
+· röja programvaran så att den kan kopieras 
+av andra,
+
+· hyra ut, leasa eller låna ut programvaran,
+
+· överföra programvaran eller detta avtal 
+till tredje part, eller
+
+· använda programvaran i kommersiella 
+hostingtjänster.
+
+4. SÄKERHETSKOPIERING. Du får skapa en 
+säkerhetskopia av programvaran. Du får endast 
+använda den för att installera om 
+programvaran.
+
+5. DOKUMENTATION. Varje person med åtkomst 
+till en dator som tillhör dig eller till ditt 
+interna nätverk får kopiera och använda 
+dokumentationen för internt, icke-
+kommersiellt bruk.
+
+6. EXPORTRESTRIKTIONER. Amerikansk 
+exportlagstiftning gäller för programvaran. 
+Du måste följa all inhemsk och internationell 
+exportlagstiftning som gäller för 
+programvaran. Sådan lagstiftning innehåller 
+restriktioner avseende destination, 
+slutanvändare och slutanvändning. Mer 
+information finns på www.microsoft.
+com/exporting <http://www.microsoft.
+com/exporting>.
+
+7. SUPPORTTJÄNSTER. Eftersom denna 
+programvara tillhandahålls 'i befintligt 
+skick' är det inte säkert att någon support 
+tillhandahålls för den.
+
+8. AVTALET I DESS HELHET. Detta avtal samt 
+villkoren för tillägg, uppdateringar, 
+Internetbaserade tjänster och supporttjänster 
+som du använder utgör hela avtalet för 
+programvaran och supporttjänsterna.
+
+9. TILLÄMPLIG LAG.
+
+a. USA. Om du har förvärvat programvaran i 
+USA skall den amerikanska delstaten 
+Washingtons lagar gälla för tolkningen av 
+avtalet och anspråk vid brott mot avtalet, 
+oavsett lagvalsprinciper. Lagarna i den stat 
+där du bor reglerar övriga anspråk, inklusive 
+anspråk som åberopas enligt 
+konsumentskyddslagstiftning, 
+konkurrensrättsliga lagar och handlingar som 
+ger rätt till utomobligatoriskt 
+skadeståndsansvar.
+
+b. Utanför USA. Om du har förvärvat 
+programvaran i något annat land gäller 
+lagarna i det landet.
+
+10. Legala påföljder. Vissa legala 
+rättigheter beskrivs i detta avtal. Du kan ha 
+andra rättigheter enligt gällande rätt i ditt 
+land. Du kan även ha rättigheter i 
+förhållande till den part som du förvärvade 
+programvaran ifrån. Detta avtal förändrar 
+inte dina rättigheter enligt lagstiftningen i 
+ditt land om lagarna i ditt land inte 
+tillåter det.
+
+11. Friskrivning från garantiansvar. 
+Programvaran licensieras 'i befintligt skick'.
+Du bär risken för dess användning. Microsoft 
+lämnar inga garantier. Du kan ha ytterligare 
+rättigheter som konsument enligt tillämplig 
+lagstiftning vilket detta avtal inte kan 
+ändra. I den utsträckning tillämplig lag 
+medger det friskriver sig Microsoft från 
+underförstådda garantier för allmän 
+lämplighet, lämplighet för ett särskilt 
+ändamål och frånvaro av intrång i tredje mans 
+rättigheter.
+
+12. BEGRÄNSNING av OCH FRISKRIVNING FRÅN 
+ANSVAR FÖR SKADOR. Du kan endast få 
+ersättning från Microsoft och dess 
+leverantörer för direkta skador upp till ett 
+belopp av U.S. $ 5,00. Du får inte ersättning 
+för andra skador, inklusive följdskador, 
+utebliven vinst, oförutsedda skador eller 
+indirekta skador.
+
+Denna begränsning gäller för
+
+· allt som är relaterat till programvaran, 
+tjänster, innehåll (inklusive kod) på tredje 
+parts webbsidor eller tredje parts program
+
+· anspråk med avseende på kontraktsbrott, 
+brott mot garantin, utfästelser eller villkor,
+strikt ansvar, skada orsakad av vårdslöshet 
+eller andra handlingar som ger rätt till 
+utomobligatoriskt skadeståndsansvar i den 
+utsträckning som följer av tillämplig lag.
+
+Den gäller även om Microsoft kände till 
+eller borde ha känt till risken för sådan 
+skada. Om inte den ovanstående begränsningen 
+av eller friskrivningen från ansvar för 
+följdskador, indirekta skador eller andra 
+skador tillåts i ditt land gäller inte denna 
+begränsning eller friskrivning för dig.

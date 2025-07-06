@@ -26,7 +26,7 @@
     SERVICE_PACK_NUMBER     = 3
     HelpLink 				= "http://shorthornproject.com"
     URLInfoAbout 			= "http://shorthornproject.com"
-	OCAMS_VERSION           = "3.0.3.canary.b2"
+	OCAMS_VERSION           = "4.0.0"
 	SP_TITLE                = "One-Core-API Modern Setup"
     UPDATE                	= "Update"
     HOTFIX                	= "Hotfix"
@@ -36,20 +36,17 @@
 	;COMMENT                 = "One-Core-API Modern Setup [See Q100000 for more information]
 	SERVICEPACKSOURCEFILES  = "One-Core-API Modern Setup"
 	PARENT_DISPLAY_NAME     = "One-Core-API"
-	LatestBaseUpdateFail    = "Please Install latest One-Core-API Base first!"	
-	LatestBrandingUpdateFail  = "Please Install latest One-Core-API Windows Modern Branding first!"
+	LatestBaseUpdateFail    = "Please Install latest One-Core-API Base first!"
+    ShortCutBootIceName     = "BootIce"	
+	ShortCutDir             = "Accessories\System Tools"
+	BootIceTooltip          = "A tool for manage boot, disk and partition configurations"	
 	
 [Prerequisite]
 	condition=SingleOp,LatestUpdateCheck1.Section
-	condition=SingleOp,LatestUpdateCheck2.Section
 	
 [LatestUpdateCheck1.Section]
     EqualOp=CheckReg,HKLM,"SOFTWARE\Microsoft\Windows NT\CurrentVersion\HotFix\OCAB",Installed,0x10001,==,1
     Display_String="%LatestBaseUpdateFail%"
-	
-[LatestUpdateCheck2.Section]
-    EqualOp=CheckReg,HKLM,"SOFTWARE\Microsoft\Windows NT\CurrentVersion\HotFix\OCAWMB",Installed,0x10001,==,1
-    Display_String="%LatestBrandingUpdateFail%"	
 
 [UninstallSections]
     Add.Reg, Add.Reg.Uninstall
@@ -72,8 +69,8 @@
 	HKLM,"SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\%SP_SHORT_TITLE%","ParentDisplayName",0x00000000,"%PARENT_DISPLAY_NAME%"
 	HKLM,"SOFTWARE\Microsoft\Windows\CurrentVersion\Uninstall\%SP_SHORT_TITLE%","ReleaseType",0x00000000,"HotFix"
 	HKLM,"SYSTEM\RNG"
-	; Supress New Hardware Prompt after installation
-	HKLM,"SYSTEM\CurrentControlSet\Services\PlugPlay\Parameters","SuppressUI",0x10001,01,00,00,00	
+	; ; Supress New Hardware Prompt after installation
+	; HKLM,"SYSTEM\CurrentControlSet\Services\PlugPlay\Parameters","SuppressUI",0x10001,01,00,00,00	
 	; Correct VGA Save Service
 	HKLM,"SYSTEM\CurrentControlSet\Services\VgaSave","Description",0x0,"Controls the VGA display adapter to provide basic display capabilities."
 	HKLM,"SYSTEM\CurrentControlSet\Services\VgaSave","DisplayName",0x0,"VGA Display Controller."
@@ -116,300 +113,6 @@
 	HKLM,"SYSTEM\CurrentControlSet\Hardware Profiles\Current\System\CurrentControlSet\Control\VIDEO\{23A77BF7-ED96-40EC-AF06-9B1F4867732A}\0000","DefaultSettings.FixedOutput",0x10001,00,00,00,00
 	HKLM,"SYSTEM\CurrentControlSet\Hardware Profiles\Current\System\CurrentControlSet\Control\VIDEO\{23A77BF7-ED96-40EC-AF06-9B1F4867732A}\0000","Attach.RelativeX",0x10001,00,00,00,00
 	HKLM,"SYSTEM\CurrentControlSet\Hardware Profiles\Current\System\CurrentControlSet\Control\VIDEO\{23A77BF7-ED96-40EC-AF06-9B1F4867732A}\0000","Attach.RelativeY",0x10001,00,00,00,00
-	;Ide and SCSI Drivers to generalize boot
-	;Atapi
-	HKLM,"SYSTEM\CurrentControlSet\Services\atapi","ErrorControl",0x10001,01,00,00,00
-	HKLM,"SYSTEM\CurrentControlSet\Services\atapi","Group",0x0,"SCSI miniport"
-	HKLM,"SYSTEM\CurrentControlSet\Services\atapi","Start",0x10001,00,00,00,00
-	HKLM,"SYSTEM\CurrentControlSet\Services\atapi","Tag",0x10001,19,00,00,00
-	HKLM,"SYSTEM\CurrentControlSet\Services\atapi","Type",0x10001,01,00,00,00
-	HKLM,"SYSTEM\CurrentControlSet\Services\atapi","DisplayName",0x0,"Standard IDE/ESDI Hard Disk Controller"
-	HKLM,"SYSTEM\CurrentControlSet\Services\atapi","ImagePath",0x20000,"system32\DRIVERS\atapi.sys"
-	HKLM,"SYSTEM\CurrentControlSet\Services\atapi\Parameters","LegacyDetection",0x10001,01,00,00,00
-	HKLM,"SYSTEM\CurrentControlSet\Services\atapi\Parameters","GhostSlave",0x10000,"SunDisk "
-	HKLM,"SYSTEM\CurrentControlSet\Services\atapi\Parameters","UseCheckPowerForFlush",0x10000,"SAMSUNG WNR-31601A (1600MB)             ","SAMSUNG WNR-31601A (1.6GB)              ","IBM-DTCA-24090                          TC6OAA2A","IBM-DTCA-24090                          TC6IAA2A","IBM-DPLA-25120                          PL8OAA2A","IBM-DPLA-25120                          PL8IAA2A","IBM-DPLA-25120                          PL8IAA4A","IBM-DTCA-23240                          TC5OAA2A","IBM-DTCA-23240                          TC5IAA2A","IBM-DPLA-24480                          PL7OAA2A","IBM-DPLA-24480                          PL7IAA2A"
-	HKLM,"SYSTEM\CurrentControlSet\Services\atapi\Parameters","NoFlushDevice",0x10000,"QUANTUM_LPS525A                         ","SCR-730                                 "
-	HKLM,"SYSTEM\CurrentControlSet\Services\atapi\Parameters","PioOnlyDevice",0x10000,"    Conner Peripherals 425MB - CFS425A  ","MATSHITA CR-581                         ","FX600S                                  ","CD-44E                                  ","QUANTUM TRB850A                         ","QUANTUM MARVERICK 540A                  "," MAXTOR MXT-540  AT                     ","Maxtor 71260 AT                         ","Maxtor 7850 AV                          ","Maxtor 7540 AV                          ","Maxtor 7213 AT                          ","Maxtor 7345                             ","Maxtor 7245 AT                          ","Maxtor 7245                             ","Maxtor 7211AU                           ","Maxtor 7171 AT                          ","CD-316E                                 ","SAMSUNG_SCR-2430","CR-2801TE"
-	HKLM,"SYSTEM\CurrentControlSet\Services\atapi\Parameters","NonRemovableMedia",0x10000,"Kingston Technology DataPak 340         ","SunDisk SDP5A-10                        ","SunDisk SDCFB-10                        ","SunDisk SDP3B-20                        ","SunDisk SDP3B-175                       ","SunDisk SDP5-2.5                        ","Calluna Technology CT260MC              ","BN-S004AC-S 1.00","Calluna Technology CT520RM","Hitachi CV 5.1.1","      ATA_FLASH ","Mitsubishi ATA Card ","LEXAR ATA_FLASH","Micron MTCF004A","Micron MTCF008A","SunDisk SDP3B-110","SunDisk SDCFB-4","BN-CAB-T","MEMORYSTICK","MEMORYSTICK   8M  8K"
-	HKLM,"SYSTEM\CurrentControlSet\Services\atapi\Parameters","NoPowerDownDevice",0x10000,"RD-DRC001-M                             ","CS-R37 0                                "
-	HKLM,"SYSTEM\CurrentControlSet\Services\atapi\Parameters","AutoEjectZipDevice",0x10000,"IOMEGA  ZIP 100       ATAPI             23.D    ","IOMEGA  ZIP 100       ATAPI             21.D    ","IOMEGA  ZIP 100       ATAPI             20.D    ","IOMEGA  ZIP 100       ATAPI             91.D    ","IOMEGA  ZIP 100                         B.29    ","IOMEGA  ZIP 100                         B.22    "
-	HKLM,"SYSTEM\CurrentControlSet\Services\atapi\Parameters","NeedIdentDevice",0x10000,"QUANTUM FIREBALL"
-	HKLM,"SYSTEM\CurrentControlSet\Services\atapi\Parameters","DefaultPioAtapiDevice",0x10000,"TORiSAN DVD-ROM DRD-N216","IDE-CD R/RW 2x2x24"	
-	;AliIde
-	HKLM,"SYSTEM\CurrentControlSet\Services\aliide","Start",0x00010001,00,00,00,00
-	HKLM,"SYSTEM\CurrentControlSet\Services\aliide","Type",0x00010001,01,00,00,00
-	HKLM,"SYSTEM\CurrentControlSet\Services\aliide","ErrorControl",0x00010001,03,00,00,00
-	HKLM,"SYSTEM\CurrentControlSet\Services\aliide","ImagePath",0x00020000,"system32\drivers\aliide.sys"
-	HKLM,"SYSTEM\CurrentControlSet\Services\aliide","Group",0x00000000,"System Bus Extender"	
-	;AmdIde
-	HKLM,"SYSTEM\CurrentControlSet\Services\amdide","Start",0x00010001,00,00,00,00
-	HKLM,"SYSTEM\CurrentControlSet\Services\amdide","Type",0x00010001,01,00,00,00
-	HKLM,"SYSTEM\CurrentControlSet\Services\amdide","ErrorControl",0x00010001,03,00,00,00
-	HKLM,"SYSTEM\CurrentControlSet\Services\amdide","ImagePath",0x00020000,"system32\drivers\amdide.sys"
-	HKLM,"SYSTEM\CurrentControlSet\Services\amdide","Group",0x00000000,"System Bus Extender"
-	;CmdIde
-	HKLM,"SYSTEM\CurrentControlSet\Services\cmdide","Group",0x00000000,"System Bus Extender"
-	HKLM,"SYSTEM\CurrentControlSet\Services\cmdide","ImagePath",0x00020000,"system32\drivers\cmdide.sys"
-	HKLM,"SYSTEM\CurrentControlSet\Services\cmdide","ErrorControl",0x00010001,03,00,00,00
-	HKLM,"SYSTEM\CurrentControlSet\Services\cmdide","Start",0x00010001,00,00,00,00
-	HKLM,"SYSTEM\CurrentControlSet\Services\cmdide","Type",0x00010001,01,00,00,00
-	;IntelIde
-	HKLM,"SYSTEM\CurrentControlSet\Services\intelide","Group",0x00000000,"System Bus Extender"
-	HKLM,"SYSTEM\CurrentControlSet\Services\intelide","ImagePath",0x00020000,"system32\drivers\intelide.sys"
-	HKLM,"SYSTEM\CurrentControlSet\Services\intelide","ErrorControl",0x00010001,03,00,00,00
-	HKLM,"SYSTEM\CurrentControlSet\Services\intelide","Start",0x00010001,00,00,00,00
-	HKLM,"SYSTEM\CurrentControlSet\Services\intelide","Type",0x00010001,01,00,00,00
-	;PciIde	
-	HKLM,"SYSTEM\CurrentControlSet\Services\pciide","Group",0x00000000,"System Bus Extender"
-	HKLM,"SYSTEM\CurrentControlSet\Services\pciide","ImagePath",0x00020000,"system32\drivers\pciide.sys"
-	HKLM,"SYSTEM\CurrentControlSet\Services\pciide","ErrorControl",0x00010001,03,00,00,00
-	HKLM,"SYSTEM\CurrentControlSet\Services\pciide","Start",0x00010001,00,00,00,00
-	HKLM,"SYSTEM\CurrentControlSet\Services\pciide","Type",0x00010001,01,00,00,00
-	;TosIde
-	HKLM,"SYSTEM\CurrentControlSet\Services\toside","Group",0x00000000,"System Bus Extender"
-	HKLM,"SYSTEM\CurrentControlSet\Services\toside","ImagePath",0x00020000,"system32\drivers\toside.sys"
-	HKLM,"SYSTEM\CurrentControlSet\Services\toside","ErrorControl",0x00010001,03,00,00,00
-	HKLM,"SYSTEM\CurrentControlSet\Services\toside","Start",0x00010001,00,00,00,00
-	HKLM,"SYSTEM\CurrentControlSet\Services\toside","Type",0x00010001,01,00,00,00	
-	;ViaIde
-	HKLM,"SYSTEM\CurrentControlSet\Services\viaide","Group",0x00000000,"System Bus Extender"
-	HKLM,"SYSTEM\CurrentControlSet\Services\viaide","ImagePath",0x00020000,"system32\drivers\viaide.sys"
-	HKLM,"SYSTEM\CurrentControlSet\Services\viaide","ErrorControl",0x00010001,03,00,00,00
-	HKLM,"SYSTEM\CurrentControlSet\Services\viaide","Start",0x00010001,00,00,00,00
-	HKLM,"SYSTEM\CurrentControlSet\Services\viaide","Type",0x00010001,01,00,00,00
-	; USB drivers
-	;Usbehci
-	HKLM,"SYSTEM\CurrentControlSet\Services\usbehci","DisplayName",0x0,"Microsoft USB 2.0 Enhanced Host Controller Miniport Driver"
-	HKLM,"SYSTEM\CurrentControlSet\Services\usbehci","Group",0x0,"Base"
-	HKLM,"SYSTEM\CurrentControlSet\Services\usbehci","ImagePath",0x20000,"system32\DRIVERS\usbehci.sys"
-	HKLM,"SYSTEM\CurrentControlSet\Services\usbehci","ErrorControl",0x10001,01,00,00,00
-	HKLM,"SYSTEM\CurrentControlSet\Services\usbehci","Start",0x10001,03,00,00,00
-	HKLM,"SYSTEM\CurrentControlSet\Services\usbehci","Type",0x10001,01,00,00,00
-	HKLM,"SYSTEM\CurrentControlSet\Services\usbehci","Tag",0x10001,11,00,00,00	
-	;Usbhub
-	HKLM,"SYSTEM\CurrentControlSet\Services\usbhub","DisplayName",0x0,"Microsoft USB Standard Hub Driver"
-	HKLM,"SYSTEM\CurrentControlSet\Services\usbhub","Group",0x0,"Base"
-	HKLM,"SYSTEM\CurrentControlSet\Services\usbhub","ImagePath",0x20000,"system32\DRIVERS\usbhub.sys"
-	HKLM,"SYSTEM\CurrentControlSet\Services\usbhub","ErrorControl",0x10001,01,00,00,00
-	HKLM,"SYSTEM\CurrentControlSet\Services\usbhub","Start",0x10001,03,00,00,00
-	HKLM,"SYSTEM\CurrentControlSet\Services\usbhub","Type",0x10001,01,00,00,00
-	HKLM,"SYSTEM\CurrentControlSet\Services\usbhub","Tag",0x10001,13,00,00,00
-	;Usbohci
-	HKLM,"SYSTEM\CurrentControlSet\Services\usbohci","DisplayName",0x0,"Microsoft USB Open Host Controller Miniport Driver"
-	HKLM,"SYSTEM\CurrentControlSet\Services\usbohci","Group",0x0,"Base"
-	HKLM,"SYSTEM\CurrentControlSet\Services\usbohci","ImagePath",0x20000,"\SystemRoot\system32\drivers\usbohci.sys"
-	HKLM,"SYSTEM\CurrentControlSet\Services\usbohci","ErrorControl",0x10001,01,00,00,00
-	HKLM,"SYSTEM\CurrentControlSet\Services\usbohci","Start",0x10001,03,00,00,00
-	HKLM,"SYSTEM\CurrentControlSet\Services\usbohci","Type",0x10001,01,00,00,00	
-	;usbstor
-	HKLM,"SYSTEM\CurrentControlSet\Services\USBSTOR","DisplayName",0x0,"USB Mass Storage Driver"
-	HKLM,"SYSTEM\CurrentControlSet\Services\USBSTOR","ImagePath",0x20000,"\SystemRoot\system32\drivers\usbstor.sys"
-	HKLM,"SYSTEM\CurrentControlSet\Services\USBSTOR","ErrorControl",0x10001,01,00,00,00
-	HKLM,"SYSTEM\CurrentControlSet\Services\USBSTOR","Start",0x10001,03,00,00,00
-	HKLM,"SYSTEM\CurrentControlSet\Services\USBSTOR","Type",0x10001,01,00,00,00
-	;Usbuhci
-	HKLM,"SYSTEM\CurrentControlSet\Services\usbuhci","DisplayName",0x0,"Microsoft USB Universal Host Controller Miniport Driver"
-	HKLM,"SYSTEM\CurrentControlSet\Services\usbuhci","Group",0x0,"Base"
-	HKLM,"SYSTEM\CurrentControlSet\Services\usbuhci","ImagePath",0x20000,"system32\DRIVERS\usbuhci.sys"
-	HKLM,"SYSTEM\CurrentControlSet\Services\usbuhci","ErrorControl",0x10001,01,00,00,00
-	HKLM,"SYSTEM\CurrentControlSet\Services\usbuhci","Start",0x10001,03,00,00,00
-	HKLM,"SYSTEM\CurrentControlSet\Services\usbuhci","Type",0x10001,01,00,00,00
-	HKLM,"SYSTEM\CurrentControlSet\Services\usbuhci","Tag",0x10001,12,00,00,00	
-	;Hid and KB Drivers to generalize boot
-	;HidBatt
-	HKLM,"System\CurrentControlSet\Services\HidBatt","Start",0x00010001,03,00,00,00
-	HKLM,"System\CurrentControlSet\Services\HidBatt","Type",0x00010001,01,00,00,00
-	HKLM,"System\CurrentControlSet\Services\HidBatt","ErrorControl",0x00010001,01,00,00,00
-	HKLM,"System\CurrentControlSet\Services\HidBatt","ImagePath",0x00020000,"\SystemRoot\system32\drivers\HidBatt.sys"
-	HKLM,"System\CurrentControlSet\Services\HidBatt","DisplayName",0x00000000,"HID UPS Battery Driver"
-	;HidBth
-	HKLM,"System\CurrentControlSet\Services\HidBth","DisplayName",0x00000000,"Microsoft Bluetooth HID Miniport"
-	HKLM,"System\CurrentControlSet\Services\HidBth","Group",0x00000000,"extended base"
-	HKLM,"System\CurrentControlSet\Services\HidBth","ImagePath",0x00020000,"\SystemRoot\system32\drivers\hidbth.sys"
-	HKLM,"System\CurrentControlSet\Services\HidBth","ErrorControl",0x00010001,00,00,00,00
-	HKLM,"System\CurrentControlSet\Services\HidBth","Start",0x00010001,03,00,00,00
-	HKLM,"System\CurrentControlSet\Services\HidBth","Type",0x00010001,01,00,00,00
-	;Hidir
-	HKLM,"System\CurrentControlSet\Services\HidIr","DisplayName",0x00000000,"Microsoft Infrared HID Driver"
-	HKLM,"System\CurrentControlSet\Services\HidIr","Group",0x00000000,"extended base"
-	HKLM,"System\CurrentControlSet\Services\HidIr","ImagePath",0x00020000,"\SystemRoot\system32\drivers\hidir.sys"
-	HKLM,"System\CurrentControlSet\Services\HidIr","ErrorControl",0x00010001,00,00,00,00
-	HKLM,"System\CurrentControlSet\Services\HidIr","Start",0x00010001,03,00,00,00
-	HKLM,"System\CurrentControlSet\Services\HidIr","Type",0x00010001,01,00,00,00
-	HKLM,"System\CurrentControlSet\Services\HidIr\Remotes",,0x00000010
-	HKLM,"System\CurrentControlSet\Services\HidIr\Remotes\745a17a0-74d3-11d0-b6fe-00a0c90f57da","RemoteName",0x00000000,"RC6 based MCE remote"
-	HKLM,"System\CurrentControlSet\Services\HidIr\Remotes\745a17a0-74d3-11d0-b6fe-00a0c90f57da","EnableDebounce",0x00010001,01,00,00,00
-	HKLM,"System\CurrentControlSet\Services\HidIr\Remotes\745a17a0-74d3-11d0-b6fe-00a0c90f57da","EnableVendorPassThrough",0x00010001,01,00,00,00
-	HKLM,"System\CurrentControlSet\Services\HidIr\Remotes\745a17a0-74d3-11d0-b6fe-00a0c90f57da","DecoderID",0x00010001,01,00,00,00
-	HKLM,"System\CurrentControlSet\Services\HidIr\Remotes\745a17a0-74d3-11d0-b6fe-00a0c90f57da","CodeSetID",0x00010001,00,00,00,00
-	HKLM,"System\CurrentControlSet\Services\HidIr\Remotes\745a17a0-74d3-11d0-b6fe-00a0c90f57da","CodeBitLen",0x00010001,20,00,00,00
-	HKLM,"System\CurrentControlSet\Services\HidIr\Remotes\745a17a0-74d3-11d0-b6fe-00a0c90f57da","CodeSetNum0",0x00010001,01,00,00,00
-	HKLM,"System\CurrentControlSet\Services\HidIr\Remotes\745a17a0-74d3-11d0-b6fe-00a0c90f57da","CodeSetNum1",0x00010001,02,00,00,00
-	HKLM,"System\CurrentControlSet\Services\HidIr\Remotes\745a17a0-74d3-11d0-b6fe-00a0c90f57da","CodeSetNum2",0x00010001,03,00,00,00
-	HKLM,"System\CurrentControlSet\Services\HidIr\Remotes\745a17a0-74d3-11d0-b6fe-00a0c90f57da","CodeSetNum3",0x00010001,04,00,00,00
-	HKLM,"System\CurrentControlSet\Services\HidIr\Remotes\745a17a0-74d3-11d0-b6fe-00a0c90f57da","CodeSetNumMask",0x00010001,00,70,00,00
-	HKLM,"System\CurrentControlSet\Services\HidIr\Remotes\745a17a0-74d3-11d0-b6fe-00a0c90f57da","CodeSetNumShiftBits",0x00010001,0c,00,00,00
-	HKLM,"System\CurrentControlSet\Services\HidIr\Remotes\745a17a0-74d3-11d0-b6fe-00a0c90f57da","CodeMatchMask",0x00010001,00,0f,ff,ff
-	HKLM,"System\CurrentControlSet\Services\HidIr\Remotes\745a17a0-74d3-11d0-b6fe-00a0c90f57da","CodeMatchValue",0x00010001,00,04,0f,80
-	HKLM,"System\CurrentControlSet\Services\HidIr\Remotes\745a17a0-74d3-11d0-b6fe-00a0c90f57da","DataMask",0x00010001,ff,00,00,00
-	HKLM,"System\CurrentControlSet\Services\HidIr\Remotes\745a17a0-74d3-11d0-b6fe-00a0c90f57da","DataShiftBits",0x00010001,00,00,00,00
-	HKLM,"System\CurrentControlSet\Services\HidIr\Remotes\745a17a0-74d3-11d0-b6fe-00a0c90f57da","ReportLength",0x00010001,03,00,00,00
-	HKLM,"System\CurrentControlSet\Services\HidIr\Remotes\745a17a0-74d3-11d0-b6fe-00a0c90f57da","ReportDescriptor",0x00000001,05,0c,09,01,a1,01,85,01,19,00,2a,3c,02,15,00,26,3c,02,95,01,75,10,81,00,c0,06,bc,ff,09,88,a1,01,85,02,19,01,29,ff,15,00,25,01,95,01,75,08,81,00,c0,05,01,09,80,a1,01,85,03,19,81,29,83,25,01,75,01,95,03,81,02,75,01,95,05,81,01,c0,05,01,09,06,a1,01,85,04,05,07,19,e0,29,e8,75,01,95,08,81,02,19,00,29,90,26,ff,00,75,08,95,01,81,00,c0
-	HKLM,"System\CurrentControlSet\Services\HidIr\Remotes\745a17a0-74d3-11d0-b6fe-00a0c90f57da","ReportMappingTable",0x00000001,01,00,00,00,04,00,1e,02,00,00,00,04,00,1f,03,00,00,00,04,00,20,04,00,00,00,04,00,21,05,00,00,00,04,00,22,06,00,00,00,04,00,23,07,00,00,00,04,00,24,08,00,00,00,04,00,25,09,00,00,00,04,00,26,00,00,00,00,04,00,27,0b,00,00,00,04,00,28,0a,00,00,00,04,00,29,1d,00,00,00,04,02,25,1c,00,00,00,04,02,20,1f,00,00,00,04,00,51,1e,00,00,00,04,00,52,21,00,00,00,04,00,4f,20,00,00,00,04,00,50,22,00,00,00,04,00,28,4e,00,00,00,01,08,02,0f,00,00,00,01,09,02,23,00,00,00,01,24,02,16,00,00,00,01,b0,00,18,00,00,00,01,b1,00,17,00,00,00,01,b2,00,14,00,00,00,01,b3,00,15,00,00,00,01,b4,00,1a,00,00,00,01,b5,00,1b,00,00,00,01,b6,00,19,00,00,00,01,b7,00,6e,00,00,00,01,cd,00,10,00,00,00,01,e9,00,11,00,00,00,01,ea,00,0e,00,00,00,01,e2,00,26,00,00,00,01,8d,00,12,00,00,00,01,9c,00,13,00,00,00,01,9d,00,0c,00,00,00,03,82,00,2a,00,00,00,03,82,00
-	HKLM,"System\CurrentControlSet\Services\HidIr\Remotes\745a17a0-74d3-11d0-b6fe-00a0c90f57db","RemoteName",0x00000000,"Samsung MCE remote"
-	HKLM,"System\CurrentControlSet\Services\HidIr\Remotes\745a17a0-74d3-11d0-b6fe-00a0c90f57db","EnableDebounce",0x00010001,00,00,00,00
-	HKLM,"System\CurrentControlSet\Services\HidIr\Remotes\745a17a0-74d3-11d0-b6fe-00a0c90f57db","DecoderID",0x00010001,04,00,00,00
-	HKLM,"System\CurrentControlSet\Services\HidIr\Remotes\745a17a0-74d3-11d0-b6fe-00a0c90f57db","CodeSetID",0x00010001,00,00,00,00
-	HKLM,"System\CurrentControlSet\Services\HidIr\Remotes\745a17a0-74d3-11d0-b6fe-00a0c90f57db","CodeBitLen",0x00010001,20,00,00,00
-	HKLM,"System\CurrentControlSet\Services\HidIr\Remotes\745a17a0-74d3-11d0-b6fe-00a0c90f57db","CodeSetNum0",0x00010001,00,00,00,00
-	HKLM,"System\CurrentControlSet\Services\HidIr\Remotes\745a17a0-74d3-11d0-b6fe-00a0c90f57db","CodeSetNum1",0x00010001,00,00,00,00
-	HKLM,"System\CurrentControlSet\Services\HidIr\Remotes\745a17a0-74d3-11d0-b6fe-00a0c90f57db","CodeSetNum2",0x00010001,00,00,00,00
-	HKLM,"System\CurrentControlSet\Services\HidIr\Remotes\745a17a0-74d3-11d0-b6fe-00a0c90f57db","CodeSetNum3",0x00010001,00,00,00,00
-	HKLM,"System\CurrentControlSet\Services\HidIr\Remotes\745a17a0-74d3-11d0-b6fe-00a0c90f57db","CodeSetNumMask",0x00010001,00,00,00,00
-	HKLM,"System\CurrentControlSet\Services\HidIr\Remotes\745a17a0-74d3-11d0-b6fe-00a0c90f57db","CodeSetNumShiftBits",0x00010001,00,00,00,00
-	HKLM,"System\CurrentControlSet\Services\HidIr\Remotes\745a17a0-74d3-11d0-b6fe-00a0c90f57db","CodeMatchMask",0x00010001,ff,ff,00,00
-	HKLM,"System\CurrentControlSet\Services\HidIr\Remotes\745a17a0-74d3-11d0-b6fe-00a0c90f57db","CodeMatchValue",0x00010001,81,ad,00,00
-	HKLM,"System\CurrentControlSet\Services\HidIr\Remotes\745a17a0-74d3-11d0-b6fe-00a0c90f57db","DataMask",0x00010001,00,00,ff,00
-	HKLM,"System\CurrentControlSet\Services\HidIr\Remotes\745a17a0-74d3-11d0-b6fe-00a0c90f57db","DataShiftBits",0x00010001,10,00,00,00
-	HKLM,"System\CurrentControlSet\Services\HidIr\Remotes\745a17a0-74d3-11d0-b6fe-00a0c90f57db","ReportLength",0x00010001,03,00,00,00
-	HKLM,"System\CurrentControlSet\Services\HidIr\Remotes\745a17a0-74d3-11d0-b6fe-00a0c90f57db","ReportDescriptor",0x00000001,05,0c,09,01,a1,01,85,01,19,00,2a,3c,02,15,00,26,3c,02,95,01,75,10,81,00,c0,06,bc,ff,09,88,a1,01,85,02,19,01,29,ff,15,00,25,01,95,01,75,08,81,00,c0,05,01,09,80,a1,01,85,03,19,81,29,83,25,01,75,01,95,03,81,02,75,01,95,05,81,01,c0,05,01,09,06,a1,01,85,04,05,07,19,e0,29,e8,75,01,95,08,81,02,19,00,29,90,26,ff,00,75,08,95,01,81,00,c0
-	HKLM,"System\CurrentControlSet\Services\HidIr\Remotes\745a17a0-74d3-11d0-b6fe-00a0c90f57db","ReportMappingTable",0x00000001,51,00,00,00,04,00,1e,52,00,00,00,04,00,1f,53,00,00,00,04,00,20,54,00,00,00,04,00,21,55,00,00,00,04,00,22,56,00,00,00,04,00,23,57,00,00,00,04,00,24,58,00,00,00,04,00,25,59,00,00,00,04,00,26,50,00,00,00,04,00,27,61,00,00,00,04,00,28,60,00,00,00,04,00,29,62,00,00,00,04,02,25,63,00,00,00,04,02,20,42,00,00,00,04,00,51,41,00,00,00,04,00,52,44,00,00,00,04,00,4f,43,00,00,00,04,00,50,40,00,00,00,04,00,28,00,00,00,00,03,82,00,37,00,00,00,01,09,02,45,00,00,00,01,24,02,13,00,00,00,01,b0,00,16,00,00,00,01,b1,00,10,00,00,00,01,b2,00,14,00,00,00,01,b3,00,12,00,00,00,01,b4,00,17,00,00,00,01,b5,00,15,00,00,00,01,b6,00,11,00,00,00,01,b7,00,21,00,00,00,01,e9,00,22,00,00,00,01,ea,00,23,00,00,00,01,e2,00,35,00,00,00,01,8d,00,24,00,00,00,01,9c,00,25,00,00,00,01,9d,00,30,00,00,00,02,0d,00,31,00,00,00,02,4a,00,34,00,00,00,02,49,00,36,00,00,00,02,25,00,33,00,00,00,02,46,00,32,00,00,00,02,47,00,38,00,00,00,02,24,00,39,00,00,00,02,48,00,81,00,00,00,02,80,00,82,00,00,00,02,81,00,83,00,00,00,02,82,00,84,00,00,00,02,80,00,86,00,00,00,02,81,00
-	HKLM,"System\CurrentControlSet\Services\HidIr\Remotes\745a17a0-74d3-11d0-b6fe-00a0c90f57dc","RemoteName",0x00000000,"MCIR Standard Keyboard Remote"
-	HKLM,"System\CurrentControlSet\Services\HidIr\Remotes\745a17a0-74d3-11d0-b6fe-00a0c90f57dc","EnableDebounce",0x00010001,00,00,00,00
-	HKLM,"System\CurrentControlSet\Services\HidIr\Remotes\745a17a0-74d3-11d0-b6fe-00a0c90f57dc","EnablePassThrough",0x00010001,05,00,00,00
-	HKLM,"System\CurrentControlSet\Services\HidIr\Remotes\745a17a0-74d3-11d0-b6fe-00a0c90f57dc","DecoderID",0x00010001,06,00,00,00
-	HKLM,"System\CurrentControlSet\Services\HidIr\Remotes\745a17a0-74d3-11d0-b6fe-00a0c90f57dc","CodeSetID",0x00010001,00,00,00,00
-	HKLM,"System\CurrentControlSet\Services\HidIr\Remotes\745a17a0-74d3-11d0-b6fe-00a0c90f57dc","CodeBitLen",0x00010001,20,00,00,00
-	HKLM,"System\CurrentControlSet\Services\HidIr\Remotes\745a17a0-74d3-11d0-b6fe-00a0c90f57dc","CodeSetNum0",0x00010001,00,00,00,00
-	HKLM,"System\CurrentControlSet\Services\HidIr\Remotes\745a17a0-74d3-11d0-b6fe-00a0c90f57dc","CodeSetNum1",0x00010001,00,00,00,00
-	HKLM,"System\CurrentControlSet\Services\HidIr\Remotes\745a17a0-74d3-11d0-b6fe-00a0c90f57dc","CodeSetNum2",0x00010001,00,00,00,00
-	HKLM,"System\CurrentControlSet\Services\HidIr\Remotes\745a17a0-74d3-11d0-b6fe-00a0c90f57dc","CodeSetNum3",0x00010001,00,00,00,00
-	HKLM,"System\CurrentControlSet\Services\HidIr\Remotes\745a17a0-74d3-11d0-b6fe-00a0c90f57dc","CodeSetNumMask",0x00010001,00,00,00,e0
-	HKLM,"System\CurrentControlSet\Services\HidIr\Remotes\745a17a0-74d3-11d0-b6fe-00a0c90f57dc","CodeSetNumShiftBits",0x00010001,1d,00,00,00
-	HKLM,"System\CurrentControlSet\Services\HidIr\Remotes\745a17a0-74d3-11d0-b6fe-00a0c90f57dc","CodeMatchMask",0x00010001,00,00,00,00
-	HKLM,"System\CurrentControlSet\Services\HidIr\Remotes\745a17a0-74d3-11d0-b6fe-00a0c90f57dc","CodeMatchValue",0x00010001,00,00,00,00
-	HKLM,"System\CurrentControlSet\Services\HidIr\Remotes\745a17a0-74d3-11d0-b6fe-00a0c90f57dc","DataMask",0x00010001,ff,ff,ff,00
-	HKLM,"System\CurrentControlSet\Services\HidIr\Remotes\745a17a0-74d3-11d0-b6fe-00a0c90f57dc","DataShiftBits",0x00010001,00,00,00,00
-	HKLM,"System\CurrentControlSet\Services\HidIr\Remotes\745a17a0-74d3-11d0-b6fe-00a0c90f57dc","CheckSumResultsMasks",0x00000001,00,00,00,1f
-	HKLM,"System\CurrentControlSet\Services\HidIr\Remotes\745a17a0-74d3-11d0-b6fe-00a0c90f57dc","CheckSumResultsShiftBits",0x00000001,18
-	HKLM,"System\CurrentControlSet\Services\HidIr\Remotes\745a17a0-74d3-11d0-b6fe-00a0c90f57dc","CheckSumOperation",0x00010001,01,00,00,00
-	HKLM,"System\CurrentControlSet\Services\HidIr\Remotes\745a17a0-74d3-11d0-b6fe-00a0c90f57dc","CheckSumWordsMasks",0x00000001,ff,ff,ff,e0
-	HKLM,"System\CurrentControlSet\Services\HidIr\Remotes\745a17a0-74d3-11d0-b6fe-00a0c90f57dc","CheckSumWordsShiftBits",0x00000001,00
-	HKLM,"System\CurrentControlSet\Services\HidIr\Remotes\745a17a0-74d3-11d0-b6fe-00a0c90f57dc","ReportLength",0x00010001,04,00,00,00
-	HKLM,"System\CurrentControlSet\Services\HidIr\Remotes\745a17a0-74d3-11d0-b6fe-00a0c90f57dc","ReportDescriptor",0x00000001,05,01,09,06,a1,01,85,05,05,07,19,e0,29,e7,15,00,25,01,75,01,95,08,81,02,19,00,29,91,15,00,26,ff,00,75,08,95,02,81,00,c0
-	HKLM,"System\CurrentControlSet\Services\HidIr\Remotes\745a17a0-74d3-11d0-b6fe-00a0c90f57dc","ReportMappingTable",0x00000001,00,00,00,00,05,00,00,00
-	HKLM,"System\CurrentControlSet\Services\HidIr\Remotes\745a17a0-74d3-11d0-b6fe-00a0c90f57dd","RemoteName",0x00000000,"MCIR Japanese Keyboard Remote"
-	HKLM,"System\CurrentControlSet\Services\HidIr\Remotes\745a17a0-74d3-11d0-b6fe-00a0c90f57dd","EnableDebounce",0x00010001,00,00,00,00
-	HKLM,"System\CurrentControlSet\Services\HidIr\Remotes\745a17a0-74d3-11d0-b6fe-00a0c90f57dd","EnablePassThrough",0x00010001,06,00,00,00
-	HKLM,"System\CurrentControlSet\Services\HidIr\Remotes\745a17a0-74d3-11d0-b6fe-00a0c90f57dd","ForceUniqueReport",0x00010001,01,00,00,00
-	HKLM,"System\CurrentControlSet\Services\HidIr\Remotes\745a17a0-74d3-11d0-b6fe-00a0c90f57dd","DecoderID",0x00010001,07,00,00,00
-	HKLM,"System\CurrentControlSet\Services\HidIr\Remotes\745a17a0-74d3-11d0-b6fe-00a0c90f57dd","CodeSetID",0x00010001,00,00,00,00
-	HKLM,"System\CurrentControlSet\Services\HidIr\Remotes\745a17a0-74d3-11d0-b6fe-00a0c90f57dd","CodeBitLen",0x00010001,20,00,00,00
-	HKLM,"System\CurrentControlSet\Services\HidIr\Remotes\745a17a0-74d3-11d0-b6fe-00a0c90f57dd","CodeSetNum0",0x00010001,00,00,00,00
-	HKLM,"System\CurrentControlSet\Services\HidIr\Remotes\745a17a0-74d3-11d0-b6fe-00a0c90f57dd","CodeSetNum1",0x00010001,00,00,00,00
-	HKLM,"System\CurrentControlSet\Services\HidIr\Remotes\745a17a0-74d3-11d0-b6fe-00a0c90f57dd","CodeSetNum2",0x00010001,00,00,00,00
-	HKLM,"System\CurrentControlSet\Services\HidIr\Remotes\745a17a0-74d3-11d0-b6fe-00a0c90f57dd","CodeSetNum3",0x00010001,00,00,00,00
-	HKLM,"System\CurrentControlSet\Services\HidIr\Remotes\745a17a0-74d3-11d0-b6fe-00a0c90f57dd","CodeSetNumMask",0x00010001,00,00,00,e0
-	HKLM,"System\CurrentControlSet\Services\HidIr\Remotes\745a17a0-74d3-11d0-b6fe-00a0c90f57dd","CodeSetNumShiftBits",0x00010001,1d,00,00,00
-	HKLM,"System\CurrentControlSet\Services\HidIr\Remotes\745a17a0-74d3-11d0-b6fe-00a0c90f57dd","CodeMatchMask",0x00010001,00,00,00,00
-	HKLM,"System\CurrentControlSet\Services\HidIr\Remotes\745a17a0-74d3-11d0-b6fe-00a0c90f57dd","CodeMatchValue",0x00010001,00,00,00,00
-	HKLM,"System\CurrentControlSet\Services\HidIr\Remotes\745a17a0-74d3-11d0-b6fe-00a0c90f57dd","DataMask",0x00010001,ff,ff,ff,00
-	HKLM,"System\CurrentControlSet\Services\HidIr\Remotes\745a17a0-74d3-11d0-b6fe-00a0c90f57dd","DataShiftBits",0x00010001,00,00,00,00
-	HKLM,"System\CurrentControlSet\Services\HidIr\Remotes\745a17a0-74d3-11d0-b6fe-00a0c90f57dd","CheckSumResultsMasks",0x00000001,00,00,00,1f
-	HKLM,"System\CurrentControlSet\Services\HidIr\Remotes\745a17a0-74d3-11d0-b6fe-00a0c90f57dd","CheckSumResultsShiftBits",0x00000001,18
-	HKLM,"System\CurrentControlSet\Services\HidIr\Remotes\745a17a0-74d3-11d0-b6fe-00a0c90f57dd","CheckSumOperation",0x00010001,01,00,00,00
-	HKLM,"System\CurrentControlSet\Services\HidIr\Remotes\745a17a0-74d3-11d0-b6fe-00a0c90f57dd","CheckSumWordsMasks",0x00000001,ff,ff,ff,e0
-	HKLM,"System\CurrentControlSet\Services\HidIr\Remotes\745a17a0-74d3-11d0-b6fe-00a0c90f57dd","CheckSumWordsShiftBits",0x00000001,00
-	HKLM,"System\CurrentControlSet\Services\HidIr\Remotes\745a17a0-74d3-11d0-b6fe-00a0c90f57dd","ReportLength",0x00010001,04,00,00,00
-	HKLM,"System\CurrentControlSet\Services\HidIr\Remotes\745a17a0-74d3-11d0-b6fe-00a0c90f57dd","ReportDescriptor",0x00000001,05,01,09,06,a1,01,85,06,05,07,19,e0,29,e7,15,00,25,01,75,01,95,08,81,02,19,00,29,98,15,00,26,ff,00,75,08,95,02,81,00,c0
-	HKLM,"System\CurrentControlSet\Services\HidIr\Remotes\745a17a0-74d3-11d0-b6fe-00a0c90f57dd","ReportMappingTable",0x00000001,00,00,00,00,06,00,00,00
-	HKLM,"System\CurrentControlSet\Services\HidIr\Remotes\745a17a0-74d3-11d0-b6fe-00a0c90f57de","RemoteName",0x00000000,"MCIR Three Button Mouse Remote"
-	HKLM,"System\CurrentControlSet\Services\HidIr\Remotes\745a17a0-74d3-11d0-b6fe-00a0c90f57de","EnableDebounce",0x00010001,00,00,00,00
-	HKLM,"System\CurrentControlSet\Services\HidIr\Remotes\745a17a0-74d3-11d0-b6fe-00a0c90f57de","EnablePassThrough",0x00010001,07,00,00,00
-	HKLM,"System\CurrentControlSet\Services\HidIr\Remotes\745a17a0-74d3-11d0-b6fe-00a0c90f57de","DecoderID",0x00010001,08,00,00,00
-	HKLM,"System\CurrentControlSet\Services\HidIr\Remotes\745a17a0-74d3-11d0-b6fe-00a0c90f57de","CodeSetID",0x00010001,00,00,00,00
-	HKLM,"System\CurrentControlSet\Services\HidIr\Remotes\745a17a0-74d3-11d0-b6fe-00a0c90f57de","CodeBitLen",0x00010001,1d,00,00,00
-	HKLM,"System\CurrentControlSet\Services\HidIr\Remotes\745a17a0-74d3-11d0-b6fe-00a0c90f57de","CodeSetNum0",0x00010001,00,00,00,00
-	HKLM,"System\CurrentControlSet\Services\HidIr\Remotes\745a17a0-74d3-11d0-b6fe-00a0c90f57de","CodeSetNum1",0x00010001,00,00,00,00
-	HKLM,"System\CurrentControlSet\Services\HidIr\Remotes\745a17a0-74d3-11d0-b6fe-00a0c90f57de","CodeSetNum2",0x00010001,00,00,00,00
-	HKLM,"System\CurrentControlSet\Services\HidIr\Remotes\745a17a0-74d3-11d0-b6fe-00a0c90f57de","CodeSetNum3",0x00010001,00,00,00,00
-	HKLM,"System\CurrentControlSet\Services\HidIr\Remotes\745a17a0-74d3-11d0-b6fe-00a0c90f57de","CodeSetNumMask",0x00010001,00,00,00,1c
-	HKLM,"System\CurrentControlSet\Services\HidIr\Remotes\745a17a0-74d3-11d0-b6fe-00a0c90f57de","CodeSetNumShiftBits",0x00010001,1a,00,00,00
-	HKLM,"System\CurrentControlSet\Services\HidIr\Remotes\745a17a0-74d3-11d0-b6fe-00a0c90f57de","CodeMatchMask",0x00010001,00,00,00,00
-	HKLM,"System\CurrentControlSet\Services\HidIr\Remotes\745a17a0-74d3-11d0-b6fe-00a0c90f57de","CodeMatchValue",0x00010001,00,00,00,00
-	HKLM,"System\CurrentControlSet\Services\HidIr\Remotes\745a17a0-74d3-11d0-b6fe-00a0c90f57de","DataMask",0x00010001,e0,ff,1f,00
-	HKLM,"System\CurrentControlSet\Services\HidIr\Remotes\745a17a0-74d3-11d0-b6fe-00a0c90f57de","DataShiftBits",0x00010001,05,00,00,00
-	HKLM,"System\CurrentControlSet\Services\HidIr\Remotes\745a17a0-74d3-11d0-b6fe-00a0c90f57de","CheckSumResultsMasks",0x00000001,00,00,e0,03,1f,00,00,00
-	HKLM,"System\CurrentControlSet\Services\HidIr\Remotes\745a17a0-74d3-11d0-b6fe-00a0c90f57de","CheckSumResultsShiftBits",0x00000001,15,00
-	HKLM,"System\CurrentControlSet\Services\HidIr\Remotes\745a17a0-74d3-11d0-b6fe-00a0c90f57de","CheckSumOperation",0x00010001,02,00,00,00
-	HKLM,"System\CurrentControlSet\Services\HidIr\Remotes\745a17a0-74d3-11d0-b6fe-00a0c90f57de","CheckSumWordsMasks",0x00000001,e0,ff,1f,1c
-	HKLM,"System\CurrentControlSet\Services\HidIr\Remotes\745a17a0-74d3-11d0-b6fe-00a0c90f57de","CheckSumWordsShiftBits",0x00000001,00
-	HKLM,"System\CurrentControlSet\Services\HidIr\Remotes\745a17a0-74d3-11d0-b6fe-00a0c90f57de","ReportLength",0x00010001,03,00,00,00
-	HKLM,"System\CurrentControlSet\Services\HidIr\Remotes\745a17a0-74d3-11d0-b6fe-00a0c90f57de","ReportDescriptor",0x00000001,05,01,09,01,a1,01,85,07,05,09,19,01,29,02,15,00,25,01,75,01,95,02,81,02,05,01,09,30,09,31,15,c1,25,3f,75,07,95,02,81,06,c0
-	HKLM,"System\CurrentControlSet\Services\HidIr\Remotes\745a17a0-74d3-11d0-b6fe-00a0c90f57de","ReportMappingTable",0x00000001,00,00,00,00,07,00,00
-	;Hidusb
-	HKLM,"System\CurrentControlSet\Services\HidUsb","DisplayName",0x00000000,"Microsoft HID Class Driver"
-	HKLM,"System\CurrentControlSet\Services\HidUsb","Group",0x00000000,"extended base"
-	HKLM,"System\CurrentControlSet\Services\HidUsb","ImagePath",0x00020000,"\SystemRoot\system32\drivers\hidusb.sys"
-	HKLM,"System\CurrentControlSet\Services\HidUsb","ErrorControl",0x00010001,00,00,00,00
-	HKLM,"System\CurrentControlSet\Services\HidUsb","Start",0x00010001,03,00,00,00
-	HKLM,"System\CurrentControlSet\Services\HidUsb","Type",0x00010001,01,00,00,00
-	;i8042prt
-	HKLM,"System\CurrentControlSet\Services\i8042prt","DisplayName",0x00000000,"i8042 Keyboard and PS/2 Mouse Port Driver"
-	HKLM,"System\CurrentControlSet\Services\i8042prt","Group",0x00000000,"Keyboard Port"
-	HKLM,"System\CurrentControlSet\Services\i8042prt","ImagePath",0x00020000,"\SystemRoot\system32\drivers\i8042prt.sys"
-	HKLM,"System\CurrentControlSet\Services\i8042prt","ErrorControl",0x00010001,01,00,00,00
-	HKLM,"System\CurrentControlSet\Services\i8042prt","Start",0x00010001,01,00,00,00
-	HKLM,"System\CurrentControlSet\Services\i8042prt","Type",0x00010001,01,00,00,00
-	HKLM,"System\CurrentControlSet\Services\i8042prt\Parameters","PollingIterations",0x00010001,e0,2e,00,00
-	HKLM,"System\CurrentControlSet\Services\i8042prt\Parameters","PollingIterationsMaximum",0x00010001,e0,2e,00,00
-	HKLM,"System\CurrentControlSet\Services\i8042prt\Parameters","ResendIterations",0x00010001,03,00,00,00
-	HKLM,"System\CurrentControlSet\Services\i8042prt\Parameters","LayerDriver KOR",0x00000000,"kbd101a.dll"
-	HKLM,"System\CurrentControlSet\Services\i8042prt\Parameters","LayerDriver JPN",0x00000000,"kbd101.dll"
-	;kbdclass	
-	HKLM,"System\CurrentControlSet\Services\kbdclass","DisplayName",0x00000000,"Keyboard Class Driver"
-	HKLM,"System\CurrentControlSet\Services\kbdclass","Group",0x00000000,"Keyboard Class"
-	HKLM,"System\CurrentControlSet\Services\kbdclass","ImagePath",0x00020000,"\SystemRoot\system32\drivers\kbdclass.sys"
-	HKLM,"System\CurrentControlSet\Services\kbdclass","ErrorControl",0x00010001,01,00,00,00
-	HKLM,"System\CurrentControlSet\Services\kbdclass","Start",0x00010001,01,00,00,00
-	HKLM,"System\CurrentControlSet\Services\kbdclass","Type",0x00010001,01,00,00,00
-	HKLM,"System\CurrentControlSet\Services\kbdclass\Parameters","ConnectMultiplePorts",0x00010001,00,00,00,00
-	HKLM,"System\CurrentControlSet\Services\kbdclass\Parameters","KeyboardDataQueueSize",0x00010001,64,00,00,00
-	HKLM,"System\CurrentControlSet\Services\kbdclass\Parameters","KeyboardDeviceBaseName",0x00000000,"KeyboardClass"
-	HKLM,"System\CurrentControlSet\Services\kbdclass\Parameters","MaximumPortsServiced",0x00010001,03,00,00,00
-	HKLM,"System\CurrentControlSet\Services\kbdclass\Parameters","SendOutputToAllPorts",0x00010001,01,00,00,00
-	;kbdhid	
-	HKLM,"System\CurrentControlSet\Services\kbdhid","DisplayName",0x00000000,"Keyboard HID Driver"
-	HKLM,"System\CurrentControlSet\Services\kbdhid","Group",0x00000000,"Keyboard Port"
-	HKLM,"System\CurrentControlSet\Services\kbdhid","ImagePath",0x00020000,"\SystemRoot\system32\drivers\kbdhid.sys"
-	HKLM,"System\CurrentControlSet\Services\kbdhid","ErrorControl",0x00010001,00,00,00,00
-	HKLM,"System\CurrentControlSet\Services\kbdhid","Start",0x00010001,01,00,00,00
-	HKLM,"System\CurrentControlSet\Services\kbdhid","Type",0x00010001,01,00,00,00
-	HKLM,"System\CurrentControlSet\Services\kbdhid\Parameters","WorkNicely",0x00010001,00,00,00,00
-	;mouclass
-	HKLM,"System\CurrentControlSet\Services\mouclass","DisplayName",0x00000000,"Mouse Class Driver"
-	HKLM,"System\CurrentControlSet\Services\mouclass","Group",0x00000000,"Pointer Class"
-	HKLM,"System\CurrentControlSet\Services\mouclass","ImagePath",0x00020000,"\SystemRoot\system32\drivers\mouclass.sys"
-	HKLM,"System\CurrentControlSet\Services\mouclass","ErrorControl",0x00010001,01,00,00,00
-	HKLM,"System\CurrentControlSet\Services\mouclass","Start",0x00010001,01,00,00,00
-	HKLM,"System\CurrentControlSet\Services\mouclass","Type",0x00010001,01,00,00,00
-	;mouhid
-	HKLM,"System\CurrentControlSet\Services\mouhid","DisplayName",0x00000000,"Mouse HID Driver"
-	HKLM,"System\CurrentControlSet\Services\mouhid","Group",0x00000000,"Pointer Port"
-	HKLM,"System\CurrentControlSet\Services\mouhid","ImagePath",0x00020000,"\SystemRoot\system32\drivers\mouhid.sys"
-	HKLM,"System\CurrentControlSet\Services\mouhid","ErrorControl",0x00010001,00,00,00,00
-	HKLM,"System\CurrentControlSet\Services\mouhid","Start",0x00010001,03,00,00,00
-	HKLM,"System\CurrentControlSet\Services\mouhid","Type",0x00010001,01,00,00,00
-	HKLM,"System\CurrentControlSet\Services\mouhid\Parameters","UseOnlyMice",0x00010001,00,00,00,00
-	HKLM,"System\CurrentControlSet\Services\mouhid\Parameters","TreatAbsoluteAsRelative",0x00010001,00,00,00,00
-	HKLM,"System\CurrentControlSet\Services\mouhid\Parameters","TreatAbsolutePointerAsAbsolute",0x00010001,00,00,00,00
-	;sermouse	
-	HKLM,"System\CurrentControlSet\Services\sermouse","DisplayName",0x00000000,"Serial Mouse Driver"
-	HKLM,"System\CurrentControlSet\Services\sermouse","Group",0x00000000,"Pointer Port"
-	HKLM,"System\CurrentControlSet\Services\sermouse","ImagePath",0x00020000,"\SystemRoot\system32\drivers\sermouse.sys"
-	HKLM,"System\CurrentControlSet\Services\sermouse","ErrorControl",0x00010001,01,00,00,00
-	HKLM,"System\CurrentControlSet\Services\sermouse","Start",0x00010001,03,00,00,00
-	HKLM,"System\CurrentControlSet\Services\sermouse","Type",0x00010001,01,00,00,00
 	;Critical Device Database
 	HKLM,"SYSTEM\CurrentControlSet\Control\CriticalDeviceDatabase",,0x10
 	HKLM,"SYSTEM\CurrentControlSet\Control\CriticalDeviceDatabase\*acpi0001","ClassGUID",0x0,"{4d36e97d-e325-11ce-bfc1-08002be10318}"
@@ -4764,7 +4467,10 @@
 
 [ProductInstall.GlobalRegistryChanges.ReInstall]
     AddReg=Product.Add.Reg
-	
+
+[LinkItems.Create]
+    %ShortCutBootIceName%=0x00000017,%ShortCutDir%,"""%SystemRoot%\System32\bootice.exe""",%SystemRoot%\System32\bootice.exe,0,"%HOMEDRIVE%%HOMEPATH%",,1,"%BootIceTooltip%",,	
+   		
 [DestinationDirs]
 	Drivers.CoreDriverFiles = 12 ; %windir%\system32\drivers
 	Boot.Files=10,Boot ; %windir%\system32\drivers
@@ -5483,63 +5189,18 @@
     sysprep.exe, Windows\System32\sysprep\sysprep.exe
 	
 [Drivers.CoreDriverFiles]
-	acpi.sys, drivers\acpi.sys
-	adpu160m.sys, drivers\adpu160m.sys
-	adpu320.sys, drivers\adpu320.sys
-	agp440.sys, drivers\agp440.sys
-	aliide.sys, drivers\aliide.sys
-	amdk8.sys, drivers\amdk8.sys	
-	amdide.sys, drivers\amdide.sys
-	arc.sys, drivers\arc.sys
-	atapi.sys, drivers\atapi.sys	
-	cmdide.sys, drivers\cmdide.sys
-	hidbatt.sys, drivers\hidbatt.sys
-	hidbth.sys, drivers\hidbth.sys
-	hidclass.sys, drivers\hidclass.sys
-	hidir.sys, drivers\hidir.sys
-	hidparse.sys, drivers\hidparse.sys
-	hidusb.sys, drivers\hidusb.sys
-	i8042prt.sys, drivers\i8042prt.sys
-	intelide.sys, drivers\intelide.sys
-	intelppm.sys, drivers\intelppm.sys	
-	iirsp.sys, drivers\iirsp.sys
-	isapnp.sys, drivers\isapnp.sys
-	kbdclass.sys, drivers\kbdclass.sys
-	kbdhid.sys, drivers\kbdhid.sys
-	lsi_fc.sys, drivers\lsi_fc.sys
-	lsi_sas.sys, drivers\lsi_sas.sys
-	lsi_scsi.sys, drivers\lsi_scsi.sys
-	megasas.sys, drivers\megasas.sys	
-	mouclass.sys, drivers\mouclass.sys
-	mraid35x.sys, drivers\mraid35x.sys
-	nfrd960.sys, drivers\nfrd960.sys
-	ntoskrn8.sys, drivers\ntoskrn8.sys	
-	NV_AGP.sys, drivers\NV_AGP.sys
-	pciide.sys, drivers\pciide.sys
-	pciidex.sys, drivers\pciidex.sys
-	rdpdr.sys, drivers\rdpdr.sys
-	serial.sys, drivers\serial.sys
-	sermouse.sys, drivers\sermouse.sys
-	storport.sys, drivers\storport.sys	
-	swenum.sys, drivers\swenum.sys
-	sym_hi.sys, drivers\sym_hi.sys
-	sym_u3.sys, drivers\sym_u3.sys
-	symc8xx.sys, drivers\symc8xx.sys
-	toside.sys, drivers\toside.sys
-	ULIAGPKX.sys, drivers\ULIAGPKX.sys
-	usbehci.sys, drivers\usbehci.sys
-	usbhub.sys, drivers\usbhub.sys
-	usbohci.sys, drivers\usbohci.sys
-	usbstor.sys, drivers\usbstor.sys
-	usbuhci.sys, drivers\usbuhci.sys
-	viaide.sys, drivers\viaide.sys
-	vgapnp.sys, drivers\vgapnp.sys	
-	volmgr.sys, drivers\volmgr.sys
-	volmgrx.sys, drivers\volmgrx.sys
+	amdk8.sys, drivers\common\amdk8.sys
+	vgapnp.sys, drivers\common\vgapnp.sys	
+	volmgr.sys, drivers\common\volmgr.sys
+	volmgrx.sys, drivers\common\volmgrx.sys
+	ntoskrn8.sys, drivers\common\ntoskrn8.sys
+	storport.sys, drivers\common\storport.sys
+	acpi.sys, drivers\common\acpi.sys
 
 [CopyAlways.DriverCab.files]
-	acpi.sys, drivers\acpi.sys
-	vgapnp.sys, drivers\vgapnp.sys
+	acpi.sys, drivers\common\acpi.sys
+    hal.dll, Windows\System32\hal.dll
+	vgapnp.sys, drivers\common\vgapnp.sys
 	
 [CopyAlways.Inf.files]
     display.inf, Windows\inf\display.inf
@@ -5563,6 +5224,7 @@
 	cmiv2.dll, Windows\System32\cmiv2.dll
     factory.exe, Windows\System32\factory.exe
 	generalizeKernelHalx64.exe
+	hal.dll, Windows\System32\hal.dll
 	license.rtf, Windows\System32\license.rtf
 	msconfig.exe, Windows\System32\msconfig.exe	
 	setbcdlocale.dll, Windows\System32\setbcdlocale.dll

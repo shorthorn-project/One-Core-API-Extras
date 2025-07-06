@@ -1,0 +1,254 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+    <title>out of box experience</title>
+    <LINK REL="stylesheet" TYPE="text/css" HREF="aregstyl.css" id=deskstyle1>
+    <LINK REL="stylesheet" TYPE="text/css" HREF="aregsty2.css" id=deskstyle2 disabled>
+    <META HTTP-EQUIV="MSThemeCompatible" CONTENT="Yes">
+</head>
+
+<body style="background-Color: transparent; background-repeat: no-repeat;" topMargin=0 rightmargin=0 leftmargin=0 tabindex=-1
+      onload="window.parent.act_desktop_error_LoadMe();" >
+
+<table valign=middle border=0 cellpadding=0 cellspacing=0 width="100%" height="100%">
+<tr>
+    <td ID=leftmargincell width=5% height=99%></td>
+    <td ID=maincell valign=top class="text-primary">
+
+    <span ID=Title_Text class="title" style="display:none;">
+        <ID id=acterror_s1>Aktivera Windows</ID>
+    </span>
+
+    <br>
+    <!-- Prepare the different error scenes, all are hidden -->
+
+        <span ID=acterror_description_SUCCESS1 class="text-primary" style="display:none;">
+            <ID id="txtActivDeskSUCCESS1">Du har nu aktiverat och registrerat ditt Windows-exemplar.</ID>
+        </span>
+
+        <span ID=acterror_description_SUCCESS2 class="text-primary" style="display:none;">
+            <ID id="txtActivDeskSUCCESS2">Du har nu aktiverat ditt Windows-exemplar.</ID>
+        </span>
+
+
+        <!-- Pre-expiration -->
+        <span ID=acterror_description1Pre class="text-primary" style="display:none;">
+            <ID id="txtActivDeskErr">Onlineaktivering kunde inte slutföras.</ID>
+            <br><br>
+            <id id="txtActivDeskerr0">Du kan fortsätta använda Windows XP i <span id=NumberDaysLeft1 class="text-primary"></span>&nbsp;dagar innan du måste aktivera.</id>
+            <br><br>
+            <ID id="txtActivDeskErr1">Under den här tiden kommer vi att påminna dig regelbundet att aktivera genom att använda guiden Aktivera Windows (som finns på Start-menyn).<br><br>Om du fortfarande har problem med att ansluta till vårt aktiveringscenter, kan du aktivera via telefon.</ID>
+            <br><br>
+            <ID id="txtActivDeskErr2">Klicka på Telefon om du vill se en lista med kontaktnummer i ditt område.</ID>
+        </span>
+        <!-- Post-expiration -->
+        <span ID=acterror_description1Post class="text-primary" style="display:none;">
+            <ID id="txtActivDeskErrPost">Det gick inte att aktivera Windows online.</ID>
+            <br><br>
+            <id id="txtActivDeskerr0Post">Aktiveringsperioden har upphört. Du måste aktivera datorn nu för att kunna fortsätta använda Windows.</id>
+            <br><br>
+            <ID id="txtActivDeskErr1Post">Du kan aktivera Windows över telefonen genom att tala med en kundtjänstansvarig. Klicka på Telefon om du vill se en lista över telefonnummer i din region.</ID>
+        </span>
+
+
+        <!-- Retail mode -->
+        <span ID=acterror_description2_RETAIL class="text-primary" style="display:none;">
+            <ID id="txtActivDeskErr3retail">Om du skrev produktnyckeln fel kan du rätta till den och sedan klicka på <B>Försök igen</B>.</ID>
+            <br><br>
+            <ID id="txtActivDeskErr4retail">Den 25 tecken långa produktnyckeln finns på Windows XP-CD-fodralets baksida på en etikett som liknar denna:</ID>
+            <br><br>
+            <center><img src="../images/prodkey.gif"></center>
+        </span>
+        <!-- OEM mode -->
+        <span ID=acterror_description2_OEM class="text-primary" style="display:none;">
+            <ID id="txtActivDeskErr3OEM">Om du skrev produktnyckeln fel kan du rätta till den och sedan klicka på <B>Försök igen</B>.</ID>
+            <br><br>
+            <ID id="txtActivDeskErr4OEM">Produktnyckeln, som är 25 tecken lång, finns på ett äkthetsbevis som finns på din dator eller på Windows-dokumentationen. Äkthetsbeviset liknar följande exempel.</ID>
+            <br><br>
+            <center><img src="../images/oemcoa.jpg"></center>
+        </span>
+
+
+        <!-- Retail mode -->
+        <span ID=acterror_description3Retail class="text-primary" style="display:none;">
+            <ID id="txtActivDeskErr5a_retail">Den här produktnyckeln har redan använts för att aktivera Windows det högsta antal gånger som tillåts. Ange en annan produktnyckel och klicka sedan på <B>Försök igen</B>.</ID>
+            <ID id="txtActivDeskErr5b_retail">Den 25 tecken långa produktnyckeln finns på Windows XP-CD-fodralets baksida på en etikett som liknar denna:</ID>
+            <br><br>
+            <center><img src="../images/prodkey.gif"></center>
+        </span>
+        <!-- OEM mode -->
+        <span ID=acterror_description3OEM class="text-primary" style="display:none;">
+            <ID id="txtActivDeskErr5a_OEM">Den här produktnyckeln har redan använts för att aktivera Windows det högsta antal gånger som tillåts. Ange en annan produktnyckel och klicka sedan på <B>Försök igen</B>.</ID>
+            <ID id="txtActivDeskErr5b_OEM">Produktnyckeln, som är 25 tecken lång, finns på ett äkthetsbevis som finns på din dator eller på Windows-dokumentationen. Äkthetsbeviset liknar följande exempel.</ID>
+            <br><br>
+            <center><img src="../images/oemcoa.jpg"></center>
+        </span>
+
+
+        <!-- Pre-expiration -->
+        <span ID=acterror_description4Pre class="text-primary" style="display:none;">
+            <ID id="txtActivDeskErr6">Onlineaktivering kunde inte slutföras.</ID>
+            <br><br>
+            <ID id="txtActivDeskErr7">Du kan fortsätta använda Windows XP i upp till <span id=NumberDaysLeft2 class="text-primary"></span>&nbsp;dagar innan du måste aktivera.</ID>
+            <br><br>
+            <id id="txtActivdeskErr71">Under den här tiden kommer vi att påminna dig regelbundet att aktivera genom att använda guiden Aktivera Windows (som finns på Start-menyn).<br><br>Om du fortfarande har problem med att ansluta till vårt aktiveringscenter, kan du aktivera via telefon.</id>
+            <br><br>
+            <id id="txtActivDeskErr72">Klicka på <b>Telefon</b>, om du vill se en lista med kontaktnummer i ditt område.</id>
+        </span>
+        <!-- Post-expiration -->
+        <span ID=acterror_description4Post class="text-primary" style="display:none;">
+            <ID id="txtActivDeskErr7Post">Det gick inte att aktivera Windows online.</ID>
+            <br><br>
+            <id id="txtActivDeskerr71Post">Aktiveringsperioden har upphört. Du måste aktivera datorn nu för att kunna fortsätta använda Windows.</id>
+            <br><br>
+            <ID id="txtActivDeskErr72Post">Du kan aktivera Windows över telefonen genom att tala med en kundtjänstansvarig. Klicka på Telefon om du vill se en lista över telefonnummer i din region.</ID>
+        </span>
+
+
+        <!-- Retail mode -->
+        <span ID=acterror_description5Retail class="text-primary" style="display:none;">
+            <ID id="txtActivDeskErr8a_retail">Den här produktnyckeln kan inte användas. Aktivering kan inte ske förrän du anger en giltig produktnyckel.</ID>
+            <ID id="txtActivDeskErr8b_retail">Den 25 tecken långa produktnyckeln finns på Windows XP-CD-fodralets baksida på en etikett som liknar exemplet nedan. Rätta till produktnyckeln eller ange en giltig produktnyckel, och klicka därefter på <B>Försök igen</B>.</ID>
+            <br><br>
+            <center><img src="../images/prodkey.gif"></center>
+        </span>
+        <!-- OEM mode -->
+        <span ID=acterror_description5OEM class="text-primary" style="display:none;">
+            <ID id="txtActivDeskErr8a_OEM">Den här produktnyckeln kan inte användas. Aktivering kan inte ske förrän du anger en giltig produktnyckel.</ID>
+            <ID id="txtActivDeskErr8b_OEM">Den 25 tecken långa produktnyckeln finns på ett äkthetsbevis som finns på din dator eller på Windows-dokumentationen. Äkthetsbeviset liknar exemplet nedan. Rätta till produktnyckeln nedan eller ange en giltig produktnyckel, och klicka därefter på <B>Försök igen</B>.</ID>
+            <br><br>
+            <center><img src="../images/oemcoa.jpg"></center>
+        </span>
+
+
+        <span ID=acterror_description6 class="text-primary" style="display:none;">
+            <ID id="txtActivDeskErr10">Din nuvarande Windows-aktivering är skadad eller inte längre giltig.</ID>
+            <br><br>
+            <ID id="txtActivDeskErr11">Men oroa dig inte, du kan fortsätta använda Windows i upp till <span id=NumberDaysLeft3 class="text-primary"></span>&nbsp;dagar innan du måste aktivera.</ID>
+            <br><br>
+            <id id="txtActivDeskErr111">Under den här tiden kommer vi att påminna dig med jämna mellanrum att aktivera genom guiden Produktaktivering (som finns på Start-menyn.) Om du efter det fortfarande har problem att ansluta till vårt aktiveringscenter, kan du aktivera via telefon.</id>
+            <br><br>
+            <id id="txtactivDeskErr112">Klicka på Telefon om du vill se en lista med kontaktnummer i ditt område.</id>
+        </span>
+
+
+        <span ID=acterror_description7 class="text-primary" style="display:none;">
+            <ID id="txtActivDeskErr12">Det gick inte att ansluta till aktiveringscentret. Kontrollera dina nätverksinställningar och att du kan ansluta till Internet och försök sedan igen.</ID>
+        </span>
+
+
+        <!-- Retail mode -->
+        <span ID=acterror_description_dedicated_pid_RETAIL class="text-primary" style="display:none;">
+            <ID id="txtActivDeskErrDedicatedPid1">Om du behöver ändra produktnyckel kan du ange nyckeln i fälten nedan och därefter klicka på <B>Uppdatera</B>. Annars kan du klicka på <B>Telefon</B> och återvända till föregående sida.</ID>
+            <br><br>
+            <ID id="txtActivDeskErrDedicatedPid2">Den 25 tecken långa produktnyckeln finns på Windows XP-CD-fodralets baksida på en etikett som liknar denna:</ID>
+            <br><br>
+            <center><img src="../images/prodkey.gif"></center>
+        </span>
+        <!-- OEM mode -->
+        <span ID=acterror_description_dedicated_pid_OEM class="text-primary" style="display:none;">
+            <ID id="txtActivDeskErrDedicatedPid1x">Om du behöver ändra produktnyckel kan du ange nyckeln i fälten nedan och därefter klicka på <B>Uppdatera</B>. Annars kan du klicka på <B>Telefon</B> och återvända till föregående sida.</ID>
+            <br><br>
+            <ID id="txtActivDeskErrDedicatedPid2x">Produktnyckeln, som är 25 tecken lång, finns på ett äkthetsbevis som finns på din dator eller på Windows-dokumentationen. Äkthetsbeviset liknar följande exempel.</ID>
+            <br><br>
+            <center><img src="../images/oemcoa.jpg"></center>
+        </span>
+
+
+        <!-- PID ENTRY -->
+        <span ID=acterror_pid_entry class="text-primary" style="display:none;">
+            <br>
+            <table ID=PidBox border=0 DIR=ltr style="font-family:Courier New; FONT-SIZE: 16pt;">
+            <tr>
+                <td nowrap width=10>&nbsp;</td>
+                <td nowrap class="text-primary" >
+                <span ID=acterror_description_verify_key class="text-primary"><ID id="txtverifykey">Verifiera nyckel:</id></span>&nbsp;
+                </td>
+                <td>
+                <input style="ime-mode:disabled" id=pid1 type="text" size=6 maxlength=5 class=pid-box TABINDEX=1 name="edtProductKey"
+                onkeydown="window.parent.ProductIDKeyDown();" onpropertychange="window.parent.ProductIDPropertyChange();"
+                onkeypress="window.parent.ProductIDKeyPress();" onkeyup="window.parent.ProductIDKeyUp();" onfocus="window.parent.OnFocus();">
+                </td><td class="text-primary">-</td><td>
+                <input style="ime-mode:disabled" id=pid2 type="text" size=6 maxlength=5 class=pid-box TABINDEX=2 name="edtProductKey"
+                onkeydown="window.parent.ProductIDKeyDown();" onpropertychange="window.parent.ProductIDPropertyChange();"
+                onkeypress="window.parent.ProductIDKeyPress();" onkeyup="window.parent.ProductIDKeyUp();" onfocus="window.parent.OnFocus();">
+                </td><td class="text-primary">-</td><td>
+                <input style="ime-mode:disabled" id=pid3 type="text" size=6 maxlength=5 class=pid-box TABINDEX=3  name="edtProductKey"
+                onkeydown="window.parent.ProductIDKeyDown();" onpropertychange="window.parent.ProductIDPropertyChange();"
+                onkeypress="window.parent.ProductIDKeyPress();" onkeyup="window.parent.ProductIDKeyUp();" onfocus="window.parent.OnFocus();">
+                </td><td class="text-primary">-</td><td>
+                <input style="ime-mode:disabled" id=pid4 type="text" size=6 maxlength=5 class=pid-box TABINDEX=4  name="edtProductKey"
+                onkeydown="window.parent.ProductIDKeyDown();" onpropertychange="window.parent.ProductIDPropertyChange();"
+                onkeypress="window.parent.ProductIDKeyPress();" onkeyup="window.parent.ProductIDKeyUp();" onfocus="window.parent.OnFocus();">
+                </td><td class="text-primary">-</td><td>
+                <input style="ime-mode:disabled" id=pid5 type="text" size=6 maxlength=5 class=pid-box TABINDEX=5  name="edtProductKey"
+                onkeydown="window.parent.ProductIDKeyDown();" onpropertychange="window.parent.ProductIDPropertyChange();"
+                onkeypress="window.parent.ProductIDKeyPress();" onkeyup="window.parent.ProductIDKeyUp();" onfocus="window.parent.OnFocus();">
+                </td>
+            </tr>
+            </table>
+        </span>
+
+
+        <!-- AFTER PID ENTRY TEXT -->
+        <span ID=acterror_after_pid_entry_OEMText class="text-primary" style="display:none;">
+            <br>
+            <ID id="txtActivDeskErrOEMText">Kontakta din datorleverantör om du inte kan hitta äkthetsbeviset.</ID><br>
+        </span>
+
+        <span ID=acterror_after_pid_entry_text1 class="text-primary" style="display:none;">
+            <br>
+            <ID id="txtActivDeskErr14">Om du tror att du skrev in den korrekta produktnyckeln och inte borde ha fått detta meddelande, var vänlig kontakta vår kundtjänst. Klicka på <B>Telefon</B>, om du vill se en lista med kontaktnummer i ditt område.</ID>
+        </span>
+
+
+        <span ID=acterror_after_pid_entry_text2 class="text-primary" style="display:none;">
+            <br>
+            <ID id="txtActivDeskErr15">Om du tycker att du inte borde ha fått detta meddelande, var vänlig kontakta vår kundtjänst. Klicka på <B>Telefon</B> om du vill se en lista över telefonnummer i din region.</ID>
+        </span>
+
+        <span ID=acterror_after_pid_entry_text3 class="text-primary" style="display:none;">
+            <br>
+            <ID id="txtActivDeskErr16">Varje Windows-kopia får bara installeras på en dator åt gången. Om du tycker att du inte borde ha fått detta meddelande, var vänlig kontakta vår kundtjänst genom att klicka på <B>Telefon</B>.</ID>
+        </span>
+
+        <span ID=acterror_after_pid_entry_text4 class="text-primary" style="display:none;">
+            <br>
+            <ID id="txtActivDeskErr17">Om du inte behöver skriva in en produktnyckel kan du klicka på knappen <B>Telefon</B> för att återvända till föregående sida.</ID>
+        </span>
+
+    <!-- End -->
+    </td>
+
+    <td ID=rightmargincell width=7%>
+    </td>
+</tr>
+<tr>
+    <td colspan=3>
+    <br>
+    <table border=0 class="buttonpositionnew">
+    <tr>
+        <td width=99%>
+            &nbsp;&nbsp;
+            <span ID=acterror_specific_error_code class="text-primary" style="display:none; z-index:10;">
+            </span>
+        </td>
+        <td>
+        <BUTTON ID="btnTelephone" class="buttons" TABINDEX=6 ACCESSKEY="T"><label for=btnTelephone><id id="LocalBtnTel_Text"><u>T</u>elefon</id></label></BUTTON>
+        </td>
+        <td>
+        <BUTTON ID="btnQuit" class="buttons" TABINDEX=7 ACCESSKEY="P"><label for=btnQuit><id id="LocalBtnQuit_Text"><u>P</u>åminn mig senare</id></label></BUTTON>
+        </td>
+        <td>
+        <BUTTON ID="btnNext" class="buttons" TABINDEX=8 ACCESSKEY="Ö"><label for=btnNext><id id="LocalBtnRetry_Text">F<u>ö</u>rsök igen</id></label></BUTTON>
+        </td>
+    </tr>
+    </table>
+    </td>
+</tr>
+</table>
+
+</body>
+</html>

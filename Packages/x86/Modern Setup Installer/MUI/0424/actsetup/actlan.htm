@@ -1,0 +1,97 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1250">
+    <title>Takoj pripravljeno za uporabo</title>
+    <LINK REL="stylesheet" TYPE="text/css" HREF="aregstyl.css" id=deskstyle1>
+    <LINK REL="stylesheet" TYPE="text/css" HREF="aregsty2.css" id=deskstyle2 disabled>
+    <META HTTP-EQUIV="MSThemeCompatible" CONTENT="Yes">
+</head>
+
+<body style="background-Color: transparent; background-repeat: no-repeat;" topMargin=0 rightmargin=0 leftmargin=0 tabindex=-1
+      onload="window.parent.ActLan_LoadMe();">
+
+<table border=0 cellpadding=0 cellspacing=0 width="100%" height="100%">
+<tr>
+    <td ID=leftmargincell width=5% height=99%></td>
+    <td ID=maincell valign=top class="text-primary">
+
+    <span ID=Title_Text class="title" style="display:none;">
+    <ID id=Activation_Title_Text1>Konfigurirajte svoje omrežne nastavitve</ID>
+    </span>
+
+    <br>
+    <span id="actlan_spn01" class="text-primary">
+        <ID id=actcon_paragraph1>Če za konfiguracijo internetne povezave potrebujete strežnik proxy, vnesite te nastavitve spodaj. Obrnite se na svojega omrežnega skrbnika, če ne veste, katere nastavitve morate uporabiti.</id>
+
+        <br><br>
+        <table class="text-primary">
+        <tr>
+            <td colspan="5"><ID id="actconn_set1"><b>Samodejna konfiguracija</b></ID></td>
+        </tr>
+        <tr>
+            <td colspan="5"><ID id="actconn_desc1">Samodejna konfiguracija lahko prepiše vašo ročno konfiguracijo. Če vnesete katere koli nastavitve za strežnik proxy, počistite polje »Samodejno zaznaj nastavitve«, da bodo uporabljene vaše spremembe.</ID></td>
+        </tr>
+        <tr>
+            <td width="0"><input type="checkbox" name="cb_auto_detect" TABINDEX=1 ACCESSKEY="A"></td>
+            <td width="100%" colspan="4"><label id="lbl_auto_detect" for="cb_auto_detect"><u>S</u>amodejno zaznaj nastavitve</label></td>
+        </tr>
+        <tr>
+            <td colspan="5">&nbsp;</td>
+        </tr>
+        <tr>
+            <td colspan="5"><ID id="actconn_set2"><b>Proxy strežnik</b></ID></td>
+        </tr>
+        <tr>
+            <td width="0"><input type="checkbox" name="cb_use_proxy" TABINDEX=2 ACCESSKEY="X" onClick="window.parent.ActLan_upClickHandler();"></td>
+            <td width="100%" colspan="4"><label id="lbl_use_proxy" for="cb_use_proxy"><u>U</u>porabi proxy strežnik</label></td>
+        </tr>
+        <tr>
+            <td width="0">&nbsp;</td>
+            <td width="0" id="lblProxyUrl" nowrap><label id="lbl_proxy_url" for="txt_proxy_url">N<u>a</u>slov:</label></td>
+            <td width="40%"><input type="text" id="txt_proxy_url" size="25"  TABINDEX=3 ACCESSKEY="R" style="ime-mode:disabled; background-Color:'#dddddd'"></td>
+            <td width="0" id="lblProxyPort" nowrap><label id="lbl_proxy_port" for="txt_proxy_port">Vra<u>t</u>a:</label></td>
+            <td width="60%"><input type="text" id="txt_proxy_port" size="6" TABINDEX=4 ACCESSKEY="T" style="ime-mode:disabled; background-Color:'#dddddd'"></td>
+        </tr>
+        </table>
+
+
+        <br><br>
+        <ID id=activation_paragraph2>Če želite nadaljevati, kliknite »Naprej«.</id>
+    </span>
+    </td>
+
+    <td ID=rightmargincell width=7%>
+    </td>
+</tr>
+<tr>
+    <td colspan=3>
+    <br>
+    <table border=0 class="buttonpositionnew">
+    <tr>
+        <td width="99%">&nbsp;</td>
+        <td>
+        <table border=0 width="100">
+        <tr>
+            <td>
+            <BUTTON ID="btnSkip" class="buttons" TABINDEX=5 ACCESSKEY="P"><label for=btnSkip><id id="LocalBtnSkip_Text"><u>P</u>reskoči</id></label></BUTTON>
+            </td>
+            <td>
+            <BUTTON ID="btnBack" class="buttons" TABINDEX=6 ACCESSKEY="z"><label for=btnBack><id id="LocalBtnBack_Text">Na<u>z</u>aj</id></label></BUTTON>
+            </td>
+            <td>
+            <BUTTON ID="btnNext" class="buttons" TABINDEX=7 ACCESSKEY="N"><label for=btnNext><id id="LocalBtnNext_Text"><u>N</u>aprej</id></label></BUTTON>
+            </td>
+        </tr>
+        </table>
+        </td>
+    </tr>
+    </table>
+    </td>
+</tr>
+</table>
+
+</body>
+</html>
+

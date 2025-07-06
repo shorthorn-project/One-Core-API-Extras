@@ -1,0 +1,254 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=gb2312">
+    <title>OOBE</title>
+    <LINK REL="stylesheet" TYPE="text/css" HREF="aregstyl.css" id=deskstyle1>
+    <LINK REL="stylesheet" TYPE="text/css" HREF="aregsty2.css" id=deskstyle2 disabled>
+    <META HTTP-EQUIV="MSThemeCompatible" CONTENT="Yes">
+</head>
+
+<body style="background-Color: transparent; background-repeat: no-repeat;" topMargin=0 rightmargin=0 leftmargin=0 tabindex=-1
+      onload="window.parent.act_desktop_error_LoadMe();" >
+
+<table valign=middle border=0 cellpadding=0 cellspacing=0 width="100%" height="100%">
+<tr>
+    <td ID=leftmargincell width=5% height=99%></td>
+    <td ID=maincell valign=top class="text-primary">
+
+    <span ID=Title_Text class="title" style="display:none;">
+        <ID id=acterror_s1>激活 Windows</ID>
+    </span>
+
+    <br>
+    <!-- Prepare the different error scenes, all are hidden -->
+
+        <span ID=acterror_description_SUCCESS1 class="text-primary" style="display:none;">
+            <ID id="txtActivDeskSUCCESS1">您已经成功地激活并注册了 Windows。</ID>
+        </span>
+
+        <span ID=acterror_description_SUCCESS2 class="text-primary" style="display:none;">
+            <ID id="txtActivDeskSUCCESS2">您已经成功地激活 Windows。</ID>
+        </span>
+
+
+        <!-- Pre-expiration -->
+        <span ID=acterror_description1Pre class="text-primary" style="display:none;">
+            <ID id="txtActivDeskErr">此时无法完成联机激活。</ID>
+            <br><br>
+            <id id="txtActivDeskerr0">您可继续使用 Windows XP <span id=NumberDaysLeft1 class="text-primary"></span>&nbsp;天，之后则需要激活。</id>
+            <br><br>
+            <ID id="txtActivDeskErr1">在此期间，我们会周期性地提醒您用激活 Windows 向导激活 (您将在「开始」菜单上找到它)。<br><br>如果还不能到达我们的激活中心，您可通过电话与顾客服务代表联系来激活。</ID>
+            <br><br>
+            <ID id="txtActivDeskErr2">要查找您所在区域的联系电话号码，请单击“电话”。</ID>
+        </span>
+        <!-- Post-expiration -->
+        <span ID=acterror_description1Post class="text-primary" style="display:none;">
+            <ID id="txtActivDeskErrPost">Windows 无法联机激活。</ID>
+            <br><br>
+            <id id="txtActivDeskerr0Post">激活期限已过。您必须现在激活您的计算机才能继续使用 Windows。</id>
+            <br><br>
+            <ID id="txtActivDeskErr1Post">您可以打电话给顾客服务代表来激活。要查找您所在区域的联系号码，请单击“电话”。</ID>
+        </span>
+
+
+        <!-- Retail mode -->
+        <span ID=acterror_description2_RETAIL class="text-primary" style="display:none;">
+            <ID id="txtActivDeskErr3retail">如果下面输入的产品密钥不正确，请改正，然后单击<B>重试</B>。</ID>
+            <br><br>
+            <ID id="txtActivDeskErr4retail">25 个数字的产品密钥应该在 Windows XP 的 CD 盒的背面，看上去像下面的标签:</ID>
+            <br><br>
+            <center><img src="../images/prodkey.gif"></center>
+        </span>
+        <!-- OEM mode -->
+        <span ID=acterror_description2_OEM class="text-primary" style="display:none;">
+            <ID id="txtActivDeskErr3OEM">如果下面输入的产品密钥不正确，请改正，然后单击<B>重试</B>。</ID>
+            <br><br>
+            <ID id="txtActivDeskErr4OEM">您可以在贴在计算机或 Windows 资料上的真品证书(COA)标签上找到 25 个数字的产品密钥。它看上去像下面的实例。</ID>
+            <br><br>
+            <center><img src="../images/oemcoa.jpg"></center>
+        </span>
+
+
+        <!-- Retail mode -->
+        <span ID=acterror_description3Retail class="text-primary" style="display:none;">
+            <ID id="txtActivDeskErr5a_retail">根据我们的记录，使用此产品密钥来激活 Windows 的次数已超过。请输入一个不同的产品密钥，然后单击<B>重试</B>。</ID>
+            <ID id="txtActivDeskErr5b_retail">25 个数字的产品密钥应该在 Windows XP 的 CD 盒的背面，看上去与下面的标签相似:</ID>
+            <br><br>
+            <center><img src="../images/prodkey.gif"></center>
+        </span>
+        <!-- OEM mode -->
+        <span ID=acterror_description3OEM class="text-primary" style="display:none;">
+            <ID id="txtActivDeskErr5a_OEM">根据我们的记录，使用此产品密钥来激活 Windows 的次数已超过。请输入一个不同的产品密钥，然后单击<B>重试</B>。</ID>
+            <ID id="txtActivDeskErr5b_OEM">您可以在贴在计算机或 Windows 资料上的真品证书(COA)标签上找到 25 个数字的产品密钥。它看上去像下面的实例。</ID>
+            <br><br>
+            <center><img src="../images/oemcoa.jpg"></center>
+        </span>
+
+
+        <!-- Pre-expiration -->
+        <span ID=acterror_description4Pre class="text-primary" style="display:none;">
+            <ID id="txtActivDeskErr6">此时无法完成联机激活。</ID>
+            <br><br>
+            <ID id="txtActivDeskErr7">您可在需要激活之前继续用 Windows XP<span id=NumberDaysLeft2 class="text-primary"></span>&nbsp;天。</ID>
+            <br><br>
+            <id id="txtActivdeskErr71">在此期间，我们会周期性地提醒您用「开始」菜单上的“激活 Windows 向导”激活。<br><br>如果还不能跟我们的激活中心取得联系，您可通过电话与顾客服务代表联系来激活。</id>
+            <br><br>
+            <id id="txtActivDeskErr72">要查找您所在区域的联系电话号码，请单击<b>电话</b>。</id>
+        </span>
+        <!-- Post-expiration -->
+        <span ID=acterror_description4Post class="text-primary" style="display:none;">
+            <ID id="txtActivDeskErr7Post">Windows 无法联机激活。</ID>
+            <br><br>
+            <id id="txtActivDeskerr71Post">激活期限已过。您必须现在激活您的计算机才能继续使用 Windows。</id>
+            <br><br>
+            <ID id="txtActivDeskErr72Post">您可以打电话给顾客服务代表来激活。要查找您所在区域的联系号码，请单击“电话”。</ID>
+        </span>
+
+
+        <!-- Retail mode -->
+        <span ID=acterror_description5Retail class="text-primary" style="display:none;">
+            <ID id="txtActivDeskErr8a_retail">此产品密钥未经授权。输入有效的产品密钥后才能完成激活。</ID>
+            <ID id="txtActivDeskErr8b_retail">25 个数字的产品密钥应该在 Windows XP 的 CD 盒的背面，或者看上去像下面实例。请改正下面的产品密钥或输入一个有效的产品密钥，然后单击<B>重试</B>。</ID>
+            <br><br>
+            <center><img src="../images/prodkey.gif"></center>
+        </span>
+        <!-- OEM mode -->
+        <span ID=acterror_description5OEM class="text-primary" style="display:none;">
+            <ID id="txtActivDeskErr8a_OEM">此产品密钥未经授权。输入有效的产品密钥后才能完成激活。</ID>
+            <ID id="txtActivDeskErr8b_OEM">您可以在贴在计算机或 Windows 资料上的真品证书(COA)标签上找到 25 个数字的产品密钥。它看上去像下面的实例。请改正下面的产品密钥或输入一个有效的产品密钥，然后单击<B>重试</B>。</ID>
+            <br><br>
+            <center><img src="../images/oemcoa.jpg"></center>
+        </span>
+
+
+        <span ID=acterror_description6 class="text-primary" style="display:none;">
+            <ID id="txtActivDeskErr10">您的 Windows 激活已损坏或不再有效。</ID>
+            <br><br>
+            <ID id="txtActivDeskErr11">但不要担心，您可在需要激活之前继续用 Windows <span id=NumberDaysLeft3 class="text-primary"></span>&nbsp;天。</ID>
+            <br><br>
+            <id id="txtActivDeskErr111">在此期间，我们将每隔几天提醒您用「开始」菜单上的“产品激活向导”激活。那时，如果还不能跟我们的激活中心取得联系，您可通过电话激活。</id>
+            <br><br>
+            <id id="txtactivDeskErr112">要查找您所在区域的联系电话号码，请单击“电话”。</id>
+        </span>
+
+
+        <span ID=acterror_description7 class="text-primary" style="display:none;">
+            <ID id="txtActivDeskErr12">无法与激活服务器建立联系。请检查您的网络设置并确认您可以连接到 Internet，然后再试。</ID>
+        </span>
+
+
+        <!-- Retail mode -->
+        <span ID=acterror_description_dedicated_pid_RETAIL class="text-primary" style="display:none;">
+            <ID id="txtActivDeskErrDedicatedPid1">如果您需要更改产品密钥，请在下面提供的字段中输入，然后单击<B>更新</B>。如果不需要，请单击<B>电话</B>返回到前面的激活页面。</ID>
+            <br><br>
+            <ID id="txtActivDeskErrDedicatedPid2">25 个数字的产品密钥应该在 Windows XP 的 CD 盒的背面，看上去与下面的标签相似:</ID>
+            <br><br>
+            <center><img src="../images/prodkey.gif"></center>
+        </span>
+        <!-- OEM mode -->
+        <span ID=acterror_description_dedicated_pid_OEM class="text-primary" style="display:none;">
+            <ID id="txtActivDeskErrDedicatedPid1x">如果您需要更改产品密钥，请在下面提供的字段中输入，然后单击<B>更新</B>。如果不需要，请单击<B>电话</B>返回到前面的激活页面。</ID>
+            <br><br>
+            <ID id="txtActivDeskErrDedicatedPid2x">您可以在贴在计算机或 Windows 资料上的真品证书(COA)标签上找到 25 个数字的产品密钥。它看上去像下面的实例。</ID>
+            <br><br>
+            <center><img src="../images/oemcoa.jpg"></center>
+        </span>
+
+
+        <!-- PID ENTRY -->
+        <span ID=acterror_pid_entry class="text-primary" style="display:none;">
+            <br>
+            <table ID=PidBox border=0 DIR=ltr style="font-family:Courier New; FONT-SIZE: 16pt;">
+            <tr>
+                <td nowrap width=10>&nbsp;</td>
+                <td nowrap class="text-primary" >
+                <span ID=acterror_description_verify_key class="text-primary"><ID id="txtverifykey">确认密钥:</id></span>&nbsp;
+                </td>
+                <td>
+                <input style="ime-mode:disabled" id=pid1 type="text" size=6 maxlength=5 class=pid-box TABINDEX=1 name="edtProductKey"
+                onkeydown="window.parent.ProductIDKeyDown();" onpropertychange="window.parent.ProductIDPropertyChange();"
+                onkeypress="window.parent.ProductIDKeyPress();" onkeyup="window.parent.ProductIDKeyUp();" onfocus="window.parent.OnFocus();">
+                </td><td class="text-primary">-</td><td>
+                <input style="ime-mode:disabled" id=pid2 type="text" size=6 maxlength=5 class=pid-box TABINDEX=2 name="edtProductKey"
+                onkeydown="window.parent.ProductIDKeyDown();" onpropertychange="window.parent.ProductIDPropertyChange();"
+                onkeypress="window.parent.ProductIDKeyPress();" onkeyup="window.parent.ProductIDKeyUp();" onfocus="window.parent.OnFocus();">
+                </td><td class="text-primary">-</td><td>
+                <input style="ime-mode:disabled" id=pid3 type="text" size=6 maxlength=5 class=pid-box TABINDEX=3  name="edtProductKey"
+                onkeydown="window.parent.ProductIDKeyDown();" onpropertychange="window.parent.ProductIDPropertyChange();"
+                onkeypress="window.parent.ProductIDKeyPress();" onkeyup="window.parent.ProductIDKeyUp();" onfocus="window.parent.OnFocus();">
+                </td><td class="text-primary">-</td><td>
+                <input style="ime-mode:disabled" id=pid4 type="text" size=6 maxlength=5 class=pid-box TABINDEX=4  name="edtProductKey"
+                onkeydown="window.parent.ProductIDKeyDown();" onpropertychange="window.parent.ProductIDPropertyChange();"
+                onkeypress="window.parent.ProductIDKeyPress();" onkeyup="window.parent.ProductIDKeyUp();" onfocus="window.parent.OnFocus();">
+                </td><td class="text-primary">-</td><td>
+                <input style="ime-mode:disabled" id=pid5 type="text" size=6 maxlength=5 class=pid-box TABINDEX=5  name="edtProductKey"
+                onkeydown="window.parent.ProductIDKeyDown();" onpropertychange="window.parent.ProductIDPropertyChange();"
+                onkeypress="window.parent.ProductIDKeyPress();" onkeyup="window.parent.ProductIDKeyUp();" onfocus="window.parent.OnFocus();">
+                </td>
+            </tr>
+            </table>
+        </span>
+
+
+        <!-- AFTER PID ENTRY TEXT -->
+        <span ID=acterror_after_pid_entry_OEMText class="text-primary" style="display:none;">
+            <br>
+            <ID id="txtActivDeskErrOEMText">如果找不到 COA 标签，请跟计算机制造商联系。</ID><br>
+        </span>
+
+        <span ID=acterror_after_pid_entry_text1 class="text-primary" style="display:none;">
+            <br>
+            <ID id="txtActivDeskErr14">如果您认为您已键入了正确的产品密钥而不应收到这个消息，请与顾客服务代表联系。要得到您所在区域的联系电话号码，请单击<b>电话</b>。</ID>
+        </span>
+
+
+        <span ID=acterror_after_pid_entry_text2 class="text-primary" style="display:none;">
+            <br>
+            <ID id="txtActivDeskErr15">如果您认为这个消息是错误的，请与顾客服务代表联系。请单击<B>电话</B>以获得在您地区的电话号码。</ID>
+        </span>
+
+        <span ID=acterror_after_pid_entry_text3 class="text-primary" style="display:none;">
+            <br>
+            <ID id="txtActivDeskErr16">每份 Windows 只能在一台计算机安装。如果您认为这个消息是错误的，请选择<B>电话</B>按钮，跟顾客服务代表联系。</ID>
+        </span>
+
+        <span ID=acterror_after_pid_entry_text4 class="text-primary" style="display:none;">
+            <br>
+            <ID id="txtActivDeskErr17">如果不需要输入产品密钥，请单击<B>电话</B>返回前面的激活页面。</ID>
+        </span>
+
+    <!-- End -->
+    </td>
+
+    <td ID=rightmargincell width=7%>
+    </td>
+</tr>
+<tr>
+    <td colspan=3>
+    <br>
+    <table border=0 class="buttonpositionnew">
+    <tr>
+        <td width=99%>
+            &nbsp;&nbsp;
+            <span ID=acterror_specific_error_code class="text-primary" style="display:none; z-index:10;">
+            </span>
+        </td>
+        <td>
+        <BUTTON ID="btnTelephone" class="buttons" TABINDEX=6 ACCESSKEY="T"><label for=btnTelephone><id id="LocalBtnTel_Text">电话(<u>T</u>)</id></label></BUTTON>
+        </td>
+        <td>
+        <BUTTON ID="btnQuit" class="buttons" TABINDEX=7 ACCESSKEY="R"><label for=btnQuit><id id="LocalBtnQuit_Text">在此之后提醒我(<u>R</u>)</id></label></BUTTON>
+        </td>
+        <td>
+        <BUTTON ID="btnNext" class="buttons" TABINDEX=8 ACCESSKEY="E"><label for=btnNext><id id="LocalBtnRetry_Text">重试(<u>E</u>)</id></label></BUTTON>
+        </td>
+    </tr>
+    </table>
+    </td>
+</tr>
+</table>
+
+</body>
+</html>

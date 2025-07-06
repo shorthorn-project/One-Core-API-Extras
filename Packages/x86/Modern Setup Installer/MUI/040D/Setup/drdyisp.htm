@@ -1,0 +1,96 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html DIR=RTL>
+<head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1255">
+    <title>מוצר מוכן לשימוש</title>
+    <LINK REL="stylesheet" TYPE="text/css" HREF="oobestyl.css">
+
+</head>
+
+<body style="background-Color: transparent; background-repeat: no-repeat;" TABINDEX=-1
+      onload="window.parent.DialRdy_LoadMe();window.parent.Agent_Activate('ISPDial');"
+      onunload="maincell.style.visibility='hidden'; window.parent.ProcessQueuedEvents(); window.parent.Agent_Deactivate();">
+
+    <table border=0 cellpadding=0 cellspacing=0 width=100% height=100%><tr>
+        <td ID=leftmargincell width=7%>
+        </td>
+
+    <td ID=maincell valign=middle class="text-primary">
+        <p><br>
+        <br>
+        <span class="title"><id id="drdyisp1">האם אתה מוכן לקבלת חשבון אינטרנט?</id></span> <br>
+        <br>
+        <span class="text-primary"><id id="drdyisp2">כעת נבצע שיחת טלפון כדי לרשום אותך לחשבון אינטרנט.</ID></span>
+        <br><br><br></P>
+
+        <span id="DialRdy_ctrl1" style="visibility:hidden">
+        <p><span class="text-primary"><ID id="drdyisp_4"> כדי להמשיך, הזן את המידע להלן ולאחר מכן לחץ על <b>הבא</b>. כדי להמשיך מבלי לחייג מקו הטלפון שלך, לחץ על <b>דלג</b>. </ID></span></p>
+        <p><span class="text-primary"><ID id="drdyisp_8">בחר במדינה/אזור בהם אתה נמצא כעת. לחץ על החץ המצביע כלפי מטה או הקש על המקשים ALT + &quot;חץ למטה&quot;‎ כדי להציג את רשימת האזורים.</id></span></p>
+        <p>
+        <select TABINDEX=1 id=selCountry onfocus="window.parent.OnFocus();" onclick="window.parent.OnClick();">
+            <script language="javascript">
+            document.write(window.parent.external.Tapi.get_AllCountryName);
+            </script>
+        </select>
+        </p>
+        <p><span class="text-primary"><ID id="drdyisp_11">הזן את אזור החיוג של מספר הטלפון שלך (למשל, 425 במספר &lrm;425-555-1212).<id></span></p>
+        <p><input style="ime-mode:disabled" TABINDEX=2 id=edtAreaCode type="text" name="textfield" size="7" maxlength="7" onkeypress="window.parent.KeyPressIsNumeric();" onfocus="window.parent.OnFocus();"></p>
+
+        <span id="PulseToneDialing" style="visibility:hidden">
+        <LABEL TABINDEX=-1 ACCESSKEY="צ" id=Tapi_TOUCHTONE for="radioTouchToneYes">האם אתה משתמש בשירות חיוג <U>צ</U>לילים?</label>
+        <input TABINDEX=3 type="radio" name=TouchTone checked id=radioTouchToneYes onfocus="window.parent.OnFocus();">
+        <LABEL TABINDEX=-1 id="Tapi_TOUCHTONE_YES" for="radioTouchToneYes">כן</LABEL>
+        <input TABINDEX=3 type="radio" name=TouchTone  id=radioTouchToneNo onfocus="window.parent.OnFocus();">
+        <LABEL TABINDEX=-1 id="Tapi_TOUCHTONE_NO" for="radioTouchToneNo">לא</LABEL>
+        </span>
+
+        <p>&nbsp;</p>
+        </span>
+
+        <!-- OUTSIDE LINE -->
+
+          <span id="spnOutsideLine" style="visibility:hidden">
+                            <LABEL TABINDEX=-1 ACCESSKEY="ח" id="DialRdy_OUTSIDELINE1" for="radioOutSideLineYes">האם אתה מחייג מספר כדי לקבל גישה לקו <>ח</U>וץ?</label>
+                            <input TABINDEX=3 type="radio" checked name=OutsideLine
+          id=radioOutsideLineYes onclick="window.parent.DialRdy_OutsideLineClicked();">
+                            <LABEL TABINDEX=-1 id="DialRdy_OUTSIDELINE_YES" for="radioOutsideLineYes">‏‏כן</LABEL>
+                            <input TABINDEX=3 type="radio" name=OutsideLine id=radioOutsideLineNo onclick="window.parent.DialRdy_OutsideLineClicked();">
+                <LABEL TABINDEX=-1 id="DialRdy_OUTSIDELINE_NO" for="radioOutSideLineNo">לא</LABEL>
+          </span>
+                            <br>
+                            <SPAN TABINDEX=-1 id="spnOutsideLineNumber" style="visibility:hidden; position:relative;">                  
+                                <LABEL TABINDEX=-1 ACCESSKEY="מ" ID="DialRdy_OUTSIDELINE2"
+                for=edtOutsideLineNumber><U>מ</U>הו מספר זה?</LABEL>
+                                <input TABINDEX=4 style="ime-mode:disabled;" type="text"
+            id=edtOutsideLineNumber maxlength=10 size="4" onkeypress="window.parent.KeyPressIsNumeric();">
+                            </SPAN>
+
+    <br><br>
+    </span>
+
+    <table border=0 class="newbuttonposition">
+    <tr>
+        <td width=10>&nbsp;&nbsp;</td>
+        <td><BUTTON ID="btnBack" class="newbuttonsBack" TABINDEX=4  ACCESSKEY="ק" style="visibility:visible;"></BUTTON></td>
+        <td nowrap valign=middle class="text-primary"><span id="BackBtnLocalText" style="visibility:visible;"><label for=btnBack><id id="LocalBtnBack_Text">ה<u>ק</u>ודם</id></label></span></td>
+
+        <td width=99%>&nbsp;</td>
+        <td nowrap valign=middle class="text-primary"><span id="SkipBtnLocalText" style="visibility:visible;"><label for=btnSkip><id id="LocalBtnSkip_Text"><u>ד</u>לג</id></label></span></td>
+        <td><BUTTON ID="btnSkip" class="newbuttonsSkip" TABINDEX=5  ACCESSKEY="ד" style="visibility:visible;"></BUTTON></td>
+
+        <td width=10>&nbsp;&nbsp;</td>
+        <td nowrap valign=middle class="text-primary"><span id="NextBtnLocalText" style="visibility:visible;"><label for=btnNext><id id="LocalBtnNext_Text">ה<U>ב</U>א</id></label></span></td>
+        <td><BUTTON ID="btnNext" class="newbuttonsNext" TABINDEX=6  ACCESSKEY="ב" style="visibility:visible;"></BUTTON></td>
+    </tr>
+    </table>
+
+    </td>
+</tr>
+</table>
+
+
+</body>
+</html>
+

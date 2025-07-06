@@ -1,0 +1,110 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=windows-1254">
+    <title>out of box experience</title>
+    <link rel="stylesheet" type="text/css" href="../actsetup/aregstyl.css">
+    <META HTTP-EQUIV="MSThemeCompatible" CONTENT="Yes">
+</head>
+
+<body style="background-Color: transparent; background-repeat: no-repeat;" topmargin=0 leftmargin=0 TABINDEX=-1
+      onload="window.parent.Toobusy_LoadMe();">
+
+<table border=0 cellpadding=0 cellspacing=0 width="100%" height="100%">
+<tr>
+    <td ID=leftmargincell width=5% height=99%></td>
+    <td ID=maincell valign=top class="text-primary">
+
+    <span ID=Title_Text class="title" style="display:none;"><id id="tb1">Telefon meşgul veya yanıt vermiyor</id></span>
+    <br>
+    <p><span class="text-primary"><id id="tb2">Aradığınız numara meşgul olabilir ya da aranmakta olan numarayı değiştirmeniz gerekebilir.</id></span>
+        <ul>
+        <li><span class="text-primary"><id id="tb22">Evde değilseniz, dış hatta erişmek için bir numara çevirmeniz gerekebilir.</id></span></li><br>
+        <li><span class="text-primary"><id id="tb21">Şehirlerarası arama yapıyorsanız, telefon numarasını değiştirmeniz gerekebilir.</id></span></li><br><br>
+        </ul>
+
+
+         <table border=0 cellspacing=0 cellpadding=0>
+           <tr>
+            <td valign="top">
+              <span class="text-primary"><id id="na3">Aranmakta olan telefon numarası: </id></span>
+            </td>
+            <td valign="top">
+             <SPAN ID="spanDisplayNumber" class="text-primary" DIR="LTR"></SPAN>
+            </td>
+           </tr>
+           <tr>
+            <td style="padding-left: 1em;"><input type="radio" ACCESSKEY="N" id="DialRuleYes" name="DialRuleChoice" CHECKED TABINDEX=1 onclick="window.parent.SelectDialRule();">
+                <span id="spn_staticDialRuleYes" class="text-primary" onclick="document.all.DialRuleYes.click();">Diğer <u>n</u>umarayı ara</span>
+            </td>
+            <td style="padding-left: 2em;">
+                &nbsp;
+            </td>
+           </tr>
+           <tr>
+            <td style="padding-left: 1em;"><input type="radio" ACCESSKEY="M" id="DialRuleNo" name="DialRuleChoice" TABINDEX=3 onclick="window.parent.SelectDialRule();">
+                <span id="spn_staticDialRuleNo" class="text-primary" onclick="document.all.DialRuleNo.click();">Bu kurallarla diğer nu<U>m</U>arayı ara: </span>
+            </td>
+            <td style="padding-left: 2em;">
+                <span id="spn_staticDialRuleNoa" class="text-secondary"><id id="Disable_call_waiting_text">Çağrı bekletmeyi de<u>v</u>re dışı bırak </id></span><input DIR=LTR ACCESSKEY="V" class="dial-number-box" type="text" id="edtCallWaiting" onfocus="this.select();" name="textfield" size="7" maxlength="10" TABINDEX=4>
+            </td>
+           </tr>
+           <tr>
+            <td>&nbsp;</td>
+            <td style="padding-left: 2em;">
+                <span id="spn_staticDialRuleNob" class="text-secondary"><id id="Set_Outside_line_text">Dış <u>h</u>at </id></span><input DIR=LTR ACCESSKEY="H" class="dial-number-box" type="text" id="edtOutsideLine" onfocus="this.select();" name="textfield" size="4" maxlength="4" TABINDEX=5></td>
+            </td>
+           </tr>
+           <tr>
+            <td colspan=2>
+                <span style="padding-left: 1.8em;" id="spn_staticDialRuleNoc" class="text-primary"><id id="Set_Dial_Signal_text">Çevirmede kullan:</id></span>
+                <span style="padding-left: 1em;"><input name="DialSignalChoice" type="radio" tabindex="6" id="DialTone" CHECKED><LABEL TABINDEX=-1 ACCESSKEY="T" id="spn_staticDialTone" for="DialTone" class="text-secondary"><id id="Set_Tone_text"><u>T</u>on</id></LABEL></span>
+                <span style="padding-left: 2em;"><input name="DialSignalChoice" type="radio" tabindex="7" id="DialPulse"><LABEL TABINDEX=-1 ACCESSKEY="D" id="spn_staticDialPulse" for="DialPulse" class="text-secondary"><id id="Set_Pulse_text"><u>D</u>arbe</id></LABEL></span>
+            </td>
+           </tr>
+         </table>
+         <br>
+
+         
+         <ul>
+         <li><span class="text-primary"><id id="tb31">Önceki numara doğruysa, birkaç dakika bekleyin ve <b>Yeniden Çevir</b>'i tıklatın. </id></span></li><br>
+         <li><span class="text-primary"><id id="tb32">Numara doğru değilse, yukarıdaki ayarı değiştirin ve <b>Yeniden Çevir</b>'i tıklatın. </id></span></li><br>
+         <li><span class="text-primary"><id id="tb33">Aranan özgün telefon numarasını geri yüklemek için, <b>Geri Yükle</b>'yi tıklatın.</id></span></li>
+         </ul>
+         <p><span class="text-primary" id="RemindMeLaterText"><id id="tb4">Bu eylemi gerçekleştirmeden devam etmek için, <b>Atla</b>'yı tıklatın.</id></span></p>
+       </span></p>
+    <DIV class="text-error" ID=error_mesg style="display:none; padding-top:20px"></div>
+    </span>
+    </td>
+
+    <td ID=rightmargincell width=7%>
+    </td>
+</tr>
+<tr>
+    <td colspan=3>
+    <br>
+    <table border=0 class="buttonpositionnew">
+    <tr>
+        <td width=99%>&nbsp;</td>
+        <td>
+        <BUTTON ID="btnTelephone" class="buttons" TABINDEX=8 ACCESSKEY="F" style="display:none;"><label for=btnTelephone><id id="LocalBtnTel_Text">Tele<u>f</u>on</id></label></BUTTON>
+        </td>
+        <td>
+        <BUTTON ID="btnRestore" class="buttons" TABINDEX=9 ACCESSKEY="R" onclick="window.parent.RestoreDialRule();"><label for=btnRestore><id id="LocalBtnRestore_Text">Ge<u>r</u>i Yükle</id></label></BUTTON>
+        </td>
+        <td>
+        <BUTTON ID="btnSkip" class="buttons" TABINDEX=10 ACCESSKEY="A"><label for=btnSkip><id id="LocalBtnSkip_Text"><u>A</u>tla</id></label></BUTTON>
+        </td>
+        <td>
+        <BUTTON ID="btnNext" class="buttons" TABINDEX=11 ACCESSKEY="Y"><label for=btnNext><id id="LocalBtnNext_Text"><u>Y</u>eniden Çevir</id></label></BUTTON>
+        </td>
+    </tr>
+    </table>
+    </td>
+</tr>
+</table>
+
+
+    </body>
+</html>

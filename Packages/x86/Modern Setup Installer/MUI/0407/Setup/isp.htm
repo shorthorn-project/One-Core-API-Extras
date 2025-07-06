@@ -1,0 +1,103 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+<title>Out-of-Box-Experience</title>
+<LINK REL="stylesheet" TYPE="text/css" HREF="oobestyl.css">
+</head>
+
+<body style="background-Color: transparent; background-repeat: no-repeat;" TABINDEX=-1
+      onload="window.parent.IspLoadMe();window.parent.Agent_Activate('ISP');"
+      onunload="window.parent.IspUnLoad();window.parent.Agent_Deactivate();">
+
+<table border=0 cellpadding=0 cellspacing=0 width=100% height=100%>
+<tr>
+    <td ID=leftmargincell width=7%></td>
+    <td ID=maincell valign=middle class="text-primary">
+
+    <br><br>
+    <span class="title">
+    <ID id= "ISP_str1">Verbindung mit dem Internet herstellen</ID>
+    </span>
+
+    <br><br>
+    <span class="text-primary">
+    <ID id="ISP_str2">Dieser Computer wird jetzt für die Verbindung mit dem Internet eingerichtet. Entweder wird ein neues Internetkonto erstellt oder ein Internetkonto von einem anderen Computer verwendet.</ID>
+    <br><br>
+    <ID id="ISP_str3">Wie wird auf diesem Computer die Verbindung mit dem Internet hergestellt werden?</ID>
+    <!--<ID id= "ISP_str4">Please select an option and click</ID>
+    <span class="emphasis-lesser"><ID id=xx351> Next </ID></span>
+    <ID id=xy123>to continue.</ID>-->
+    </span>
+
+    <br><br>
+    <SPAN TABINDEX=-1 CLASS="contents">
+    <table border=0 cellpadding=4 cellspacing=0>
+
+    <tr>
+        <td valign="top">
+        <input ID="radioGetNewISP" style="display:none" TABINDEX=1 name="ISP" type="radio" onClick="window.parent.OnClick();" onfocus="this.select(); window.parent.OnFocus();">
+        </td>
+
+        <td valign="top">
+        <LABEL id=ISP_New for="radioGetNewISP" style="display:none" TABINDEX=-1 ACCESSKEY="M" class="text-primary">
+        <ID id="IDNew"><b>Mit <u>M</u>SN ins Internet (neue und bestehende Mitglieder)</b><br></ID>
+        </LABEL>
+        </td>
+    </tr>
+    <tr>
+        <td valign="top">
+        <input TABINDEX=2 ID="radioMigrateISP" name="ISP" type="radio" onClick="window.parent.OnClick();" onfocus="this.select(); window.parent.OnFocus();">
+        </td>
+
+        <td valign="top">
+        <LABEL TABINDEX=-1 ACCESSKEY="B" id=ISP_Migrate for=radioMigrateISP class="text-primary">
+        <ID id="ISP_str7"><b><u>B</u>estehendes Internetkonto eines anderen Internetdienstanbieters verwenden</b><br>Wählen Sie diese Option, falls Sie bereits über ein Internetkonto verfügen (auch wenn Sie dieses Konto noch nie auf diesem Computer verwendet haben).</ID>
+        </LABEL>
+        </td>
+    </tr>
+    <tr>
+        <td valign="top">
+        <input TABINDEX=3 ID="radioSkip" name="ISP" type="radio" onClick="window.parent.OnClick();" onfocus="this.select(); window.parent.OnFocus();">
+        </td>
+
+        <td valign="top">
+        <LABEL TABINDEX=-1 ACCESSKEY="I" id=skipISP for=radioSkip class="text-primary">
+        <ID id="ISP_str73"><b>Ein neues <u>I</u>nternetkonto nach Konfiguration von Windows erstellen</b><br>Wählen Sie diese Option, falls Sie ein neues Internetkonto einrichten möchten. Klicken Sie nach Abschließen der Windows-Konfiguration auf <B>Start</B> und dann auf <B>Internet</B>, und folgen Sie den Anweisungen, um ein neues Internetkonto zu erstellen.</ID>
+        </LABEL>                                                                                                                                                                                              
+        </td>
+    </tr>
+    </table>
+    </SPAN>
+
+    <script>
+    document.write(window.parent.g_ClickNextStr);
+    </script>
+
+    <table border=0 class="newbuttonposition">
+    <tr>
+        <td width=10>&nbsp;&nbsp;</td>
+        <td><BUTTON ID="btnBack" class="newbuttonsBack" TABINDEX=6  ACCESSKEY="Z" style="visibility:visible;"></BUTTON></td>
+        <td nowrap valign=middle class="text-primary"><span id="BackBtnLocalText" style="visibility:visible;"><label for=btnBack><id id="LocalBtnBack_Text"><u>Z</u>urück</id></label></span></td>
+
+        <td width=99%>&nbsp;</td>
+        <td nowrap valign=middle class="text-primary"><span id="SkipBtnLocalText" style="visibility:hidden;"><label for=btnSkip><id id="LocalBtnSkip_Text">Übe<u>r</u>springen </id></label></span></td>
+        <td><BUTTON ID="btnSkip" class="newbuttonsSkip" TABINDEX=-1 ACCESSKEY="R" style="visibility:hidden;"></BUTTON></td>
+
+        <td width=10>&nbsp;&nbsp;</td>
+        <td nowrap valign=middle class="text-primary"><span id="NextBtnLocalText" style="visibility:visible;"><label for=btnNext><id id="LocalBtnNext_Text"><U>W</U>eiter</id></label></span></td>
+        <td><BUTTON ID="btnNext" class="newbuttonsNext" TABINDEX=7  ACCESSKEY="W" style="visibility:visible;"></BUTTON></td>
+    </tr>
+    </table>
+
+    </td>
+</tr>
+</table>
+
+</body>
+</html>
+
+
+
+

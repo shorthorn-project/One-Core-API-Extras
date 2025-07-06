@@ -1,0 +1,109 @@
+
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+
+<html>
+<head>
+<META HTTP-EQUIV="Content-Type" CONTENT="text/html; charset=iso-8859-1">
+    <title>out of box experience</title>
+    <LINK REL="stylesheet" TYPE="text/css" HREF="../setup/oobestyl.css">
+</head>
+
+<body style="background-Color: transparent; background-repeat: no-repeat;" TABINDEX=-1
+       bgcolor="#ffffff" onload="window.parent.NoAnsw_LoadMe();window.parent.Agent_Activate('ISPNoAnw');"
+       onunload="window.parent.Agent_Deactivate();">
+
+<table border=0 cellpadding=0 cellspacing=0 width=100% height=100%><tr><td ID=leftmargincell width=7%></td>
+<td ID=maincell valign=middle class="text-primary">
+<br>
+
+    <span class="title"><id id="na1">Telefone ocupado ou não atendeu</id></span><br>
+    <br>
+    <p><span class="text-primary"><id id="na2">Poderá existir algum problema com o número marcado ou poderá ser necessário modificar o número marcado.</id></span>
+        <ul>
+        <li><span class="text-primary"><id id="na22">Se não estiver em casa, poderá ser necessário marcar um número para aceder a uma linha externa.</id></span></li><br>
+        <li><span class="text-primary"><id id="na21">Se marcar para fora da localidade, poderá ser necessário modificar o número do telefone. </id></span></li><br><br>
+        </ul>
+
+
+         <table border=0 cellspacing=0 cellpadding=0>
+           <tr>
+            <td valign="top">
+              <span class="text-primary"><id id="na3">O número de telefone marcado estava </id></span>
+            </td>
+            <td valign="top">
+             <SPAN ID="spanDisplayNumber" class="text-primary" DIR="LTR"></SPAN>
+            </td>
+           </tr>
+           <tr>
+            <td style="padding-left: 1em;">
+                <input type="radio" ACCESSKEY="M" id="DialRuleYes" name="DialRuleChoice" CHECKED TABINDEX=1 onclick="window.parent.SelectDialRule(); document.all.edtPhoneNumber.focus();">
+                <span id="spn_staticDialRuleYes" class="text-primary">
+                    <label id="radiolabel01" for="DialRuleYes"><u>M</u>arcar exactamente este número:</label>
+                </span>
+            </td>
+            <td style="padding-left: 2em;">
+                <input DIR=LTR TABINDEX=2 class="dial-number-box" type="text" id="edtPhoneNumber" name="textfield" size="23" maxlength="25">
+            </td>
+           </tr>
+           <tr>
+            <td style="padding-left: 1em;">
+                <input ACCESSKEY="N"  type="radio" id="DialRuleNo" name="DialRuleChoice" TABINDEX=3 onclick="window.parent.SelectDialRule(); document.all.edtCallWaiting.focus();">
+                <span id="spn_staticDialRuleNo" class="text-primary">
+                    <label id="radiolabel02" for="DialRuleNo">Marcar um <u>n</u>úmero com estas regras:</label>
+                </span>
+            </td>
+            <td style="padding-left: 2em;">
+                <span id="spn_staticDialRuleNoa" class="text-secondary"><id id="Disable_call_waiting_text">Desa<u>c</u>tivar atendimento autom. </id></span><input ACCESSKEY="C" DIR=LTR class="dial-number-box" type="text" id="edtCallWaiting" onfocus="this.select();" name="textfield" size="7" maxlength="10" TABINDEX=4>
+            </td>
+           </tr>
+           <tr>
+            <td>&nbsp;</td>
+            <td style="padding-left: 2em;">
+                <span id="spn_staticDialRuleNob" class="text-secondary"><id id="Set_Outside_line_text"><u>L</u>inha externa </id></span><input ACCESSKEY="L" DIR=LTR class="dial-number-box" type="text" id="edtOutsideLine" onfocus="this.select();" name="textfield" size="4" maxlength="4" TABINDEX=5></td>
+            </td>
+           </tr>
+           <tr>
+            <td colspan=2>
+                <span style="padding-left: 1.8em;" id="spn_staticDialRuleNoc" class="text-primary"><id id="Set_Dial_Signal_text">Marcar utilizando:</id></span>
+                <span style="padding-left: 1em;"><input name="DialSignalChoice" type="radio" tabindex="6" id="DialTone" CHECKED><LABEL TABINDEX=-1 ACCESSKEY="F" id="spn_staticDialTone" for="DialTone" class="text-secondary"><id id="Set_Tone_text">M<u>F</u></id></LABEL></span>
+                <span style="padding-left: 2em;"><input name="DialSignalChoice" type="radio" tabindex="7" id="DialPulse"><LABEL TABINDEX=-1 ACCESSKEY="O" id="spn_staticDialPulse" for="DialPulse" class="text-secondary"><id id="Set_Pulse_text">Impuls<u>o</u>s</id></LABEL></span>
+            </td>
+           </tr>
+         </table>
+         <br>
+
+         <ul>
+         <li><span class="text-primary"><id id="na31">Se o número anterior for o correcto, aguarde alguns minutos e clique em <b>Marcar novamente</b>. </id></span></li><br>
+         <li><span class="text-primary"><id id="na32">Se o número não for o correcto, modifique uma das definições acima e clique em <b>Marcar novamente</b>. </id></span></li><br>
+         <li><span class="text-primary"><id id="na33">Para restaurar o número de telefone original marcado, clique em <b>Restaurar</b>.</id></span></li>
+         </ul>
+         <p><span class="text-primary-btndesc"><id id="na4">Para continuar sem configurar o serviço Internet, clique em <b>Ignorar</b>.</id></span></p>
+       </span></p>
+    <DIV class="text-error" ID=error_mesg style="display:none; padding-top:20px"></div>
+    <br>
+    <br>
+    </span><br>
+
+    <table border=0 class="newbuttonposition">
+    <tr>
+        <td width=10>&nbsp;&nbsp;</td>
+        <td><BUTTON ID="btnRestore" class="newbuttonsNext" TABINDEX=8  ACCESSKEY="E" style="visibility:visible;" onclick="window.parent.RestoreDialRule();"></BUTTON></td>
+        <td nowrap valign=middle class="text-primary"><span id="RestoreBtnLocalText" style="visibility:visible;"><label for=btnRestore><id id="LocalBtnRestore_Text">R<u>e</u>staurar</id></label></span></td>
+
+        <td width=99%>&nbsp;</td>
+        <td nowrap valign=middle class="text-primary"><span id="SkipBtnLocalText" style="visibility:visible;"><label for=btnSkip><id id="LocalBtnSkip_Text"><u>I</u>gnorar</id></label></span></td>
+        <td><BUTTON ID="btnSkip" class="newbuttonsSkip" TABINDEX=9  ACCESSKEY="I" style="visibility:visible;"></BUTTON></td>
+
+        <td width=10>&nbsp;&nbsp;</td>
+        <td nowrap valign=middle class="text-primary"><span id="NextBtnLocalText" style="visibility:visible;"><label for=btnNext><id id="LocalBtnRedial_Text">Marcar no<u>v</u>amente</id></label></span></td>
+        <td><BUTTON ID="btnNext" class="newbuttonsNext" TABINDEX=10  ACCESSKEY="V" style="visibility:visible;"></BUTTON></td>
+    </tr>
+    </table>
+
+    </td>
+</tr>
+</table>
+
+
+</body>
+</html>
