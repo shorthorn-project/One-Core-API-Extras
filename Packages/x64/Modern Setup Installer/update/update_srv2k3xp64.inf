@@ -5274,7 +5274,7 @@
 	syssetup.dll, Windows\SysWOW64\wsyssetup.dll
 	
 [MustReplace.System32.files]
-	umpnpmgr.dll, Windows\System32\umpnpmgr.dll
+	;umpnpmgr.dll, Windows\System32\umpnpmgr.dll
 	
 [ProcessesToRunAfterCopying]
     cmd.exe /C copy /y "%windir%\system32\eula.txt" "%windir%\system32\Licenses\neutral\_Default\Professional\license.rtf"

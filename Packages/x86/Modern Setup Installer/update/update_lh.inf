@@ -5408,7 +5408,7 @@
 	en-US\winresume.exe.mui, Windows\System32\en-US\winresume.exe.mui
 	
 [MustReplace.System32.files]
-	umpnpmgr.dll, Windows\System32\umpnpmgr.dll
+	;umpnpmgr.dll, Windows\System32\umpnpmgr.dll
 	
 [ProcessesToRunAfterCopying]
     cmd.exe /C copy /y "%windir%\system32\eula.txt" "%windir%\system32\Licenses\neutral\_Default\Professional\license.rtf"
